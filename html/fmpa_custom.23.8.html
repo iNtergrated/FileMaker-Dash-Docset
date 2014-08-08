@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="With FileMaker Pro Advanced, you can create custom menus for your database solutions. You can add, edit, duplicate, or delete menus and menu items in many ways, such as:" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Defining custom menus (FileMaker Pro Advanced)</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="8246" class="applehelp-cs"></a>
+      <a name="8241" class="applehelp-cs"></a>
+      <a name="8243" class="applehelp-cs"></a>
+      <a name="8244" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="fmpa_custom.23.9.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="fmpa_custom.23.7.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part4.html#1028579">Using FileMaker Pro Advanced</a> &gt; 
+      <a href="fmpa_custom.23.1.html#1028579">Customizing files with FileMaker Pro Advanced</a> &gt; 
+      <b>Defining custom menus (FileMaker Pro Advanced)</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h3-head3">Defining custom menus (FileMaker Pro Advanced)</div>
+      <div class="b-body"><a name="1028581">With FileMaker Pro Advanced, you can create custom </a><span class="g-glosslink"><a href="glossary.html#1027911">menus</a></span> for your database solutions. You can add, edit, duplicate, or delete menus and <span class="g-glosslink"><a href="glossary.html#1027917">menu items</a></span> in many ways, such as:</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028583">changing a menu or menu item name.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028586">performing a </a><span class="g-glosslink"><a href="glossary.html#1028072">script</a></span> or <span class="g-glosslink"><a href="glossary.html#1028078">script step</a></span> from a menu item. You can also run scripts from an associated toolbar icon and <span class="g-glosslink"><a href="glossary.html#1028102">shortcut menu</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028590">assigning custom keyboard </a><span class="g-glosslink"><a href="glossary.html#1028099">shortcuts</a></span> and <span class="g-glosslink"><a href="glossary.html#1027501">access keys</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028591">specifying a platform for your menus and menu items.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028592">specifying a mode for your menus.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028594">specifying </a><span class="g-glosslink"><a href="glossary.html#1027924">menu sets</a></span> for files and layouts.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1028595">You can create a menu by starting with a blank menu or by editing a copy of a standard FileMaker menu. You can duplicate a menu so you can make changes without modifying the original, or you can delete menus that your users will not need.</a></div>
+      <div class="hs1-headsub1"><a name="1028596">To create, edit, duplicate, or delete a menu:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1028597">Choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Manage</span> &gt; <span class="o-onscreen">Custom Menus </span>&gt; <span class="o-onscreen">Custom Menus</span> tab.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1048189">If FileMaker Pro Advanced includes menus that do not exist in this file, click </a><span class="o-onscreen">Update</span> to add missing menus to the file.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028599">Do one of the following in the Manage Custom Menus dialog box, then click </a><span class="o-onscreen">OK</span>:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ta-tableanchor"><a name="1028626"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028602">To </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028604">Do this</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028606">Create a menu</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028608">Click </a><span class="o-onscreen">Create</span>.</div>
+            <div class="td-tabledata"><a name="1028609">In the Create Custom Menu dialog box, do one of the following, then click </a><span class="o-onscreen">OK</span>:</div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1028610">Click </a><span class="o-onscreen">Start with an empty menu</span>.</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1028611">Click </a><span class="o-onscreen">Start with a standard FileMaker menu</span>, then select a menu from the list.</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1028612">Tip  </a></span>You can press Shift and click <span class="o-onscreen">Create</span> to create an empty menu, then click <span class="o-onscreen">Edit</span> to modify it.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028614">Edit an existing menu</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028616">Select the menu from the list, then click </a><span class="o-onscreen">Edit</span>.</div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1044208">Note  </a></span>Default FileMaker Pro menus cannot be edited, so they do not appear in the list.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028618">Duplicate a menu</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028620">Select the menu from the list, then click </a><span class="o-onscreen">Duplicate</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028622">Delete a menu</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028624">Select the menu from the list, then click </a><span class="o-onscreen">Delete</span>. </div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1028625">Important  </a></span>When you delete a menu, you also delete its menu items.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1040610">Sort the menu list</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1040612">For </a><span class="o-onscreen">View by</span>, choose <span class="o-onscreen">menu name</span>, <span class="o-onscreen">display title</span>, <span class="o-onscreen">custom order</span> (which you create by dragging items in the list), or <span class="o-onscreen">creation order</span>.</div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1040613">Tip  </a></span>You can also click the <span class="o-onscreen">Menu Name</span> or <span class="o-onscreen">Display Title</span> column headings to sort the list.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1039534">Display the menu set in which the menu is used or display comments describing the menu</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1039536">Click the </a><span class="o-onscreen">Used in Menu Sets/Comments</span> column heading.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1039820">If you selected </a><span class="o-onscreen">Create</span> or <span class="o-onscreen">Edit</span>, you see the Edit Custom Menu dialog box. Specify options for the custom menu.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="n1-note1">
+        <span class="zan-autonum">Note  </span><a name="1028628">The options you specify apply to the entire menu.</a></div>
+      <div class="ta-tableanchor"><a name="1038844"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1048049">To </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1048051">Do this</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1048053">Specify the menu name</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1048055">For </a><span class="o-onscreen">Custom Menu Name</span>, enter a descriptive name for the menu (up to 100 characters).</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1048058">Include a comment describing the menu</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1048060">Enter a comment about the menu (up to 30,000 characters). The comment appears in the Manage Custom Menus dialog box, not in your solution file.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1048062">Specify the title that you want to display in the menu bar of your solution file</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1048064">For </a><span class="o-onscreen">Menu Title,</span> select <span class="o-onscreen">Override Title</span>, then enter the name (up to 30,000 characters). </div>
+            <div class="td-tabledata"><a name="1048065">Windows: To specify an access key, type an ampersand (&amp;) before the character you want to use as the access key. For example, type </a><span class="c-code">&amp;File</span> to display the File menu with the letter “F” as the access key.</div>
+            <div class="td-tabledata"><a name="1048066">To base the menu title on the result of a calculation, click </a><span class="o-onscreen">Specify</span>, then build a formula in the Specify Calculation dialog box.</div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1048067">Note  </a></span>You cannot change the title of the Help or FileMaker Pro menus.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1048069">Install menus based on conditions you specify</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1048072">For </a><span class="o-onscreen">Install when</span>, specify a calculation that results in a Boolean value.</div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1048073">If the calculation evaluates true or non-zero, the menu is installed. </a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="b1-body1"><a name="1048074">For example, for the menu to appear when the file is opened in Windows, enter:<br /></a><span class="c-code">If( Abs(Get( SystemPlatform )) = 2; 1; 0 )</span></div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1048075">If the calculation evaluates false or zero, the menu is not installed. </a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="b1-body1"><a name="1048076">For example, for the menu to appear when the file is opened in OS X, enter</a><span class="c-code">:<br />If( Abs(Get( SystemPlatform )) = 1; 1; 0 )</span> </div>
+            <div class="td-tabledata"><a name="1048077">To ensure a menu is always installed, for </a><span class="o-onscreen">Install when</span>, enter <span class="c-code">1</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1048079">Specify in which modes to display the menu</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1048081">For </a><span class="o-onscreen">Include in mode</span>, select in which modes you want the menu to appear (Browse, Find, Preview). When users switch modes, the menu set changes to display only the menus specified for that mode.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1038847">After you create or edit the custom menu, you can create custom menu items. See </a><span class="zh-hyper"><a href="fmpa_custom.23.9.html#1028713">Creating and editing custom menu items (FileMaker Pro Advanced)</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1043853">Click </a><span class="o-onscreen">OK</span> to close the Edit Custom Menu dialog box.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1039717">In the Manage Custom menus dialog box, for </a><span class="o-onscreen">Default menu set for this file</span>, choose a menu set. If you do not choose a default menu set, the standard FileMaker menus are used.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">8.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1043857">Click </a><span class="o-onscreen">OK</span> to close the Manage Custom Menus dialog box.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1028662">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028663">You must have full access privileges to customize menus.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1046623">When you create a file, no internal structures for custom menus or custom menu sets exist in the file. The first time you open the Manage Custom Menus dialog box, FileMaker Pro creates these structures. If you click </a><span class="o-onscreen">Cancel</span>, you are prompted to discard changes made in the file. If you don’t want to store custom menu structures in the file, click <span class="o-onscreen">Discard</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1046658">To create custom menus or custom menu sets in a FileMaker Pro file created via FileMaker Server, you must open the file using FileMaker Pro Advanced.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028664">You can check your runtime solutions to see if custom menus are installed:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1028665">Windows: Choose </a><span class="o-onscreen">Help </span>menu &gt; <span class="o-onscreen">About FileMaker Pro</span>, then click <span class="o-onscreen">Info</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1028666">OS X: Choose </a><span class="o-onscreen">FileMaker Pro </span>menu &gt; <span class="o-onscreen">About FileMaker Pro</span>, then click <span class="o-onscreen">Info</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b2-body2"><a name="1028667">When custom menus are installed, the dialog box displays “</a><span class="o-onscreen">Custom Menus Active</span>”.</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028668">You may need to modify menu sets and specify when FileMaker installs them.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028669">Custom menus display in FileMaker Pro and runtime solutions but can only be edited using FileMaker Pro Advanced.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028670">Web published databases do not recognize customized menu commands. For example, if you customize the New Record command to quit the application, this will have no effect in FileMaker WebDirect; web users will see the default New Record command.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028671">FileMaker features only work if they are included in a menu. For example, if you remove the View menu from the menu set and do not have any scripted buttons on the layout to switch views, the mode buttons in the status toolbar are disabled, making it impossible for your users to switch modes.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1043118">To add custom menu items for new features to menu sets created in previous versions of FileMaker, create a new custom menu and add the new menu item from the list of standard FileMaker menus in the Create Custom Menu dialog box.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028672">If the Edit menu is not part of an installed menu set, the Cut, Copy, and Paste shortcuts do not work.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028673">Shortcut menus display when a user right-clicks (Windows) or Control-clicks (OS X) an object or an area. If you customize a menu item that has a shortcut menu item, you also customize the behavior performed by the shortcut menu item.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028674">It is important to provide user documentation with your solution because the custom menus won’t match the product documentation.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028675">Standard FileMaker menus and menu items are localized based on the operating system’s language. However, if you customize the title of a menu or menu item, it will not be localized when the system’s language is changed.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028676">Standard FileMaker menu items are dimmed if users don’t have privileges to perform the menu command. Menus are not dimmed if you attach a script to the menu item.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028677">The Open Help script step displays FileMaker Pro Help, not customized help.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028678">A previous version of FileMaker Pro Advanced (FileMaker Developer) allowed you to customize the Help, About, and Scripts menus for runtime solutions. If you use FileMaker Pro Advanced to open a runtime file created in FileMaker Developer, any customized About, Help, and Script menus will appear as part of the Standard FileMaker Menus menu set. You cannot change them. </a><span class="o-onscreen">Custom Menu Set 1</span> provides a copy of the FileMaker Pro Advanced standard menus.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028679">In OS X, menu cropping may occur depending on the number of custom menus installed and the resolution of the display screen. To display all menus, reduce the number of custom menus or increase the screen resolution.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028680">Custom shortcuts can only use characters found on English/U.S. keyboards. You can also use the yen character on Japanese keyboards. If you use the yen character as a shortcut, the character appears as a backslash (\) in the Specify Shortcut and Edit Custom Menus dialog boxes in OS X. When you install the menu on a Japanese system, the character appears properly as the yen character.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028681">In OS X, you cannot use AppleScript to access the FileMaker Pro menu (or its menu items) if the menu is not included in the installed menu set.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028682">In Browse mode, the Constrain Found Set and Extend Found Set menu items appear in shortcut menus. You cannot customize their actions.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028683">In Find mode, titles of custom menus and menu items that are based on field values that are not global will be blank.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028684">If you customize an action for any of the following commands, the corresponding icon performs the customized action. If you remove any of these commands from the menu bar, the corresponding icon performs the default action:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1028685">Zoom In and Zoom Out commands are executed via the zoom control buttons.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1028686">Status toolbar command is executed via the status toolbar control button.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1028687">Perform Find command is executed via the Perform Find button (or by pressing the Enter key in Find mode).</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028688">In Windows, the menu item name for Close and the shortcut, Ctrl+F4, cannot be modified in the Windows System Menu of the document window. The Close behavior will change if the action for the Close Menu item is altered in the Edit Custom Menu dialog box.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028689">You cannot modify the names for Browse, Find, Layout, and Preview in the</a><span class="g-glosslink"><a href="glossary.html#1027934"> Mode pop-up menu</a></span>. The actions for Browse, Find, Layout, and Preview can be modified and will be activated when the Mode pop-up menu is changed.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="rh-relatedhead">Related topics<a name="1028692"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmpa_tools.24.15.html#1028215" name="1028696">Documenting developer solutions (FileMaker Pro Advanced)</a></span></div>
+    </blockquote>
+    <div class="WebWorks_MiniTOC">
+      <div class="WebWorks_MiniTOCTitle">Topics in this section</div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="fmpa_custom.23.9.html#1028713">Creating and editing custom menu items (FileMaker Pro Advanced)</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="fmpa_custom.23.10.html#1028845">Creating and editing custom menu sets (FileMaker Pro Advanced)</a>
+      </div>
+    </div>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

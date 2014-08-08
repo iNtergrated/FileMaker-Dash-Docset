@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Sends a DDE (Dynamic Data Exchange) command to another application to execute a series of commands available in that application." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Send DDE Execute (Windows)</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="scripts_ref2.37.72.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="scripts_ref2.37.70.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1029704">Reference</a> &gt; 
+      <a href="help_script_cat.34.1.html#1029704">Script steps reference</a> &gt; 
+      <a href="scripts_ref2.37.59.html#1029704">Miscellaneous script steps</a> &gt; 
+      <b>Send DDE Execute (Windows)</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="ssh-scripthead">Send DDE Execute (Windows)</div>
+      <div class="sspuh-scriptpurposehead">Purpose<a name="1038432"> </a></div>
+      <div class="sspu-scriptpurpose"><a name="1038433">Sends a DDE (Dynamic Data Exchange) command to another application to execute a series of commands available in that application.</a></div>
+      <div class="ssfh-scriptformathead">Format<a name="1029705"> </a></div>
+      <div class="co-code"><a name="1029706">Send DDE Execute [</a><span class="v-variable">&lt;topic text or filename&gt;</span>; <span class="v-variable">&lt;service name&gt;</span>]</div>
+      <div class="ssoh-scriptoptshead">Options<a name="1029707"> </a></div>
+      <div class="b-body"><a name="1029708">Click</a><span class="o-onscreen"> Specify</span> to display the “Send DDE Execute” Options dialog box, where you can set the following options:</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1029709">Service name</a></span> is the name of the application that executes the commands. Refer to the documentation of the application you specify for the valid service name. You can enter the service name directly as text or click <span class="o-onscreen">Specify</span> to create the service name from a calculation.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1029710">Topic</a></span> is a filename or text string that describes the topic that the application executes the commands on. Refer to the documentation of the application specified in the Service Name for valid topics. You can enter the topic name directly as text or click <span class="o-onscreen">Specify</span> to create the topic name from a calculation. For more information, see <span class="zh-hyper"><a href="create_db.8.42.html#1087742">Creating file paths</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1029714">Commands</a></span> are a calculated value or text string that specifies what the application does. Refer to the documentation of the application specified in the Service Name for valid commands and formats. You can enter the commands directly as text or click <span class="o-onscreen">Specify</span> to create the commands from a calculation.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sscoh-scriptcompathead">Compatibility<a name="1055801"> </a></div>
+      <div class="ta-tableanchor"><a name="1055827"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh1-scriptstepcompthead1">Where the script step runs<a name="1067116"> </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh2-scriptstepcompthead2">Supported<a name="1067118"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco1-scriptstepcompt1">FileMaker Pro<a name="1067120"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1067122"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco2-scriptstepcompt2">FileMaker Server scheduled script<a name="1067124"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1067126"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco3-scriptstepcompt3">FileMaker Go<a name="1067128"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1067130"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco4-scriptstepcompt4">Custom Web Publishing<a name="1067132"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1067134"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco5-scriptstepcompt5">FileMaker WebDirect<a name="1067136"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1067138"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco6-scriptstepcompt6">Runtime solution<a name="1067140"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1067142"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="orh-originhead">Originated in<a name="1043686"> </a></div>
+      <div class="or-origin"><a name="1043687">FileMaker Pro 6.0 or earlier</a></div>
+      <div class="ssdh-scriptdeschead">Description<a name="1029717"> </a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029723">FileMaker Pro sends DDE execute commands, but does not receive them.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029725">Because DDE is a Windows feature, if you run a script containing a Send DDE execute script step on an OS X-based computer, the script step is ignored. (An error code is generated, which can be captured with the </a><span class="zh-hyper"><a href="func_ref2.32.46.html#1029752">Get(LastError) function</a></span>.)</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029729">When a FileMaker Pro script first establishes a DDE connection, the connection stays open to execute subsequent script steps for the same service name and topic. If the script includes another DDE Execute script step using a different service name or topic, FileMaker Pro closes the current connection and opens another with the new service name and topic. All open connections close when the script is completed.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sseh1-scriptexamhead1">Example 1<a name="1029730"> </a></div>
+      <div class="b-body"><a name="1029731">Opens a URL in Internet Explorer. (Internet Explorer must be open when this step executes.)</a></div>
+      <div class="co-code"><a name="1029732">Send DDE Execute [Service Name: "iexplore"; Topic: "WWW_OpenURL";<br />Commands: "www.filemaker.com"]</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1029733"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_alpha.html#66468" name="1029737">Script steps reference (alphabetical list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_cat.34.2.html#947337" name="1029741">Script steps reference (category list)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="keywords" content="Boolean" />
+    <meta name="description" content="Constraining a found set lets you narrow find results incrementally, looking for more specific detail as you search your database. To find records based on multiple criteria in separate fields (a logical AND search), perform a find, specify the next criter ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Constraining (narrowing) a found set</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="find_sort.5.18.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="find_sort.5.16.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part1.html#1028608">Using FileMaker Pro</a> &gt; 
+      <a href="find_sort.5.1.html#1028608">Finding, sorting, and replacing data</a> &gt; 
+      <a href="find_sort.5.2.html#1028608">Finding records</a> &gt; 
+      <b>Constraining (narrowing) a found set</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Constraining (narrowing) a found set</div>
+      <div class="b-body"><a name="1028616">Constraining a found set lets you narrow find results incrementally, looking for more specific detail as you search your database. To find </a><span class="g-glosslink"><a href="glossary.html#1028030">records</a></span> based on multiple criteria in separate <span class="g-glosslink"><a href="glossary.html#1027703">fields</a></span> (a logical AND search), perform a find, specify the next criteria, then choose <span class="o-onscreen">Requests</span> menu &gt; <span class="o-onscreen">Constrain Found Set</span>.</div>
+      <div class="b-body"><a name="1028619">For example, after searching for all of the employees who work in Sales, you can narrow the search to find all of the employees within Sales named Alvarez.</a></div>
+      <div class="hs1-headsub1"><a name="1028620">To constrain or narrow a found set:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1028622">Perform a find so that your database contains a </a><span class="g-glosslink"><a href="glossary.html#1027747">found set</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1028626">See </a><span class="zh-hyper"><a href="find_sort.5.5.html#1027609">Making a find request</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028627">Switch back to Find mode and type the criteria to narrow the search.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028628">Choose </a><span class="o-onscreen">Requests</span> menu &gt; <span class="o-onscreen">Constrain Found Set</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1028630">FileMaker displays the constrained found set in </a><span class="g-glosslink"><a href="glossary.html#1027555">Browse mode</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1028631">Example</a></div>
+      <div class="b-body"><a name="1028632">To first search for all the employees in Sales, and then constrain the found set to Sales employees named Alvarez:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1028633">Perform a find for </a><span class="c-code">Sales</span> in the Department field.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028634">Go to Find mode and enter a second find request: type </a><span class="c-code">Alvarez</span> in the Last Name field.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028635">Instead of clicking </a><span class="o-onscreen">Find</span>, choose <span class="o-onscreen">Requests</span> menu &gt; <span class="o-onscreen">Constrain Found Set</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1028636">The found set would then consist of employees in Sales named Alvarez.</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1028637"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.18.html#1028651" name="1028641">Extending (broadening) a found set</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.11.html#1059754" name="1028645">Finding duplicate values</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.4.html#1047538" name="1028649">Finding records based on criteria in a single field</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

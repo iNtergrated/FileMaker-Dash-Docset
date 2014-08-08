@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="By using scripts and calculations to evaluate the state of button fields, you can make dynamic buttons that change each time they are clicked." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Creating dynamic buttons (FileMaker Pro Advanced)</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="part5.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="fmpa_tools.24.26.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part4.html#1028986">Using FileMaker Pro Advanced</a> &gt; 
+      <a href="fmpa_tools.24.1.html#1028986">Using FileMaker Pro Advanced tools</a> &gt; 
+      <a href="fmpa_tools.24.24.html#1028986">Displaying databases in Kiosk mode (FileMaker Pro Advanced)</a> &gt; 
+      <b>Creating dynamic buttons (FileMaker Pro Advanced)</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Creating dynamic buttons (FileMaker Pro Advanced)</div>
+      <div class="b-body"><a name="1028989">By using </a><span class="g-glosslink"><a href="glossary.html#1028072">scripts</a></span> and calculations to evaluate the state of <span class="g-glosslink"><a href="glossary.html#1027559">button</a></span> fields, you can make dynamic buttons that change each time they are clicked.</div>
+      <div class="b-body"><a name="1028990">To create dynamic buttons:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028991">Define the dynamic button field.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028992">Create the dynamic button script.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028993">Connect the field and the script.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1028994">The following example shows how to create a button that changes every time it is clicked.</a></div>
+      <div class="hs1-headsub1"><a name="1028995">To define the dynamic button field:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1028996">Choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Manage</span> &gt; <span class="o-onscreen">Database</span> &gt; <span class="o-onscreen">Fields</span> tab. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028997">Create a field named Icons and choose </a><span class="o-onscreen">Container</span> type.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028998">Click </a><span class="o-onscreen">Options</span> &gt; <span class="o-onscreen">Storage</span> tab.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028999">Select the </a><span class="o-onscreen">Use global storage</span> checkbox and type the number of button states for the <span class="o-onscreen">Maximum number of repetitions</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029000">Click </a><span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029002">In </a><span class="g-glosslink"><a href="glossary.html#1027555">Browse</a></span> mode, select the Icons field and choose <span class="o-onscreen">Insert</span> menu &gt; <span class="o-onscreen">Picture</span> to add graphics to the Icons field.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="nt1-notetip1">
+        <span class="zan-autonum">Tip  </span><a name="1029003">Ensure that all graphics are the same size. </a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029004">Choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Manage</span> &gt; <span class="o-onscreen">Database</span> &gt; <span class="o-onscreen">Fields</span> tab.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">8.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029005">Create a field named Buttons and choose </a><span class="o-onscreen">Container</span> type.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">9.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029006">Click </a><span class="o-onscreen">Options</span> &gt; <span class="o-onscreen">Auto-Enter</span> tab.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">10.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029007">For </a><span class="o-onscreen">Calculated value</span>, click <span class="o-onscreen">Specify</span> and enter the function <span class="c-code">GetRepetition (Icons; 1)</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="nt1-notetip1">
+        <span class="zan-autonum">Tip  </span><a name="1046763">To create a button that displays identically across all records, click the </a><span class="o-onscreen">Storage</span> tab and select <span class="o-onscreen">Use global storage</span>. Otherwise, each record will display its own button state.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">11.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1046764">Click </a><span class="o-onscreen">OK</span>, then <span class="o-onscreen">OK </span>again.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1029009">To create the dynamic button script:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1029010">Choose </a><span class="o-onscreen">Scripts</span> menu &gt; <span class="o-onscreen">Manage Scripts </span>and click <span class="o-onscreen">New</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029011">Name the script Toggle Buttons.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029012">Add a </a><span class="c-code">Set Field</span> script step.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029013">Select </a><span class="o-onscreen">Specify target field </span>or click <span class="o-onscreen">Specify</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029014">Double-click </a><span class="o-onscreen">Buttons</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029015">For </a><span class="o-onscreen">Calculated result</span>, click <span class="o-onscreen">Specify</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029016">Write a Case function that evaluates each GetRepetition test expression for the icon number and increments the number by 1, replacing the table name “icons” with the table in which you created the Icons field.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><span class="c-code"><a name="1029017">Case (</a></span></div>
+      <div class="b1-body1"><span class="c-code"><a name="1029018">icons::Buttons = GetRepetition (icons::Icons; 1); GetRepetition (icons::Icons; 2);</a></span></div>
+      <div class="b1-body1"><span class="c-code"><a name="1029019">icons::Buttons = GetRepetition (icons::Icons; 2); GetRepetition (icons::Icons; 3);</a></span></div>
+      <div class="b1-body1"><span class="c-code"><a name="1029020">icons::Buttons = GetRepetition (icons::Icons; 3); GetRepetition (icons::Icons; 4);</a></span></div>
+      <div class="b1-body1"><span class="c-code"><a name="1029021">icons::Buttons = GetRepetition (icons::Icons; 4); GetRepetition (icons::Icons; 5);</a></span></div>
+      <div class="b1-body1"><span class="c-code"><a name="1029022">GetRepetition (icons::Icons; 1)</a></span></div>
+      <div class="b1-body1"><span class="c-code"><a name="1029023">)</a></span></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">8.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029024">Click </a><span class="o-onscreen">OK</span> and close the Edit Script and Manage Scripts dialog boxes.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1029025">To connect the field and the script:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1029027">In </a><span class="g-glosslink"><a href="glossary.html#1034324">Layout mode</a></span>, select the Buttons field.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1035335">Click </a><span class="o-onscreen">Inspector </span><img class="Default" src="../images/objectinfo_button.png" width="21" height="18" style="float: none; left: 0.0; top: 0.0;" alt="Inspector button" /> in the <span class="g-glosslink"><a href="glossary.html#1034854">layout bar</a></span>, then click <span class="o-onscreen">Data</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029028">In the Behavior area, clear </a><span class="o-onscreen">Browse Mode</span> and <span class="o-onscreen">Find Mode</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029029">Choose </a><span class="o-onscreen">Format</span> menu &gt; <span class="o-onscreen">Button Setup</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029030">Select </a><span class="o-onscreen">Perform Script</span> and specify <span class="o-onscreen">Toggle Buttons</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029031">Click </a><span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1041520">Switch to Browse mode and test your dynamic button. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1041527">For more information about using buttons with scripts, see </a><span class="zh-hyper"><a href="create_script.13.25.html#1028657">Using buttons with scripts</a></span>.</div>
+      <div class="rh-relatedhead">Related topics<a name="1029037"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmpa_tools.24.24.html#1028803" name="1029041">Displaying databases in Kiosk mode (FileMaker Pro Advanced)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmpa_tools.24.25.html#1028839" name="1029045">Creating Kiosk solutions (FileMaker Pro Advanced)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmpa_tools.24.26.html#1028918" name="1029049">Using scripts and buttons to control Kiosk solutions (FileMaker Pro Advanced)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_script.13.1.html#1034729" name="1029053">Creating scripts to automate tasks</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.44.html#1030528" name="1029057">Working with formulas and functions</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

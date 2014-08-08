@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="The following topics describe common problems and solutions when working with web viewers on a layout." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Troubleshooting layouts with web viewers</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="edit_layout.10.1.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="create_layout.9.69.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1030699">Designing and creating databases</a> &gt; 
+      <a href="create_layout.9.1.html#1030699">Creating and managing layouts and reports</a> &gt; 
+      <a href="create_layout.9.65.html#1030699">Troubleshooting layouts</a> &gt; 
+      <b>Troubleshooting layouts with web viewers</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Troubleshooting layouts with web viewers</div>
+      <div class="b-body"><a name="1030700">The following topics describe common problems and solutions when working with web viewers on a layout.</a></div>
+      <div class="hs1-headsub1"><a name="1030701">A web viewer displays “Loading:” and a URL, but doesn’t load a web page</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030702">The URL might be invalid. In Layout mode, you can see a calculated URL by choosing </a><span class="o-onscreen">View</span> menu &gt; <span class="o-onscreen">Show</span> &gt; <span class="o-onscreen">Sample Data</span>. (Also, a web viewer displays the URL that it is trying to load in Browse mode.) Look at this URL closely. Then in Layout mode, choose <span class="o-onscreen">Format</span> menu &gt; <span class="o-onscreen">Web Viewer Setup</span>. In the Web Viewer Setup dialog box, try the following changes to the web address:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1030703">Specify the correct URL scheme — for example, http:// — and the complete server name, including “www.” or “.com” as required. Windows and OS X respond to incomplete or improperly specified URLs differently. Don’t assume that the correct scheme or “www.” will be added automatically.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1030704">Ensure that the syntax of the website parameters in your web address is what the website expects. Some websites explain the query syntax they require, so search the support area of the website that you want to use for more information.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1030705">Fix problems in the formula that defines your custom web address — for example, add or change quotation marks around strings, use the concatenate operator (&amp;) between strings. See </a><span class="zh-hyper"><a href="create_db.8.44.html#1030528">Working with formulas and functions</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1030709">Ensure that characters in the URL are correctly encoded. Review text constants in your web address and the data in your database. See </a><span class="zh-hyper"><a href="non_toc.46.20.html#1028935">About URL encoding in web viewers</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1030713">You can see the progress of page loads with the progress bar and errors with the status bar, which are displayed at the bottom of the web viewer. If you do not see the progress bar or the status bar, select </a><span class="o-onscreen">Display progress bar</span> and <span class="o-onscreen">Display status messages</span>. See <span class="zh-hyper"><a href="create_layout.9.52.html#1029724">Adding a web viewer</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030717">The URL is correct, but the website is not responding. Open your web browser and go to the same website. If the website doesn’t respond, then the website might be down, so try again later.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030718">Your computer might not be connected to a network. Open your web browser and go to one or more known websites. If these websites don’t respond, then ensure that your computer is connected to a network.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1030719">Links, fields, tabbing, and scrolling in a web viewer don’t work</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030720">The web viewer is set to prevent interaction. To enable interaction, in Layout mode choose </a><span class="o-onscreen">Format</span> menu &gt; <span class="o-onscreen">Web Viewer Setup</span>. In the Web Viewer Setup dialog box, select the <span class="o-onscreen">Allow interaction with web viewer content</span> checkbox.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030721">The web viewer is defined as a button. Even if interaction is allowed, a web viewer that is defined as a button prevents mouse clicks from interacting with web viewer content but does allow keyboard interaction. For more information, see </a><span class="zh-hyper"><a href="create_script.13.26.html#1028717">Defining a button</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1030725">A web viewer is blank in Find mode</a></div>
+      <div class="b-body"><a name="1030726">The web viewer is set not to display content in Find mode. To display content, in Layout mode choose </a><span class="o-onscreen">Format</span> menu &gt; <span class="o-onscreen">Web Viewer Setup</span>. In the Web Viewer Setup dialog box, select the <span class="o-onscreen">Display content in Find mode</span> checkbox.</div>
+      <div class="hs1-headsub1"><a name="1030727">Web pages that use Java, JavaScript, or other installed plug-ins don't work</a></div>
+      <div class="b-body"><a name="1030728">Some of the operating system’s web browser preferences can affect web viewers. In particular, if Java, JavaScript, or other plug-ins are disabled in the web browser, then these technologies are disabled in web viewers also. In the preferences or options dialog box of the operating system’s web browser, enable the technologies that are needed.</a></div>
+      <div class="hs1-headsub1"><a name="1030729">Some web pages don’t work correctly in a web viewer</a></div>
+      <div class="b-body"><a name="1030730">Some technologies used by some web pages might not work correctly in a web viewer. In these cases, use a web browser instead. </a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030731">If the web page in a web viewer contains links, you can open a link in a separate web browser window. From the </a><span class="g-glosslink"><a href="glossary.html#1028102">shortcut menu</a></span> on a link in a web viewer, choose <span class="o-onscreen">Open in New Window</span> (Windows) or <span class="o-onscreen">Open Link in New Window</span> (OS X). </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030733">You can provide a way for the user to open the web viewer’s current URL in a separate web browser window. For example, insert a button on your layout near your web viewer. Set up the button to perform the following example script:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><span class="c-code"><a name="1030734">Open URL [No dialog; GetLayoutObjectAttribute ("Web Viewer 1"; "source")]</a></span> </div>
+      <div class="b1-body1"><a name="1030735">This script gets the current URL of the web viewer named “Web Viewer 1” and opens it in a separate web browser window. For more information, see </a><span class="zh-hyper"><a href="edit_layout.10.12.html#1066667">Naming objects</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1030739">Some web browser features don’t work as expected in a web viewer</a></div>
+      <div class="b-body"><a name="1030740">Web viewers provide many of the same features as your operating system’s web browser, but not all. Also, some web browser features work in web viewers on one operating system but not the other.</a></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

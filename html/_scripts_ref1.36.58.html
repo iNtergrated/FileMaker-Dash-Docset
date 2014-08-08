@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Imports a file or a reference to a file into the current container field. Configures the Insert File dialog box." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Insert File</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <a name="//apple_ref/cpp/Command/Insert File" class="dashAnchor"></a>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="scripts_ref1.36.59.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="scripts_ref1.36.57.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1029502">Reference</a> &gt; 
+      <a href="help_script_cat.34.1.html#1029502">Script steps reference</a> &gt; 
+      <a href="scripts_ref1.36.41.html#1029502">Fields script steps</a> &gt; 
+      <b>Insert File</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="ssh-scripthead">Insert File</div>
+      <div class="sspuh-scriptpurposehead">Purpose<a name="1039538"> </a></div>
+      <div class="sspu-scriptpurpose"><a name="1039539">Imports a file or a reference to a file into the current container field. Configures the Insert File dialog box.</a></div>
+      <div class="ssfh-scriptformathead">Format<a name="1057503"> </a></div>
+      <div class="ssf-scriptformat"><a name="1057504">Insert File [</a><span class="e-emphasis">&lt;dialog options&gt;;&lt;table::field&gt;;”&lt;filename&gt;”</span>]</div>
+      <div class="ssoh-scriptoptshead">Options<a name="1057505"> </a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1078548">Select </a><span class="o-onscreen">Dialog options </span>or click<span class="o-onscreen"> Specify</span> to<span class="o-onscreen"> </span>create a custom Insert File dialog box, filter file types, and choose storage, display, and compression options for files that are inserted into a container field. See <span class="zh-hyper"><a href="non_toc.46.50.html#1054873">Insert File Options dialog box</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1029507">Store only a reference</a></span> instructs FileMaker Pro to store only a link to a file in the <span class="g-glosslink"><a href="glossary.html#1041246">container field</a></span> instead of the entire file. This option may reduce the size of your FileMaker Pro file, but if you move or delete the file being referenced, FileMaker Pro won't be able to display it.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029508">Select</a><span class="o-onscreen"> Go to target field</span> or click <span class="o-onscreen">Specify</span> to specify the container field to insert the file into.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029509">Select</a><span class="o-onscreen"> Specify source file</span> or click<span class="o-onscreen"> Specify</span> to<span class="o-onscreen"> </span>specify the file to be inserted. For information on creating file paths in FileMaker Pro, see <span class="zh-hyper"><a href="create_db.8.42.html#1087742">Creating file paths</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sscoh-scriptcompathead">Compatibility<a name="1063210"> </a></div>
+      <div class="ta-tableanchor"><a name="1063236"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh1-scriptstepcompthead1">Where the script step runs<a name="1076585"> </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh2-scriptstepcompthead2">Supported<a name="1076587"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco1-scriptstepcompt1">FileMaker Pro<a name="1076589"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1076591"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco2-scriptstepcompt2">FileMaker Server scheduled script<a name="1076593"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1076595"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco3-scriptstepcompt3">FileMaker Go<a name="1076597"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1076599"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco4-scriptstepcompt4">Custom Web Publishing<a name="1076601"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1076603"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco5-scriptstepcompt5">FileMaker WebDirect<a name="1076605"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscop-scriptstepcomptpartial">Partial<a name="1076607"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco6-scriptstepcompt6">Runtime solution<a name="1076609"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1076611"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="orh-originhead">Originated in<a name="1049786"> </a></div>
+      <div class="or-origin"><a name="1049787">FileMaker Pro 6.0 or earlier</a></div>
+      <div class="ssdh-scriptdeschead">Description<a name="1029515"> </a></div>
+      <div class="b-body"><a name="1029528">You must specify a target field, click in a field, or use the </a><span class="zh-hyper"><a href="scripts_ref1.36.25.html#1028490">Go to Field script step</a></span> before performing this script step. If you do not specify a file to insert, FileMaker Pro displays a dialog box where the user can select a file.</div>
+      <div class="hs1-headsub1"><a name="1102997">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029532">If there is no active container field on the layout where the script is being performed, Insert File returns an error code that can be captured with the </a><span class="zh-hyper"><a href="func_ref2.32.46.html#1029752">Get(LastError) function</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1102980">FileMaker WebDirect does not support the </a><span class="o-onscreen">Dialog options</span>, <span class="o-onscreen">Store only a reference</span>, or <span class="o-onscreen">Specify source file</span> options.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sseh1-scriptexamhead1">Example 1<a name="1029536"> </a></div>
+      <div class="b-body"><a name="1089824">Goes to the File field and inserts a document.</a></div>
+      <div class="co-code"><a name="1089826">Go to Field [Products::File]<br />Insert File ["Instruction Manual.doc"]</a></div>
+      <div class="sseh2-scriptexamhead2">Example 2<a name="1089796"> </a></div>
+      <div class="b-body"><a name="1089852">Opens a dialog box with custom file format filters for the user to select a file, attempts to compress the selected file, then inserts the file into the active container field.</a></div>
+      <div class="co-code"><a name="1089806">Insert File [Filters; Insert; Compress when possible]</a></div>
+      <div class="sseh3-scriptexamhead3">Example 3<a name="1089813"> </a></div>
+      <div class="b-body"><a name="1089874">Inserts the file specified in the File Name field into the File container field, and attempts to display the contents of the file.</a></div>
+      <div class="co-code"><a name="1089876">Set Variable [$FILE_PATH; Value: Get ( DocumentsPath ) &amp; Products::File Name]<br />Insert File [Insert; Display content; Never compress; Products::File ; $FILE_PATH]</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1029538"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_alpha.html#66468" name="1029542">Script steps reference (alphabetical list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_cat.34.2.html#947337" name="1029546">Script steps reference (category list)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

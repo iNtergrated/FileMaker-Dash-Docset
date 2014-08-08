@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="FileMaker Pro can import a folder of files in a single operation. Instead of inserting several pictures or QuickTime files one by one, you can import them all at once. You can also import a folder of text files, which is faster than copying and pasting the ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Importing a folder of files all at once</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="5054" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="import_export.17.17.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="import_export.17.15.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1044791">Sharing data</a> &gt; 
+      <a href="import_export.17.1.html#1044791">Saving, importing, and exporting data</a> &gt; 
+      <a href="import_export.17.10.html#1044791">Importing data into FileMaker Pro</a> &gt; 
+      <b>Importing a folder of files all at once</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Importing a folder of files all at once</div>
+      <div class="b-body"><a name="1028388">FileMaker Pro can import a folder of files in a single operation. Instead of inserting several pictures or </a><span class="g-glosslink"><a href="glossary.html#1028020">QuickTime</a></span> files one by one, you can import them all at once. You can also import a folder of text files, which is faster than copying and pasting the contents of each file.</div>
+      <div class="b-body"><a name="1028390">FileMaker Pro can import any image file that you can insert with the Insert Picture and Insert QuickTime commands, including GIF, JPEG, EPS, TIFF, QuickTime Movie, and many other formats. Text files must be plain, text-only files with a .txt filename extension or a TEXT file type.</a></div>
+      <div class="b-body"><a name="1051328">You can import a folder of image files into a container field, or import a folder of text files into a text, number, date, time, timestamp, or container field. In addition to the file content, you can also import information about each file: the filename, the </a><span class="g-glosslink"><a href="glossary.html#1027722">file path</a></span>, and (for picture and movie files only) a smaller thumbnail image.</div>
+      <div class="hs1-headsub1"><a name="1028393">To import a folder of files:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1028394">Open the FileMaker Pro file into which you want to import a folder of files.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1028395">You need an existing FileMaker Pro file into which to import a folder of files. FileMaker Pro won’t convert the imported data into a new file.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028397">If you’re updating existing or matching records, make a backup copy of the </a><span class="g-glosslink"><a href="glossary.html#1044531">target file</a></span> that you’re importing into.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ni1-noteimportant1">
+        <span class="zan-autonum">Important  </span><a name="1028398">Updating existing or matching records overwrites data in the target file and cannot be undone. Choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Save a Copy As</span> to make a backup copy of the target file. Make sure you understand how updating records works. See <span class="zh-hyper"><a href="import_export.17.11.html#1027964">Methods of importing data into an existing file</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028402">If the target file contains multiple tables, use the </a><span class="g-glosslink"><a href="glossary.html#1027861">Layout pop-up menu</a></span> to display a layout that shows records from the table you want to import data into.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028403">If you’re updating existing or matching records, do the following before you import. (If you’re adding new records, skip to the next step.)</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1028405">If you’re updating existing records in the file, make sure the </a><span class="g-glosslink"><a href="glossary.html#1027747">found set</a></span> contains only the records you want to replace. Sort the records (for example, by the filename) to ensure that data you’re importing replaces the correct records in the target file.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1028406">If you’re updating matching records, make sure the found set contains only the records you want to update. Records outside the found set will not be updated, even if </a><span class="g-glosslink"><a href="glossary.html#1027907">match field</a></span> data matches.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028408">In Browse mode, choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Import Records</span> &gt; <span class="o-onscreen">Folder</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1028409">The Folder of Files Import Options dialog box appears.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028410">In the </a><span class="o-onscreen">Folder Location</span> area, click <span class="o-onscreen">Specify</span>, and choose the folder that contains the files you want to import.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1028411">Select</a><span class="o-onscreen"> Include all enclosed folders</span> to indicate whether to import files that exist in any enclosed folders. (FileMaker Pro will import up to 100 folder levels deep.)</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028412">In the </a><span class="o-onscreen">File Type</span> area, choose <span class="o-onscreen">Picture and movie files</span> or <span class="o-onscreen">Text files</span>, then click <span class="o-onscreen">Continue</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1028413">If you’re importing a folder of picture files, you can select </a><span class="o-onscreen">Import only a reference to each picture file</span> to import only a reference to each file. When this option is deselected, a copy of each file is imported directly into the database.</div>
+      <div class="ni1-noteimportant1">
+        <span class="zan-autonum">Important  </span><a name="1028414">Because movie files are usually large, they are always imported by reference. If you’re importing large picture files, consider importing only a reference to each file. However, if you import files by reference and later move, rename, or delete a source file, FileMaker Pro won’t be able to display it. </a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">8.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028415">In the Import Field Mapping dialog box, choose the type of import to perform, and map fields in your database to the data you want to import. Then click </a><span class="o-onscreen">Import</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1028416">For details on using the Import Field Mapping dialog box and finishing the import process, see </a><span class="zh-hyper"><a href="import_export.17.19.html#1061356">Setting the import action and mapping fields during import</a></span>.</div>
+      <div class="b1-body1"><a name="1028420">For </a><span class="o-onscreen">Picture and movie files</span> import, the following data mapping is available:</div>
+      <div class="ta-tableanchor"><a name="1028443"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028423">Data</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028425">Map to field type</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028427">Image</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028429">Container field</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028431">File Name</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028433">Text field</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028436">File Path</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028438">Text field</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028440">Image Thumbnail</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028442">Container field</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="b1-body1"><a name="1028444">For </a><span class="o-onscreen">Text files</span> import, the following data mapping is available:</div>
+      <div class="ta-tableanchor"><a name="1028463"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028447">Data</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028449">Map to field type</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028451">Text Content</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028453">Text, number, date, time, timestamp, or container field</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028455">File Name</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028457">Text field</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028460">File Path</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028462">Text field</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="hs1-headsub1"><a name="1028464">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028472">OS X: FileMaker Pro can import a folder of Portable Document Format (PDF) files into a container field. Each PDF file appears in QuickTime format. To display different pages in a multi-page PDF file, click the PDF file container field and use QuickTime controls.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028473">When the folder you specify for import contains shortcuts (Windows) or aliases (OS X) to either files or folders, FileMaker Pro does the following:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><span class="e-emphasis"><a name="1028474">Shortcuts/aliases to files:</a></span> FileMaker Pro locates each original file and imports it.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><span class="e-emphasis"><a name="1028475">Shortcuts/aliases to folders:</a></span> FileMaker Pro does not locate the original folders and import from them.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028476">Some items are not imported:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1028477">Windows: FileMaker Pro does not import files or from folders that are hidden, offline, system, or temporary.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1028478">OS X: FileMaker Pro does not import invisible files or from folders that are invisible.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028479">The maximum size of most text files that you import is 1 GB. The size limit on UTF-16 encoded text files is 2 GB.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028481">If you import the File Path data into a field, you can open the original file directly from FileMaker Pro: select the entire file path text, right-click the text, and then choose </a><span class="o-onscreen">Open File</span> from the shortcut menu.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

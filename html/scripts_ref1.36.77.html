@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Saves a set of found records to a FileMaker Pro Snapshot Link (FMPSL) file." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Save Records As Snapshot Link</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="scripts_ref1.36.78.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="scripts_ref1.36.76.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1048226">Reference</a> &gt; 
+      <a href="help_script_cat.34.1.html#1048226">Script steps reference</a> &gt; 
+      <a href="scripts_ref1.36.62.html#1048226">Records script steps</a> &gt; 
+      <b>Save Records As Snapshot Link</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="ssh-scripthead">Save Records As Snapshot Link</div>
+      <div class="sspuh-scriptpurposehead">Purpose<a name="1048251"> </a></div>
+      <div class="b-body"><a name="1048266">Saves a set of found records to a FileMaker Pro Snapshot Link (FMPSL) file.</a></div>
+      <div class="ssfh-scriptformathead">Format<a name="1048273"> </a></div>
+      <div class="co-code"><a name="1048274">Save Records As Snapshot Link [“</a>&lt;output filename&gt;”; Records being browsed/Current record]</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1048303">Select </a><span class="o-onscreen">Specify output file</span> or click <span class="o-onscreen">Specify</span> to display the Specify Output File dialog box, and enter the path of the snapshot link. Click <span class="o-onscreen">Add File</span> and choose the folder to save the file to, or type the path directly in the list. Specify one path per line. FileMaker Pro will use the first path it locates. See <span class="zh-hyper"><a href="create_db.8.42.html#1087742">Creating file paths</a></span>. You can also select <span class="o-onscreen">Create email with file as attachment</span> to create a blank email with the snapshot link as an attachment.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1106712">If FileMaker Pro executes a script that does not specify an absolute path, and the database file containing the script is hosted, the path is assumed to be the current user’s Documents folder.</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1048348">For </a><span class="o-onscreen">Specify</span>, choose <span class="o-onscreen">Records being browsed</span> (to save the entire found set of records), or <span class="o-onscreen">Current record</span> (to save only the current record).</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sscoh-scriptcompathead">Compatibility<a name="1077493"> </a></div>
+      <div class="ta-tableanchor"><a name="1077519"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh1-scriptstepcompthead1">Where the script step runs<a name="1077528"> </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh2-scriptstepcompthead2">Supported<a name="1077530"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco1-scriptstepcompt1">FileMaker Pro<a name="1077532"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077534"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco2-scriptstepcompt2">FileMaker Server scheduled script<a name="1077536"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077538"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco3-scriptstepcompt3">FileMaker Go<a name="1077540"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077542"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco4-scriptstepcompt4">Custom Web Publishing<a name="1077544"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1077546"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco5-scriptstepcompt5">FileMaker WebDirect<a name="1077548"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscop-scriptstepcomptpartial">Partial<a name="1077550"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco6-scriptstepcompt6">Runtime solution<a name="1077552"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1077554"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="orh-originhead">Originated in<a name="1049220"> </a></div>
+      <div class="or-origin"><a name="1049221">FileMaker Pro 11.0</a></div>
+      <div class="ssdh-scriptdeschead">Description<a name="1048400"> </a></div>
+      <div class="b-body"><a name="1048412">This script step operates in all modes except Find mode.</a></div>
+      <div class="b-body"><a name="1048419">To send a snapshot link file via SMTP, use the Send Mail script step with the snapshot link file as an attachment, and place it after the Save Records As Snapshot Link script step in the script.</a></div>
+      <div class="b-body"><a name="1048413">Use this script step with the Get(TemporaryPath) function to save the snapshot link file to a temporary location, if you do not need to store the file locally. If you use Get(TemporaryPath) to form a file path, first assign it to a variable, then use the variable in the Specify Output File dialog box. See </a><span class="zh-hyper"><a href="create_db.8.42.html#1087742">Creating file paths</a></span>.</div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1102848">FileMaker WebDirect does not support the </a><span class="o-onscreen">Specify output file</span> option. FileMaker WebDirect saves snapshot links to the web browser’s default download location.</div>
+      <div class="sseh1-scriptexamhead1">Example 1<a name="1048442"> </a></div>
+      <div class="b-body"><a name="1092169">Saves the current record as a snapshot link and asks where the user wants to save the snapshot link file.</a></div>
+      <div class="co-code"><a name="1092171">Save Records As Snapshot Link [Current record]</a></div>
+      <div class="sseh2-scriptexamhead2">Example 2<a name="1092125"> </a></div>
+      <div class="b-body"><a name="1092182">Saves the found set as a snapshot link in a temporary directory, then creates an email with the snapshot link as an attachment.</a></div>
+      <div class="co-code"><a name="1092184">Set Variable [$PATH; Value: Get ( TemporaryPath ) &amp; "Invoices.fmpsl"]<br />Save Records As Snapshot Link ["$PATH"; Create email; Records being browsed]</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1048477"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="import_export.17.5.html#1051509" name="1048542">Saving and sending records as a snapshot link</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="func_ref2.32.29.html#1041647" name="1096807">Get(DesktopPath) function</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="func_ref2.32.87.html#1031578" name="1096817">Get(TemporaryPath) function</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="scripts_ref1.36.74.html#1030181" name="1048591">Export Records script step</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="scripts_ref1.36.73.html#1030099" name="1048546">Import Records script step</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_alpha.html#66468" name="1048572">Script steps reference (alphabetical list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_cat.34.2.html#947337" name="1048576">Script steps reference (category list)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

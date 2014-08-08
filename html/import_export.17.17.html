@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="FileMaker Pro can import Bento data into an existing FileMaker Pro file or convert Bento data into a new FileMaker Pro file. The Bento file must be created with Bento 4 (or a later supported version). Bento 4 (or a later supported version) must be installe ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Importing Bento data (OS X)</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="5061" class="applehelp-cs"></a>
+      <a name="BentoLogin" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="import_export.17.18.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="import_export.17.16.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1051155">Sharing data</a> &gt; 
+      <a href="import_export.17.1.html#1051155">Saving, importing, and exporting data</a> &gt; 
+      <a href="import_export.17.10.html#1051155">Importing data into FileMaker Pro</a> &gt; 
+      <b>Importing Bento data (OS X)</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Importing Bento data (OS X)</div>
+      <div class="b-body"><a name="1062288">FileMaker Pro can import Bento data into an existing FileMaker Pro file or convert Bento data into a new FileMaker Pro file. The Bento file must be created with Bento 4 (or a later supported version). Bento 4 (or a later supported version) must be installed on the computer running FileMaker Pro.</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1062289">You can import from Bento 1 by saving Bento data as a .csv file and then importing the .csv file into FileMaker Pro.</a></div>
+      <div class="b-body"><a name="1057699">Before you begin importing Bento data, be sure that the bento.bentodb file is in its default location in your home folder: </a><span class="c-code">Library/Application Support/Bento</span>.</div>
+      <div class="hs1-headsub1"><a name="1057701">To import Bento data into an existing FileMaker Pro file:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1057703">Open the FileMaker Pro file that you want to import records into (the </a><span class="g-glosslink"><a href="glossary.html#1044531">target file</a></span>). </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1043081">If you’re updating existing or matching records, choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Save a Copy As</span> to make a backup copy of the target file.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ni1-noteimportant1">
+        <span class="zan-autonum">Important  </span><a name="1041912">Updating existing or matching records overwrites data in the target file and cannot be undone, so make sure you understand how updating records works before you begin. See </a><span class="zh-hyper"><a href="import_export.17.11.html#1027964">Methods of importing data into an existing file</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1041917">If the target file contains multiple tables, use the </a><span class="g-glosslink"><a href="glossary.html#1027861">Layout pop-up menu</a></span> to display a layout that shows fields from the table you want to import data into.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1041918">If you’re adding new records, skip to the next step.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1044231">If you’re updating existing or matching records, do the following before you import:</a></div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1041920">If you’re updating existing records in the file, make sure the </a><span class="g-glosslink"><a href="glossary.html#1027747">found set</a></span> contains only the records you want to replace.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1041921">If you’re updating matching records, make sure the found set contains only the records you want to update. Records outside the found set will not be updated, even if </a><span class="g-glosslink"><a href="glossary.html#1027907">match field</a></span> data matches.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1041923">Choose</a><span class="o-onscreen"> File</span> menu &gt; <span class="o-onscreen">Import Records</span> &gt;<span class="o-onscreen"> Bento Data Source</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1041924">Enter the Database Password in the Bento Password dialog box, if one was set in Bento. Click </a><span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1048391">In the Select Bento Source dialog box, select the library and collection that you want to import, then click </a><span class="o-onscreen">Continue</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1044378">The Import Field Mapping dialog box appears.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">8.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1042843">Choose the </a><span class="o-onscreen">Target</span> table and <span class="o-onscreen">Import Action</span>, then choose the fields in your database that map to the data being imported. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1062798">See </a><span class="zh-hyper"><a href="import_export.17.19.html#1061356">Setting the import action and mapping fields during import</a></span>.</div>
+      <div class="n1-note1">
+        <span class="zan-autonum">Note  </span><a name="1049999">A Bento location field displays as two separate fields in the Source Fields list: </a><span class="o-onscreen">[Fieldname]</span>(<span class="o-onscreen">Longitude)</span> and <span class="o-onscreen">[Fieldname]</span>(<span class="o-onscreen">Latitude)</span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">9.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1042859">Click </a><span class="o-onscreen">Import</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1043121">The Import Summary dialog box shows the progress of your import.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">10.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1057711">Click </a><span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1057713">To import Bento data into a new FileMaker Pro file:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1057714">In the FileMaker Quick Start Screen, select </a><span class="o-onscreen">Convert an Existing File, </span>then choose <span class="o-onscreen">Bento Data Source</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1048194">If you don’t see the FileMaker Quick Start Screen, choose </a><span class="o-onscreen">Help</span> menu &gt; <span class="o-onscreen">Quick Start Screen</span>, and repeat step 1.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1048053">Enter the Database Password in the Bento Password dialog box, if one was set in Bento. Click </a><span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1042915">In the Select Bento Source dialog box, select the library and collection that you want to import, then click </a><span class="o-onscreen">Continue</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1042922">The Create a New File Named dialog box appears.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1042938">Type a name for the new file, choose a location, then click </a><span class="o-onscreen">Save</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1057706">The Import Summary dialog box shows the progress of your import. </a></div>
+      <div class="hs1-headsub1"><a name="1057707">Bento and FileMaker Pro field type mapping</a></div>
+      <div class="b-body"><a name="1057708">The following table lists how Bento field types map to FileMaker Pro field types.</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1044260">Data might appear differently after you import because of the differences in field mapping between Bento and FileMaker Pro and issues related to numerical precision.</a></div>
+      <div class="ta-tableanchor"><a name="1042274"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1042161">Bento Field Type </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1042163">FileMaker Pro Field Type </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1042165">Notes</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042167">Date </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042169">Timestamp </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042171">Dates also display a time. Data is reformatted into FileMaker Pro format.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042173">Time </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042175">Time </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1049511">Data is reformatted into FileMaker Pro format</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042179">Checkbox </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042181">Number </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042183">See “Displaying Bento checkbox fields in FileMaker Pro,” below</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042185">Currency </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042187">Number </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042189"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042191">Automatic Counter </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042193">Number </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042195"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042197">Number </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042199">Number </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042201"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042203">Duration </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042205">Number </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042207"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042209">Rating </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042211">Number </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042213"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042215">Text </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042217">Text </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042219"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042221">Choice </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042223">Text </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042225"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042227">Date Created </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042229">Timestamp </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042231"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042233">Date Modified </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042235">Timestamp </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042237"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042239">Calculation </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042241">Text, Number, Time, or Timestamp </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042243"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042245">Address </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042247">Text </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042249">Multiple fields are created</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042251">Email Address </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042253">Text </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042287">Multiple fields are created</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042257">Phone Number </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042259">Text </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042289">Multiple fields are created</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042263">URL </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042265">Text </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042291">Multiple fields are created</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042269">IM Account </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042271">Text </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1042293">Multiple fields are created</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047951">Encrypted (Bento 3 or a later supported version)</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047953">Text</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047955">If the Bento database requires a password, FileMaker Pro also requires it</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050061">Location (Bento 4 or a later supported version)</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050063">Number</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050065">Location fields are imported as two separate Number fields: </a><span class="v-variable">[Fieldname]</span>(Longitude) and <span class="v-variable">[Fieldname](</span>Latitude)</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047945">Simple List (Bento 3 or a later supported version)</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047947">Text</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047949">Tab characters are inserted between each column. Carriage return characters are inserted between each row.</a></div>
+            <div class="td-tabledata"><a name="1050047">Although simple list fields in Bento 4 support types other than text, FileMaker Pro imports the data as text.</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="b-body"><a name="1042317">The following user-created </a><span class="g-glosslink"><a href="glossary.html#1027715">field types</a></span> in Bento are not supported in FileMaker Pro:</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1042318">Media</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1042319">File List</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1042320">Related Data</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1044459">Message List</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1062832">Displaying Bento checkbox fields in FileMaker Pro</a></div>
+      <div class="b-body"><a name="1062846">After importing, Bento checkbox fields do not display in FileMaker Pro in the same manner as they did in Bento. To achieve a similar result in Form View and List View, do the following:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1062853">For a number field that you mapped to a checkbox field, define a value list with the single value of </a><span class="o-onscreen">1</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1063607">See </a><span class="zh-hyper"><a href="edit_layout.10.46.html#1029124">Defining value lists</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1062891">In </a><span class="g-glosslink"><a href="glossary.html#1034324">Layout mode</a></span>, select the number field.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1062898">Click </a><span class="o-onscreen">Inspector </span><img class="Default" src="../images/objectinfo_button.png" width="21" height="18" style="float: none; left: 0.0; top: 0.0;" alt="Inspector button" /> in the layout bar, then click <span class="o-onscreen">Data</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1062905">In the Field area, under </a><span class="o-onscreen">Control Style</span>, choose <span class="o-onscreen">Checkbox set</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1062926">Choose the value list you defined in step 1 from the </a><span class="o-onscreen">Values from</span> list.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1062933">Resize the number field so that only the checkbox is visible.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1062940">Save the layout.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

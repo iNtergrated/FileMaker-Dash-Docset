@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="The following example compares the version of an installed plug-in to the version located in a container field in the FileMaker Pro file and updates the plug-in, if necessary." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Plug-in update example</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="create_layout.9.1.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="create_db.8.56.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1052531">Designing and creating databases</a> &gt; 
+      <a href="create_db.8.1.html#1052531">Creating a database</a> &gt; 
+      <a href="create_db.8.53.html#1052531">Working with plug-ins</a> &gt; 
+      <b>Plug-in update example</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Plug-in update example</div>
+      <div class="b-body"><a name="1052532">The following example compares the version of an installed </a><span class="g-glosslink"><a href="glossary.html#1027997">plug-in</a></span> to the version located in a container field in the FileMaker Pro file and updates the plug-in, if necessary.</div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1052533">In the solution file, create a table named </a><span class="c-code">Plugin Update</span> to store plug-in information. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1052534">Define the following fields:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ta-tableanchor"><a name="1052566"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1052537">Field name</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1052539">Field type</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1052541">Plugin Name</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1052543">text</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1052545">Required Plugin Version</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1052547">number</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1052549">Installed Plugin Version</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1052553">calculation (unstored). For example code, see </a><span class="zh-hyper"><a href="non_toc.46.26.html#1054675">Client plug-in version calculation</a></span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1052556">Installed Plugin State</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1052560">calculation (unstored). For example code, see </a><span class="zh-hyper"><a href="non_toc.46.27.html#1054688">Client plug-in enabled state calculation</a></span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1052563">Plugin File</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1052565">container</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1054517">Create a layout named Plugin Update Information and add to it the fields you defined in step 2. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1083123">Create the following script and name it Install Plug-in:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="co1-code1"><a name="1083326">Set Error Capture [On]</a></div>
+      <div class="co1-code1"><a name="1083327">Install Plug-In File [Plugin Update::Plug-in File]</a></div>
+      <div class="co1-code1"><a name="1083328">#</a></div>
+      <div class="co1-code1"><a name="1083127">#Deal with errors</a></div>
+      <div class="co1-code1"><a name="1083128">If [Get(LastError) </a><span class="sy-symbol">≠</span> 0]</div>
+      <div class="co1-code1"><a name="1083129">  If [Get(LastError) = 3]</a></div>
+      <div class="co1-code1"><a name="1083130">    Show Custom Dialog [Plugin Update::Plugin File &amp; " could not be installed. <br />    Ensure Allow Solutions to Install Files is selected in the <br />    FileMaker Pro Plug-in preferences."</a></div>
+      <div class="co1-code1"><a name="1083131">  Else If [Get(LastError) = 1550]</a></div>
+      <div class="co1-code1"><a name="1083132">    Show Custom Dialog [Plugin Update::Plugin File &amp; " was installed but could not be initialized."]</a></div>
+      <div class="co1-code1"><a name="1083133">  Else If [Get(LastError) = 1551]</a></div>
+      <div class="co1-code1"><a name="1083134">    Show Custom Dialog [Plugin Update::Plugin File &amp; " could not be installed."]</a></div>
+      <div class="co1-code1"><a name="1083135">  Else</a></div>
+      <div class="co1-code1"><a name="1083136">    Show Custom Dialog ["A general error " &amp; Get(LastError) &amp; " occured when installing " &amp; Plugin Update::Plugin File]</a></div>
+      <div class="co1-code1"><a name="1083137">  End If</a></div>
+      <div class="co1-code1"><a name="1083141">End If</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1083342">Create the following script and name it Check Plug-in Versions.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="co1-code1"><a name="1052569">Go to Layout [“Plugin Update Information”]</a></div>
+      <div class="co1-code1"><a name="1052570">Go to Record/Request/page [First]</a></div>
+      <div class="co1-code1"><a name="1055163">Loop</a></div>
+      <div class="co1-code1"><a name="1055164">  If [Plugin Update::Installed Plugin Version &lt; <br />    Plugin Update::Required Plugin Version]</a></div>
+      <div class="co1-code1"><a name="1052573">  #Plug-in needs to be either installed or updated.</a></div>
+      <div class="co1-code1"><a name="1052574">  Perform script [“Install plug-in”]</a></div>
+      <div class="co1-code1"><a name="1052575">  End If</a></div>
+      <div class="co1-code1"><a name="1052576">  Go to Record/Request/page [Next; Exit after last]</a></div>
+      <div class="co1-code1"><a name="1052577">End Loop</a></div>
+      <div class="co1-code1"><a name="1054395"> </a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1054569">Create the following script and name it Check If Enabled:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="co1-code1"><a name="1054570">Set Error Capture [On]</a></div>
+      <div class="co1-code1"><a name="1054571">Perform Find [Restore]</a></div>
+      <div class="co1-code1"><a name="1086657">#Find for "Enabled" in the Installed Plugin State field</a></div>
+      <div class="co1-code1"><a name="1054572">If[Get(FoundCount) </a><span class="sy-symbol">≠</span> 0]</div>
+      <div class="co1-code1"><a name="1054573">  Show Custom Dialog ["Some required plug-ins are not enabled. Ensure Allow Solutions to Install Files is selected in the FileMaker Pro Plug-in preferences."</a></div>
+      <div class="co1-code1"><a name="1054574">End If</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1052604">Create a start-up script named Plugin Update Script that references the above scripts in order when the database opens:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="co1-code1"><a name="1052605">Perform Script ["Check Plug-in Versions"]</a></div>
+      <div class="co1-code1"><a name="1052606">Perform Script ["Check If Enabled”]</a></div>
+      <div class="co1-code1"><a name="1052607">Go to Layout [original layout]</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1052608"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.54.html#1056546" name="1052616">Creating custom plug-ins</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="func_ref2.32.45.html#1060792" name="1054656">Get(InstalledFMPlugins)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="scripts_ref2.37.66.html#1076200" name="1054674">Install Plug-In File</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

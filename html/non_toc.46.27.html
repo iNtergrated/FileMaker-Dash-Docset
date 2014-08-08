@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Client plug-in enabled state calculation</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="non_toc.46.28.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="non_toc.46.26.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <b></b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="hx3-head3notoc">Client plug-in enabled state calculation</div>
+      <div class="co-code"><a name="1054690">Let (</a></div>
+      <div class="co-code"><a name="1054691">  [</a></div>
+      <div class="co-code"><a name="1054692">   PluginNamePosition = Position ( Get(InstalledFMPlugins); <br />		Plugin Name ; 1 ; 1 );</a></div>
+      <div class="co-code"><a name="1054693">   PluginStateStart = Position ( Get(InstalledFMPlugins); ";" ;<br />		PluginNamePosition ; 2 ) + 1;</a></div>
+      <div class="co-code"><a name="1054694">   PluginStateEnd = If ( Position ( Get(InstalledFMPlugins); "¶" ; <br />		PluginNamePosition ; 1 ) &gt; 0;</a></div>
+      <div class="co-code"><a name="1054695">      Position ( Get(InstalledFMPlugins); "¶" ; PluginNamePosition ; 1 );</a></div>
+      <div class="co-code"><a name="1054696">      Length( Get(InstalledFMPlugins) ) + 1</a></div>
+      <div class="co-code"><a name="1054697">    );</a></div>
+      <div class="co-code"><a name="1054698">    PluginStateLength = PluginStateEnd - PluginStateStart</a></div>
+      <div class="co-code"><a name="1054699">  ];</a></div>
+      <div class="co-code"><a name="1054700">  </a></div>
+      <div class="co-code"><a name="1054701">  Middle ( Get(InstalledFMPlugins) ; PluginStateStart ; <br />		PluginStateLength )</a></div>
+      <div class="co-code"><a name="1067350">)</a></div>
+      <div class="b-body"><a name="1054665"> </a></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

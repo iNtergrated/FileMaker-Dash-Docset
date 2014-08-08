@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Copies new values from the lookup source field into the records that make up the current found set." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Relookup Field Contents</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <a name="//apple_ref/cpp/Command/Relookup Field Contents" class="dashAnchor"></a>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="scripts_ref1.36.61.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="scripts_ref1.36.59.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1029621">Reference</a> &gt; 
+      <a href="help_script_cat.34.1.html#1029621">Script steps reference</a> &gt; 
+      <a href="scripts_ref1.36.41.html#1029621">Fields script steps</a> &gt; 
+      <b>Relookup Field Contents</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="ssh-scripthead">Relookup Field Contents</div>
+      <div class="sspuh-scriptpurposehead">Purpose<a name="1039572"> </a></div>
+      <div class="sspu-scriptpurpose"><a name="1039579">Copies new values from the </a><span class="g-glosslink"><a href="glossary.html#1027900">lookup source field</a></span> into the records that make up the current <span class="g-glosslink"><a href="glossary.html#1027747">found set</a></span>.</div>
+      <div class="ssfh-scriptformathead">Format<a name="1029622"> </a></div>
+      <div class="ssf-scriptformat"><a name="1029623">Relookup Field Contents [No dialog; </a><span class="v-variable">&lt;table::field&gt;</span>]</div>
+      <div class="ssoh-scriptoptshead">Options<a name="1029624"> </a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1029625">Perform without dialog</a></span> prevents a dialog box from displaying when the script step executes that lets the user confirm field information.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029626">Select </a><span class="o-onscreen">Go to target field</span> or click <span class="o-onscreen">Specify</span> to specify the field that is the target of the relookup operation. FileMaker Pro moves the cursor to the field you specify. This must be the <span class="g-glosslink"><a href="glossary.html#1027907">match field</a></span> for the relationship upon which the <span class="g-glosslink"><a href="glossary.html#1027894">lookup</a></span> is based, not the Lookup source or target field. If no field is selected, Relookup Field Contents returns an error code that can be captured with the <span class="zh-hyper"><a href="func_ref2.32.46.html#1029752">Get(LastError) function</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sscoh-scriptcompathead">Compatibility<a name="1063298"> </a></div>
+      <div class="ta-tableanchor"><a name="1063324"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh1-scriptstepcompthead1">Where the script step runs<a name="1076682"> </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh2-scriptstepcompthead2">Supported<a name="1076684"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco1-scriptstepcompt1">FileMaker Pro<a name="1076686"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1076688"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco2-scriptstepcompt2">FileMaker Server scheduled script<a name="1076690"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscop-scriptstepcomptpartial">Partial<a name="1076692"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco3-scriptstepcompt3">FileMaker Go<a name="1076694"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1076696"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco4-scriptstepcompt4">Custom Web Publishing<a name="1076698"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscop-scriptstepcomptpartial">Partial<a name="1076700"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco5-scriptstepcompt5">FileMaker WebDirect<a name="1076702"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1076704"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco6-scriptstepcompt6">Runtime solution<a name="1076706"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1076708"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="orh-originhead">Originated in<a name="1049810"> </a></div>
+      <div class="or-origin"><a name="1049811">FileMaker Pro 6.0 or earlier</a></div>
+      <div class="ssdh-scriptdeschead">Description<a name="1080656"> </a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1080657">The target field specified for the Relookup Field Contents step must be an editable field.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1080658">Relookups are only performed on the found set of records in the active table.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1080659">Calculation fields cannot be used for the Relookup Field Contents command. If you use the Relookup Field Contents command, and you're using a calculation field as the matching value, you must specify one of the input fields for the calculation as the field parameter for the Relookup Field Contents.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1080660">When you use the Relookup Field Contents script step, the data must be committed first before the operation is performed, or you may get unexpected results. For example, if a field value is modified and a relookup is attempted before the data is committed, then the relookup search will be based on the old data rather than the modified data. (For more information about committing data, see </a><span class="zh-hyper"><a href="add_view_data.4.24.html#1047900">Committing data in records</a></span>.)</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sseh1-scriptexamhead1">Example 1<a name="1029647"> </a></div>
+      <div class="b-body"><a name="1090035">Finds records that have matching values in the Customer ID field, then updates all lookups in the found set based on the relationship that uses Customer ID as a match field.</a></div>
+      <div class="co-code"><a name="1096619">Go to Layout [“Invoice Details"]<br />Find Matching Records [Replace; Invoices::Customer ID]<br />Relookup Field Contents [No dialog; Invoices::Customer ID]</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1029649"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_alpha.html#66468" name="1029653">Script steps reference (alphabetical list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_cat.34.2.html#947337" name="1029657">Script steps reference (category list)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

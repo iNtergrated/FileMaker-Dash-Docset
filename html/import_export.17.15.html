@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="You can set up a FileMaker Pro file to automatically update data imported from another file, such as a Microsoft Excel spreadsheet. Recurring import occurs automatically every time you open the file and the first time you view the layout containing the dat ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Setting up recurring imports</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="AutoImport" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="import_export.17.16.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="import_export.17.14.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1028368">Sharing data</a> &gt; 
+      <a href="import_export.17.1.html#1028368">Saving, importing, and exporting data</a> &gt; 
+      <a href="import_export.17.10.html#1028368">Importing data into FileMaker Pro</a> &gt; 
+      <b>Setting up recurring imports</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Setting up recurring imports</div>
+      <div class="b-body"><a name="1045561">You can set up a FileMaker Pro file to automatically update data imported from another file, such as a Microsoft Excel spreadsheet</a>. <span class="g-glosslink"><a href="glossary.html#1036447">Recurring import</a></span> occurs automatically every time you open the file and the first time you view the layout containing the data from the external file. Later, you can run a script to update data.</div>
+      <div class="b-body"><a name="1044693">When you set up recurring imports, FileMaker Pro creates a new table for the imported data and a new layout to display the data. You can customize the layout in Layout mode later, if you wish.</a></div>
+      <div class="b-body"><a name="1049132">Each time you update data, FileMaker Pro deletes data in the recurring import layout and replaces it with current data from the external file. Data imported via recurring import cannot be modified or added to in FileMaker Pro.</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1045400">To set up recurring imports, you must open a file with an </a><span class="g-glosslink"><a href="glossary.html#1027507">account</a></span> that is assigned the Full Access privilege set. For information about privilege sets, see <span class="zh-hyper"><a href="passwords.14.3.html#1027607">About accounts, privilege sets, and extended privileges</a></span>. Users do not need to use an account with Full Access privileges to use recurring import after it has been set up in a file.</div>
+      <div class="hs1-headsub1"><a name="1044786">To set up recurring imports:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1044787">Create a new file or open the file in which you want to set up recurring imports. See </a><span class="zh-hyper"><a href="create_db.8.5.html#1071373">Creating a FileMaker Pro file</a></span> or <span class="zh-hyper"><a href="fmp_basics.3.25.html#1028431">Opening files</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044846">In Browse mode, choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Import Records</span> &gt; <span class="o-onscreen">File</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1047493">For </a><span class="o-onscreen">Files of type</span> (Windows) or <span class="o-onscreen">Show</span> (OS X), select the type of file you want to import. For example, choose <span class="o-onscreen">Excel Workbooks (*xlsx)</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1047517">For a list of supported file types, see </a><span class="zh-hyper"><a href="import_export.17.23.html#1046089">Supported import/export file formats</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1047503">Locate and select the file containing data you want to import.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1047528">Select </a><span class="o-onscreen">Set up as automatic recurring import</span>, then click <span class="o-onscreen">Open</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1047529">The path of the file you selected appears in the Recurring Import Setup dialog box.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1047530">To skip importing column headings, select </a><span class="o-onscreen">Don’t import first record (Contains field names)</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044906">Accept the default layout name or type a new name for the layout FileMaker Pro will create to display the imported data.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">8.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044907">Accept the default script name or type a new name for the script you can use to update data manually.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">9.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044918">Click </a><span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">10.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044919">If you are importing data from an Excel file, you can import by worksheet or by named range.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="n1-note1">
+        <span class="zan-autonum">Note  </span><a name="1044986">You can import data from only one worksheet or named range per layout.</a></div>
+      <div class="ta-tableanchor"><a name="1044943"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1044927">To</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1044929">Do this</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1044931">Import data by worksheet</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1044933">Select </a><span class="o-onscreen">Display worksheets</span>, select the worksheet you want to import, then click <span class="o-onscreen">Continue</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1044935">Import data by named range</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1044971">Select </a><span class="o-onscreen">Display named ranges</span>, select the named range you want to import, then click <span class="o-onscreen">Continue</span>.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="b1-body1"><a name="1044923">The new layout appears in Browse mode in Table View. For more information about Table View, see </a><span class="zh-hyper"><a href="add_view_data.4.3.html#1027871">Viewing records as a form, list, or table</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1045682">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1045733">Recurring import creates a new table and layout for imported data. If you want to add imported data to an existing table or layout in your database, see </a><span class="zh-hyper"><a href="import_export.17.10.html#1027874">Importing data into FileMaker Pro</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1045737">Data changes in external files must be saved in the original application before FileMaker Pro can import them.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1045474">Recurring import is an import-only process. To make changes to the data, first modify data in the source file. Next import data in the FileMaker Pro file by clicking the script button on the recurring import layout. If changes are made to the data while the FileMaker Pro file is closed, data on the recurring import layout will update the first time you view the layout during your next FileMaker Pro session.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1045488">When data is imported for the first time, FileMaker Pro creates an Import log file in the folder that contains the FileMaker Pro file. This log file is updated each time data is imported into any FileMaker Pro file located in this folder.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1047600">When you use the script button to update data, FileMaker Pro deletes all previously imported records, reimports the data, and creates new records for any new data found in the external file.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1045510">As your needs grow, you might find that you want to modify the import script. For more information about planning and creating scripts, see </a><span class="zh-hyper"><a href="create_script.13.1.html#1034729">Creating scripts to automate tasks</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1046827">The automatically generated script FileMaker Pro creates for recurring import is not supported in a FileMaker Server scheduled script.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="rh-relatedhead">Related topics<a name="1045475"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="import_export.17.14.html#1028245" name="1045147">Importing data into an existing file</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

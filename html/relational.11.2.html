@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="A relationship is a powerful method for organizing your data. Using a relationship, you can join data in one or more tables based on common field values, different field values, or a comparison of values in two or more fields." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>About relationships</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="relational.11.3.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="relational.11.1.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1027577">Designing and creating databases</a> &gt; 
+      <a href="relational.11.1.html#1027577">Working with related tables and files</a> &gt; 
+      <b>About relationships</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h3-head3">About relationships</div>
+      <div class="b-body"><a name="1027579">A </a><span class="g-glosslink"><a href="glossary.html#1028048">relationship</a></span> is a powerful method for organizing your data. Using a relationship, you can join data in one or more <span class="g-glosslink"><a href="glossary.html#1045562">tables</a></span> based on common field values, different field values, or a comparison of values in two or more fields.</div>
+      <div class="b-body"><a name="1027582">After you create a relationship, you can do either of the following to display the data from the </a><span class="g-glosslink"><a href="glossary.html#1028042">related table</a></span>:</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027584">Design a </a><span class="g-glosslink"><a href="glossary.html#1028045">relational database</a></span>, which is one or more tables in one or more files that, when used together, contain all the data you need for your work. Each occurrence of data is stored in only one table at a time but can be accessed and displayed from any related table. You can change any occurrence of your related data, and the changes appear in all places where that related data is used.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027586">Define a </a><span class="g-glosslink"><a href="glossary.html#1027894">lookup</a></span> to copy data from a related table into a field in the target table. The copied data is now stored in two places, just as if it were copied and pasted into a target field. Looked-up data is current at the time it is copied, but once copied it remains static unless it is relookedup or the lookup is triggered again.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ni-noteimportant">
+        <span class="zan-autonum">Important  </span><a name="1027600">Whenever you want to use data from another table — either in a relational database or for a lookup — you must first define a relationship between the two tables.</a></div>
+      <div class="b-body"><a name="1037787">For example, a typical Sales database may have these tables: an Invoices table, which keeps a record of each invoice; a Products table, which stores the products and their current prices; and a LineItems table, which stores sales data for each line of the invoice, including the item being sold, the quantity, and the price at which it is sold. Because invoices are a mix of dynamic and static data, you use both related fields and lookups to display your data. Records from the LineItems table are displayed dynamically, in a </a><span class="g-glosslink"><a href="glossary.html#1028003">portal</a></span> on the Invoices layout, but the actual sales price of each line item is entered using a lookup, so the invoice totals remain the same, even if prices change at some future date.</div>
+      <div class="b-body"><a name="1027604">You create a relational database by defining a relationship between two fields, called </a><span class="g-glosslink"><a href="glossary.html#1027907">match fields</a></span>. These fields can be in different tables or they can be in the same table (a <span class="g-glosslink"><a href="glossary.html#1028087">self-join</a></span>). You are able to access related data when the value in the match field(s) on one side of the relationship compares successfully with a value in the match field(s) on the other side of the relationship, according to the criteria you establish in the relationship.</div>
+      <div class="b-body"><a name="1027606">After you have created a relationship you can use fields from the related table just as you would use any fields in the current table: to display data on a layout, as part of a calculation formula, in a script, as a match field for another relationship, and so on.</a></div>
+      <div class="b-body"><a name="1027607">When you display related data in a portal, values from all related records are displayed, subject to a user’s </a><span class="g-glosslink"><a href="glossary.html#1027504">access privileges</a></span>. When the related field isn't in a portal, the value from the first related record is displayed. See <span class="zh-hyper"><a href="create_layout.9.28.html#1028605">Creating portals to display related records</a></span>.</div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1027613">Use access privileges in the </a><span class="g-glosslink"><a href="glossary.html#1028123">source table</a></span> to limit or prevent access to related data. For example, users must have access privileges to view a related match field to see the related fields from that relationship. See <span class="zh-hyper"><a href="passwords.14.15.html#1028334">Creating and managing privilege sets</a></span>.</div>
+      <div class="b-body"><a name="1027617">You can sort related records before displaying them. When you place a related field directly on a layout, you see the value from the first related record in the sort order (such as the lowest or highest value). When you display related fields in a portal, the related records are displayed in the sort order assigned to the portal, which takes precedence over any sort order in the relationship definition.</a></div>
+      <div class="hs1-headsub1"><a name="1027618">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027619">You can base relationships on one or more match fields in each table. Match fields should be the same type, for example, number fields or a calculation field that returns a numeric result.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027621">Relationships are always created between two tables, or, in the case of self-joining relationships, two occurrences of the same table in the relationships graph. You can connect relationships together in a series and access related data from any point within that series, but each relationship is created between only two tables.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027623">Two or more related tables cannot form a cycle. Each series of relationships must have a beginning table and an ending table.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1040021">The number of relationships is limited only by disk space.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1040022">Relationships are bi-directional, although you can set independent record sorting, creation, and deletion options for each table in the relationship.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027626">You can add pairs of match fields to a relationship as necessary until you are able to establish the relational criteria you want.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027627">Because a sort order can be assigned to a portal, you can display data from a single relationship in multiple portals on the same page, and use a different sort order for each portal.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027629">Before you begin building a </a><span class="g-glosslink"><a href="glossary.html#1028045">relational database</a></span>, it’s a good idea to plan it on paper first. See <span class="zh-hyper"><a href="create_db.8.2.html#1027557">About planning a database</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="rh-relatedhead">Related topics<a name="1027633"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="relational.11.5.html#1027758" name="1027641">About the types of relationships</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="relational.11.12.html#1028445" name="1027649">Creating relationships</a></span></div>
+    </blockquote>
+    <div class="WebWorks_MiniTOC">
+      <div class="WebWorks_MiniTOCTitle">Topics in this section</div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="relational.11.3.html#1027651">About the relationships graph</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="relational.11.4.html#1027684">About match fields for relationships</a>
+      </div>
+    </div>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

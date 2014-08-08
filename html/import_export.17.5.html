@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="You can save a found set of records, called a snapshot link, to capture a found set as it was when you performed the find request. The found set is saved in FileMaker Pro Snapshot Link format (FMPSL) with the filename extension .fmpsl. You can also email a ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Saving and sending records as a snapshot link</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="12026" class="applehelp-cs"></a>
+      <a name="14026" class="applehelp-cs"></a>
+      <a name="1510" class="applehelp-cs"></a>
+      <a name="SaveAsReferenceOptions" class="applehelp-cs"></a>
+      <a name="SaveAsReferenceOptions_ScriptMaker" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="import_export.17.6.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="import_export.17.4.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1051509">Sharing data</a> &gt; 
+      <a href="import_export.17.1.html#1051509">Saving, importing, and exporting data</a> &gt; 
+      <a href="import_export.17.2.html#1051509">Saving and sending records in other formats</a> &gt; 
+      <b>Saving and sending records as a snapshot link</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Saving and sending records as a snapshot link</div>
+      <div class="b-body"><a name="1051511">You can save a </a><span class="g-glosslink"><a href="glossary.html#1027747">found set</a></span> of records, called a <span class="e-emphasis">snapshot link</span>, to capture a found set as it was when you performed the find request. The found set is saved in FileMaker Pro Snapshot Link format (FMPSL) with the filename extension .fmpsl. You can also email an FMPSL file to another person.</div>
+      <div class="b-body"><a name="1046349">The snapshot link includes the current found set of record IDs—including the layout, view, sort order, mode, and toolbar visibility. Snapshot link files can include local or remote records.</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1059070">A snapshot link does not preserve record data, and opening a snapshot link will not return record data to the state it was in when the snapshot link was created. To preserve record data, you can </a><span class="g-glosslink"><a href="glossary.html#1027687">export</a></span> records (see <span class="zh-hyper"><a href="import_export.17.21.html#1049167">Exporting data from FileMaker Pro</a></span>) or save a copy of the file (see <span class="zh-hyper"><a href="fmp_basics.3.33.html#1028872">Saving and copying files</a></span>).</div>
+      <div class="hs1-headsub1"><a name="1046401">To save records as a snapshot link file:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1046410">Find the records that you want to save as a snapshot link. See </a><span class="zh-hyper"><a href="find_sort.5.5.html#1027609">Making a find request</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1046412">If you don’t perform a find, all the records in the current </a><span class="g-glosslink"><a href="glossary.html#1045562">table</a></span> will be included in the FMPSL file. </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1046413">In </a><span class="g-glosslink"><a href="glossary.html#1027555">Browse mode</a></span>, <span class="g-glosslink"><a href="glossary.html#1034324">Layout mode</a></span>, or <span class="g-glosslink"><a href="glossary.html#1028006">Preview mode</a></span>, choose <span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Save/Send Records As</span> &gt; <span class="o-onscreen">Snapshot Link</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1046414">In the Save Records As Snapshot Link dialog box, accept the default filename (the name of the active window with the .fmpsl filename extension), or enter a different name.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1046415">For </a><span class="o-onscreen">Save</span>, choose <span class="o-onscreen">Records being browsed</span> to save the entire found set of records. Or choose <span class="o-onscreen">Current record</span> to save only the current record (in this case, the found set is not stored, but the current record and all other states, such as the layout, view, and sort order, are stored).</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1046416">If you want to email the snapshot link, for </a><span class="o-onscreen">After saving</span>, select <span class="o-onscreen">Create email with file as attachment</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1046417">Click </a><span class="o-onscreen">Save</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1046498">If you chose to email the snapshot link, a blank email message opens in your default email application, with the FMPSL file attached. Complete the header information and send the message.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1046504">To open a snapshot link file:</a></div>
+      <div class="b-body"><a name="1046502">You can use any method of opening FileMaker Pro files to open a snapshot link file. See </a><span class="zh-hyper"><a href="fmp_basics.3.25.html#1028431">Opening files</a></span>.</div>
+      <div class="b-body"><a name="1046529">The snapshot link file opens in a new window.</a></div>
+      <div class="hs1-headsub1"><a name="1046537">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1046543">A snapshot link does not include the find request that was used for finding the records. To see records that are based on current information from the database, you must re‑create the find request.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1046721">If any records (including the current record) in the snapshot link were deleted after the file was created, only the available records are displayed.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1046748">If a layout for a snapshot link no longer exists in the database, or the layout is associated with another table, then no records are displayed.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1046755">You can create a script that creates a snapshot link. See </a><span class="zh-hyper"><a href="scripts_ref1.36.77.html#1048226">Save Records As Snapshot Link</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1046761">Make sure that everyone who will use the snapshot link has the proper access privileges for the layout and records.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1049697">If any actions are set to be performed on the database when it is opened, such as switching to a layout, running a script, or responding to a script trigger, those actions are done before the snapshot link is opened.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1046771">If database windows are locked and hidden when you try to open a snapshot link, the found set will not be displayed. Unlock and unhide at least one window in the database, and then try again.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1049753">Snapshot links are not supported in runtime solutions created with FileMaker Pro Advanced.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1051923">If </a><span class="o-onscreen">Current record</span> was selected when the snapshot link was created, then only the current record is shown, and the state of the database (for example, the layout, view, and sort order used at the time) is restored. If <span class="o-onscreen">Records being browsed</span> was selected and the window didn’t have a found set, then only the records that existed at the time are shown. Records created after the snapshot link was created are not shown.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1051930">Snapshot link files created in FileMaker Pro 11 are incompatible with later versions, and vice versa. You must </a><span class="g-glosslink"><a href="glossary.html#1046386">convert</a></span> the database from which the records were found and then re-create the snapshot link. See <span class="zh-hyper"><a href="fmp_basics.3.11.html#1073169">Converting files from FileMaker Pro 11 and earlier</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="rh-relatedhead">Related topics<a name="1051890"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="sharing_data.16.1.html#1029496" name="1046702">Sharing databases on a network</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

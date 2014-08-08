@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="The FMPDSORESULT grammar is useful for exporting databases that you want to format with cascading style sheets or XSL. This grammar is compatible with the Microsoft XML Data Source Object used by Internet Explorer." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>XML FMPDSORESULT grammar</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="import_export.17.33.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="import_export.17.31.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1060919">Sharing data</a> &gt; 
+      <a href="import_export.17.1.html#1060919">Saving, importing, and exporting data</a> &gt; 
+      <a href="import_export.17.23.html#1060919">Supported import/export file formats</a> &gt; 
+      <b>XML FMPDSORESULT grammar</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">XML FMPDSORESULT grammar</div>
+      <div class="b-body"><a name="1060920">The FMPDSORESULT grammar is useful for exporting databases that you want to format with </a><span class="g-glosslink"><a href="glossary.html#1027569">cascading style sheets</a></span> or XSL. This grammar is compatible with the Microsoft XML Data Source Object used by Internet Explorer.</div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1029647">Do not name your data fields with leading numbers or single-byte kana characters (for example “7”). The FMPDSORESULT grammar does not allow numeric or single-byte kana characters as field name tags and will not display the resulting XML file in a browser.</a></div>
+      <div class="b-body"><a name="1029648">Each ROW element in the exported FMPDSORESULT grammar contains a number of FIELD elements that correspond to the field names that you export.</a></div>
+      <div class="b-body"><a name="1029649">Spaces or single colons in field names are converted to underscores in the element names (for example, </a><span class="c-code">&lt;FIRST_NAME&gt;</span>). Double colons in <span class="g-glosslink"><a href="glossary.html#1028003">portal</a></span> fields are converted to periods (for example, <span class="c-code">&lt;PHONE.PHONE_NUMBER&gt;</span>). This is done because colons are reserved in XML for specifying namespaces, and spaces are not allowed in XML element names. </div>
+      <div class="b-body"><a name="1029651">For repeating and related fields, each FIELD element will contain a DATA element that corresponds to each repetition or portal record.</a></div>
+      <div class="b-body"><a name="1029653">XML export does not support exporting </a><span class="g-glosslink"><a href="glossary.html#1041246">container</a></span> field data.</div>
+      <div class="b-body"><a name="1029654">Due to XML limitations, only one record from each related field is exported.</a></div>
+      <div class="b-body"><a name="1056677">For more information, search the FileMaker Knowledge Base available at </a><span class="h-hyperlink"><a href="http://help.filemaker.com" target="external_window">http://help.filemaker.com</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1029655">Sample XML data in the FMPDSORESULT grammar</a></div>
+      <div class="b-body"><a name="1029656">The following is an example of XML in the FMPDSORESULT grammar. For complete details on the document type definition (</a><span class="g-glosslink"><a href="glossary.html#1027668">DTD</a></span>) for the grammar, see the<span class="c-code"> fmpdsoresult_dtd.htm </span>file, which you can download at <span class="h-hyperlink"><a href="http://www.filemaker.com/downloads" target="external_window">http://www.filemaker.com/downloads</a></span>.</div>
+      <div class="co-code"><a name="1029658">&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br />&lt;FMPDSORESULT xmlns="http://www.filemaker.com/fmpdsoresult"&gt;<br />	&lt;ERRORCODE&gt;0&lt;/ERRORCODE&gt;<br />	&lt;DATABASE&gt;PhoneList.fp5&lt;/DATABASE&gt;<br />	&lt;LAYOUT&gt;Web Layout&lt;/LAYOUT&gt;<br />	&lt;ROW MODID="23" RECORDID="3"&gt;<br />		&lt;FIRST_NAME&gt;John&lt;/FIRST_NAME&gt;<br />		&lt;LAST_NAME&gt;Smith&lt;/LAST_NAME&gt;<br />		&lt;PHONE.PHONE_NUMBER&gt;<br />			&lt;DATA&gt;555-444-3333&lt;/DATA&gt;<br />			&lt;DATA&gt;555-222-9999&lt;/DATA&gt;<br />		&lt;/PHONE.PHONE_NUMBER&gt;<br />	&lt;/ROW&gt;<br />	&lt;ROW MODID="32" RECORDID="6"&gt;<br />		&lt;FIRST_NAME&gt;Barbara&lt;/FIRST_NAME&gt;<br />		&lt;LAST_NAME&gt;Jones&lt;/LAST_NAME&gt;<br />		&lt;PHONE.PHONE_NUMBER&gt;<br />			&lt;DATA&gt;555-666-7777&lt;/DATA&gt;<br />			&lt;DATA&gt;555-333-0000&lt;/DATA&gt;<br />			&lt;DATA&gt;555-111-7654&lt;/DATA&gt;<br />		&lt;/PHONE.PHONE_NUMBER&gt;<br />	&lt;/ROW&gt;<br />&lt;/FMPDSORESULT&gt;</a></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

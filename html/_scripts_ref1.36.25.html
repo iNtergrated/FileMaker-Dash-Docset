@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Moves to the specified field on the current layout." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Go to Field</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <a name="//apple_ref/cpp/Command/Go to Field" class="dashAnchor"></a>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="scripts_ref1.36.26.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="scripts_ref1.36.24.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1028490">Reference</a> &gt; 
+      <a href="help_script_cat.34.1.html#1028490">Script steps reference</a> &gt; 
+      <a href="scripts_ref1.36.19.html#1028490">Navigation script steps</a> &gt; 
+      <b>Go to Field</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="ssh-scripthead">Go to Field</div>
+      <div class="sspuh-scriptpurposehead">Purpose<a name="1039195"> </a></div>
+      <div class="sspu-scriptpurpose"><a name="1039196">Moves to the specified field on the current layout.</a></div>
+      <div class="ssfh-scriptformathead">Format<a name="1028491"> </a></div>
+      <div class="ssf-scriptformat"><a name="1028492">Go to Field [Select/perform; </a><span class="v-variable">&lt;table::field&gt;</span>]</div>
+      <div class="ssoh-scriptoptshead">Options<a name="1028493"> </a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1028494">Select/perform</a></span> tells FileMaker Pro to perform an action on the contents of a field. All text in a field is selected with this option. The contents of the field (sound or movie) determine what action is performed. If the field contains a sound, then the sound is played. If the field contains a movie, the movie is played. For example, if the primary command is Edit, <span class="o-onscreen">Select/perform</span> opens the document in a state ready for editing.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028496">Select</a><span class="o-onscreen"> Go to target field</span> or click <span class="o-onscreen">Specify</span> to specify the target field.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sscoh-scriptcompathead">Compatibility<a name="1061828"> </a></div>
+      <div class="ta-tableanchor"><a name="1061854"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh1-scriptstepcompthead1">Where the script step runs<a name="1074991"> </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh2-scriptstepcompthead2">Supported<a name="1074993"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco1-scriptstepcompt1">FileMaker Pro<a name="1074995"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1074997"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco2-scriptstepcompt2">FileMaker Server scheduled script<a name="1074999"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075001"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco3-scriptstepcompt3">FileMaker Go<a name="1075003"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075005"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco4-scriptstepcompt4">Custom Web Publishing<a name="1075007"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075009"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco5-scriptstepcompt5">FileMaker WebDirect<a name="1075011"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075013"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco6-scriptstepcompt6">Runtime solution<a name="1075015"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075017"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="orh-originhead">Originated in<a name="1049401"> </a></div>
+      <div class="or-origin"><a name="1049402">FileMaker Pro 6.0 or earlier</a></div>
+      <div class="ssdh-scriptdeschead">Description<a name="1028499"> </a></div>
+      <div class="b-body"><a name="1028509">To play a sound or movie, use the </a><span class="o-onscreen">Select/perform</span> option.</div>
+      <div class="hs1-headsub1"><a name="1100239">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028510">If this script step specifies a field on a </a><span class="g-glosslink"><a href="glossary.html#1028174">tab panel</a></span> or a <span class="g-glosslink"><a href="glossary.html#1047051">slide panel</a></span> that is not the front-most panel, the specified field is selected and the panel it is on moves to the front of the <span class="g-glosslink"><a href="glossary.html#1047120">panel control</a></span>. If, however, the same field appears elsewhere on the layout and the script finds that field first, the panel with that same field will not come forward. You can force FileMaker Pro to find a specific field by assigning an object name to the field and using the <span class="zh-hyper"><a href="scripts_ref1.36.24.html#1028450">Go to Object script step</a></span> to move to that instance of the field. If the object is a repeating field, you can also specify which repetition that you want to go to.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1104029">If the script step specifies a field on a </a><span class="g-glosslink"><a href="glossary.html#1051389">popover</a></span>, the popover opens.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1100252">In FileMaker WebDirect, the cursor moves to the specified field.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sseh1-scriptexamhead1">Example 1<a name="1028515"> </a></div>
+      <div class="b-body"><a name="1086711">Goes to the Invoice Details layout, creates a record, and goes to the Summary field.</a></div>
+      <div class="co-code"><a name="1086713">Go to Layout ["Invoice Details"]<br />New Record/Request<br />Go to Field [Invoices::Summary]</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1028517"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_alpha.html#66468" name="1028521">Script steps reference (alphabetical list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_cat.34.2.html#947337" name="1028525">Script steps reference (category list)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

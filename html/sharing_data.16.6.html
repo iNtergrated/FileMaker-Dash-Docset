@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="After a file is opened by a host and shared via FileMaker Networking, you can access it as a client." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Opening shared files as a client</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="5034" class="applehelp-cs"></a>
+      <a name="5044" class="applehelp-cs"></a>
+      <a name="5045" class="applehelp-cs"></a>
+      <a name="5520" class="applehelp-cs"></a>
+      <a name="24008" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="sharing_data.16.7.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="sharing_data.16.5.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1029708">Sharing data</a> &gt; 
+      <a href="sharing_data.16.1.html#1029708">Sharing databases on a network</a> &gt; 
+      <a href="sharing_data.16.5.html#1029708">Working with shared files as a client</a> &gt; 
+      <b>Opening shared files as a client</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Opening shared files as a client</div>
+      <div class="b-body"><a name="1029709">After a file is opened by a host and shared via FileMaker Networking, you can access it as a client.</a></div>
+      <div class="b-body"><a name="1029710">FileMaker Pro databases shared via TCP/IP can be opened remotely using the list of local hosts, the IP address of the host machine, or the DNS name of the host machine if one has been defined. For example, a database hosted from a computer with an IP address of 192.168.10.0 and a DNS name of host.domain.com can be opened by entering either the IP address or the DNS name in the </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Open Remote</span> &gt; <span class="o-onscreen">Network File Path</span> field, using the format<br /><span class="c-code">fmnet:/192.168.10.0/&lt;filename&gt;. </span>(Note that <span class="c-code">fmnet:/</span> uses a single slash.)</div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1029711">FileMaker Pro also supports IPv6 addresses in the form of eight four-digit number groups, separated by colons and surrounded by square brackets. For example, <br /></a><span class="c-code">fmnet:/[2001:0DB8:85A3:08D3:1319:8A2E:0370:7334]/&lt;filename&gt;</span></div>
+      <div class="hs1-headsub1"><a name="1029712">To open a shared file as a client:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1029713">Choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Open Remote</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029714">The Open Remote File dialog box appears, displaying a list of hosts.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029715">For </a><span class="o-onscreen">View</span>, choose the type of host you want displayed in <span class="o-onscreen">Hosts</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ta-tableanchor"><a name="1029738"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1029718">Choose</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1029720">To display </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1029722">Favorite Hosts</a></span></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029724">Hosts you previously added as favorites. (For information about adding, editing, or removing a favorite host, see the section after these steps.)</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1029726">Local Hosts</a></span></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029728">FileMaker Server hosts located on your TCP/IP subnet.</a></div>
+            <div class="td-tabledata"><a name="1029729">To specify a host located on another TCP/IP subnet, for </a><span class="o-onscreen">Network File Path</span>, type a domain name (as <span class="c-code">host.domain.com</span>) or IP address using one of the following formats:</div>
+            <div class="td-tabledata"><a name="1029730">IPv4: </a><span class="c-code">192.168.10.0</span></div>
+            <div class="td-tabledata"><a name="1029731">IPv6: </a><span class="c-code">[2001:0DB8:85A3:08D3:1319:8A2E:0370:7334]</span> </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1029733">Hosts Listed by LDAP</a></span></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029736">FileMaker Server hosts available through </a><span class="g-glosslink"><a href="glossary.html#1027875">LDAP</a></span>.</div>
+            <div class="td-tabledata"><a name="1029737">To specify an LDAP from which you want to see hosts displayed, see the last section in this topic. </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="n1-note1">
+        <span class="zan-autonum">Note  </span><a name="1029739">To add a local host or a host located on an LDAP to the list of favorites, select the host to add and click </a><span class="o-onscreen">Add to Favorite Hosts</span>. Then, see the section after these steps.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029740">To see the available files from a host, select the host.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029741">For </a><span class="o-onscreen">Available Files</span>, select the file you want to open, then click <span class="o-onscreen">Open</span> (or double-click the filename). Or, for <span class="o-onscreen">Network File Path</span>, type the fully qualified filename (for example, <span class="c-code">fmnet:/&lt;host IP address&gt;/&lt;filename&gt;</span>), then click <span class="o-onscreen">Open</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="nt1-notetip1">
+        <span class="zan-autonum">Tip  </span><a name="1029742">To narrow the list of available files, type a few characters in the </a><span class="o-onscreen">Filter</span> text box. Only filenames containing the characters you type are displayed in the list.</div>
+      <div class="b1-body1"><a name="1029743">You might be required to enter an account name, password, and domain name (Windows only), depending on how file sharing is configured on the host. </a></div>
+      <div class="hs1-headsub1"><a name="1029745">To add, edit, and remove favorite hosts:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1029746">In the Open Remote File dialog box, do one of the following:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029747">To organize the list of favorite hosts, for </a><span class="o-onscreen">View</span>, select <span class="o-onscreen">Favorite Hosts</span>. Select the host to organize, then click <span class="o-onscreen">Add</span>, <span class="o-onscreen">Edit</span>, or <span class="o-onscreen">Remove</span>. (Add and Edit display the Edit Favorite Host dialog box; Remove deletes the host from the list.)</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029748">To mark a remote file so it appears in the </a><span class="o-onscreen">Favorite Files </span>list in the FileMaker Quick Start Screen, for <span class="o-onscreen">View </span>select <span class="o-onscreen">Favorite Hosts</span>, select a host, select an available file, click <span class="o-onscreen">Add to Favorites</span>. For more information about accessing favorite remote files, see <span class="zh-hyper"><a href="fmp_basics.3.23.html#1028350">Using FileMaker Quick Start to open files</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029752">To add a local host or a host located on an LDAP to the list of favorites, for </a><span class="o-onscreen">Hosts</span>, select the host you want to add, then click <span class="o-onscreen">Add to Favorites</span>. (The Edit Favorite Host dialog box appears.)</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029753">In the Edit Favorite Host dialog box, for </a><span class="o-onscreen">Host’s Internet Address</span>, enter the host’s IP address or domain name.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029754">Enter IP addresses using one of the following formats:<br />IPv4: </a><span class="c-code">192.168.10.0<br /></span>IPv6: <span class="c-code">[2001:0DB8:85A3:08D3:1319:8A2E:0370:7334]</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029755">Enter domain names using the format </a><span class="c-code">host.domain.com</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029756">For </a><span class="o-onscreen">Favorite Host’s Name </span>(optional), type a name for the host. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029757">If you don’t enter a name, only the host’s internet address is displayed in the Manage Favorites dialog box and the</a><span class="o-onscreen"> </span>FileMaker Quick Start Screen.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029758">In the </a><span class="o-onscreen">File Settings</span> area, choose to show all available files (the default) or only the files you specify. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029759">If you choose </a><span class="o-onscreen">Show only these files</span>, enter each filename on a separate line, ending each line with a carriage return.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029760">Click </a><span class="o-onscreen">Save</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1029761">To specify an LDAP server:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1029762">In the Open Remote File dialog box, with </a><span class="o-onscreen">Hosts Listed by LDAP</span> selected for <span class="o-onscreen">View</span>, click <span class="o-onscreen">Specify</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029763">The Specify LDAP Directory Service dialog box appears.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029764">In the </a><span class="o-onscreen">Server Information</span> area, enter information about the server. (You may need to contact your network administrator for this information.)</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ta-tableanchor"><a name="1029786"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1029767">For</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1029769">Do this</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1029771">Server Address</a></span></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029773">Enter the domain name of the server, in this format:</a></div>
+            <div class="td-tabledata"><span class="c-code"><a name="1029774">host.domain.com</a></span></div>
+            <div class="td-tabledata"><a name="1029775">or the IP address of the server in one of the following formats:</a></div>
+            <div class="td-tabledata"><a name="1029776">IPv4: </a><span class="c-code">192.168.10.0</span></div>
+            <div class="td-tabledata"><a name="1029777">IPv6: </a><span class="c-code">[2001:0DB8:85A3:08D3:1319:8A2E:0370:7334] </span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1029779">LDAP Port</a></span></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029781">Keep or change the port number. (To return to the initial value, click </a><span class="o-onscreen">Use Default</span>.)</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1029783">Search base</a></span></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029785">Enter an LDAP host search base string. </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029787">In the </a><span class="o-onscreen">Login Settings </span>area, select or clear <span class="o-onscreen">Use Windows Authentication</span> (Windows only). Then:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029788">If you select this option, choose </a><span class="o-onscreen">Log in as current user</span>, or choose <span class="o-onscreen">Log in using account </span>and type your account name, password, and domain name (Windows only).</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029789">If you clear this option, choose </a><span class="o-onscreen">Log in anonymously</span>, or choose <span class="o-onscreen">Log in using account </span>and type your account name and password.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029790">Click </a><span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1056296"> </a></div>
+      <div class="rh-relatedhead">Related topics<a name="1029791"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="non_toc.46.36.html#1029314" name="1033673">Cannot see hosted databases</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

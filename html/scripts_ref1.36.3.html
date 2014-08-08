@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Performs a script on the server that is hosting the current file." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Perform Script On Server</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="scripts_ref1.36.4.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="scripts_ref1.36.2.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1104870">Reference</a> &gt; 
+      <a href="help_script_cat.34.1.html#1104870">Script steps reference</a> &gt; 
+      <a href="scripts_ref1.36.1.html#1104870">Control script steps</a> &gt; 
+      <b>Perform Script On Server</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="ssh-scripthead">Perform Script On Server</div>
+      <div class="sspuh-scriptpurposehead">Purpose<a name="1104871"> </a></div>
+      <div class="sspu-scriptpurpose"><a name="1104872">Performs a script on the server that is hosting the current file.</a></div>
+      <div class="ssfh-scriptformathead">Format<a name="1104873"> </a></div>
+      <div class="ssf-scriptformat"><a name="1104874">Perform Script On Server [Wait for completion; "</a><span class="v-variable">&lt;script name&gt;</span>"; Parameter: <span class="v-variable">&lt;parameter&gt;</span>]</div>
+      <div class="ssoh-scriptoptshead">Options<a name="1104875"> </a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1105031">To select a script, click </a><span class="o-onscreen">Specify</span> and choose the script from the list. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1105475">For </a><span class="o-onscreen">Optional script parameter</span>, type the text you want to use or click <span class="o-onscreen">Edit</span> and use the Specify Calculation dialog box to build a more complex parameter.</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1105488">Wait for completion</a></span> pauses the script on the <span class="g-glosslink"><a href="glossary.html#1027578">client</a></span> until the <span class="g-glosslink"><a href="glossary.html#1028145">sub-script</a></span> called by Perform Script On Server is completed on the <span class="g-glosslink"><a href="glossary.html#1027797">host</a></span>. <span class="o-onscreen">Wait for completion</span> must be selected to pass a script result or error code from the host to the client. Use the <span class="zh-hyper"><a href="func_ref2.32.78.html#1031167">Get(ScriptResult) function</a></span> to capture a result or the <span class="zh-hyper"><a href="func_ref2.32.46.html#1029752">Get(LastError) function</a></span> to capture an error code.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sscoh-scriptcompathead">Compatibility<a name="1104878"> </a></div>
+      <div class="ta-tableanchor"><a name="1104908"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh1-scriptstepcompthead1">Where the script step runs<a name="1104881"> </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh2-scriptstepcompthead2">Supported<a name="1104883"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco1-scriptstepcompt1">FileMaker Pro<a name="1104885"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1104887"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco2-scriptstepcompt2">FileMaker Server scheduled script<a name="1104889"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1104891"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco3-scriptstepcompt3">FileMaker Go<a name="1104893"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1104895"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco4-scriptstepcompt4">Custom Web Publishing<a name="1104897"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1104899"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco5-scriptstepcompt5">FileMaker WebDirect<a name="1104901"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1104903"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco6-scriptstepcompt6">Runtime solution<a name="1104905"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1104907"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="orh-originhead">Originated in<a name="1104909"> </a></div>
+      <div class="or-origin"><a name="1104910">FileMaker Pro 13.0</a></div>
+      <div class="ssdh-scriptdeschead">Description<a name="1105356"> </a></div>
+      <div class="b-body"><a name="1105357">The current file must be hosted on FileMaker Server. Otherwise, Perform Script On Server returns an error. Scripts performed on the host are treated as FileMaker Server scheduled scripts.</a></div>
+      <div class="b-body"><a name="1104914">Scripts performed by Perform Script On Server:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1105128">are not aware of the client’s current layout or record. If necessary, use the </a><span class="zh-hyper"><a href="scripts_ref1.36.20.html#1028245">Go to Layout script step</a></span> and the <span class="zh-hyper"><a href="scripts_ref1.36.21.html#1028306">Go to Record/Request/Page script step</a></span> to specify which layout and record to act on.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1105308">can only access global variables that are defined after the script begins running on the host.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1105235">support script parameters and script results up to 1 million characters.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1105276">If records are locked by a client, scripts performed on the host cannot access uncommitted data or change the contents of those records.</a></div>
+      <div class="sseh1-scriptexamhead1">Example 1<a name="1105277"> </a></div>
+      <div class="b-body"><a name="1104916">Runs a script on the server and sends the current layout name, record number, and customer email address as the script parameter. The server navigates to the layout and record specified in the parameter, saves a snapshot link of the current record, emails the snapshot link to the email address specified in the parameter, and returns a result. The client fetches the script result from the server and displays it in a custom dialog.</a></div>
+      <div class="hs2-headsub2"><a name="1105096">Main script: Email snapshot link (Client)</a></div>
+      <div class="b1-body1"><span class="c-code"><a name="1105103">Perform Script On Server [Wait for completion; "Email snapshot link (Server)"; Parameter: List ( Get ( LayoutName ) ; Get ( RecordNumber ) ; Customers::Email )]<br />Show Custom Dialog [Get ( ScriptResult )]</a></span></div>
+      <div class="hs2-headsub2"><a name="1105110">Sub-script: Email snapshot link (Server)</a></div>
+      <div class="b1-body1"><span class="c-code"><a name="1105179">Go to Layout [MiddleValues ( Get ( ScriptParameter ) ; 1 ; 1 )]<br />Go to Record/Request/Page [MiddleValues ( Get ( ScriptParameter ) ; 2 ; 1 )]<br />Set Variable [$PATH; Value:Get ( TemporaryPath ) &amp; "Snapshot.fmpsl"]<br />Save Records as Snapshot Link ["$PATH"; Current record]<br />Send Mail [Send via SMTP Server; No dialog; To: MiddleValues ( Get ( ScriptParameter ) ; 3 ; 1 ); "$PATH"]<br />Exit Script [Result: "Snapshot link sent."]</a></span></div>
+      <div class="rh-relatedhead">Related topics<a name="1104990"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="scripts_ref1.36.2.html#1051802" name="1106041">Perform Script script step</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_script.13.34.html#1046688" name="1104994">Perform Script and script parameter examples</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_alpha.html#66468" name="1104998">Script steps reference (alphabetical list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_cat.34.2.html#947337" name="1104979">Script steps reference (category list)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

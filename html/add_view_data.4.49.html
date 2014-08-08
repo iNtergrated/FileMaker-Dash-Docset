@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="You can replace the contents of a field in all records or in a found set with a new value, a calculation, or a serial number." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Replacing the contents of a field</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="2500" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="add_view_data.4.50.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="add_view_data.4.48.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part1.html#1053099">Using FileMaker Pro</a> &gt; 
+      <a href="add_view_data.4.1.html#1053099">Adding and viewing data</a> &gt; 
+      <b>Replacing the contents of a field</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h3-head3">Replacing the contents of a field</div>
+      <div class="b-body"><a name="1053103">You can replace the contents of a </a><span class="g-glosslink"><a href="glossary.html#1027703">field</a></span> in all <span class="g-glosslink"><a href="glossary.html#1028030">records</a></span> or in a <span class="g-glosslink"><a href="glossary.html#1027747">found set</a></span> with a new value, a calculation, or a <span class="g-glosslink"><a href="glossary.html#1028093">serial number</a></span>.</div>
+      <div class="ni-noteimportant">
+        <span class="zan-autonum">Important  </span><a name="1030733">This process overwrites a field in every record (or every record in the found set) with a new value. You can't undo replacing field values. Before you begin, consider making a backup copy of the file.</a></div>
+      <div class="hs1-headsub1"><a name="1030734">To replace field values in every record in the found set:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1030735">If necessary, find, omit, or sort the records in the database table.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1030739">For more information, see </a><span class="zh-hyper"><a href="find_sort.5.1.html#1048926">Finding, sorting, and replacing data</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1030741">In </a><span class="g-glosslink"><a href="glossary.html#1027555">Browse mode</a></span>, in the current record, select the contents of the field you want to replace.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1030742">If you're replacing data with a constant value (instead of serialized numbers or a calculated result), type the value.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1030743">Choose </a><span class="o-onscreen">Records</span> menu &gt; <span class="o-onscreen">Replace Field Contents</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1030744">In the Replace Field Contents dialog box, select an option:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ta-tableanchor"><a name="1030768"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1030747">To replace each value with</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1030749">Select</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030751">The value in the currently selected field</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1030753">Replace with “</a></span>&lt;<span class="v-variable">value&gt;</span><span class="o-onscreen">”</span>. FileMaker Pro replaces the contents of the field for the entire found set.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030755">A serialized number</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1030757">Replace with serial numbers</a></span>, then type the starting value for the serial numbers in <span class="o-onscreen">Initial value</span>, and the incremental value in <span class="o-onscreen">Increment by</span>.</div>
+            <div class="td-tabledata"><a name="1030758">If the field is defined to automatically enter a serial number, you can select </a><span class="o-onscreen">Update serial number in Entry Options</span> to reset the next value in the Options for Field dialog box. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030760">A calculated value</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1030762">Replace with calculated result</a></span>, then click <span class="o-onscreen">Specify</span>. In the Specify Calculation dialog box, enter the calculation you want evaluated. (The result must match the <span class="g-glosslink"><a href="glossary.html#1027715">field type</a></span> of the replaced field.) Click <span class="o-onscreen">OK</span>.</div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1030764">Note</a></span>  For more information about the Specify Calculation dialog box, see <span class="zh-hyper"><a href="non_toc.46.3.html#1027764">Specify Calculation dialog box</a></span>.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1030769">Click </a><span class="o-onscreen">Replace</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1030770">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030773">You can't replace </a><span class="g-glosslink"><a href="glossary.html#1027566">calculation</a></span> or<span class="g-glosslink"><a href="glossary.html#1028154"> summary</a></span> fields or fields defined with the global storage option.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030774">You can't reserialize calculation, summary, container, or global fields.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030775">If the field that contains the replaced data is validated, FileMaker Pro doesn't validate the new data. See </a><span class="zh-hyper"><a href="create_db.8.24.html#1029602">Defining field validation</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030779">If you select </a><span class="o-onscreen">Update serial number in Entry Options</span>, the next automatically entered value for this field (after the replace is performed) follows in sequence. If you clear this option, the <span class="o-onscreen">next value</span> isn't changed in the Options for Field dialog box. The next automatically entered value is based on the current settings (not in sequence with the records reserialized by this replace task).</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030780">You can modify a field's existing values by using a calculation that includes the field. For example, you can change the value Gross Pay to the results of the calculation Gross Pay + 1000. See </a><span class="zh-hyper"><a href="create_db.8.20.html#1029046">Defining calculation fields</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1053109">You can use a calculation to add a suffix or prefix to an existing field value. For example, to append “-01” to all the values in the “Partnumber” field in the found set, enter Partnumber &amp; “-01” in the Specify Calculation dialog box. The result must match the </a><span class="g-glosslink"><a href="glossary.html#1027715">field type</a></span> of the replaced field.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1053111">In FileMaker Pro 10, there was a change to how FileMaker Pro performs the Replace Field Contents and Relookup Field Contents commands and script steps. Replace/relookup operations are now performed without committing the active record. This change only affects multiple uncommitted records in a window transaction, as when you do a replace/relookup on related records in a portal. If there are uncommitted records in the window that are affected by the operation, these changes will be made using the window's transaction and remain uncommitted until you choose to commit the changes following the completion of the operation. All other records will be modified and committed during the operation as before. For more information about committing data, see </a><span class="zh-hyper"><a href="add_view_data.4.24.html#1047900">Committing data in records</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ni-noteimportant">
+        <span class="zan-autonum">Important  </span><a name="1053115">To avoid confusion when replacing dates in FileMaker Pro, always enter dates with four-digit years. For more information, see </a><span class="zh-hyper"><a href="add_view_data.4.22.html#1028976">Conversion of dates with two-digit years</a></span>.</div>
+      <div class="rh-relatedhead">Related topics<a name="1030790"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="add_view_data.4.17.html#1028529" name="1030794">Entering and changing data in fields</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.2.html#1027519" name="1030798">Finding records</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="add_view_data.4.50.html#1030810" name="1030802">Adding and viewing data troubleshooting</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmp_basics.3.33.html#1028872" name="1030806">Saving and copying files</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="You can place fields from related tables either directly on layouts or in portals:" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Deciding where to place related fields</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="non_toc.46.20.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="non_toc.46.18.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <b></b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="hx3-head3notoc">Deciding where to place related fields</div>
+      <div class="b-body"><a name="1028552">You can place fields from </a><span class="g-glosslink"><a href="glossary.html#1028042">related tables</a></span> either directly on layouts or in <span class="g-glosslink"><a href="glossary.html#1028003">portals</a></span>:</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="e-emphasis"><a name="1028554">Directly on layouts:</a></span> Place <span class="g-glosslink"><a href="glossary.html#1028036">related fields</a></span> directly on a layout to display data from the first related record, even when there are more than one related record that match the criteria of the relationship. (The first related record that is displayed is determined by whether the relationship specifies a sort order.)</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="e-emphasis"><a name="1028555">In portals: </a></span>Place related fields within a portal on a layout to display data from all related records that match the criteria of the relationship.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1028556">For example, you might do the following on an Invoice layout in an Invoices database:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028557">Place related fields on the invoice that displays data from the Clients database, such as the client's identification number and contact information. (The match field is Client ID.) There is only one record in the Clients database for each Client ID, so each related field on the invoice displays the data for that client.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028558">Place a related field on the invoice that displays the most recent value from the Order Date field in the Order History database. (Again, the match field is Client ID.) If the client has placed more than one order, there are multiple records in Order History that match this client's Client ID. By defining a sort order on the Order Date field when you define the relationship, the most recent date displays in the related field when it's placed directly on the layout (not in a portal). </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028559">Place related fields on the invoice that display data about each ordered item, such as Product ID, Product Name, Unit Price, and so on. (The match field is Order ID.) Since in most cases there is more than one product on the invoice (you're displaying more than one related record), you create a portal to hold the related fields. Each row of the portal displays one related record with the related fields you select from the Line Item database.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1028560">How FileMaker Pro evaluates references to related fields in portals</a></div>
+      <div class="b-body"><a name="1028561">When you place a related field in a portal, FileMaker Pro uses one of two starting points to evaluate the related data to display: the record in the portal’s table, or the record in the layout’s table. The starting point is significant because it affects the related data that the field displays.</a></div>
+      <div class="b-body"><a name="1028562">FileMaker Pro determines which starting point to use based on the path of relationships between two tables in the </a><span class="g-glosslink"><a href="glossary.html#1028051">relationships graph</a></span>:</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028564">the layout’s table</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028565">the field’s table (the table that contains the placed field)</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1028566">If the path of relationships from the layout’s table to the field’s table includes the portal’s table, the record in the portal’s table is the starting point. Otherwise, the record in the layout’s table is the starting point.</a></div>
+      <div class="b-body"><a name="1028567">For example, the following relationships graph shows a school enrollment database. It contains tables for teachers, classes, and students, and an enrollment table to indicate which students are in each class. There is also an advisors table (another occurrence of the teachers table) which assigns a faculty advisor to each student.</a></div>
+      <div class="gr-graphicanchor"><a name="1028571"><img class="Default" src="../images/enrollment.gif" width="372" height="102" style="float: none; left: 0.0; top: 0.0;" alt="Example of relationships for five tables in a school enrollment database" /></a></div>
+      <div class="b-body"><a name="1028572">Consider the following layout, which displays the enrolled students in a class. The layout’s table is Classes, and the portal’s table is Students.</a></div>
+      <div class="gr-graphicanchor"><a name="1028590"><img class="Default" src="../images/non_toc.46.19.2.png" width="186.5" height="147.5" style="float: none; left: 0.0; top: 0.0;" alt="Example of a portal on a layout" /></a></div>
+      <div class="b-body"><a name="1028591">The table below describes how FileMaker Pro determines the starting points for four fields placed in this portal from different tables.</a></div>
+      <div class="ta-tableanchor"><a name="1028643"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028594">Placed field</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028596">Path from<br />layout’s table to<br />field’s table</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028598">Does path<br />include<br />portal’s table?</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028600">Starting<br />point</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028602">Comment</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028604">Name field from<br />Students table</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028606">Classes-Enrollment-Students</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028608">Yes</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028610">Portal’s record</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028612">The placed field is from the portal’s table (a very common occurrence). The field would display an enrolled student in each row of the portal.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028614">Name field from<br />Advisors table</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028616">Classes-Enrollment-<br />Students-Advisors</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028618">Yes</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028620">Portal’s record</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028622">The placed field would display each student’s advisor in each row of the portal.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028624">Name from<br />Teachers table</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028626">Classes-Teachers</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028628">No</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028630">Layout’s record</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028632">The placed field would repeat the teacher for the class in each row of the portal, not the first related teacher value for each student.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028634">Class Name from Classes table</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028636">Classes</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028638">No</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028640">Layout’s record</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028642">The placed field is from the layout’s table (an uncommon occurrence). The field would repeat the class name for each row in the portal, which is redundant if the layout includes the Class Name field outside of the portal.</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="b-body"><a name="1028644">In addition to fields placed in a portal, FileMaker Pro uses this method to determine the starting point for other references to fields in portals:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="e-emphasis"><a name="1028646">Value lists:</a></span> when a <span class="g-glosslink"><a href="glossary.html#1028227">value list</a></span> is defined to include only related values from a field, and a field in a portal is formatted to display this value list. (The starting point determines the values displayed in the value list.)</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="e-emphasis"><a name="1028647">Calculations:</a></span> when scripted calculations refer to fields while a portal is active.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1028648">Usually, FileMaker Pro determines the correct related data to display. However, you can change the starting point by modifying the relationships graph to include other tables and relationships, and then changing the related fields referenced in the portal.</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1028649">:</a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_layout.9.25.html#1176168" name="1028653">Adding fields to a layout</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_layout.9.26.html#1028465" name="1028657">Placing and removing fields on a layout</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_layout.9.28.html#1028605" name="1028661">Creating portals to display related records</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="relational.11.1.html#1027502" name="1028665">Working with related tables and files</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="non_toc.46.23.html#1029041" name="1028669">Example of a value list that includes only related field values</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

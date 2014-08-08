@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="An ODBC data source lets a FileMaker file access data from external ODBC tables. You can view and update ODBC tables interactively in the relationships graph in much the same way you view and update FileMaker tables." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Editing ODBC data sources</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="5519" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="odbc_ess.20.7.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="odbc_ess.20.5.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1030069">Sharing data</a> &gt; 
+      <a href="odbc_ess.20.1.html#1030069">Accessing external data sources</a> &gt; 
+      <a href="odbc_ess.20.4.html#1030069">Working with data sources</a> &gt; 
+      <b>Editing ODBC data sources</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Editing ODBC data sources</div>
+      <div class="b-body"><a name="1030072">An </a><span class="g-glosslink"><a href="glossary.html#1027961">ODBC</a></span> <span class="g-glosslink"><a href="glossary.html#1027629">data source</a></span> lets a FileMaker file access data from external ODBC tables. You can view and update ODBC tables interactively in the <span class="g-glosslink"><a href="glossary.html#1028051">relationships graph</a></span> in much the same way you view and update FileMaker <span class="g-glosslink"><a href="glossary.html#1045562">tables</a></span>. </div>
+      <div class="b-body"><a name="1027762">FileMaker can connect to many relational database management systems (RDBMSs) that provide ODBC APIs for external use. See </a><span class="zh-hyper"><a href="odbc_ess.20.2.html#1027549">Configuring an ODBC client driver</a></span> for a list of the data sources that are supported.</div>
+      <div class="b-body"><span class="zan-autonum"><a name="1027766">Important</a></span> To work with ODBC data sources, you must:</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027771">connect to the external data source via an ODBC </a><span class="g-glosslink"><a href="glossary.html#1027659">driver</a></span> and set up <span class="g-glosslink"><a href="glossary.html#1027632">DSNs</a></span>. See <span class="zh-hyper"><a href="odbc_ess.20.2.html#1027549">Configuring an ODBC client driver</a></span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027776">add an external ODBC data source. See </a><span class="zh-hyper"><a href="odbc_ess.20.3.html#1027612">Connecting to data sources</a></span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1027777">After you have linked the ODBC data source to a FileMaker Pro file, you can set and edit options.</a></div>
+      <div class="hs1-headsub1"><a name="1027779">To edit an ODBC data source:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1027780">Choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Manage</span> &gt; <span class="o-onscreen">External Data Sources</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027781">The Manage External Data Sources dialog box appears.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027782">Select the ODBC data source in the list and click </a><span class="o-onscreen">Edit</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027783">The Edit Data Source dialog box appears. </a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027785">You can change the name of the data source, specify a different DSN, set </a><span class="g-glosslink"><a href="glossary.html#1027528">authentication</a></span> options to log in to a named ODBC data source, or set view options.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027786">For </a><span class="o-onscreen">Authentication</span>, the default option is <span class="o-onscreen">Prompt user for user name and password</span>. Users must enter a user name and password the first time they access the table.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027787">If you don’t want any user of this FileMaker file to be prompted, select </a><span class="o-onscreen">Specify user name and password (applies to all users)</span> and enter a user name and password. You can also create a calculation to determine user access to the external table. You cannot use variables or fields in these calculations. See <span class="zh-hyper"><a href="non_toc.46.3.html#1027764">Specify Calculation dialog box</a></span> for more information on setting up calculations.</div>
+      <div class="b1-body1"><a name="1030488">If you work with shared database files that access ODBC data from Microsoft SQL Server and you want to enable ODBC data source single sign-on, select </a><span class="o-onscreen">Use Windows Authentication (Single Sign-on) </span>and enter the <span class="o-onscreen">SPN</span> (Service Principal Name). See <span class="zh-hyper"><a href="odbc_ess.20.7.html#1027863">Enabling ODBC data source single sign-on (Windows only)</a></span>.</div>
+      <div class="b1-body1"><span class="zan-autonum"><a name="1027791">Note </a></span>FileMaker encrypts passwords. However, encryption on external data sources depends on whether encryption is supported by the ODBC driver.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027792">To enhance performance, you can filter the list of external tables or views that are available for you to add to the relationships graph. The default is to list all the tables from the data source.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1027793">For </a><span class="o-onscreen">Catalog name</span>, enter a name. Otherwise, tables from all catalogs are listed.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1027794">For </a><span class="o-onscreen">Schema name</span>, enter a name. Otherwise, tables from all schemas are listed.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1027795">For </a><span class="o-onscreen">Table name</span>, enter a name to list only that table.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027796">You can filter the list of tables by type: </a><span class="o-onscreen">Tables</span>, <span class="o-onscreen">Views</span>, or <span class="o-onscreen">System table</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><span class="zan-autonum"><a name="1027797">Note</a></span> If you want to include other types, deselect all the <span class="o-onscreen">Filter by Type</span> options.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1035789">Click </a><span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1035790">Setting up an ODBC table in the relationships graph</a></div>
+      <div class="b-body"><a name="1035791">After you have added an ODBC data source, you can work with ODBC tables in the relationships graph and on </a><span class="g-glosslink"><a href="glossary.html#1027851">layouts</a></span> as you would other FileMaker tables. You can retrieve, add, update, and delete data in the ODBC table interactively, in real time.</div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1027802">Choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Manage</span> &gt; <span class="o-onscreen">Database</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027806">In the </a><span class="o-onscreen">Relationships</span> tab in the Manage Database dialog box, click <img class="Default" src="../images/IDB_DEFINE_RELATIONS_ADDTABLE2x.png" width="21" height="15" style="float: none; left: 0.0; top: 0.0;" alt="Add table button" />. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027807">In the Specify Table dialog box, for </a><span class="o-onscreen">Data Source</span>, choose <span class="o-onscreen">ODBC data source</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027808">If you are prompted, enter the user name and password for the ODBC data source.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027809">You see a list of the external tables for that data source.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027810">Select the table you want and click </a><span class="o-onscreen">OK</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027811">The external table appears in the relationships graph. The table name appears in italics. For information on linking to and working with tables in the relationships graph, see </a><span class="zh-hyper"><a href="relational.11.11.html#1028192">Working with the relationships graph</a></span>.</div>
+      <div class="b1-body1"><span class="zan-autonum"><a name="1027815">Tip </a></span>To identify whether a table in the relationships graph is a FileMaker table or from an ODBC data source, move the pointer over the arrow in the table header. You might want to add a color to ODBC tables in order to identify them more easily.</div>
+      <div class="b1-body1"><a name="1027816">After you add a table to the relationships graph, FileMaker adds a layout with that table name to the </a><span class="g-glosslink"><a href="glossary.html#1027861">Layout pop-up menu</a></span> and the table is listed in the <span class="o-onscreen">Tables</span> tab. The table name appears in italics.</div>
+      <div class="b1-body1"><a name="1027818">Columns from the ODBC table appear in the </a><span class="o-onscreen">Fields</span> tab. The field names appear in italics. You can remove fields if you do not want FileMaker Pro to display them within your solution. These columns are not removed from the external SQL data source table schema, only from the FileMaker Pro representation of that table’s schema. See <span class="zh-hyper"><a href="odbc_ess.20.8.html#1030203">Updating data between FileMaker and ODBC data sources</a></span> for more information.</div>
+      <div class="hs1-headsub1"><span class="zan-autonum"><a name="1027822">Considerations before you begin working with ODBC data sources</a></span></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030962">Decide whether you want to work with ODBC tables interactively in the relationships graph or through “static” ODBC imports. For an overview of the various ways of working with ODBC data sources, see </a><span class="zh-hyper"><a href="odbc.19.1.html#1027500">Using ODBC and JDBC with FileMaker Pro</a></span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027823">Determine which tables you want to access, and which data sources they are in.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030952">If FileMaker cannot automatically determine a table’s primary </a><span class="g-glosslink"><a href="glossary.html#1027838">key</a></span>, you will be asked to select the columns that comprise a unique key. FileMaker requires every table to have one or more columns that have a unique value for each row.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1027831">Limitations on working with ODBC data sources</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027832">You cannot change the schema of external ODBC data sources. However, you can add </a><span class="g-glosslink"><a href="glossary.html#1028157">supplemental fields</a></span> to do calculations and summaries on data from ODBC tables. See <span class="zh-hyper"><a href="odbc_ess.20.10.html#1027889">Using supplemental fields</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027838">Fields from ODBC data sources can be used in </a><span class="g-glosslink"><a href="glossary.html#1028227">value lists</a></span>, but character large objects (CLOBs) such as long text strings are not supported.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1035826">For value lists with ODBC data, the </a><span class="o-onscreen">No access</span> privilege and <span class="o-onscreen">Limited</span> custom privilege are not supported. To prohibit a user from seeing ODBC data in a value list, you must enforce row-level security in the external SQL database. See <span class="zh-hyper"><a href="passwords.14.22.html#1029001">Editing value list privileges</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1035830">The SQL Server Timestamp data type is not supported.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1035831">Binary large objects (BLOBs) such as pictures and sounds are not supported.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1035832">When you’re working with external tables in the </a><span class="o-onscreen">Fields</span> tab of the Manage Database dialog box, the following field options are not supported. See <span class="zh-hyper"><a href="create_db.8.22.html#1056816">Setting options for fields</a></span> for information on field options.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1027845">On the </a><span class="o-onscreen">Auto-Enter</span> tab, you can auto-enter serial numbers when you create records, but not when you commit records. (The external database controls how records are committed.) When a <span class="g-glosslink"><a href="glossary.html#1027894">lookup</a></span> is to related data in an ODBC data source, <span class="o-onscreen">copy next lower value</span> and <span class="o-onscreen">copy next higher value</span> are disabled.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1027847">On the </a><span class="o-onscreen">Validation</span> tab, <span class="o-onscreen">Unique value</span> and <span class="o-onscreen">Existing value</span> are disabled. The <span class="o-onscreen">Maximum number of characters</span> allowed in a field is determined by the external data source.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1027848">The </a><span class="o-onscreen">Storage</span> tab is disabled.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027849">FileMaker cannot control validation and other options that ODBC administrators set. See </a><span class="zh-hyper"><a href="odbc_ess.20.8.html#1030203">Updating data between FileMaker and ODBC data sources</a></span> for information on how field options are affected in <span class="o-onscreen">Sync</span> operations.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027853">FileMaker files linked to ODBC data sources don’t inherent relationships that are created in the ODBC data sources.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1027854">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027857">You can apply conditional formatting to data from external fields. See </a><span class="zh-hyper"><a href="edit_layout.10.13.html#1066700">Defining conditional formatting for layout objects</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027859">When FileMaker Server hosts databases linked to ODBC data sources, FileMaker clients do not need to set up a DSN to access the external data source. However, the DSN must be set up on the machine running FileMaker Server.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027860">FileMaker does not use SQL set semantics on queries. FileMaker may execute one query for each related table on a layout. If you want to retain certain SQL join behavior or obtain the results of SQL predicates such as GROUP BY, create views. Then access the data from FileMaker through those views. (Views are sometimes called “virtual tables.”)</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030937">Long queries, attempts to scroll the entire ODBC table, or opening a large table can result in slower performance.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1031124">Microsoft SQL Server: By default, DATETIME, DATETIME2, and SMALLDATETIME data from ODBC tables is imported as the timestamp field type. You can change the field type of a timestamp shadow field to either date or time, but the data must be structured in a specific manner. If the imported ODBC table contains timestamp data and you treat the timestamp field as a date field, the time portion must equal 12:00 AM (or midnight) for all records in the table. Likewise, if you import an ODBC table that contains timestamp data and you treat the timestamp field as a time field, the date portion must equal 1900-01-01 (or January 1, 1900) for all records in the table.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1031087">As with any ODBC table, if the field is a primary key and the values are not unique, the results may be inconsistent.</a></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

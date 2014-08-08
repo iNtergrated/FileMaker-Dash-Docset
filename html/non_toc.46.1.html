@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="When you create a file, FileMaker Pro uses the operating system language setting to determine the language used for indexing text fields and sorting data. You can choose a different language in the Storage tab of the Options for Field dialog box (for index ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Choosing a language for indexing or sorting</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="non_toc.46.2.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="copyright.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <b></b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="hx3-head3notoc">Choosing a language for indexing or sorting</div>
+      <div class="b-body"><a name="1039133">When you create a file, FileMaker Pro uses the operating system language setting to determine the language used for </a><span class="g-glosslink"><a href="glossary.html#1027810">indexing</a></span> text fields and <span class="g-glosslink"><a href="glossary.html#1028117">sorting</a></span> data. You can choose a different language in the Storage tab of the Options for Field dialog box (for indexing and sorting) and the Sort Records dialog box (for sorting only). </div>
+      <div class="b-body"><a name="1027541">For languages such as Chinese, Spanish, and others, the index order of values in a text field can differ from the sort order. For example, dictionary sort order in some languages distinguishes between characters with and without diacritical marks, but index order does not. If you want to display indexed values in dictionary sort order for such languages, select </a><span class="o-onscreen">Re-sort values based on</span> in the View Index dialog box or Specify Fields for Value List dialog box (for field-based value lists) and choose a language.</div>
+      <div class="b-body"><a name="1027542">In all of these instances, you can change the language for indexing or sorting to:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027543">another language supported by FileMaker Pro</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027544">a setting named </a><span class="o-onscreen">Default</span>, which is language-neutral</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027546">a setting named </a><span class="o-onscreen">Unicode</span>, which is based on <span class="g-glosslink"><a href="glossary.html#1028214">Unicode</a></span> numeric encoding order</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1027547">For more information about Unicode, visit </a><span class="h-hyperlink"><a href="http://www.unicode.org" target="external_window">http://www.unicode.org</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1027548">Using a language-based setting for indexing or sorting</a></div>
+      <div class="b-body"><a name="1027549">Language settings in FileMaker Pro are based on Unicode Collation Algorithm primary and secondary character collation weights, tailored to support language-specific indexing and sorting requirements.</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1027550">Some behavior is dependent upon the data source or drivers when using Japanese collation that does not distinguish Katakana or Hiragana, either in full- or half-width. This is also the case with roman characters with accents.</a></div>
+      <div class="hs1-headsub1"><a name="1027551">Using the Default language setting for indexing or sorting</a></div>
+      <div class="b-body"><a name="1027552">The </a><span class="o-onscreen">Default</span> language setting uses the Unicode Collation Algorithm primary and secondary collation weights for indexing and sorting characters without any language-specific tailoring.</div>
+      <div class="b-body"><a name="1027553">The </a><span class="o-onscreen">Default</span> setting is useful when you need an index with more character distinctions than you get when you index using a specific language. For example, if you use the French language setting to index records containing the words “demande” and “demandé,” and then use the index to search for the word “demande,” the result contains a set of records that contain either "demande" or “demandé.” If you use the <span class="o-onscreen">Default</span> language setting to index the same records, a search for the word “demande” results in the set of records that contain “demande,” but not “demandé.”</div>
+      <div class="hs1-headsub1"><a name="1027554">Using the Unicode setting for indexing or sorting</a></div>
+      <div class="b-body"><a name="1027555">When you choose to index or sort by </a><span class="o-onscreen">Unicode</span>, characters are distinguished and ordered by their Unicode numeric encoding. This means lowercase and uppercase letters are indexed and sorted separately and punctuation characters are treated as alphanumeric characters.</div>
+      <div class="b-body"><a name="1027556">If you have been using the </a><span class="o-onscreen">ASCII</span> setting for sorting and indexing data in previous versions of FileMaker Pro, you can use the <span class="o-onscreen">Unicode</span> setting to achieve similar results.</div>
+      <div class="rh-relatedhead">Related topics<a name="1027557"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.27.html#1029839" name="1027561">Defining field indexing options</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.22.html#1043585" name="1027565">Sorting records</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="add_view_data.4.29.html#1029531" name="1027569">Using a field index</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="edit_layout.10.46.html#1029124" name="1027573">Defining value lists</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

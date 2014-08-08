@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="keywords" content="zip code, zip codes, phone number, phone numbers, format phone number, format phone numbers, add fields, adding fields, add a field, adding a field" />
+    <meta name="description" content="Use container fields to store any file:" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>About container fields</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="create_db.8.20.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="create_db.8.18.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1028970">Designing and creating databases</a> &gt; 
+      <a href="create_db.8.1.html#1028970">Creating a database</a> &gt; 
+      <a href="create_db.8.13.html#1028970">About choosing a field type</a> &gt; 
+      <b>About container fields</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">About container fields</div>
+      <div class="b-body"><a name="1060108">Use container fields to store any file:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028985">photos, movies, sounds</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028987">documents, including Microsoft Word and Excel files, PDF files, and so on</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1028989">You can reference container fields in calculation formulas or summary fields. </a></div>
+      <div class="b-body"><a name="1062752">Data in container fields is by default </a><span class="g-glosslink"><a href="glossary.html#1041191">embedded</a></span>. You can, instead:</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1063825">store a reference in the field when you select a file to insert into it</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1063845">define the field to store data externally</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1104437">FileMaker Pro saves externally stored container data in the same folder in which the database file is located. See </a><span class="zh-hyper"><a href="create_db.8.31.html#1104560">Managing external storage of container data</a></span>.</div>
+      <div class="b-body"><a name="1104441">When you save a FileMaker Pro file as a self-contained copy, container data that is stored as a file reference, as well as externally stored data, is embedded in container fields in the copy. See </a><span class="zh-hyper"><a href="fmp_basics.3.33.html#1028872">Saving and copying files</a></span>.</div>
+      <div class="b-body"><a name="1104448">You can use the </a><span class="zh-hyper"><a href="func_ref1.31.15.html#1063605">GetContainerAttribute function</a></span> to track how the contents of a container field are stored and how much storage space it uses. This function also returns metadata about a container field’s contents, such as the height and width of images, photo orientation, cover art of audio contents, bar code type, and signature timestamps.</div>
+      <div class="b-body"><a name="1104450">You can make a container field </a><span class="g-glosslink"><a href="glossary.html#1045835">interactive</a></span> to optimize the field for content such as audio, video, or PDF files. See <span class="zh-hyper"><a href="edit_layout.10.43.html#1136311">Specifying formats for container fields</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1029007">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1091159">After you define a container field, you can make the field larger in </a><span class="g-glosslink"><a href="glossary.html#1034324">Layout mode</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029010">You can't find or sort records based on a container field, but you can define a text field to describe or identify the contents of the container. Then, you can find or sort records based on the information in the text field.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1080366">To specify how data in a container field displays (for example, whether the image is cropped or scaled), see </a><span class="zh-hyper"><a href="edit_layout.10.37.html#1149236">Formatting and setting up field objects in Layout mode</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1104516">FileMaker Pro uses the orientation attribute set by many cameras to display photographs right side up in container fields. See </a><span class="zh-hyper"><a href="add_view_data.4.36.html#1075610">Inserting graphics into container fields</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1104473">To put a static graphic (like a logo) on a layout, create, paste, or import the graphic directly onto the layout, or use a </a><span class="g-glosslink"><a href="glossary.html#1027766">global</a></span> container field. Either option will use less storage space than storing the same graphic with every record.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1083272">You can create a </a><span class="g-glosslink"><a href="glossary.html#1028072">script</a></span> that includes the <span class="zh-hyper"><a href="scripts_ref1.36.58.html#1029502">Insert File script step</a></span> to specify the contents of a container field.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1104530">When externally stored container data is hosted on FileMaker Server, the data can be located on a different volume from the databases, including on network attached storage. For more information, see FileMaker Server Help.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="rh-relatedhead">Related topics<a name="1080375"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.8.html#1090149" name="1104489">About defining database fields</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.29.html#1057901" name="1104493">About setting up container fields</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="add_view_data.4.35.html#1053046" name="1104497">Using data in container fields</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="add_view_data.4.44.html#1064894" name="1104501">Deleting data from container fields</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.42.html#1087742" name="1104505">Creating file paths</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

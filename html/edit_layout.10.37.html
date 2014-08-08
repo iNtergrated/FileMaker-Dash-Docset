@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="keywords" content="format number field, formatting numbers, format numbers, formatting field objects, field formats, field setup, number field setup" />
+    <meta name="description" content="Use FileMaker Pro field formats to control how data appears on a layout. The formats you specify don't change the data as it's stored in the database, and you can specify a different format for each time you place a field on a layout (whether it's on the s ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Formatting and setting up field objects in Layout mode</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="edit_layout.10.38.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="edit_layout.10.36.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1149236">Designing and creating databases</a> &gt; 
+      <a href="edit_layout.10.1.html#1149236">Editing objects, layout parts, and the layout background</a> &gt; 
+      <b>Formatting and setting up field objects in Layout mode</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h3-head3">Formatting and setting up field objects in Layout mode</div>
+      <div class="b-body"><a name="1066892">Use FileMaker Pro field formats to control how data appears on a layout. The formats you specify don't change the data as it's stored in the database, and you can specify a different format for each time you place a field on a layout (whether it's on the same layout or a different layout). For example, if you enter -5123 into a number field, you can format it in one place to display as -$5,123.00 and in another place as &lt;5123&gt;.</a></div>
+      <div class="b-body"><a name="1066893">You can also have field formats change automatically when data meets criteria you specify. See </a><span class="zh-hyper"><a href="edit_layout.10.13.html#1066700">Defining conditional formatting for layout objects</a></span>.</div>
+      <div class="b-body"><a name="1066897">FileMaker Pro applies field formatting in the following precedence: </a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1125925">If you don’t specify formats, FileMaker Pro displays numbers, dates, and times based on the system formats set in the Clock, Language, and Region control panel (Windows) or the Language &amp; Text pane in System Preferences (OS X) when the file was created.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1125926">Once you place fields, you can select one or more fields and specify formats.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1125927">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1125795">You can specify number, date, time, and timestamp fields to display data based on the current system formats when the file is opened. For more information, see the Help topics for specifying formats for each field type.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1132088">If a field uses system formats to display data, FileMaker WebDirect uses the default system formats for the location in which the database file was created.</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1125803">You can set up a field as a pop-up menu, a drop-down list, or a series of checkboxes or radio buttons. See </a><span class="zh-hyper"><a href="edit_layout.10.46.html#1029124">Defining value lists</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1066908">You can set up a field to auto-complete during data entry. See </a><span class="zh-hyper"><a href="edit_layout.10.50.html#1029409">Setting up a field to auto-complete during data entry</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1066912">You can set up a field to display as a drop-down calendar. See </a><span class="zh-hyper"><a href="edit_layout.10.49.html#1029385">Setting up a field to display a drop-down calendar</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1124883">You can set up a field to display a context-specific keyboard in FileMaker Go. See </a><span class="zh-hyper"><a href="edit_layout.10.48.html#1124264">Setting up a field to display a keyboard</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1150197">You can set specific formats for number, date, time and timestamp fields, but users can still enter data with extraneous characters (like “per pound”). To control the type of data users enter in a field, specify validation options. See </a><span class="zh-hyper"><a href="create_db.8.24.html#1029602">Defining field validation</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1150201">In Layout mode, to set default field attributes from the attributes of an existing field (for example, to specify that all new text fields you place have text attributes that match an existing field or all new number fields you place have number formats that match an existing field), Ctrl-click (Windows) or Command-click (OS X) the existing field. Then create the new fields that you want.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1150202">To display sample data in fields formatted with the specified field formats, in Layout mode, choose </a><span class="o-onscreen">View</span> menu &gt; <span class="o-onscreen">Show</span> &gt; <span class="o-onscreen">Sample Data</span>. FileMaker Pro replaces the field names with sample data from the record currently being browsed.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1066921">Files created with different system formats for numbers, dates, and times can affect the appearance of data. For example, if you're in the United States and you open a database created in Australia, the database may have different system formats than those currently on your computer. See </a><span class="zh-hyper"><a href="fmp_basics.3.26.html#1028551">Opening files with different system formats</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1066925">Number and date format settings are applied after conditional formatting settings and are therefore preserved, even if data meets your conditional formatting criteria. However, sometimes number, date, and conditional format settings are combined. For example, if you set negative numbers to display in red in the Data Formatting area of the </a><span class="g-glosslink"><a href="glossary.html#1036424">Inspector</a></span> and also set conditional formatting on the same field to display negative numbers in blue with the fill color yellow, the result will be a red number in a yellow field. System formats have no affect on conditional formatting settings.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="rh-relatedhead">Related topics<a name="1066926"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="edit_layout.10.52.html#1039607" name="1066930">Adding tooltips on layouts</a></span></div>
+    </blockquote>
+    <div class="WebWorks_MiniTOC">
+      <div class="WebWorks_MiniTOCTitle">Topics in this section</div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="edit_layout.10.38.html#1066932">Specifying text formats for fields</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="edit_layout.10.39.html#1125911">Specifying formats for fields containing numbers</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="edit_layout.10.40.html#1067068">Specifying formats for date fields</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="edit_layout.10.41.html#1067147">Specifying formats for time fields</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="edit_layout.10.42.html#1067218">Specifying formats for timestamp fields</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="edit_layout.10.43.html#1136311">Specifying formats for container fields</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="edit_layout.10.44.html#1125720">Adding borders, fill, and baselines to fields</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="edit_layout.10.45.html#1104961">Adding scroll bars to fields </a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="edit_layout.10.46.html#1029124">Defining value lists</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="edit_layout.10.47.html#1118478">Setting up a field to display a pop-up menu, checkbox set, or other control</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="edit_layout.10.48.html#1124264">Setting up a field to display a keyboard</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="edit_layout.10.49.html#1029385">Setting up a field to display a drop-down calendar</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="edit_layout.10.50.html#1029409">Setting up a field to auto-complete during data entry</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="edit_layout.10.51.html#1029453">Setting up the display of repeating fields</a>
+      </div>
+    </div>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

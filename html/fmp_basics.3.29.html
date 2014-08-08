@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="You can open more than one window per file. This allows you to view the same layout in separate windows, or to simultaneously view different layouts in the same file. You can perform sort operations and find operations independently in the different window ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Opening multiple windows per file</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="fmp_basics.3.30.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="fmp_basics.3.28.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part1.html#1028665">Using FileMaker Pro</a> &gt; 
+      <a href="fmp_basics.3.1.html#1028665">FileMaker Pro basics</a> &gt; 
+      <a href="fmp_basics.3.21.html#1028665">Managing files</a> &gt; 
+      <b>Opening multiple windows per file</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Opening multiple windows per file</div>
+      <div class="b-body"><a name="1028666">You can open more than one window per file. This allows you to view the same layout in separate windows, or to simultaneously view different layouts in the same file. You can perform sort operations and find operations independently in the different windows.</a></div>
+      <div class="hs1-headsub1"><a name="1028667">To open an additional window:</a></div>
+      <div class="b-body"><a name="1028668">Choose </a><span class="o-onscreen">Window</span> menu &gt; <span class="o-onscreen">New Window</span>.</div>
+      <div class="b-body"><a name="1028670">The window displays the same layout, sort order, and </a><span class="g-glosslink"><a href="glossary.html#1027747">found set</a></span> as the previously active window. To view a different layout in the new window, choose a layout from the <span class="g-glosslink"><a href="glossary.html#1027861">Layout pop-up menu</a></span>. For information on sorting and finding records, see <span class="zh-hyper"><a href="find_sort.5.1.html#1048926">Finding, sorting, and replacing data</a></span>. </div>
+      <div class="b-body"><a name="1028676">The following table describes the behavior of some FileMaker Pro actions when there are multiple windows open.</a></div>
+      <div class="ta-tableanchor"><a name="1028740"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028679">Action</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028681">Behavior when there are multiple windows open</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028683">Editing data</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028685">Changes made to fields in Browse mode are reflected in other windows when you commit the record. For more information, see </a><span class="zh-hyper"><a href="add_view_data.4.24.html#1047900">Committing data in records</a></span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028690">Creating a new record</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028692">In other windows that display records from the same table, the new record may or may not initially appear:</a></div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1028694">In each window that is displaying a found set of records, the new record is added as an omitted record and is not immediately visible, even if the new record matches the layout’s find criteria.</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1028695">In each window that is displaying all records, the new record is added as a visible record. However, the active record in each window does not change to display the new record.</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028697">Deleting a record</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028699">The record is removed in other windows that display records from the same table, regardless of whether the windows are displaying a found set or not.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028701">Finding and sorting records</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028703">You can find and sort the same records differently in each window.</a></div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1028704">Note  </a></span>When you switch within a window between layouts that display records from the same table, FileMaker Pro maintains the same found set. (For a particular window, every layout that displays records from the same table shares the same found set.)</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028706">Closing and reopening files</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028708">When you close a file, FileMaker retains the state of the last-used window. When you reopen the file, it opens a single window in that retained state. The information retained for a window includes:</a></div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1028709">the current layout, window size, and position</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1028710">the current record</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1028711">the current found set and sort order</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1028712">the found sets for any other tables viewed with the window</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1028713">Note  </a></span>FileMaker Pro only retains the window state for locally opened files. It does not retain the window state when a shared file opened by a client is closed.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028715">Switching modes</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028717">You can display the same layout in different modes in different windows. For example, if one window is in </a><span class="g-glosslink"><a href="glossary.html#1027555">Browse mode</a></span>, another window can be in <span class="g-glosslink"><a href="glossary.html#1034324">Layout mode</a></span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028721">Switching between Form View, List View, and Table View</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028723">When multiple windows are displaying the same layout, only the window in which you switch views changes.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028725">Changing a layout design in Layout mode</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028727">Layout changes appear in other windows that display the same layout when you save the layout, switch to another layout, or switch to another mode.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028729">Scripts</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028731">Scripts act on the active window unless you design them to work in a particular window. There are script steps that you can use to open and manipulate windows. For more information, see </a><span class="zh-hyper"><a href="scripts_ref2.37.1.html#1027500">Windows script steps</a></span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028736">Working with web viewers</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028738">If a layout contains a web viewer, and the same layout is open in multiple windows, you can navigate each web viewer to a new location after its initial </a><span class="g-glosslink"><a href="glossary.html#1028239">web address</a></span> is loaded. However, if the web address is a field-based calculation, when the field value changes, the web address is re-evaluated and the new web address is loaded.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="rh-relatedhead">Related topics<a name="1028741"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmp_basics.3.30.html#1028751" name="1028745">Arranging windows in FileMaker Pro</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_layout.9.6.html#1176137" name="1028749">Saving and reverting layout changes</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

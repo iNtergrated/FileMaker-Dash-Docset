@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="keywords" content="preset data, predefined values" />
+    <meta name="description" content="If a field uses the same set of text, number, date, or time values for many or all records, you can create a value list that includes those values. Then, format a field to display the values as a pop-up menu, a drop-down list, or as a series of checkboxes ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Defining value lists</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="8200" class="applehelp-cs"></a>
+      <a name="8210" class="applehelp-cs"></a>
+      <a name="8211" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="edit_layout.10.47.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="edit_layout.10.45.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1029124">Designing and creating databases</a> &gt; 
+      <a href="edit_layout.10.1.html#1029124">Editing objects, layout parts, and the layout background</a> &gt; 
+      <a href="edit_layout.10.37.html#1029124">Formatting and setting up field objects in Layout mode</a> &gt; 
+      <b>Defining value lists</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Defining value lists</div>
+      <div class="b-body"><a name="1119580">If a field uses the same set of text, number, date, or time values for many or all records, you can create a </a><span class="g-glosslink"><a href="glossary.html#1028227">value list</a></span> that includes those values. Then, format a field to display the values as a pop-up menu, a drop-down list, or as a series of checkboxes or radio buttons.</div>
+      <div class="b-body"><a name="1119618">For example, define a value list that contains two values, New and Continuing. Then, define a Customer Type field to display the values in that list as radio buttons.</a></div>
+      <div class="gr-graphicanchor"><a name="1119601"><img class="Default" src="../images/edit_layout.10.46.1.png" width="552" height="85" style="float: none; left: 0.0; top: 0.0;" alt="Field displaying radio buttons" /></a></div>
+      <div class="b-body"><a name="1119529">Value lists help make data entry faster and more accurate. You can display the values in a particular order; for example, by month or region.</a></div>
+      <div class="b-body"><a name="1118599">Displaying data in a value list is a two-step process:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1118600">Create a value list. You can:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1118194">Create a custom value list.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1118204">Use values from a field in the current file or another file.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1118608">Use values from an existing value list in another file.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1118612">In </a><span class="g-glosslink"><a href="glossary.html#1034324">Layout mode</a></span>, use the <span class="g-glosslink"><a href="glossary.html#1036424">Inspector</a></span> to format a field to display the values in a pop-up menu, drop-down list, checkboxes, or radio buttons.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1119717">Defining a custom value list</a></div>
+      <div class="b-body"><a name="1119718">This method is the easiest way to create a value list, because you type the values to be displayed.</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1055933">Choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Manage</span> &gt;<span class="o-onscreen"> Value Lists</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1055935">In Layout mode, you can also click </a><span class="o-onscreen">Manage</span> in the <span class="g-glosslink"><a href="glossary.html#1028139">status toolbar</a></span>, then choose <span class="o-onscreen">Value Lists</span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1055936">In the Manage Value Lists dialog box, click </a><span class="o-onscreen">New</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1055937">In the Edit Value List dialog box, for </a><span class="o-onscreen">Value List Name</span>, type a name.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1055938">Select </a><span class="o-onscreen">Use custom values</span>, then type each value on a separate line, in the order you want them to appear.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1055939">Press Enter (Windows) or Return (OS X) to separate each value on its own line.</a></div>
+      <div class="nt1-notetip1">
+        <span class="zan-autonum">Tip  </span><a name="1055940">To create a separator line between items in a pop-up menu or drop-down list, or produce spaces between radio buttons or checkboxes, type a hyphen on a separate line where you want each separator line or space to appear.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1055941">Click </a><span class="o-onscreen">OK</span> twice to close the Edit Value List dialog box and then the Manage Value Lists dialog box.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1055942">Format a field to display values from the value list. See </a><span class="zh-hyper"><a href="edit_layout.10.47.html#1118478">Setting up a field to display a pop-up menu, checkbox set, or other control</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1029148">Defining a value list using a field in the current or another file</a></div>
+      <div class="b-body"><a name="1118318">A value list created using this method is dynamically updated whenever the values change in the field that the list is based on. Also, if the field is in a </a><span class="g-glosslink"><a href="glossary.html#1028042">related table</a></span>, you can show all the values in the field, or only the related values.</div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1029149">Choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Manage</span> &gt;<span class="o-onscreen"> Value Lists</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1044408">In Layout mode, you can also click </a><span class="o-onscreen">Manage</span> in the <span class="g-glosslink"><a href="glossary.html#1028139">status toolbar</a></span>, then choose <span class="o-onscreen">Value Lists</span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029150">In the Manage Value Lists dialog box, click </a><span class="o-onscreen">New</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029151">In the Edit Value List dialog box, for </a><span class="o-onscreen">Value List Name</span>, type a name.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1055539">Select </a><span class="o-onscreen">Use values from field</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029168">In the Specify Fields for Value List dialog box, for </a><span class="o-onscreen">Use values from first field</span>, select the table that contains the field you want, and then select the field in the list.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029169">If the table you want is in another file and does not appear in the list, choose </a><span class="o-onscreen">Manage Database</span> from the list, and add the table to the relationships graph. See <span class="zh-hyper"><a href="relational.11.12.html#1028445">Creating relationships</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029173">Choose whether to display all the values in the field or only related values:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029174">To include all the field values in the value list, choose </a><span class="o-onscreen">Include all values</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029175">To include only related values in the value list, choose </a><span class="o-onscreen">Include only related values starting from</span>, and choose a related table from the list. The value list will only display field values from records that satisfy the relationship criteria specified between the related<span class="o-onscreen"> </span>table and the table containing the field selected in the <span class="o-onscreen">Use values from first field</span> list.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029178">For an example of a value list that displays only related values, see </a><span class="zh-hyper"><a href="non_toc.46.23.html#1029041">Example of a value list that includes only related field values</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1055546">To also display associated values from a second field, select </a><span class="o-onscreen">Also display values from second field</span>, select the table that contains the field you want, and then select the field in the list.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029182">Select this option to display the values from a corresponding field after the values in your value list. For example, to help with data entry, you could display part names next to part numbers. If </a><span class="o-onscreen">Also display values from second field</span> is dimmed, first select a field in the left field list, as described in step 5.</div>
+      <div class="n1-note1">
+        <span class="zan-autonum">Note  </span><a name="1029186">During data entry, a value list that displays values from two fields still only enters data from the first field specified in step 5. The second field in the value list is for display only, and its value is not entered into any field. However, you could use a lookup to automatically enter the data from the second field. See </a><span class="zh-hyper"><a href="relational.11.23.html#1033096">About lookups</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">8.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029193">If you selected a second field to display values:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029194">Choose which field to use for determining the value list sort order.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029195">Choose </a><span class="o-onscreen">Show values only from second field </span>to display values from the second field, but store the data from the first field.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029196">If you choose not to select </a><span class="o-onscreen">Show values only from second field</span>, the value list will display both fields, for example, a pop-up menu displays both fields. </div>
+      <div class="b1-body1"><a name="1029197">Summary of </a><span class="o-onscreen">Show values only from second field</span> behavior:</div>
+      <div class="ta-tableanchor"><a name="1029211"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1029200">Field/control</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1029202">Behavior</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029204">Radio Button set, Checkbox set, Pop-up menu</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029206">Only the value from the second field is displayed. When you make your selection, the corresponding value from the first field is stored in the database.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029208">Drop-down list</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029210">The field displays the value from the first field. When you click in the field, the drop-down list displays values from the second field. After a selection, the list again displays the value from the first field when the field is exited.</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="n1-note1">
+        <span class="zan-autonum">Note  </span><a name="1029212">When you make your selection, the corresponding value from the first field is stored in the database.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">9.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029213">If you want to display the values that are in a text field in a specific language’s dictionary sort order, select </a><span class="o-onscreen">Re-sort values based on</span> and choose a language. Otherwise, the values are sorted in the index order of the field’s default language. This setting is ignored for other types of fields.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029217">See </a><span class="zh-hyper"><a href="non_toc.46.1.html#1039132">Choosing a language for indexing or sorting</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">10.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029221">Click </a><span class="o-onscreen">OK</span> to close the Specify Fields for Value List dialog box.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">11.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1055560">Click </a><span class="o-onscreen">OK</span> twice to close the Edit Value List dialog box and then the Manage Value Lists dialog box.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">12.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029243">Format a field to display values from the value list. See </a><span class="zh-hyper"><a href="edit_layout.10.47.html#1118478">Setting up a field to display a pop-up menu, checkbox set, or other control</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1055491">Defining a value list using a value list in another file</a></div>
+      <div class="b-body"><a name="1118350">If the value list you want is already defined in another file, you can use that list instead of re-creating it.</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1055492">Choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Manage</span> &gt;<span class="o-onscreen"> Value Lists</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1055494">In Layout mode, you can also click </a><span class="o-onscreen">Manage</span> in the <span class="g-glosslink"><a href="glossary.html#1028139">status toolbar</a></span>, then choose <span class="o-onscreen">Value Lists</span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1055495">In the Manage Value Lists dialog box, click </a><span class="o-onscreen">New</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1055496">In the Edit Value List dialog box, for </a><span class="o-onscreen">Value List Name</span>, type a name.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1055497">Select </a><span class="o-onscreen">Use value list from another file</span> and, from the list, choose or create a file path that points to the file containing the value list you want to use.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1055501">For details on file paths, see </a><span class="zh-hyper"><a href="create_db.8.42.html#1087742">Creating file paths</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1055502">From the </a><span class="o-onscreen">Value list</span> list, select the value list from the other file.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1055503">Some value lists may be dimmed and cannot be selected. These value lists are defined to show only related values from a field and cannot be referenced directly from another file. Instead, use the </a><span class="o-onscreen">Use values from field</span> option. (You will also need to add the table from the other file to the relationships graph in the current file.) To create this type of value list, follow the instructions above for defining a value list based on values in a field.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1055504">Click </a><span class="o-onscreen">OK</span> twice to close the Edit Value List dialog box and then the Manage Value Lists dialog box.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1055505">Format a field to display values from the value list. See </a><span class="zh-hyper"><a href="edit_layout.10.47.html#1118478">Setting up a field to display a pop-up menu, checkbox set, or other control</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1029248">To change, duplicate, or delete a value list:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1029249">Choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Manage</span> &gt;<span class="o-onscreen"> Value Lists</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1044430">In Layout mode, you can also click </a><span class="o-onscreen">Manage</span> in the status toolbar, then choose <span class="o-onscreen">Value Lists</span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029250">In the Manage Value Lists dialog box, do one of the following: </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ta-tableanchor"><a name="1029269"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1029253">To </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1029255">Do this</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029257">Change the values in a value list or how the values in a dynamic value list are generated</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029259">In the list of value list names, select the value list, then click </a><span class="o-onscreen">Edit</span>. In the Edit Value List dialog box, make changes. Then, click <span class="o-onscreen">OK</span>.</div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1029260">Note  </a></span>Redefining a value list item after data has been entered might cause unexpected results. For example, if you change a value list item from Accessory to Accessories, the field will appear to be empty on layouts where the field is formatted as a checkbox or radio button. Also, you will not find the existing records if you search for Accessories. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029262">Duplicate a value list</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029264">In the list of names, select the value list, then click </a><span class="o-onscreen">Duplicate</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029266">Delete a value list</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029268">In the list of names, select the value list, then click </a><span class="o-onscreen">Delete</span>. In the confirmation dialog box, click <span class="o-onscreen">Delete</span> again.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029270">In the Manage Value Lists dialog box, click </a><span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1029271">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029272">If you want a field to always use the values in the value list, no matter what layout the fields object is on, specify a validation option in the field’s definition. See </a><span class="zh-hyper"><a href="create_db.8.24.html#1029602">Defining field validation</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029276">If the value list you’re defining contains dates, make sure the values contain four-digit years such as</a><span class="c-code"> 6/29/2014 </span>instead of <span class="c-code">6/29/14</span>. During data entry, a date field formatted to display a value list containing two-digit year dates will convert them into four-digit years as described in <span class="zh-hyper"><a href="add_view_data.4.22.html#1028976">Conversion of dates with two-digit years</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029280">Fields from ODBC data sources can be used in value lists, but character large objects (CLOBs) such as long text strings are not supported.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1039147">For value lists with ODBC data, the </a><span class="o-onscreen">No access</span> privilege and <span class="o-onscreen">Limited</span> custom privilege are not supported. To prohibit a user from seeing ODBC data in a value list, you must enforce row-level security in the external SQL database. See <span class="zh-hyper"><a href="passwords.14.22.html#1029001">Editing value list privileges</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

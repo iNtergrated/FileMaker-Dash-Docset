@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Use the Developer Utilities to encrypt your database files." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Encrypting a file (FileMaker Pro Advanced)</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="EARNewPassword" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="fmpa_tools.24.7.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="fmpa_tools.24.5.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part4.html#1046351">Using FileMaker Pro Advanced</a> &gt; 
+      <a href="fmpa_tools.24.1.html#1046351">Using FileMaker Pro Advanced tools</a> &gt; 
+      <a href="fmpa_tools.24.5.html#1046351">Encrypting database files (FileMaker Pro Advanced)</a> &gt; 
+      <b>Encrypting a file (FileMaker Pro Advanced)</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Encrypting a file (FileMaker Pro Advanced)</div>
+      <div class="b-body"><a name="1046353">Use the Developer Utilities to </a><span class="g-glosslink"><a href="glossary.html#1047232">encrypt</a></span> your database files.</div>
+      <div class="b-body"><a name="1046355">When you encrypt a file, you create an </a><span class="g-glosslink"><a href="glossary.html#1047186">encryption password</a></span> that users must enter to access the file. To change a file’s encryption password, you must re-encrypt the file.</div>
+      <div class="nw-notewarning">
+        <span class="zan-autonum">Warning  </span><a name="1044779">Do not forget the encryption password that you assign to an encrypted database file. If necessary, write it down and store it in a secure place. If you lose or forget the encryption password, you will not be able to access or change the file.</a></div>
+      <div class="b-body"><a name="1044270">If you have a multi-file </a><span class="g-glosslink"><a href="glossary.html#1028114">solution</a></span>, encrypt all database files with the same encryption password and <span class="g-glosslink"><a href="glossary.html#1047549">shared ID</a></span>. When one encrypted file attempts to access another encrypted file, FileMaker Pro displays the Database Encryption Password dialog box if the files’ encryption passwords or shared IDs do not match.</div>
+      <div class="nt-notetip">
+        <span class="zan-autonum">Tip  </span><a name="1046416">Encrypt multiple files at the same time so they have the same encryption password and shared ID.</a></div>
+      <div class="hs1-headsub1"><a name="1044271">To encrypt a file:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1044272">Close all the database files that you are going to encrypt.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044273">Choose </a><span class="o-onscreen">Tools</span> menu &gt; <span class="o-onscreen">Developer Utilities</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044972">If you have used Developer Utilities on the same database solution before and saved your settings, click </a><span class="o-onscreen">Load Settings</span>, locate and select the appropriate .sav file, the click <span class="o-onscreen">Load</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044973">Click </a><span class="o-onscreen">Add</span>, select the file or files that you want to encrypt, then click <span class="o-onscreen">Add</span> again.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1045175">Encrypt files that are in a multi-file solution all at the same time.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044976">For </a><span class="o-onscreen">Project Folder</span>, click <span class="o-onscreen">Specify</span> to choose a location for the encrypted solution.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1046958">To rename the encrypted copy of the file, for </a><span class="o-onscreen">Rename file</span>, type a filename and click <span class="o-onscreen">Change</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1046973">To be able to quickly repeat the process, click </a><span class="o-onscreen">Save Settings</span>, and choose a folder and location for your settings file. See <span class="zh-hyper"><a href="fmpa_tools.24.11.html#1027994">Saving solution settings (FileMaker Pro Advanced)</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">8.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044280">For </a><span class="o-onscreen">Solution Options</span>, click <span class="o-onscreen">Specify</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">9.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044281">In the Specify Solution Options dialog box, select </a><span class="o-onscreen">Enable Database Encryption (or Re-encrypt files)</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">10.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044282">For </a><span class="o-onscreen">Shared ID</span>, type any combination of uppercase or lowercase characters, numbers, and symbols between 1 and 32 characters.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ni1-noteimportant1">
+        <span class="zan-autonum">Important  </span><a name="1044283">The shared ID is case sensitive.</a></div>
+      <div class="b1-body1"><a name="1044985">Encrypted files in multi-file solutions are linked by the shared ID.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">11.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044998">For </a><span class="o-onscreen">FileMaker Account</span>, click <span class="o-onscreen">Specify</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">12.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044999">Enter the account name and password for an account with Full Access privileges, then click </a><span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">13.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044284">For </a><span class="o-onscreen">Encryption Password</span>, click <span class="o-onscreen">Specify</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">14.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044285">Type an encryption password and a password hint for the files, then click </a><span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ni1-noteimportant1">
+        <span class="zan-autonum">Important  </span><a name="1045039">The encryption password is case sensitive.</a></div>
+      <div class="b1-body1"><a name="1045210">You can use any combination of uppercase or lowercase characters, numbers, and symbols in the encryption password.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">15.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1045212">By default, FileMaker Pro Advanced uses secure storage to encrypt </a><span class="g-glosslink"><a href="glossary.html#1041246">container data</a></span> that is stored externally. If you do not want to encrypt container data when you encrypt your database files, select <span class="o-onscreen">Keep Open Storage</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="n1-note1">
+        <span class="zan-autonum">Note  </span><a name="1045168">You can change the secure or open storage of container data that is stored externally after you encrypt database files. For more information about storage options for container data, see </a><span class="zh-hyper"><a href="create_db.8.30.html#1058057">Setting up container fields to store data externally</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">16.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044296">Click </a><span class="o-onscreen">OK</span>, then click <span class="o-onscreen">Create</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1044312">To change the password for an encrypted file:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1044313">Close all the encrypted files whose password you are going to change.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1044314">Follow steps 2-15 in “To encrypt a file” above.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1046492">For the </a><span class="o-onscreen">Encryption Password</span> text box at the bottom of the Specify Solution Options dialog box, enter the current encryption password for the database file or files.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="n1-note1">
+        <span class="zan-autonum">Note  </span><a name="1046498">The </a><span class="o-onscreen">Encryption Password</span> text box is visible only if one or more of the selected files is encrypted.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1046493">Click </a><span class="o-onscreen">OK</span>, then click <span class="o-onscreen">Create</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1047045">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1047072">If FileMaker Pro Advanced fails to create an encrypted file, review the log file in your project folder for error messages.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1047059">To add a new database file to an encrypted multi-file solution, encrypt the new file with the same encryption password and </a><span class="g-glosslink"><a href="glossary.html#1047549">shared ID</a></span> as the database files in the solution.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="rh-relatedhead">Related topics<a name="1045080"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="passwords.14.14.html#1058865" name="1045094">Tips for creating account names and passwords</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Makes an existing record or find request available for editing if the current user has record-editing privileges." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Open Record/Request</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="scripts_ref1.36.69.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="scripts_ref1.36.67.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1029942">Reference</a> &gt; 
+      <a href="help_script_cat.34.1.html#1029942">Script steps reference</a> &gt; 
+      <a href="scripts_ref1.36.62.html#1029942">Records script steps</a> &gt; 
+      <b>Open Record/Request</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="ssh-scripthead">Open Record/Request</div>
+      <div class="sspuh-scriptpurposehead">Purpose<a name="1040441"> </a></div>
+      <div class="b-body"><a name="1040442">Makes an existing record or </a><span class="g-glosslink"><a href="glossary.html#1027732">find request</a></span> available for editing if the current user has record-editing privileges.</div>
+      <div class="ssfh-scriptformathead">Format<a name="1040443"> </a></div>
+      <div class="ssf-scriptformat"><a name="1029944">Open Record/Request</a></div>
+      <div class="ssoh-scriptoptshead">Options<a name="1029945"> </a></div>
+      <div class="b-body"><a name="1029946">None.</a></div>
+      <div class="sscoh-scriptcompathead">Compatibility<a name="1063614"> </a></div>
+      <div class="ta-tableanchor"><a name="1063640"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh1-scriptstepcompthead1">Where the script step runs<a name="1077003"> </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh2-scriptstepcompthead2">Supported<a name="1077005"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco1-scriptstepcompt1">FileMaker Pro<a name="1077007"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077009"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco2-scriptstepcompt2">FileMaker Server scheduled script<a name="1077011"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077013"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco3-scriptstepcompt3">FileMaker Go<a name="1077015"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077017"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco4-scriptstepcompt4">Custom Web Publishing<a name="1077019"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077021"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco5-scriptstepcompt5">FileMaker WebDirect<a name="1077023"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077025"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco6-scriptstepcompt6">Runtime solution<a name="1077027"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077029"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="orh-originhead">Originated in<a name="1049923"> </a></div>
+      <div class="or-origin"><a name="1049924">FileMaker Pro 6.0 or earlier</a></div>
+      <div class="ssdh-scriptdeschead">Description<a name="1029949"> </a></div>
+      <div class="b-body"><a name="1029951">When performed on a record, this script step verifies that the user has sufficient </a><span class="g-glosslink"><a href="glossary.html#1027504">access privileges</a></span> to edit the record. If the user has the proper privilege set, FileMaker Pro attempts to prevent others from simultaneously editing or deleting the record. Once locked, the record is considered “opened” and may be edited.</div>
+      <div class="b-body"><a name="1029953">If an error occurs (for example, if the current user has insufficient access privileges, the record is currently locked by another user, or the record is open in another window), FileMaker Pro generates an error message, which may be captured using the </a><span class="zh-hyper"><a href="scripts_ref1.36.15.html#1028105">Set Error Capture script step</a></span> and the <span class="zh-hyper"><a href="func_ref2.32.46.html#1029752">Get(LastError) function</a></span>. (Opening a find request will not return an error, because requests can’t be locked by other users.)</div>
+      <div class="ni-noteimportant">
+        <span class="zan-autonum">Important  </span><a name="1029960">Because any attempt to modify a field or a record will also attempt to open the record for editing, in most cases you will not need to use the Open Record/Request script step to open a record explicitly. But when using the </a><span class="zh-hyper"><a href="scripts_ref1.36.21.html#1028306">Go to Record/Request/Page script step</a></span> to enter a field or record, use the Open Record/Request script step first to obtain a write lock.</div>
+      <div class="sseh1-scriptexamhead1">Example 1<a name="1029967"> </a></div>
+      <div class="b-body"><a name="1090781">Prints the current invoice if the user has the privileges to edit it.</a></div>
+      <div class="co-code"><a name="1090847">Go to Layout ["Print Invoices"]<br />Open Record/Request<br />If [Get ( LastError ) = 0]<br />	Print [ ]<br />End If<br />Go to Layout [original layout]</a></div>
+      <div class="sseh2-scriptexamhead2">Example 2<a name="1090848"> </a></div>
+      <div class="b-body"><a name="1090854">Checks if the current user account has the privilege to edit records. If not, asks if the user wants to log in to a different account.</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1090896">This script does not run properly if </a><span class="o-onscreen">Run script with full access privileges</span> is selected because this option allows any account to open the record.</div>
+      <div class="co-code"><a name="1090897">Set Error Capture [On]<br />Go to Layout ["Invoice Details"]<br />Open Record/Request<br />If [Get ( LastError ) = 200]<br />	Show Custom Dialog ["You cannot edit this record. Do you want to re-login?"]<br />	If [Get ( LastMessageChoice ) = 1]<br />		Re-Login [ ]<br />	Else<br />		Go to Layout [original layout]<br />	End If<br />End If</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1029969"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_alpha.html#66468" name="1029973">Script steps reference (alphabetical list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_cat.34.2.html#947337" name="1029977">Script steps reference (category list)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

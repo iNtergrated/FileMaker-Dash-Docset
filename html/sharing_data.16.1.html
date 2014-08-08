@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="keywords" content="FileMaker Go" />
+    <meta name="description" content="If your computer is connected to a network, you and other Windows and OS X FileMaker Pro and FileMaker Go users can use the same database file simultaneously." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Sharing databases on a network</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="sharing_data.16.2.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="part3.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1029496">Sharing data</a> &gt; 
+      <b>Sharing databases on a network</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h2-head2">Sharing databases on a network</div>
+      <div class="b-body"><a name="1029497">If your computer is connected to a network, you and other Windows and OS X FileMaker Pro and FileMaker Go users can use the same database file simultaneously. </a></div>
+      <div class="b-body"><a name="1029499">FileMaker Pro Network Sharing supports the </a><span class="g-glosslink"><a href="glossary.html#1028096">sharing</a></span> of files with up to 5 concurrent users (not including the host). FileMaker Go clients are included in the limit of 5 users. To support more users and web publishing technologies such as XML and <span class="g-glosslink"><a href="glossary.html#1049656">FileMaker WebDirect</a></span>, use FileMaker Server.</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029502">The information in this topic pertains to sharing files on a </a><span class="g-glosslink"><a href="glossary.html#1027848">local area network</a></span>. To host databases over a network, see <span class="zh-hyper"><a href="sharing_data.16.3.html#1029598">Opening files as the host</a></span>. For information about publishing files on the web or an <span class="g-glosslink"><a href="glossary.html#1027824">intranet</a></span>, see <span class="zh-hyper"><a href="publish_web.18.1.html#1028528">Publishing databases on the web</a></span>. For information about sharing files via ODBC or JDBC, see <span class="zh-hyper"><a href="odbc.19.1.html#1027500">Using ODBC and JDBC with FileMaker Pro</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029510">OS X: If you are unable to share files on a local network, verify on the host computer that either the OS X Sharing firewall has been turned off, or that you have added an open network port configuration for port 5003 to the system sharing preferences. For more information about the OS X Sharing firewall and adding a network port configuration, see OS X Help Center.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ni-noteimportant">
+        <span class="zan-autonum">Important  </span><a name="1029511">Sharing (or hosting) a FileMaker Pro database is independent of any operating system file sharing. Access control you set up in Windows or OS X is not associated with access privileges you set up in FileMaker Pro, and vice versa. </a></div>
+      <div class="b-body"><a name="1029513">If you are the first person to open a shared file, you are the </a><span class="g-glosslink"><a href="glossary.html#1027797">host</a></span>. Users who open a shared file after you are <span class="g-glosslink"><a href="glossary.html#1027578">clients</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1029515">Notes</a></div>
+      <div class="b-body"><a name="1029516">Once a shared file is open, the host and clients have access to the same information, and all changes to the file appear in each user's window. </a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029517">Modifications to the data made by any user are saved in the shared file. Any changes to layouts and scripts are also saved in the shared file.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029518">Specified sort orders, find requests, import and export field orders, and print setups are specific to each user.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1029519">Although it's possible for multiple users to make changes in the same shared file at the same time, there are limits to the types of simultaneous changes that are permitted. The following table describes the types of changes you can and cannot make to shared files.</a></div>
+      <div class="ta-tableanchor"><a name="1029558"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1029522">Database change</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1029524">Limitation</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029526">Changing data in fields and records</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029528">Two people can’t edit the same record at the same time.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029530">Changing layouts and layout elements</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029532">Two people can’t modify the same layout at the same time.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029534">Changing value lists</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029536">Two people can’t modify or define value lists at the same time.</a></div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1029537">Note</a></span> One person can edit a value list while another person is using it in Browse or Find mode.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029539">Changing scripts</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029541">Two people can’t modify a specific script at the same time.</a></div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1029542">Note</a></span> One person can edit a script while another person is using it.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029544">Changing tables, fields, relationships (database </a><span class="g-glosslink"><a href="glossary.html#1028069">schema</a></span>)</div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029547">Two people can’t modify any of these elements at one time.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029549">Changing data source references</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029551">Two people can’t modify or define data sources at the same time.</a></div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1029552">Note</a></span> One person can edit a data source while another person is using it.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029554">Changing accounts and privileges</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029556">Two people can’t modify or define accounts and privileges at the same time.</a></div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1029557">Note</a></span> One person can create or modify an account or privilege while another person is using it.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><span class="g-glosslink"><a href="glossary.html#1027504" name="1029560">Access privileges</a></span> may also restrict the ability of users to change certain elements in a file. For more information, see <span class="zh-hyper"><a href="passwords.14.1.html#1027502">Protecting databases</a></span></div>
+    </blockquote>
+    <div class="WebWorks_MiniTOC">
+      <div class="WebWorks_MiniTOCTitle">Topics in this section</div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="sharing_data.16.2.html#1029565">Sharing and hosting files</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="sharing_data.16.5.html#1029680">Working with shared files as a client</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="sharing_data.16.9.html#1031222">Sharing files with FileMaker Go clients</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="sharing_data.16.10.html#1059150">Uploading files to FileMaker Server</a>
+      </div>
+    </div>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

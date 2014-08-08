@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="After you create a menu, you can create menu items. You can also create or edit menu items that are copies of the Standard FileMaker menus. Menu items can be commands, submenus or separators. You can create a menu item that is based on a standard FileMaker ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Creating and editing custom menu items (FileMaker Pro Advanced)</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="8249" class="applehelp-cs"></a>
+      <a name="8250" class="applehelp-cs"></a>
+      <a name="8248" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="fmpa_custom.23.10.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="fmpa_custom.23.8.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part4.html#1028713">Using FileMaker Pro Advanced</a> &gt; 
+      <a href="fmpa_custom.23.1.html#1028713">Customizing files with FileMaker Pro Advanced</a> &gt; 
+      <a href="fmpa_custom.23.8.html#1028713">Defining custom menus (FileMaker Pro Advanced)</a> &gt; 
+      <b>Creating and editing custom menu items (FileMaker Pro Advanced)</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Creating and editing custom menu items (FileMaker Pro Advanced)</div>
+      <div class="b-body"><a name="1028715">After you create a menu, you can create </a><span class="g-glosslink"><a href="glossary.html#1027917">menu items</a></span>. You can also create or edit menu items that are copies of the Standard FileMaker menus. Menu items can be commands, submenus or <span class="g-glosslink"><a href="glossary.html#1028090">separators</a></span>. You can create a menu item that is based on a standard FileMaker command or you can create a menu item that initially does not have an assigned command.</div>
+      <div class="b-body"><a name="1028717">When you base a menu item on a FileMaker command, that menu item inherits all the properties of that command. You can override properties (title, </a><span class="g-glosslink"><a href="glossary.html#1028099">shortcut</a></span>, or action) to customize the menu item.</div>
+      <div class="b-body"><a name="1028719">When you create a menu item that does not have an assigned command, an &lt;unknown&gt; menu item appears in the Menu Items list in the Edit Custom Menu dialog box. You can then customize the menu item properties.</a></div>
+      <div class="hs1-headsub1"><a name="1028720">To add or edit menu items in a custom menu:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1039928">Choose or create a custom menu and set options such as menu name, menu title, and mode. See </a><span class="zh-hyper"><a href="fmpa_custom.23.8.html#1028579">Defining custom menus (FileMaker Pro Advanced)</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028721">Choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Manage</span> &gt; <span class="o-onscreen">Custom Menus </span>&gt; <span class="o-onscreen">Custom Menus </span>tab.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1039949">In the Manage Custom Menus dialog box, select the menu from the list and click </a><span class="o-onscreen">Edit</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1039953">In the Edit Custom Menus dialog box, specify which menu items are included in the menu:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ta-tableanchor"><a name="1028769"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028730">To</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028732">Do this</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028734">Add a command</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1039998">Click </a><span class="o-onscreen">Create</span> to add a new (&lt;unknown&gt;) menu item to the list. For <span class="o-onscreen">Menu Item Type</span>, choose <span class="o-onscreen">Command</span>, then select <span class="o-onscreen">Based on existing command</span>. In the Specify FileMaker Command dialog box, choose a command, then click <span class="o-onscreen">Select</span> or <span class="o-onscreen">OK</span>.</div>
+            <div class="td-tabledata"><a name="1040893">A command determines the action or behavior of a menu item.</a></div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1040042">Tip  </a></span>You can Shift-click <span class="o-onscreen">Create</span> to create an &lt;unknown&gt; command menu item.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028746">Add a submenu</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028748">Click </a><span class="o-onscreen">Create</span> to add an &lt;unknown&gt; menu item to the list. For <span class="o-onscreen">Menu Item Type</span>, choose <span class="o-onscreen">Submenu</span>, then click <span class="o-onscreen">Specify</span>. In the Select Menu dialog box, choose a menu, then click <span class="o-onscreen">Select</span>.</div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1040931">Note  </a></span>You can add up to 100 menus to the menu bar. If you add a menu that includes itself as a submenu, you may quickly reach the limit.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028752">Add a separator line</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028754">Click </a><span class="o-onscreen">Create</span> to add an &lt;unknown&gt; menu item to the list. For <span class="o-onscreen">Menu Item Type</span>, choose <span class="o-onscreen">Separator</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028756">Duplicate a menu item</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028761">Select a menu item from the list, then click </a><span class="o-onscreen">Duplicate</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028763">Delete a menu item</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028768">Select a menu item from the list, then click </a><span class="o-onscreen">Delete</span>.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="b1-body1"><a name="1028775">Drag an arrow <img class="Default" src="../images/order-arrow2.png" width="8" height="12" style="float: none; left: 0.0; top: 0.0;" alt="Open/Close Data Viewer button" /> up or down to change the order of the menu items in the list.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1040267">Select each menu item from the </a><span class="o-onscreen">Menu Items</span> list and specify its properties, then click <span class="o-onscreen">OK</span> to close the Edit Custom Menu dialog box.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ta-tableanchor"><a name="1028812"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028778">To</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028780">Do this</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028782">Change a command for a menu item</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1039329">For </a><span class="o-onscreen">Based on existing command, </span>click <span class="o-onscreen">Specify</span>, choose a different command, then click <span class="o-onscreen">Select</span> or <span class="o-onscreen">OK</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1039289">Change a menu item from one type to another</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1039291">For </a><span class="o-onscreen">Menu Item Type</span>, choose a different type. (For example, you can change a separator to a command.) </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028791">Change the name of a menu item</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028793">Select </a><span class="o-onscreen">Item Name </span>and enter a new name.</div>
+            <div class="td-tabledata"><a name="1043899">Windows: To specify an access key, type an ampersand (&amp;) before the character you want to use as the access key. For example, type </a><span class="c-code">&amp;Open</span> to display the <span class="o-onscreen">Open</span> menu item with the letter “O” as the access key.</div>
+            <div class="td-tabledata"><a name="1028794">To base the menu title on the result of a calculation, click </a><span class="o-onscreen">Specify</span>, then build a formula in the Specify Calculation dialog box. </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028797">Define a keyboard shortcut for a menu item</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028799">Select</a><span class="o-onscreen"> Keyboard Shortcut</span>. In the Specify Shortcut dialog box, type a key combination, then click <span class="o-onscreen">OK</span>. Keyboard shortcuts appear next to menu items in the <span class="o-onscreen">Menu Items</span> list.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1040217">Change a keyboard shortcut for a menu item</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1040219">For </a><span class="o-onscreen">Keyboard Shortcut</span>, click <span class="o-onscreen">Specify</span>, type a key combination, then click <span class="o-onscreen">OK</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028801">Perform a script or script step when a user selects a menu item</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028803">Select </a><span class="o-onscreen">Action</span>. In the Specify Script Step dialog box, select a step and specify options as necessary, then click <span class="o-onscreen">OK</span>. For more information about scripts and script steps, see <span class="zh-hyper"><a href="create_script.13.1.html#1034729">Creating scripts to automate tasks</a></span>. </div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1028807">Tip  </a></span>To affect the behavior of a currently running script (for example, to halt, exit, resume, or pause the script) use the Perform Script script step.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1040234">Change a script or script step</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1040236">For </a><span class="o-onscreen">Action</span>, click <span class="o-onscreen">Specify</span>, modify the script definition, then click <span class="o-onscreen">OK</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047147">Install menu items based on conditions you specify</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047149">For </a><span class="o-onscreen">Install when</span>, specify a calculation that results in a Boolean value.</div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1047150">If the calculation evaluates true or non-zero, the menu item is installed. </a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="b1-body1"><a name="1047356">For example, for the menu item to appear when the file is opened in Windows, enter:<br /></a><span class="c-code">If( Abs(Get( SystemPlatform )) = 2; 1; 0 )</span></div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1047151">If the calculation evaluates false or zero, the menu item is not installed. </a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="b1-body1"><a name="1047384">For example, for the menu item to appear when the file is opened in OS X, enter</a><span class="c-code">:<br />If( Abs(Get( SystemPlatform )) = 1; 1; 0 )</span> </div>
+            <div class="td-tabledata"><a name="1047152">To ensure a menu item is always installed, for </a><span class="o-onscreen">Install when</span>, enter <span class="c-code">1</span>. For example, for the menu item to appear when the file is opened in Windows or OS X, enter <span class="c-code">1</span>. </div>
+          </td>
+        </tr>
+      </table>
+      <div class="hs1-headsub1"><a name="1028813">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028814">To override a command’s behavior (item name, keyboard shortcut, or action), you must select the </a><span class="o-onscreen">Based on existing command</span> checkbox and choose a different command. If the checkbox is not selected, the original command behavior is retained.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028816">Buttons on toolbars are linked to menu items. If you customize a menu item that has a toolbar button, you also customize the button, its behavior, and its tooltip. For example, the New Record button is linked to the New Record menu item. If you customize the New Record menu item by renaming it to New Contact and specifying a script be performed, the toolbar button will perform the custom New Contact script and the tooltip for the button will display </a><span class="o-onscreen">New Contact</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028817">Shortcut menus display when a user right-clicks (Windows) or Control-clicks (OS X) an object or an area. If you customize a menu item that has a shortcut menu item, you also customize the behavior performed by the shortcut menu item.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1051248">FileMaker Pro Advanced updates menus and menu items when a menu set change is requested either through switching modes, windows, or layouts, or by performing a script that accomplishes a similar result. Menu and menu item titles based on field contents or functions only update when menu sets change.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1051258">If you enter the same keyboard shortcut or </a><span class="g-glosslink"><a href="glossary.html#1037441">access key</a></span> (Windows) for two different menu items, FileMaker Pro locates and issues the first instance of the command as follows:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1051259">Keyboard shortcuts: right to left and top to bottom</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1051250">Access keys (Windows): left to right and top to bottom</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1051251">If you want an ampersand (&amp;) to appear as part of a menu or menu item name, you must type the ampersand twice. For example, if you want a menu name to appear as </a><span class="o-onscreen">Records &amp; Reports</span>, enter the title as <span class="c-code">Records &amp;&amp; Reports</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1028823">Privilege set considerations</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1039401">You can modify </a><span class="g-glosslink"><a href="glossary.html#1028013">privilege sets</a></span> in the Edit Privilege Set dialog box to control which menu items are enabled. See <span class="zh-hyper"><a href="passwords.14.15.html#1028334">Creating and managing privilege sets</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1028827">If you set </a><span class="o-onscreen">Available menu commands</span> to <span class="o-onscreen">Editing only</span> or <span class="o-onscreen">Minimum</span>, menu items based on FileMaker commands are enabled or disabled according to the setting. All other menu items, including items with customized actions, are disabled. For example, if you choose <span class="o-onscreen">Editing only</span>, all basic FileMaker editing commands are enabled but all other items (including items with customized actions) are disabled.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1028828">If you set </a><span class="o-onscreen">Available menu commands</span> to <span class="o-onscreen">All</span>, all menu items are enabled normally.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1028829">Keyboard shortcut considerations</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1039394">FileMaker uses keyboard shortcuts that don’t appear in the menu bar. For example, Command-Option-Z zooms an OS X window. In addition, the operating system defines shortcuts. Both types of shortcuts override the ones you define in the Specify Shortcuts dialog box.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1028830">Windows and OS X keyboard shortcuts are different. For example, if you use FileMaker Pro Advanced for Windows to define the Ctrl+H shortcut, then open the file in OS X, the shortcut maps to Command-H. This conflicts with the OS X shortcut to hide an open application. The shortcut works as expected on Windows, but on OS X, the operating system shortcut overrides the custom-defined shortcut.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1028831">Be sure to test custom keyboard shortcuts on both platforms. For information about shortcuts, see the documentation provided with your operating system.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1028832">OS X: Users can assign keyboard shortcuts for installed applications using the Keyboard system preference. These shortcuts override any standard FileMaker Pro menu shortcuts or custom menu shortcuts when users open a solution file on that computer. System preference shortcuts also become the default shortcut for any custom menus or custom menu items created while the solution is running on that computer. Do not use OS X-specific keyboard equivalents when defining shortcuts for use in FileMaker Pro as results might be unpredictable.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="rh-relatedhead">Related topics<a name="1028834"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmpa_custom.23.10.html#1028845" name="1028838">Creating and editing custom menu sets (FileMaker Pro Advanced)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

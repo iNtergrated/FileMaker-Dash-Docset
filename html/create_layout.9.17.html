@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="FileMaker Pro layouts are divided into layout parts, sections of the layout that determine how data in a field is treated and displayed. By using parts, you can control how FileMaker Pro prints data, for example:" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Working with layout parts</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="5030" class="applehelp-cs"></a>
+      <a name="5036" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="create_layout.9.18.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="create_layout.9.16.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1028037">Designing and creating databases</a> &gt; 
+      <a href="create_layout.9.1.html#1028037">Creating and managing layouts and reports</a> &gt; 
+      <b>Working with layout parts</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h3-head3">Working with layout parts</div>
+      <div class="b-body"><a name="1028046">FileMaker Pro layouts are divided into layout parts, sections of the layout that determine how data in a field is treated and displayed. By using parts, you can control how FileMaker Pro prints data, for example:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028047">once for each record</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028048">only at the top of each page</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028049">only before or after groups of sorted records (for example, to include a subtotal for each group of records)</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1028050">Each layout must have at least one part. Layout parts can contain fields, portals, buttons, text, charts and other objects. In </a><span class="g-glosslink"><a href="glossary.html#1034324">Layout mode</a></span>, gray horizontal lines mark the division between layout parts (part boundaries). </div>
+      <div class="b-body"><a name="1154574">Part labels display horizontally or vertically on the left side of a layout.</a></div>
+      <div class="gr-graphicanchor"><a name="1028067"><img class="Default" src="../images/create_layout.9.17.1.png" width="669" height="156" style="float: none; left: 0.0; top: 0.0;" alt="Part label and part boundary" /></a></div>
+      <div class="hs1-headsub1"><a name="1028068">To switch part labels between the vertical and horizontal position:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1154647">click <img class="Default" src="../images/part-label-control.png" width="22" height="18" style="float: none; left: 0.0; top: 0.0;" alt="Switch part labels button" /> located at the bottom of the FileMaker Pro window</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1154666">Ctrl-click (Windows) or Command-click (OS X) a part label</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="nt1-notetip1">
+        <span class="zan-autonum">Tip  </span><a name="1154680">To display a vertical part label horizontally for a moment, hold down the mouse button on a vertical part label. When you release the mouse, the label returns to the vertical position.</a></div>
+      <div class="b-body"><a name="1154630">Parts are assigned styles that are defined by the </a><span class="g-glosslink"><a href="glossary.html#1033494">theme</a></span> of the layout. You can use the Inspector to customize part styles. See <span class="zh-hyper"><a href="edit_layout.10.15.html#1171828">Setting the fill, line style, and borders for objects, layout parts, and the layout background</a></span>.</div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1140274">The New Layout/Report assistant automatically creates the appropriate layout parts depending on the choices you make. You can add, change, or delete layout parts after you finish the assistant as needed. For information on creating layouts, see </a><span class="zh-hyper"><a href="create_layout.9.2.html#1068091">Creating a layout</a></span>.</div>
+    </blockquote>
+    <div class="WebWorks_MiniTOC">
+      <div class="WebWorks_MiniTOCTitle">Topics in this section</div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="create_layout.9.18.html#1028102">About layout part types</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="create_layout.9.19.html#1028136">Adding a layout part</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="create_layout.9.20.html#1028217">Changing a layout part</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="create_layout.9.21.html#1109919">Defining page breaks and numbering</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="create_layout.9.22.html#1028334">Reordering layout parts</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="create_layout.9.23.html#1028353">Resizing layout parts</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="create_layout.9.24.html#1028387">Deleting layout parts</a>
+      </div>
+    </div>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

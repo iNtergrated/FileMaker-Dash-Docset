@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="In a single-criteria relationship, data in one field is matched to data in another field." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>About single-criteria relationships</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="relational.11.7.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="relational.11.5.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1027800">Designing and creating databases</a> &gt; 
+      <a href="relational.11.1.html#1027800">Working with related tables and files</a> &gt; 
+      <a href="relational.11.5.html#1027800">About the types of relationships</a> &gt; 
+      <b>About single-criteria relationships</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">About single-criteria relationships</div>
+      <div class="b-body"><a name="1027801">In a single-criteria relationship, data in one field is matched to data in another field.</a></div>
+      <div class="b-body"><a name="1044098">For example, a record in either table is related to any record in the other table when the values TextFieldA and TextFieldB are the same.</a></div>
+      <div class="gr-graphicanchor"><a name="1044102"><img class="Default" src="../images/relationship-single-ex.png" width="313" height="129" style="float: none; left: 0.0; top: 0.0;" alt="Two tables with lines between two fields showing a single-criteria relationship" />	</a></div>
+      <div class="hs1-headsub1"><a name="1044103">Using a single-criteria relationship</a></div>
+      <div class="b-body"><a name="1027808">Use a single-criteria relationship when you want to relate two tables based on a single common value, such as a serial number or an ID number. For example, a database has two tables: </a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027809">Customers, which stores names and addresses</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027810">Contacts, which stores phone numbers, types of phones numbers (such as work, home, fax, and so on), and email addresses</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1027811">The data is split between two tables because a single customer can have multiple phone numbers and email addresses.</a></div>
+      <div class="b-body"><a name="1027812">The tables have these fields:</a></div>
+      <div class="ta-tableanchor"><a name="1027875"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1027815">Table</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1027817">Field name</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1027819">Comment</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027821">Customers</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027823">Customer ID</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027825">Number field, auto-enter </a><span class="g-glosslink"><a href="glossary.html#1028093">serial number</a></span>; this will be the match field in the Customers table</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027827"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027829">First Name</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027831">Text field</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038882"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038884">Last Name</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038886">Text field</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038891"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038893">Address1</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038895">Text field</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027833"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027835">City</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027837">Text field</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027839"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027841">State</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027843">Text field</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027845"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027847">Country</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027849">Text field</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027851">Contacts</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038966">Phone Number</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038968">Text field</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027858"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038970">Phone Type</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038972">Text field</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027864"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038974">Email Address</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038976">Text field</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027870"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038978">Email Type</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038980">Text field</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038946"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038953">Customer ID</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1038956">Number field; this will be the match field in the Contacts table</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="b-body"><a name="1027876">The Customer ID field is the match field in the relationship between the two tables. In the Customers table, the Customer ID field is set to auto-enter a serial number, giving each record in the Customers table a unique ID number. In the Contacts table, the Customer ID is a simple number field, and no auto-entry options are set. </a></div>
+      <div class="b-body"><a name="1027878">In the relationships graph, a relationship is between the Contact ID fields in each table.</a></div>
+      <div class="gr-graphicanchor"><a name="1039704"><img class="Default" src="../images/single-criteria-rel.png" width="316" height="141" style="float: none; left: 0.0; top: 0.0;" alt="A single-criteria relationship between a Customers table and a Contacts table" />	</a></div>
+      <div class="b-body"><a name="1042318">In the Edit Relationship dialog box, the </a><span class="o-onscreen">Allow creation of records in this table via this relationship</span> option is enabled. This means that you will be able to enter a phone number in an empty <span class="g-glosslink"><a href="glossary.html#1028003">portal</a></span> row, and FileMaker Pro will automatically create a related record for that phone number. Also, the <span class="o-onscreen">Delete related records in this table when a record is deleted in the other table</span> option is enabled, because there is no reason to retain old phone numbers if the matching contact record has been deleted.</div>
+      <div class="b-body"><a name="1042295">Because the relationship is defined to allow the creation of related records in the Contacts table, the Customer ID number from a Customers record will be automatically inserted in the Customer ID field in the Contacts table in each new related record. This allows many records in the Contacts table to be related to a single record in the Customers table.</a></div>
+      <div class="b-body"><a name="1027884">Finally, a portal is added to the Contacts table on the Customer layout. When you enter a phone number or an email address in an empty portal row in the Customers table, FileMaker Pro creates a related record for that phone number or email address in the Contacts table.</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1027889"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="relational.11.7.html#1027907" name="1027893">About multi-criteria relationships</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="relational.11.8.html#1028014" name="1027897">About relationships using comparative operators</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="relational.11.9.html#1028074" name="1027901">About relationships that return a range of records</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="relational.11.10.html#1028163" name="1027905">About self-joining relationships</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_layout.9.28.html#1028605" name="1039151">Creating portals to display related records</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Saves records to a specified Excel worksheet." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Save Records As Excel</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <a name="//apple_ref/cpp/Command/Save Records As Excel" class="dashAnchor"></a>
+    <div id="appleanchors">
+      <a name="24017" class="applehelp-cs"></a>
+      <a name="8910" class="applehelp-cs"></a>
+      <a name="8915" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="scripts_ref1.36.76.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="scripts_ref1.36.74.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1030230">Reference</a> &gt; 
+      <a href="help_script_cat.34.1.html#1030230">Script steps reference</a> &gt; 
+      <a href="scripts_ref1.36.62.html#1030230">Records script steps</a> &gt; 
+      <b>Save Records As Excel</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="ssh-scripthead">Save Records As Excel</div>
+      <div class="sspuh-scriptpurposehead">Purpose<a name="1040525"> </a></div>
+      <div class="sspu-scriptpurpose"><a name="1040526">Saves records to a specified Excel worksheet.</a></div>
+      <div class="ssfh-scriptformathead">Format<a name="1030231"> </a></div>
+      <div class="ssf-scriptformat"><a name="1030232">Save Records As Excel [Restore; No dialog; “</a><span class="v-variable">&lt;output filename&gt;</span>”; Automatically open; Create email; Records being browsed/Current record]</div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1030233">In order to save records as a Microsoft Excel worksheet, your privilege set must include </a><span class="o-onscreen">Allow exporting</span>, or you must select <span class="o-onscreen">Run script with full access privileges </span>in the Edit Script<span class="o-onscreen"> </span>dialog box.</div>
+      <div class="ssoh-scriptoptshead">Options<a name="1030234"> </a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1030235">Perform without dialog </a></span>prevents the Excel Options dialog box from displaying as the script step executes if you have already specified a file. If you have not specified a file, the Save Records as Excel dialog box displays as the script step executes, but the Excel Options dialog box is not displayed.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030236">Select</a><span class="o-onscreen"> Specify output file</span> or click <span class="o-onscreen">Specify</span> to display a dialog box where you can specify the file path. Choose the folder you want to export to, or type the file path directly into the list. Specify one path per line. FileMaker Pro will use the first path it locates. See <span class="zh-hyper"><a href="create_db.8.42.html#1087742">Creating file paths</a></span>. You can choose to <span class="o-onscreen">Automatically open file</span> or choose to <span class="o-onscreen">Create email with file as attachment </span>to create a blank email with the Excel file as an attachment.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1106684">If FileMaker Pro executes a script that does not specify an absolute path, and the database file containing the script is hosted, the path is assumed to be the current user’s Documents folder.</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030240">Select </a><span class="o-onscreen">Specify options</span> or click <span class="o-onscreen">Specify</span> to display the "Save Records as Excel" Options dialog box. From the <span class="o-onscreen">Save </span>list, choose <span class="o-onscreen">Records being browsed</span> or<span class="o-onscreen"> Current record</span>. Specify whether the values in the first row should be used as field names or as data. For <span class="o-onscreen">Worksheet</span>, <span class="o-onscreen">Title</span>, <span class="o-onscreen">Subject</span>, and <span class="o-onscreen">Author</span>, you can enter text directly, or click <span class="o-onscreen">Specify</span> to enter a field name or values from a calculation. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sscoh-scriptcompathead">Compatibility<a name="1064009"> </a></div>
+      <div class="ta-tableanchor"><a name="1064035"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh1-scriptstepcompthead1">Where the script step runs<a name="1077341"> </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh2-scriptstepcompthead2">Supported<a name="1077343"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco1-scriptstepcompt1">FileMaker Pro<a name="1077345"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077347"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco2-scriptstepcompt2">FileMaker Server scheduled script<a name="1077349"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1077351"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco3-scriptstepcompt3">FileMaker Go<a name="1077353"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1077355"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco4-scriptstepcompt4">Custom Web Publishing<a name="1077357"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1077359"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco5-scriptstepcompt5">FileMaker WebDirect<a name="1077361"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1077363"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco6-scriptstepcompt6">Runtime solution<a name="1077365"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077367"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="orh-originhead">Originated in<a name="1049188"> </a></div>
+      <div class="or-origin"><a name="1049189">FileMaker Pro 8.0</a></div>
+      <div class="ssdh-scriptdeschead">Description<a name="1078841"> </a></div>
+      <div class="b-body"><a name="1078870">This script step operates in all modes except Find mode. </a></div>
+      <div class="sseh1-scriptexamhead1">Example 1<a name="1078873"> </a></div>
+      <div class="b-body"><a name="1091906">Finds and sorts records, then saves the found set as an Excel file without prompting the user.</a></div>
+      <div class="co-code"><a name="1091908">Go to Layout ["Invoices"]<br />Perform Find [Restore]<br />Sort Records [Restore; No dialog]<br />Save Records As Excel [No dialog; "Unpaid Invoice List.xlsx"; Records being browsed]</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1030251"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="import_export.17.3.html#1056548" name="1030255">Saving and sending records as an Excel file</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="scripts_ref1.36.74.html#1030181" name="1030259">Export Records script step</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="scripts_ref1.36.73.html#1030099" name="1030263">Import Records script step</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_alpha.html#66468" name="1030267">Script steps reference (alphabetical list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_cat.34.2.html#947337" name="1030271">Script steps reference (category list)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

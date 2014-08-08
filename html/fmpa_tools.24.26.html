@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="You can use scripts and buttons to automate much of your database solution, control startup behavior, emulate menu commands and window controls, navigate, and much more. See Creating scripts to automate tasks." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Using scripts and buttons to control Kiosk solutions (FileMaker Pro Advanced)</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="fmpa_tools.24.27.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="fmpa_tools.24.25.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part4.html#1028918">Using FileMaker Pro Advanced</a> &gt; 
+      <a href="fmpa_tools.24.1.html#1028918">Using FileMaker Pro Advanced tools</a> &gt; 
+      <a href="fmpa_tools.24.24.html#1028918">Displaying databases in Kiosk mode (FileMaker Pro Advanced)</a> &gt; 
+      <b>Using scripts and buttons to control Kiosk solutions (FileMaker Pro Advanced)</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Using scripts and buttons to control Kiosk solutions (FileMaker Pro Advanced)</div>
+      <div class="b-body"><a name="1028921">You can use </a><span class="g-glosslink"><a href="glossary.html#1028072">scripts</a></span> and <span class="g-glosslink"><a href="glossary.html#1027559">buttons</a></span> to automate much of your database solution, control startup behavior, emulate menu commands and window controls, navigate, and much more. See <span class="zh-hyper"><a href="create_script.13.1.html#1034729">Creating scripts to automate tasks</a></span>.</div>
+      <div class="nt-notetip">
+        <span class="zan-autonum">Tip  </span><a name="1028927">Use the Script Debugger to test scripts. See </a><span class="zh-hyper"><a href="fmpa_tools.24.2.html#1033267">Debugging scripts (FileMaker Pro Advanced)</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1028929">Centering database windows in Kiosk screens</a></div>
+      <div class="b-body"><a name="1028930">If you maximize a layout that was designed for 640x480 on a screen that has a resolution larger than 640x480, the layout will not be centered. It will display in the top left corner with empty space surrounding it. For best results, don’t maximize kiosk windows. Use the Adjust Window[Resize to Fit] and Move/Resize Window script steps instead to center windows based on the user’s screen resolution. Use the Get functions to determine the resolution.</a></div>
+      <div class="ni-noteimportant">
+        <span class="zan-autonum">Important  </span><a name="1038039">Before using the Adjust Window script step, perform any script steps that affect the window display area (such as Go to Layout or Show/Hide Toolbars). Once the window area is determined, add the Adjust Window script step.</a></div>
+      <div class="b-body"><a name="1038040">The Adjust Window script step may cover up a window that has an Exit Application button. Be sure that users can close the Kiosk database solution easily.</a></div>
+      <div class="hs1-headsub1"><a name="1038042">Emulating menu commands and window controls</a></div>
+      <div class="b-body"><a name="1028935">Use the following script steps to emulate menu commands and window controls.</a></div>
+      <div class="ta-tableanchor"><a name="1028969"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028938">To emulate these interface elements</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028940">Create buttons with these script steps attached</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028942">Menu commands</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028944">Script steps for any menu command (for example, Sort Records, Print, and Open Preferences)</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028946">Zoom controls</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028948">Adjust Window or Set Zoom Level </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028950">Status toolbar control</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028952">Show/Hide Toolbars</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028954">Mode pop-up menu</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028956">Enter Browse Mode, Enter Find Mode, or Enter Preview Mode </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028958">Vertical scroll bar</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028960">Scroll Window (if the layout is longer than one screen)</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028962">Horizontal scroll bar</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028964">Scroll Window (if the layout objects are wider than one screen)</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028966">Window size and location</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028968">Move/Resize Window </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="rh-relatedhead">Related topics<a name="1028972"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmpa_tools.24.24.html#1028803" name="1028976">Displaying databases in Kiosk mode (FileMaker Pro Advanced)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmpa_tools.24.25.html#1028839" name="1028980">Creating Kiosk solutions (FileMaker Pro Advanced)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmpa_tools.24.27.html#1028986" name="1028984">Creating dynamic buttons (FileMaker Pro Advanced)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

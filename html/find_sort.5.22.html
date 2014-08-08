@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="FileMaker Pro stores records in the order they were added to the file. Sorting rearranges records, so you can view, update, or print them in a different sequence." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Sorting records</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="5021" class="applehelp-cs"></a>
+      <a name="5022" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="find_sort.5.23.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="find_sort.5.21.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part1.html#1043585">Using FileMaker Pro</a> &gt; 
+      <a href="find_sort.5.1.html#1043585">Finding, sorting, and replacing data</a> &gt; 
+      <b>Sorting records</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h3-head3">Sorting records</div>
+      <div class="b-body"><a name="1043588">FileMaker Pro stores </a><span class="g-glosslink"><a href="glossary.html#1028030">records</a></span> in the order they were added to the file. <span class="g-glosslink"><a href="glossary.html#1028117">Sorting</a></span> rearranges records, so you can view, update, or print them in a different sequence.</div>
+      <div class="b-body"><a name="1051125">You choose the </a><span class="g-glosslink"><a href="glossary.html#1027703">fields</a></span> whose contents you want to sort by. The first sort field arranges the records based on the field’s contents. The second sort field arranges records when two or more records have the same value in the first sort field, and so on. You can sort records in <span class="g-glosslink"><a href="glossary.html#1027522">ascending order</a></span>, <span class="g-glosslink"><a href="glossary.html#1027647">descending order</a></span>, or in a custom order.</div>
+      <div class="b-body"><a name="1051128">By default, the records remain sorted until you perform a find or sort records by different criteria. When you add a new record in a sorted found set, or change the data in a sort field of a sorted record, the record appears in the correct position in the sort order when you </a><span class="g-glosslink"><a href="glossary.html#1027603">commit</a></span> the record. To change the way new and changed records are sorted, see <span class="zh-hyper"><a href="find_sort.5.23.html#1038201">Options for sorting records</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1051130">To sort the records in the current found set:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1040431">In </a><span class="g-glosslink"><a href="glossary.html#1027555">Browse mode</a></span>, click <span class="o-onscreen">Sort</span> in the <span class="g-glosslink"><a href="glossary.html#1028139">status toolbar</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1040432">In the Sort Records dialog box, choose fields for sorting, in the order you want them sorted.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1028842">For details about the sort options in the Sort Records dialog box, see </a><span class="zh-hyper"><a href="find_sort.5.23.html#1038201">Options for sorting records</a></span>. </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028844">Click </a><span class="o-onscreen">Sort</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1028845">To quickly sort records by a single field:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1028846">In Browse mode, click </a><span class="o-onscreen">Table View </span><img class="Default" src="../images/table-view.png" width="24" height="18" style="float: none; left: 0.0; top: 0.0;" alt="Table View button" />.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1049159">Right-click the column heading of the field that you want to sort by.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1049356">From the </a><span class="g-glosslink"><a href="glossary.html#1028102">shortcut menu</a></span>, choose <span class="o-onscreen">Sort Ascending</span> or <span class="o-onscreen">Sort Descending</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1049357">See </a><span class="zh-hyper"><a href="add_view_data.4.8.html#1045713">Working with data in Table View</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1049335">To cancel a sort operation before it is finished:</a></div>
+      <div class="b-body"><a name="1028856">Press Esc (Windows) or Command-period (OS X). </a></div>
+      <div class="hs1-headsub1"><a name="1028857">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028860">Data sorts differently in different field types:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ta-tableanchor"><a name="1028887"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028863">This field type</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028865">Sorts data in this order</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028867">Text</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028869">Alphabetically. Numbers sort by character position. (Example of an ascending sort: 1, 11, 2.) Numbers sort before letters. Non-alphanumeric values before the first word are ignored (unless you change the sort language to </a><span class="g-glosslink"><a href="glossary.html#1028214">Unicode</a></span>).</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028872">Number</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028874">Numerically. Non-numeric characters are ignored.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028876">Date</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028878">Chronologically. </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028880">Time</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028882">Numerically. Times using AM/PM are sorted according to their 24-hour-clock equivalent (for example, 8:00 PM is 20:00).</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028884">Timestamp</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028886">Chronologically. Times using AM/PM are sorted according to their 24-hour-clock equivalent (for example, 8:00 PM is 20:00).</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1038322">Automatic record sorting:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1038323">occurs when changes to records are </a><span class="g-glosslink"><a href="glossary.html#1027603">committed</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1038324">does not occur while scripts are running or paused</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028890">Records in a sorted </a><span class="g-glosslink"><a href="glossary.html#1028003">portal</a></span> are re-sorted whenever the <span class="g-glosslink"><a href="glossary.html#1028048">relationship</a></span> is re-established. (For example, when you browse out of and then back into the record, or change the value in the <span class="g-glosslink"><a href="glossary.html#1027907">match field</a></span>.) See <span class="zh-hyper"><a href="create_layout.9.28.html#1028605">Creating portals to display related records</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="g-glosslink"><a href="glossary.html#1028056" name="1028898">Repeating fields</a></span> sort by the value in the first repetition. See <span class="zh-hyper"><a href="create_db.8.26.html#1029799">Defining repeating fields</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028900">If you import records from another file into a sorted file, the records are not automatically sorted. Instead, the status toolbar shows </a><span class="o-onscreen">Semi-sorted</span>. Sort again to incorporate new records in the sort order.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="g-glosslink"><a href="glossary.html#1028160" name="1028904">System formats</a></span> affect the way numbers, dates, and times sort. See <span class="zh-hyper"><a href="fmp_basics.3.26.html#1028551">Opening files with different system formats</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028907">When you define a text field, the default language for </a><span class="g-glosslink"><a href="glossary.html#1027810">indexing</a></span> and sorting text is determined by the operating system on which FileMaker Pro is running. If you want to override the default language for a sort, select <span class="o-onscreen">Override field's language for sort</span> in the Sort Records dialog box. (If you want to permanently change the field's default language, select the field in the Manage Database dialog box, click <span class="o-onscreen">Options</span>, then click the <span class="o-onscreen">Storage</span> tab and select the default language from the pop-up menu.) See <span class="zh-hyper"><a href="create_db.8.27.html#1029839">Defining field indexing options</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028917">You can open another window in order to perform different sort requests on the same data. See </a><span class="zh-hyper"><a href="fmp_basics.3.29.html#1028665">Opening multiple windows per file</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028921">If you open a file, sort records, and then close the file, the sort order is not saved. For more information about when a database file is saved, see </a><span class="zh-hyper"><a href="fmp_basics.3.33.html#1028872">Saving and copying files</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028925">You can sort using a “default” language setting or Unicode to have FileMaker Pro ignore language-based sorting rules. See </a><span class="zh-hyper"><a href="non_toc.46.1.html#1039132">Choosing a language for indexing or sorting</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1038199">The longest text string that FileMaker Pro will sort is 100 characters.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </blockquote>
+    <div class="WebWorks_MiniTOC">
+      <div class="WebWorks_MiniTOCTitle">Topics in this section</div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="find_sort.5.23.html#1038201">Options for sorting records</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="find_sort.5.24.html#1029044">Sorting records by subsummary values</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="find_sort.5.25.html#1029113">Sorting records troubleshooting</a>
+      </div>
+    </div>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

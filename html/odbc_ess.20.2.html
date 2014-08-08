@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Whether you are importing ODBC data or working with ODBC tables in the relationships graph, as a client application, you must configure a driver for the ODBC data source you’re using. For example, if you will be accessing records from an Oracle database, y ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Configuring an ODBC client driver</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="odbc_ess.20.3.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="odbc_ess.20.1.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1027549">Sharing data</a> &gt; 
+      <a href="odbc_ess.20.1.html#1027549">Accessing external data sources</a> &gt; 
+      <b>Configuring an ODBC client driver</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h3-head3">Configuring an ODBC client driver</div>
+      <div class="b-body"><a name="1027551">Whether you are importing </a><span class="g-glosslink"><a href="glossary.html#1027961">ODBC</a></span> data or working with ODBC tables in the relationships graph, as a <span class="g-glosslink"><a href="glossary.html#1027581">client application</a></span>, you must configure a <span class="g-glosslink"><a href="glossary.html#1027659">driver</a></span> for the ODBC <span class="g-glosslink"><a href="glossary.html#1027629">data source</a></span> you’re using. For example, if you will be accessing records from an Oracle database, you will configure an Oracle client driver.</div>
+      <div class="b-body"><a name="1027555">The way you interact with the data source, provide a password, and perform and display query results varies with each application’s client driver. Additionally, data source configuration can vary from one ODBC driver manufacturer to another. </a></div>
+      <div class="hs1-headsub1"><a name="1027556">Data sources supported in FileMaker 13.0 </a></div>
+      <div class="b-body"><a name="1031507">You can use the following data sources in the FileMaker Pro relationships graph. If you are importing ODBC data, or using the Import Records or the Execute SQL script step, you can use additional data sources, such as IBM DB2 or Informix ODBC.</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030098">Oracle 11</a><span class="v-variable">g</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027560">SQL Server 2008 R2</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030099">SQL Server 2012</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027561">MySQL 5.5 Community Edition (free)</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1027565">For an overview of the various ways of working with ODBC data sources, see </a><span class="zh-hyper"><a href="odbc.19.1.html#1027500">Using ODBC and JDBC with FileMaker Pro</a></span>.</div>
+      <div class="b-body"><a name="1027567">Use the following procedure as a general guideline for configuring data sources (refer to the documentation that accompanies each data source application for details).</a></div>
+      <div class="hs1-headsub1"><a name="1035657">Windows</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1035658">Start the 32-bit ODBC Data Source Administrator by doing one of the following:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1035757">32-bit Windows: In the Windows Control Panel, choose </a><span class="o-onscreen">Administrative Tools</span> &gt;<span class="o-onscreen"> Data Sources (ODBC)</span>. Administrative Tools appear in the <span class="o-onscreen">System and Security</span> category.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1035758">64-bit Windows: Double-click the odbcad32.exe file in the C:\Windows\SysWOW64 folder. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1035759">Click the </a><span class="o-onscreen">System DSN</span> tab or the <span class="o-onscreen">User DSN</span> tab.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027572">If your data source appears in the list, the driver is already configured. You can skip the remaining steps and begin accessing ODBC data, or choose your data source and click </a><span class="o-onscreen">Configure</span> to modify how you’ll interact with the data source.</div>
+      <div class="b1-body1"><a name="1027574">A System </a><span class="g-glosslink"><a href="glossary.html#1027632">DSN</a></span> (data source name) is available to all users who log in to your computer. A User DSN is available only when you log in. </div>
+      <div class="b1-body1"><span class="zan-autonum"><a name="1027575">Important </a></span>Only System DSNs are supported when you are working with ODBC tables in the relationships graph.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027576">Click </a><span class="o-onscreen">Add</span> to configure a driver for your data source.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027577">A list displays all ODBC client drivers installed on your computer. </a></div>
+      <div class="b1-body1"><a name="1034519">If no driver appears for the data source you want to use, you can use a driver from a third-party vendor.</a></div>
+      <div class="b1-body1"><a name="1034521">To install a new driver, use the driver’s installation program.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027580">Choose the driver for the data source you’ll be accessing with FileMaker Pro, then click </a><span class="o-onscreen">Finish</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027581">A setup dialog box appears.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027582">For </a><span class="o-onscreen">Name</span>, enter descriptive text to identify the data source.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027583">Many drivers also offer options to customize how you access a data source, such as identifying a particular data source file. Enter descriptive text, if desired.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027584">Click </a><span class="o-onscreen">Finish</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1031841">Click </a><span class="o-onscreen">OK</span> to save your data source information.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1031604">OS X</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1031620">Install the ODBC Manager from Actual Technologies, available at </a><span class="h-hyperlink"><a href="http://www.odbcmanager.net" target="external_window">http://www.odbcmanager.net</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1031637">Launch the ODBC Manager utility.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1031609">Click the </a><span class="o-onscreen">System DSN</span> tab (or, for ODBC imports, click either the <span class="o-onscreen">System DSN</span> tab or the <span class="o-onscreen">User DSN</span> tab).</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><span class="zan-autonum"><a name="1027589">Important </a></span>Only System DSNs are supported when you are working with ODBC tables in the relationships graph.</div>
+      <div class="b1-body1"><a name="1027590">If your data source appears in the list, the driver is already configured. You can skip the remaining steps and begin accessing ODBC data, or choose your data source and click </a><span class="o-onscreen">Configure</span> to modify how you’ll interact with the data source.</div>
+      <div class="b1-body1"><a name="1027592">A System </a><span class="g-glosslink"><a href="glossary.html#1027632">DSN</a></span> (data source name) is available to all users who log in to your computer. A User DSN is available only when you log in.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027593">Click </a><span class="o-onscreen">Add</span> to configure a driver for your data source.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027594">A list displays all ODBC client drivers installed on your computer.</a></div>
+      <div class="b1-body1"><a name="1027595">If no driver appears for the data source you want to use, you can use a driver from a third-party vendor.</a></div>
+      <div class="b1-body1"><a name="1027596">To install a new driver, use the driver’s installation program.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027597">Choose the driver for the data source you’ll be accessing with FileMaker Pro, then click </a><span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027598">In the configuration dialog box, click </a><span class="o-onscreen">Continue</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027599">For </a><span class="o-onscreen">Name</span>, enter descriptive text to identify the data source.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027600">Many drivers also offer options to customize how you access a data source, such as identifying a particular data source file. Enter descriptive text, if desired.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">8.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027601">Click </a><span class="o-onscreen">Finish</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">9.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1031737">Click </a><span class="o-onscreen">Done</span> to save your data source information.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1027604">After you have configured the driver, you can access records in your data source. See </a><span class="zh-hyper"><a href="odbc_ess.20.3.html#1027612">Connecting to data sources</a></span> and <span class="zh-hyper"><a href="odbc_ess.20.12.html#1035969">Querying an ODBC data source from FileMaker Pro</a></span>.</div>
+      <div class="hs1-headsub1"><span class="o-onscreen"><a name="1031924">Notes</a></span></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1031927">ODBC Manager is a freeware product not supported by FileMaker.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1031928">You may also use Apple’s ODBC Administrator Tool for OS X, available at </a><span class="h-hyperlink"><a href="http://www.apple.com/support" target="external_window">http://www.apple.com/support</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

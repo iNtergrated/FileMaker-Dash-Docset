@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="There are three ways that you can import data into an existing file. You can:" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Methods of importing data into an existing file</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="import_export.17.12.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="import_export.17.10.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1027964">Sharing data</a> &gt; 
+      <a href="import_export.17.1.html#1027964">Saving, importing, and exporting data</a> &gt; 
+      <a href="import_export.17.10.html#1027964">Importing data into FileMaker Pro</a> &gt; 
+      <b>Methods of importing data into an existing file</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Methods of importing data into an existing file</div>
+      <div class="b-body"><a name="1027965">There are three ways that you can import data into an existing file. You can:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027966">Add new records to the file</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027967">Update existing records in the file</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027968">Update matching records in the file</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1027969">These options are available in the </a><span class="o-onscreen">Import Action</span> area of the Import Field Mapping dialog box when you’re importing data into an existing file. Each of these options is described in detail below.</div>
+      <div class="ni-noteimportant">
+        <span class="zan-autonum">Important  </span><a name="1027970">The import options that update existing records and update matching records both overwrite existing data during the import process and cannot be undone. To safeguard your data, choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Save a Copy As</span> to make a backup of the FileMaker Pro file before you perform an import that updates records.</div>
+      <div class="hs1-headsub1"><a name="1027972">Adding records</a></div>
+      <div class="b-body"><a name="1027974">When you add records, the import process creates a new record in the </a><span class="g-glosslink"><a href="glossary.html#1044531">target file</a></span> for each importable record in the <span class="g-glosslink"><a href="glossary.html#1028120">source file</a></span>.</div>
+      <div class="b-body"><a name="1027976">When you add records from most source file formats, the import process adds all the records from the source file. If the source file is a FileMaker Pro file, you can add only the records in the found set and skip adding the omitted records. See </a><span class="zh-hyper"><a href="import_export.17.26.html#1029426">FileMaker Pro format</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1027981">Updating existing records</a></div>
+      <div class="b-body"><a name="1027982">With this option, you replace data in your file with data from the source file. For each field you import into, data from the first importable record (or row of data) in the source file overwrites fields in the first record in the target file. Data from the second importable record (or row of data) in the source file overwrites fields in the second record in the target file, and so on. When you replace data, FileMaker Pro doesn’t examine or compare the data in the files.</a></div>
+      <div class="b-body"><a name="1027983">You can choose whether to replace or not replace data on a field-by-field basis.</a></div>
+      <div class="b-body"><a name="1027984">Records in the target file are replaced with the same number of records from the source file. If there are more importable records in the source file, data from the extra records in the source file will not be imported unless you also choose </a><span class="o-onscreen">Add remaining data as new records</span>. If there are more records in the target file, data in the extra records in the target file will not be replaced.</div>
+      <div class="hs1-headsub1"><a name="1027986">Updating matching records</a></div>
+      <div class="b-body"><a name="1027988">You can update matching records and fields in your target file with data from another file. For example, you might have a copy of a database on your desktop computer and another copy on your laptop computer. You can update the file in your office with the changes you make on the road.</a></div>
+      <div class="b-body"><a name="1027990">You determine which records in the source file update which records in the target file by choosing one or more </a><span class="g-glosslink"><a href="glossary.html#1027907">match fields</a></span> in each file. If data in the match field(s) of a record in the target file matches data in the match field(s) of a record in the source file, the record in the target file will be updated with data from the source file.</div>
+      <div class="b-body"><a name="1027992">Match fields must uniquely identify each entity in your database. For example, in a database of people, you could use one match field such as an Employee Number, or multiple match fields such as Last Name, First Name, and Phone Number. (Using Last Name alone might identify more than one person, so it isn’t a good match field to use by itself.)</a></div>
+      <div class="b-body"><a name="1027993">You also specify the fields you want to import. The contents of all fields you select to import, in all matching records, will overwrite data in the target file, even if the field in the source file is blank.</a></div>
+      <div class="b-body"><a name="1027995">When the target file contains a </a><span class="g-glosslink"><a href="glossary.html#1027747">found set</a></span>, only the found records are updated. (If the source file is another FileMaker Pro file, you can also import only from a found set. See <span class="zh-hyper"><a href="import_export.17.26.html#1029426">FileMaker Pro format</a></span>.)</div>
+      <div class="b-body"><a name="1027999">The following table shows an example of how a record in a target file appears before and after being updated by a matching record in a source file. In the Mapping column, <img class="Default" src="../images/field-map-match.gif" width="13" height="12" style="float: none; left: 0.0; top: 0.0;" alt="Match icon in Windows" /> (Windows) or <img class="Default" src="../images/IDB_IMPORT_ARROWS_MATCH2x.png" width="15" height="10" style="float: none; left: 0.0; top: 0.0;" alt="Match icon in the Mac OS" /> (OS X) indicates a match field, <img class="Default" src="../images/IDB_IMPORT_ARROWS_MAP2x.png" width="15" height="10" style="float: none; left: 0.0; top: 0.0;" alt="Import icon" /> indicates to import the field, and <img class="Default" src="../images/field-map-dont-import.gif" width="15" height="3" style="float: none; left: 0.0; top: 0.0;" alt="Do not import icon in Windows" /> (Windows) or <img class="Default" src="../images/IDB_IMPORT_ARROWS_NONE2x.png" width="15" height="10" style="float: none; left: 0.0; top: 0.0;" alt="Do not import icon in the Mac OS" /> (OS X) indicates not to import the field.</a></div>
+      <div class="ta-tableanchor"><a name="1028147"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1050858">Source file</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1050860">Mapping</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1050862">Target file</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1050864">Result</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050866">123-456-7890</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050871"><img class="Default" src="../images/field-map-match.gif" width="13" height="12" style="float: none; left: 0.0; top: 0.0;" alt="Match icon in Windows" /> or <img class="Default" src="../images/IDB_IMPORT_ARROWS_MATCH2x.png" width="15" height="10" style="float: none; left: 0.0; top: 0.0;" alt="Match icon in the Mac OS" /></a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050873">123-456-7890</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050875">123-456-7890</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050877">John</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050882"><img class="Default" src="../images/field-map-dont-import.gif" width="15" height="3" style="float: none; left: 0.0; top: 0.0;" alt="Do not import icon in Windows" /> or <img class="Default" src="../images/IDB_IMPORT_ARROWS_NONE2x.png" width="15" height="10" style="float: none; left: 0.0; top: 0.0;" alt="Do not import icon in the Mac OS" /></a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050884">John</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050886">John</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050888">Q</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050893"><img class="Default" src="../images/IDB_IMPORT_ARROWS_MAP2x.png" width="15" height="10" style="float: none; left: 0.0; top: 0.0;" alt="Import icon" /></a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050895"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050897">Q</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050899">Smith</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050904"><img class="Default" src="../images/field-map-dont-import.gif" width="15" height="3" style="float: none; left: 0.0; top: 0.0;" alt="Do not import icon in Windows" /></a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050906">Smith</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050908">Smith</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050910">456 New Rd.</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050915"><img class="Default" src="../images/IDB_IMPORT_ARROWS_MAP2x.png" width="15" height="10" style="float: none; left: 0.0; top: 0.0;" alt="Import icon" /></a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050917">123 Main St.</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050919">456 New Rd.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050921">Newtown</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050926"><img class="Default" src="../images/IDB_IMPORT_ARROWS_MAP2x.png" width="15" height="10" style="float: none; left: 0.0; top: 0.0;" alt="Import icon" /></a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050928">Anytown</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050930">Newtown</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050932">USA</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050937"><img class="Default" src="../images/IDB_IMPORT_ARROWS_MAP2x.png" width="15" height="10" style="float: none; left: 0.0; top: 0.0;" alt="Import icon" /></a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050939">USA</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050941">USA</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050943"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050948"><img class="Default" src="../images/field-map-dont-import.gif" width="15" height="3" style="float: none; left: 0.0; top: 0.0;" alt="Do not import icon in Windows" /></a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050950">3/3/1960</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050952">3/3/1960</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050954"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050959"><img class="Default" src="../images/IDB_IMPORT_ARROWS_MAP2x.png" width="15" height="10" style="float: none; left: 0.0; top: 0.0;" alt="Import icon" /></a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050961">(408) 555-6789</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1050963"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="hs1-headsub1"><a name="1028148">Notes </a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028149">If the source file is a FileMaker Pro file, you can import only the records in the found set and skip importing the omitted records. See </a><span class="zh-hyper"><a href="import_export.17.26.html#1029426">FileMaker Pro format</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028154">Match fields in the target file cannot be container, summary, or </a><span class="g-glosslink"><a href="glossary.html#1028220">unstored calculation</a></span> fields. The <span class="g-glosslink"><a href="glossary.html#1027715">field type</a></span> of match fields should correspond to the type of data in the matching field. For example, number fields should not be matched to fields containing text. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028156">If all specified match fields in a record are empty, that record will not be updated.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028157">If a record in the source file matches more than one record in the target file, all matching records in the found set of the target file will be updated. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028158">If more than one record in the source file matches a record in the found set of the target file, the target file will be updated with the last matching record in the source file. (During the import process, the matching record in the target file is actually updated multiple times — once by each matching record in the source file — so the last matching source record to update the matching target record determines its final content.)</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028159">The found set after an update contains the records that were updated (those that matched) and any new records added, regardless of the found set before update. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="rh-relatedhead">Related topics<a name="1028160"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="import_export.17.14.html#1028245" name="1028164">Importing data into an existing file</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="import_export.17.19.html#1061356" name="1028168">Setting the import action and mapping fields during import</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="import_export.17.12.html#1028174" name="1028172">About creating a new table for imported data</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="import_export.17.15.html#1028368" name="1045753">Setting up recurring imports</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

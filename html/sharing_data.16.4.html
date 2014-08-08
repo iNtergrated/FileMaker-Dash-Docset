@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Before a shared file can be closed by a host, all clients must close the file. FileMaker Pro allows you to prompt networked clients to close the shared file when you do one of the following: close the file, change the sharing conditions for the file, exit ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Closing shared files</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="sharing_data.16.5.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="sharing_data.16.3.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1029639">Sharing data</a> &gt; 
+      <a href="sharing_data.16.1.html#1029639">Sharing databases on a network</a> &gt; 
+      <a href="sharing_data.16.2.html#1029639">Sharing and hosting files</a> &gt; 
+      <b>Closing shared files</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Closing shared files</div>
+      <div class="b-body"><a name="1029640">Before a shared file can be closed by a host, all clients must close the file. FileMaker Pro allows you to prompt networked clients to close the shared file when you do one of the following: close the file, change the sharing conditions for the file, exit FileMaker Pro, or perform a task that requires all clients to close the file. If a client does not respond to your request to close a shared file within 30 seconds, FileMaker Pro attempts to close the shared file on the clients’ machine.</a></div>
+      <div class="hs1-headsub1"><a name="1029641">To close a shared file:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1029642">On the computer hosting the file, choose </a><span class="o-onscreen">File</span> menu &gt;<span class="o-onscreen"> Close</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029643">If any clients have the shared file open, you see a dialog box listing those clients. Click </a><span class="o-onscreen">Ask</span> to send a message to these clients requesting that they close the file.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029644">Clients see a dialog box requesting that they close the file. </a></div>
+      <div class="ta-tableanchor"><a name="1029662"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1029647">If</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1029649">Then FileMaker Pro </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029651">Clients click </a><span class="o-onscreen">Cancel</span></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029653">Waits for those clients to close the file</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029655">Clients click </a><span class="o-onscreen">Close Now</span></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029657">Closes the shared file on the client's computer. (If other FileMaker Pro files are open, they are left open.)</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029659">Clients do nothing</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029661">Attempts to close the file after 30 seconds, if it can be closed safely</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="b1-body1"><a name="1029663">Once all clients have closed the file, FileMaker Pro closes the file on your computer.</a></div>
+      <div class="nt-notetip">
+        <span class="zan-autonum">Tip  </span><a name="1046251">As the host, you can send a message to all clients accessing the database. Choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Sharing</span> &gt; <span class="o-onscreen">Share with FileMaker Clients </span>to open the FileMaker Network Settings dialog box. Select the shared database from the <span class="o-onscreen">Currently open files list</span>. Click the <span class="o-onscreen">Send Message</span> button, type a message in the Send Message dialog box, and click <span class="o-onscreen">OK</span>.</div>
+      <div class="b-body"><span class="zan-autonum"><a name="1029665">To quit FileMaker Pro when you're hosting a shared file:</a></span> Choose <span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Exit</span> (Windows), or <span class="o-onscreen">FileMaker Pro</span> menu &gt; <span class="o-onscreen">Quit FileMaker Pro</span> (OS X). If you see a dialog box listing connected users, click <span class="o-onscreen">Ask</span>. Once all clients have closed the file, FileMaker Pro closes the file on your computer and then quits.</div>
+      <div class="rh-relatedhead">Related topics<a name="1029666"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="sharing_data.16.3.html#1029598" name="1029670">Opening files as the host</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

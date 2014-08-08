@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="FileMaker Pro reserves the use of some words and symbols, including:" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Using a reserved word or symbol for a field or table name</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="create_db.8.52.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="create_db.8.50.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1030956">Designing and creating databases</a> &gt; 
+      <a href="create_db.8.1.html#1030956">Creating a database</a> &gt; 
+      <a href="create_db.8.44.html#1030956">Working with formulas and functions</a> &gt; 
+      <b>Using a reserved word or symbol for a field or table name</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Using a reserved word or symbol for a field or table name</div>
+      <div class="b-body"><a name="1030957">FileMaker Pro reserves the use of some words and symbols, including:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030958">The names of functions that have no arguments such as Pi or Random.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030959">Predefined parameters of some functions such as the </a><span class="c-code">Roman</span> and <span class="c-code">Greek</span> font scripts for the TextFont function.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030963">Some keywords and symbols. See </a><span class="zh-hyper"><a href="create_db.8.12.html#1081048">About naming fields</a></span> for some guidelines.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1030964">Avoid using these words and symbols in field names and table names, because the names become difficult to refer to in calculations. </a></div>
+      <div class="b-body"><a name="1030965">If one of your field names or table names is a reserved word or contains reserved symbol, you must put the characters </a><span class="c-code">${</span> <span class="c-code">} </span>around the name when it appears in a function.</div>
+      <div class="nt-notetip">
+        <span class="zan-autonum">Tip  </span><a name="1030966">When you double-click to choose a field for a calculation, FileMaker Pro automatically wraps the characters </a><span class="c-code">${</span> <span class="c-code">}</span> around field names that are reserved words or that contain reserved symbols.</div>
+      <div class="hs1-headsub1"><a name="1030967">Examples</a></div>
+      <div class="b-body"><span class="c-code"><a name="1030968">${A + B}</a></span> returns the contents of a field named A + B.</div>
+      <div class="b-body"><span class="c-code"><a name="1030969">${.123}</a></span> returns the contents of a field named .123.</div>
+      <div class="b-body"><span class="c-code"><a name="1030970">${Pi}</a></span> returns the contents of a field named Pi.</div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1030971">During file conversion, FileMaker Pro uses the characters </a><span class="c-code">${</span> <span class="c-code">}</span> to enclose field names that conflict with reserved words and symbols.</div>
+      <div class="rh-relatedhead">Related topics<a name="1030972"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.46.html#1030710" name="1030976">About formulas</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.20.html#1029046" name="1030980">Defining calculation fields</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="non_toc.46.41.html#1029503" name="1030984">Text operators</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.47.html#1030789" name="1030988">Using operators in formulas</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_func_cat.29.2.html#707904" name="1030992">Functions reference (category list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_func_alpha.html#47874" name="1030996">Functions reference (alphabetical list)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

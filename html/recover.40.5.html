@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="FileMaker Pro runs a consistency check automatically, if necessary, when a database is opened. You can also choose to verify the consistency of a file if you suspect the file is damaged. If a database requires more extensive correction to open, you can hav ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>About recovering FileMaker Pro files</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="recover.40.6.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="recover.40.4.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1028457">Reference</a> &gt; 
+      <a href="recover.40.1.html#1028457">Maintaining and recovering FileMaker Pro databases</a> &gt; 
+      <b>About recovering FileMaker Pro files</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h3-head3">About recovering FileMaker Pro files</div>
+      <div class="b-body"><a name="1028458">FileMaker Pro runs a consistency check automatically, if necessary, when a database is opened. You can also choose to verify the consistency of a file if you suspect the file is damaged. If a database requires more extensive correction to open, you can have FileMaker Pro attempt to recover the file.</a></div>
+      <div class="b-body"><a name="1027583">The underlying action of file recovery is to preserve as much of the data as possible. In this context, </a><span class="v-variable">data</span> generically refers to the file’s <span class="g-glosslink"><a href="glossary.html#1028069">schema</a></span> and <span class="g-glosslink"><a href="glossary.html#1032999">structure</a></span> and its tables, records, layouts, scripts, and field definitions. Non-essential data, such as the sort order, is not recovered. </div>
+      <div class="b-body"><a name="1027584">These utilities do not guarantee that the file has been completely repaired. Therefore, after getting a damaged database to open, you should immediately save a backup copy of the recovered database and, depending on the severity of the problem, possibly import the data into a </a><span class="g-glosslink"><a href="glossary.html#1027590">clone</a></span> of the original database.</div>
+      <div class="b-body"><a name="1027585">After you have opened a repaired or recovered database, check for consistent content, especially if an active operation was running at the time of the shutdown.</a></div>
+      <div class="hs1-headsub1"><a name="1027586">Special notes on file recovery</a></div>
+      <div class="b-body"><a name="1027587">In general, recovering a file should be reserved for files that will not open or are displaying index problems. Try to save a compacted copy of the file first. Databases that are returning records incorrectly from a find should be fixed by saving a compacted copy (see </a><span class="zh-hyper"><a href="recover.40.4.html#1035127">Saving a compacted copy</a></span>).</div>
+      <div class="b-body"><a name="1027588">The Recover command aggressively attempts to correct a file so you can open it and recover your data. To do this, the recovery process may delete corrupted fields, layouts, layout objects, scripts, and data. For this reason, you should only use the Recover command when you cannot open a file. Do not use this command for regular file maintenance.</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1027589">There are many other conditions that return incorrect find results, including mismatched field types. Also, records might be unexpectedly deleted by a misplaced script step or an option set in the Edit Relationship dialog box. Be certain you have eliminated all other possibilities before assuming that a file is damaged and must be recovered.</a></div>
+    </blockquote>
+    <div class="WebWorks_MiniTOC">
+      <div class="WebWorks_MiniTOCTitle">Topics in this section</div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="recover.40.6.html#1027609">Preventing database damage</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="recover.40.7.html#1027619">Damaged files</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="recover.40.8.html#1027634">Damaged layouts</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="recover.40.9.html#1029333">Checking file consistency</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="recover.40.10.html#1029844">Recovering files</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="recover.40.11.html#1032103">Setting advanced file recovery options</a>
+      </div>
+    </div>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+/* alphabar */
+/* change png to gif in navbar */
+.navimg {
+	background-image: url(../images/prod_icon.gif); 
+}
+/* remove default margins around viewport */
+body {
+margin: 0px !important;
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+/* remove default margins around navbar */
+#navbar {
+	margin: 0px 0px 0px 0px;
+}
+div.rh-relatedhead {
+  margin-right: 0pt;
+}
+/* margins */
+#breadcrumb {
+	margin: 0 10px 0 10px;
+}
+#alphabar {
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+}
+.content-fmi {
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+}
+div.WebWorks_MiniTOC {
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+}
+/*more space for ti-title */
+.ti-title {
+	padding-top: 0.8em;
+}
+/*align on the web heading */
+.wwt-webtitle {
+	margin-right: 1px;
+	margin-left: 0px;
+	padding-right: 2px;
+}
+.wwt-webtitle span {
+	margin-left: 0px;
+}
+/* ensure footer displays on top of line */
+div#homefooter {
+	padding-top: 15px;
+}
+/* tighten upper space to account for nonfloating navbar*/
+.gt-glossterm a, .gh-glosshead a, .zfa-funcalphaheadAPL a, .zssa-scriptalphaheadAPL a {
+	padding-top: 1em;
+}
+div.rh-relatedhead {
+	width: 50%
+}
+div.rt-relatedtopic {
+	width: 50%
+}
+div.WebWorks_MiniTOC {
+	width: 50%;
+}

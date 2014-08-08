@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="If you are generating the values in a value list from a field, you can have FileMaker Pro dynamically change the value list's values based on the values in a second field. In other words, the value list will only display values in the first field from rela ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Example of a value list that includes only related field values</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="non_toc.46.24.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="non_toc.46.22.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <b></b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="hx3-head3notoc">Example of a value list that includes only related field values</div>
+      <div class="b-body"><a name="1029042">If you are generating the values in a value list from a field, you can have FileMaker Pro dynamically change the value list's values based on the values in a second field. In other words, the value list will only display values in the first field from related records where the relationship definition is met by a value entered into the second field. </a></div>
+      <div class="b-body"><a name="1029043">For example, imagine you have a table called Products that tracks a large number of inventory items. You could define a value list and assign it to the Item Name field to display only a subset of those items based on values in a second field, Category. During data entry, when you specify the value of the Category field (for example, Accessory), only the Item Name values where the Category equals Accessory show up in the value list. Similarly, if the value of Category changes to Clothing, the values for Item Name change to those records where Category matches Clothing.</a></div>
+      <div class="hs1-headsub1"><a name="1029044">To set up a value list like the example above, do the following:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1029046">Define a </a><span class="g-glosslink"><a href="glossary.html#1028087">self-join</a></span> relationship in the Products table and use the Category fields as the match fields.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029050">For more information, see </a><span class="zh-hyper"><a href="relational.11.10.html#1028163">About self-joining relationships</a></span>. Defining a self-join relationship creates another occurrence of the Products table in the Relationships graph (referred to here as the Products 2 table).</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029052">Define a value list that uses values from the Item Name field in the Products 2 table. Define this value list to include only related values starting from the Products table.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029055">For more information about defining a value list, see </a><span class="zh-hyper"><a href="edit_layout.10.46.html#1029124">Defining value lists</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029058">In </a><span class="g-glosslink"><a href="glossary.html#1034324">Layout mode</a></span>, add the Category and Item Name fields from the Products table to your layout.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029062">For more information, see </a><span class="zh-hyper"><a href="create_layout.9.26.html#1028465">Placing and removing fields on a layout</a></span>. If you want to create multiple line items on an invoice, you can add the Category and Item Name fields to a <span class="g-glosslink"><a href="glossary.html#1028003">portal</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029067">Format the Item Name field to display the value list you created in step 2. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029070">For more information, see </a><span class="zh-hyper"><a href="edit_layout.10.47.html#1118478">Setting up a field to display a pop-up menu, checkbox set, or other control</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029072">Enter data into your Category and Item Name fields.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029073">After you enter a value for Category and tab into the Item Name field, FileMaker Pro retrieves the related records where Category matches the value you entered, and displays the corresponding Item Name values in the value list.</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1029074">Both the field with the value list values and the match field for the relationship must reside in the same file, for example, Category and Item Name from the example above.</a></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

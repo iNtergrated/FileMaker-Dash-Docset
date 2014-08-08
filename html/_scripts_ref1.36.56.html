@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="keywords" content="sound, movies, songs, clips, multimedia, media files" />
+    <meta name="description" content="Imports an audio or video file, or a reference to an audio or video file, into the current interactive container." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Insert Audio/Video</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <a name="//apple_ref/cpp/Command/Insert Audio/Video" class="dashAnchor"></a>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="scripts_ref1.36.57.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="scripts_ref1.36.55.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1056339">Reference</a> &gt; 
+      <a href="help_script_cat.34.1.html#1056339">Script steps reference</a> &gt; 
+      <a href="scripts_ref1.36.41.html#1056339">Fields script steps</a> &gt; 
+      <b>Insert Audio/Video</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="ssh-scripthead">Insert Audio/Video</div>
+      <div class="sspuh-scriptpurposehead">Purpose<a name="1079898"> </a></div>
+      <div class="sspu-scriptpurpose"><a name="1079900">Imports an audio or video file, or a reference to an audio or video file, into the current </a><span class="g-glosslink"><a href="glossary.html#1045835">interactive container</a></span>.</div>
+      <div class="ssfh-scriptformathead">Format<a name="1079901"> </a></div>
+      <div class="ssf-scriptformat"><a name="1056343">Insert Audio/Video [Reference;“</a><span class="v-variable">&lt;filename&gt;</span>”]</div>
+      <div class="ssoh-scriptoptshead">Options<a name="1056344"> </a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1079867">Select</a><span class="o-onscreen"> Store only a reference</span> to have FileMaker Pro store only a link to an audio or video file in the container field instead of the actual file. This option may reduce the size of your FileMaker Pro file, but if you move or delete the file being referenced, FileMaker Pro won't be able to display it.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1056750">Select</a><span class="o-onscreen"> Specify source file</span> or click<span class="o-onscreen"> Specify</span> to display the Specify Audio/Video File dialog box, where you can specify the audio or video file you intend to insert in the interactive container. Or click <span class="o-onscreen">Add File </span>and choose a file to insert. For more information, see <span class="zh-hyper"><a href="create_db.8.42.html#1087742">Creating file paths</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sscoh-scriptcompathead">Compatibility<a name="1063114"> </a></div>
+      <div class="ta-tableanchor"><a name="1063140"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh1-scriptstepcompthead1">Where the script step runs<a name="1076475"> </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh2-scriptstepcompthead2">Supported<a name="1076477"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco1-scriptstepcompt1">FileMaker Pro<a name="1076479"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1076481"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco2-scriptstepcompt2">FileMaker Server scheduled script<a name="1076483"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1076485"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco3-scriptstepcompt3">FileMaker Go<a name="1076487"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1076489"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco4-scriptstepcompt4">Custom Web Publishing<a name="1076491"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1076493"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco5-scriptstepcompt5">FileMaker WebDirect<a name="1076495"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscop-scriptstepcomptpartial">Partial<a name="1076497"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco6-scriptstepcompt6">Runtime solution<a name="1076499"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1076501"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="orh-originhead">Originated in<a name="1056353"> </a></div>
+      <div class="or-origin"><a name="1056354">FileMaker Pro 12.0</a></div>
+      <div class="ssdh-scriptdeschead">Description<a name="1056355"> </a></div>
+      <div class="b-body"><a name="1056359">You must specify a field, click in a field, or use the </a><span class="zh-hyper"><a href="scripts_ref1.36.25.html#1028490">Go to Field script step</a></span> before performing this script step.</div>
+      <div class="b-body"><a name="1056360">When Insert Audio/Video is performed, unless a file is specified with the </a><span class="o-onscreen">Specify source file </span>option, FileMaker Pro displays a dialog box where the user can select and preview the file to be imported.</div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1102935">FileMaker WebDirect does not support the </a><span class="o-onscreen">Store only a reference</span> or <span class="o-onscreen">Specify source file</span> options.</div>
+      <div class="hs1-headsub1"><a name="1056361">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1079969">If there is no active container field on the layout where the script is being performed, Insert Audio/Video returns an error code that can be captured with the </a><span class="zh-hyper"><a href="func_ref2.32.46.html#1029752">Get(LastError) function</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1079976">This script step works only for interactive containers. For more information, see </a><span class="zh-hyper"><a href="edit_layout.10.43.html#1136311">Specifying formats for container fields</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1056370">For a list of supported media types, see </a><span class="zh-hyper"><a href="add_view_data.4.35.html#1053046">Using data in container fields</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sseh1-scriptexamhead1">Example 1<a name="1056371"> </a></div>
+      <div class="b-body"><a name="1089677">Goes to the Media field and inserts an audio file.</a></div>
+      <div class="co-code"><a name="1089679">Go to Field [Customers::Media]<br />Insert Audio/Video [“Music.mp3”]</a></div>
+      <div class="sseh2-scriptexamhead2">Example 2<a name="1089666"> </a></div>
+      <div class="b-body"><a name="1089705">Inserts the media file specified in the Media Name field into the active container field by reference.</a></div>
+      <div class="co-code"><a name="1089707">Set Variable [$MEDIA_PATH; Value: Get ( DocumentsPath ) &amp; Products::Media Name]<br />Insert Audio/Video [Reference; “$MEDIA_PATH”]</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1056373"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_alpha.html#66468" name="1056377">Script steps reference (alphabetical list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_cat.34.2.html#947337" name="1056381">Script steps reference (category list)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="After configuring an ODBC client driver, you can interact with records, import records into an existing FileMaker Pro database file, or create a new FileMaker Pro database file from an ODBC data source (such as Oracle or Microsoft Access databases)." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Querying an ODBC data source from FileMaker Pro</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="4103" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="odbc_ess.20.13.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="odbc_ess.20.11.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1035969">Sharing data</a> &gt; 
+      <a href="odbc_ess.20.1.html#1035969">Accessing external data sources</a> &gt; 
+      <b>Querying an ODBC data source from FileMaker Pro</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h3-head3">Querying an ODBC data source from FileMaker Pro</div>
+      <div class="b-body"><a name="1035973">After configuring an </a><span class="g-glosslink"><a href="glossary.html#1027961">ODBC</a></span> <span class="g-glosslink"><a href="glossary.html#1027581">client</a></span> <span class="g-glosslink"><a href="glossary.html#1027659">driver</a></span>, you can interact with records, import records into an existing FileMaker Pro <span class="g-glosslink"><a href="glossary.html#1027641">database file</a></span>, or create a new FileMaker Pro database file from an ODBC <span class="g-glosslink"><a href="glossary.html#1027629">data source</a></span> (such as Oracle or Microsoft Access databases). </div>
+      <div class="b-body"><a name="1027949">First, you access the data source you want to import from. Then you construct a query for the records you want to import from the data source. Finally, if you’re importing data into an existing file, you map fields from your data source to fields in your FileMaker Pro database file.</a></div>
+      <div class="ni-noteimportant">
+        <span class="zan-autonum">Important  </span><a name="1027953">See </a><span class="zh-hyper"><a href="odbc_ess.20.3.html#1027612">Connecting to data sources</a></span> for information on how you can access and work with ODBC data sources without writing SQL queries.</div>
+      <div class="b-body"><a name="1027956">You can access your ODBC data source through the </a><span class="o-onscreen">File</span> menu, with the <span class="zh-hyper"><a href="scripts_ref1.36.73.html#1030099">Import Records script step</a></span>, or with the <span class="zh-hyper"><a href="scripts_ref2.37.73.html#1029790">Execute SQL script step</a></span>.</div>
+      <div class="b-body"><a name="1027962">All applications that support ODBC recognize a basic subset of </a><span class="g-glosslink"><a href="glossary.html#1028126">SQL (Structured Query Language)</a></span> statements. SQL is passed through the ODBC interface to the data source, performing queries such as <span class="c-code">SELECT first_name, last_name FROM customers WHERE city=N'Paris'</span> and making updates such as the creation of a new record with <span class="c-code">INSERT INTO customers (first_name, last_name) VALUES (N'Jane',N'Smith')</span>.</div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1030020">Because Microsoft SQL Server supports both Unicode and non-Unicode field types, you must prefix all Unicode strings with an uppercase “N” (which stands for “National” in the SQL-92 standard). Otherwise, when a Unicode string containing non-English characters is passed to Microsoft SQL Server, you may lose any data that doesn’t exist in the Microsoft SQL Server code page.</a></div>
+      <div class="hs1-headsub1"><a name="1035580">To query an ODBC data source from FileMaker Pro:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1027964">In FileMaker Pro, do one of the following:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1027965">To import into an existing FileMaker Pro file, choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Import Records</span> &gt; <span class="o-onscreen">ODBC Data Source</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1027966">To create a FileMaker Pro file from the data source records, choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Open</span>. In the Open dialog box, choose <span class="o-onscreen">ODBC Data Source</span> for <span class="o-onscreen">Files of type</span> (Windows) or <span class="o-onscreen">Show</span> (OS X).</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027967">Choose your data source and click </a><span class="o-onscreen">Continue</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027968">Most server-based ODBC drivers require the data source to be open, but the requirement varies depending on the driver.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027969">Enter the user name and password (if any) for the data source you chose.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027970">To skip this dialog box in the future, select </a><span class="o-onscreen">Save user name and password</span> (this option is only available if you’re importing into an existing FileMaker Pro file).</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027971">Click </a><span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027972">The FileMaker Pro SQL Query builder dialog box appears.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027976">Construct your query. See </a><span class="zh-hyper"><a href="odbc_ess.20.13.html#1028014">Constructing an SQL query for importing via ODBC</a></span> for details.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027977">You can execute the query immediately, or copy and paste it into a field for later use. Use the Import Records or Execute SQL script step to execute a query stored in a field. See </a><span class="zh-hyper"><a href="odbc_ess.20.15.html#1028079">Storing an SQL query in a field</a></span> for details.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027981">Click </a><span class="o-onscreen">Execute</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1027982">If you are importing data into an existing file, FileMaker Pro displays the Import Field Mapping dialog box. You map fields from the data source to fields in your FileMaker Pro database file. See </a><span class="zh-hyper"><a href="import_export.17.19.html#1061356">Setting the import action and mapping fields during import</a></span> and <span class="zh-hyper"><a href="import_export.17.14.html#1028245">Importing data into an existing file</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1027989">If you are importing data into a new file, FileMaker Pro puts the imported records into your database file.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1030559">ODBC import, the Execute SQL script step, and external SQL data sources are not supported in runtime solutions created with FileMaker Pro Advanced.</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1027990"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="odbc.19.1.html#1027500" name="1027994">Using ODBC and JDBC with FileMaker Pro</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="odbc_ess.20.2.html#1027549" name="1027998">Configuring an ODBC client driver</a></span></div>
+    </blockquote>
+    <div class="WebWorks_MiniTOC">
+      <div class="WebWorks_MiniTOCTitle">Topics in this section</div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="odbc_ess.20.13.html#1028014">Constructing an SQL query for importing via ODBC</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="odbc_ess.20.14.html#1028052">Executing SQL to interact with data sources via ODBC</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="odbc_ess.20.15.html#1028079">Storing an SQL query in a field</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="odbc_ess.20.16.html#1035844">Automating ODBC import using the Import Records script step </a>
+      </div>
+    </div>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

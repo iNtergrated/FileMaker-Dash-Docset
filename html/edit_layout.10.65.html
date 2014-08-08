@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="If your operating system is configured to support Japanese text entry, you can format field objects and text objects that display Japanese text in vertical writing format. In vertical writing, characters are displayed and read from top-to-bottom, with succ ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Formatting fields and text for vertical writing</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="edit_layout.10.66.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="edit_layout.10.64.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1030010">Designing and creating databases</a> &gt; 
+      <a href="edit_layout.10.1.html#1030010">Editing objects, layout parts, and the layout background</a> &gt; 
+      <a href="edit_layout.10.62.html#1030010">Formatting text</a> &gt; 
+      <b>Formatting fields and text for vertical writing</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Formatting fields and text for vertical writing</div>
+      <div class="b-body"><a name="1030011">If your operating system is configured to support Japanese text entry, you can format field objects and text objects that display Japanese text in vertical writing format. In vertical writing, characters are displayed and read from top-to-bottom, with successive columns displayed vertically from right-to-left.</a></div>
+      <div class="b-body"><a name="1030012">There are two ways to format vertical text on a layout. The format you choose usually depends on the page orientation of the layout. For each text object or field, you can:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="e-emphasis"><a name="1030013">Rotate the characters only, but not the field or text object.</a></span> In this case, each character is rotated 90 degrees counter-clockwise, but the characters still display left-to-right and columns remain horizontal.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="e-emphasis"><a name="1030014">Rotate both the characters and the field or text object.</a></span> In this case, each character is rotated 90 degrees counter-clockwise and the text object or field object is also rotated 90 degrees clockwise so that characters display on screen in vertical format, with characters displaying top-to-bottom in vertical columns.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1030015">Alphabetic and numeric half-width (hankaku) characters do not rotate when you specify </a><span class="o-onscreen">Sideways</span>, but alphabetic and numeric full-width (zenkaku) characters do rotate. For example, when an address field containing half-width numbers for a street number is specified as <span class="o-onscreen">Sideways</span>, the half-width numbers remain in their original orientation. You can use functions to convert alphabetic or numeric half-width characters to full-width characters or Chinese numbers. For more information, see the Notes section below.</div>
+      <div class="b-body"><a name="1030019">The following table shows the available formatting choices:</a></div>
+      <div class="ta-tableanchor"><a name="1030063"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1030022">Original Japanese text</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1030024">Rotating characters only</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;" colspan="2">
+            <div class="th-tablehead"><a name="1030026">Rotating both<br />characters and<br />the object</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030030">Half-width:</a></div>
+            <div class="gr-graphicanchor"><a name="1030034"><img class="Default" src="../images/vertical-hw-original.png" width="192" height="44" style="float: none; left: 0.0; top: 0.0;" alt="Original Japanese text (hankaku example)" /></a></div>
+            <div class="td-tabledata"><a name="1030035">Full-width:</a></div>
+            <div class="gr-graphicanchor"><a name="1030039"><img class="Default" src="../images/vertical-fw-original.png" width="222" height="46" style="float: none; left: 0.0; top: 0.0;" alt="Original Japanese text (zenkaku example)" /></a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030041">Half-width:</a></div>
+            <div class="gr-graphicanchor"><a name="1030045"><img class="Default" src="../images/vertical-hw-rotate-char.png" width="191" height="46" style="float: none; left: 0.0; top: 0.0;" alt="Rotating characters only (hankaku example)" /></a></div>
+            <div class="td-tabledata"><a name="1030046">Full-width:</a></div>
+            <div class="gr-graphicanchor"><a name="1030050"><img class="Default" src="../images/vertical-fw-rotate-char.png" width="228" height="44" style="float: none; left: 0.0; top: 0.0;" alt="Rotating characters only (zenkaku example)" /></a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030052">Half-width:</a></div>
+            <div class="gr-graphicanchor"><a name="1030056"><img class="Default" src="../images/vertical-hw-rotate-obj.png" width="46" height="194" style="float: none; left: 0.0; top: 0.0;" alt="Rotating both character and the object (hankaku example)" /></a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030058">Full-width:</a></div>
+            <div class="gr-graphicanchor"><a name="1030062"><img class="Default" src="../images/vertical-fw-rotate-obj.png" width="50" height="227" style="float: none; left: 0.0; top: 0.0;" alt="Rotating both character and the object (zenkaku example)" /></a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="hs1-headsub1"><a name="1030064">To format fields and text objects for vertical writing:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1030066">In </a><span class="g-glosslink"><a href="glossary.html#1034324">Layout mode</a></span>, select the fields and text objects that you would like to set to vertical.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1030070">For more information, see </a><span class="zh-hyper"><a href="edit_layout.10.3.html#1027599">Selecting objects</a></span>. </div>
+      <div class="nt1-notetip1">
+        <span class="zan-autonum">Tip  </span><a name="1030074">You can select all text objects on a layout by clicking the </a><span class="o-onscreen">Text tool</span> <img class="Default" src="../images/text-tool.png" width="22" height="24" style="float: none; left: 0.0; top: 0.0;" alt="Text tool" /> in the <span class="g-glosslink"><a href="glossary.html#1028139">status toolbar</a></span> and choosing <span class="o-onscreen">Edit</span> menu &gt; <span class="o-onscreen">Select All</span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1030075">To rotate the characters 90 degrees counter-clockwise, choose </a><span class="o-onscreen">Format</span> menu &gt; <span class="o-onscreen">Orientation</span> &gt; <span class="o-onscreen">Sideways</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1030076">All text (except alphabetic and numeric full-width characters) displays as rotated.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1030077">To rotate the selected field objects and text objects so that text columns display vertically, choose </a><span class="o-onscreen">Arrange</span> menu &gt; <span class="o-onscreen">Rotate</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1030079">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030080">Depending on how you want the layout to print, you may want to change the page orientation of the layout. To do so, choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Print Setup</span> (Windows) or <span class="o-onscreen">Page Setup</span> (OS X), and change the page orientation to Portrait or Landscape.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1041711">In </a><span class="g-glosslink"><a href="glossary.html#1028006">Preview mode</a></span>, you can also click <span class="o-onscreen">Print Setup </span>(Windows) or <span class="o-onscreen">Page Setup</span> (OS X) in the status toolbar.</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030081">When you select text in a rotated field in </a><span class="g-glosslink">Browse mode</span> or in a rotated text object in Layout mode, the text temporarily displays unrotated while you’re editing the text.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030082">If necessary, you can also rotate graphics to match vertical text. For more information, see </a><span class="zh-hyper"><a href="edit_layout.10.69.html#1030276">Rotating objects</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030086">Instead of re-entering data, you can use functions to convert alphabetic and numeric half-width characters to full-width characters or Chinese numbers. To convert the characters using a function, define a new calculation field that contains the appropriate function and place it on the layout. The following functions are available. For more information, see </a><span class="zh-hyper"><a href="func_ref3.33.48.html#1029735">Text functions</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ta-tableanchor"><a name="1030121"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1030092">Field Type</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1030094">Function</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1030096">Conversion type</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030098">Text</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030100">RomanZenkaku</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030102">half-width numbers or alphabetic characters to full-width</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030104">Text</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030106">KanaZenkaku</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030108">half-width Katakana to full-width</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030110">Text</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030112">KanjiNumeral</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030114">half-width numbers to Chinese numbers</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030116">Numeric</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030118">NumToJText</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030120">half-width numbers to full-width</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="b1-body1"><a name="1030122">You can also display full-width characters for number, date and time fields by changing their field format. For more information, see:</a></div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><span class="zh-hyper"><a href="edit_layout.10.39.html#1125911" name="1030126">Specifying formats for fields containing numbers</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><span class="zh-hyper"><a href="edit_layout.10.40.html#1067068" name="1030130">Specifying formats for date fields</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><span class="zh-hyper"><a href="edit_layout.10.41.html#1067147" name="1030134">Specifying formats for time fields</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

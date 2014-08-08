@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="keywords" content="message, message in script, prompting, user input dialog box" />
+    <meta name="description" content="Displays a custom message dialog box, with custom text and labels." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Show Custom Dialog</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="6602" class="applehelp-cs"></a>
+      <a name="6603" class="applehelp-cs"></a>
+      <a name="6601" class="applehelp-cs"></a>
+      <a name="IDD_SPECIFY_SHOW_CUSTOM_DIALOG" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="scripts_ref2.37.61.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="scripts_ref2.37.59.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1068697">Reference</a> &gt; 
+      <a href="help_script_cat.34.1.html#1068697">Script steps reference</a> &gt; 
+      <a href="scripts_ref2.37.59.html#1068697">Miscellaneous script steps</a> &gt; 
+      <b>Show Custom Dialog</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="ssh-scripthead">Show Custom Dialog</div>
+      <div class="sspuh-scriptpurposehead">Purpose<a name="1068698"> </a></div>
+      <div class="sspu-scriptpurpose"><a name="1038334">Displays a custom message dialog box, with custom text and labels.</a></div>
+      <div class="ssfh-scriptformathead">Format<a name="1029317"> </a></div>
+      <div class="co-code"><a name="1029318">Show Custom Dialog [</a><span class="v-variable">&lt;title&gt;</span>; <span class="v-variable">&lt;message text&gt;</span>; Table1::input field 1;...]</div>
+      <div class="ssoh-scriptoptshead">Options<a name="1029319"> </a></div>
+      <div class="b-body"><a name="1029320">Click</a><span class="o-onscreen"> Specify</span> to display the “Show Custom Dialog” Options dialog box, where you can set the dialog box title, message text, and buttons, and specify up to three fields to use for input or display.</div>
+      <div class="hs2-headsub2"><a name="1029321">General options</a></div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><span class="o-onscreen"><a name="1029322">Title</a></span> lets you specify the title of the custom dialog box. You can enter literal text or click <span class="o-onscreen">Specify</span> to create the dialog box title from a calculation.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><span class="o-onscreen"><a name="1029323">Message</a></span> lets you specify the message of the dialog box.You can enter literal text or click <span class="o-onscreen">Specify</span> to create the message text from a calculation.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><span class="o-onscreen"><a name="1029324">Button Labels</a></span> let you specify how many buttons (up to three) to display in the custom dialog box and labels for these buttons. If you leave a button label blank, the button does not appear in the custom dialog box. If you leave all button titles blank, an OK button displays in the lower-right corner of the custom dialog box. To create a button label based on a calculation, click <span class="o-onscreen">Specify</span> and then specify the calculation.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><span class="o-onscreen"><a name="1079897">Commit Data</a></span> checkboxes pass input from the dialog box to the database according to the action of each button. If no fields are active, then the data is committed; if a field is active, then the data is committed when the record is committed.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs2-headsub2"><a name="1029325">Input Field options</a></div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029326">Select </a><span class="o-onscreen">Show input field &lt;</span><span class="v-variable">n</span><span class="o-onscreen">&gt;</span> to activate an input field.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029327">Select </a><span class="o-onscreen">Specify</span> to choose the field for input. Each input area maps to one field.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029328">Select </a><span class="o-onscreen">Use password character (*)</span> to mask text as it is entered, or as it is displayed from the database. This option obscures data being input into the custom dialog box or being displayed, but does not alter the actual data as it is stored in the database. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029329">Use </a><span class="o-onscreen">Label</span> to specify a field label (the text that will identify this input to the user.) You can enter literal text or create the label from a calculation.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sscoh-scriptcompathead">Compatibility<a name="1055148"> </a></div>
+      <div class="ta-tableanchor"><a name="1055174"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh1-scriptstepcompthead1">Where the script step runs<a name="1066625"> </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh2-scriptstepcompthead2">Supported<a name="1066627"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco1-scriptstepcompt1">FileMaker Pro<a name="1066629"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1066631"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco2-scriptstepcompt2">FileMaker Server scheduled script<a name="1066633"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1066635"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco3-scriptstepcompt3">FileMaker Go<a name="1066637"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1066639"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco4-scriptstepcompt4">Custom Web Publishing<a name="1066641"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1066643"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco5-scriptstepcompt5">FileMaker WebDirect<a name="1066645"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1066647"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco6-scriptstepcompt6">Runtime solution<a name="1066649"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1066651"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="orh-originhead">Originated in<a name="1043571"> </a></div>
+      <div class="or-origin"><a name="1043572">FileMaker Pro 6.0 or earlier</a></div>
+      <div class="ssdh-scriptdeschead">Description<a name="1029332"> </a></div>
+      <div class="b-body"><a name="1029336">The custom message dialog box can take user input for up to three fields in the database, and display data from up to three fields in the database. The script pauses as long as the custom dialog box stays on the screen. Fields used for input can be of type text, number, date, time, timestamp, or container. Your custom dialog box can also have up to three buttons, with custom button titles.</a></div>
+      <div class="b-body"><a name="1029340">Use the </a><span class="zh-hyper"><a href="func_ref2.32.47.html#1029814">Get(LastMessageChoice) function</a></span> to determine which button the user presses.</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1068076">1</a></span> for the first button (by default, labeled OK)</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1068077">2</a></span> for the second button (by default, labeled Cancel)</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1068078">3</a></span> for the third button</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1029345">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029346">If values entered into input fields don’t match the field type, a validation error message displays. The user must resolve validation errors before the dialog box can be closed. See </a><span class="zh-hyper"><a href="create_db.8.24.html#1029602">Defining field validation</a></span> for more information.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029350">The fields you specify don’t need to appear on the current layout. Show Custom Dialog input fields are independent of layouts, similar to the Set Field script step. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029351">Data can't be inserted into calculation or summary fields.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029355">Show Custom Dialog ignores any field entry options. See </a><span class="zh-hyper"><a href="edit_layout.10.57.html#1029603">Allowing or preventing entry into fields</a></span> for more information.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029357">Data entry via the Show Custom Dialog script step is limited by any </a><span class="g-glosslink"><a href="glossary.html#1027504">access privileges</a></span> criteria that may be in place. (Select <span class="o-onscreen">Run script with full access privileges</span> to enable the script for all users.)</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029358">(Windows) You can create a keyboard shortcut for a custom dialog box button by placing an ampersand before the shortcut key letter in the button label. For example, to create a keyboard shortcut ‘D’ (Alt+D) for a button labeled ‘Done’, type the label ‘&amp;Done’.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1045432">For databases created with pre-12 versions of FileMaker Pro that are opened with FileMaker Pro 13, the </a><span class="o-onscreen">Commit Data</span> checkbox for <span class="o-onscreen">Default Button</span> is selected when you open the Show Custom Dialog dialog box. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1045462">Before you change the data commitment status of a button for a database that’s already in use, consider the behavior that users currently expect of the button and how changing its behavior could affect the validity of data committed (or not committed) to the database.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1076100">To develop more-complex custom dialog boxes, you can use the </a><span class="zh-hyper"><a href="scripts_ref2.37.2.html#1027577">New Window</a></span><span class="h-hyperlink"> script step</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sseh1-scriptexamhead1">Example 1<a name="1076101"> </a></div>
+      <div class="b-body"><a name="1076102">Performs a find. If no records were found, displays a custom dialog.</a></div>
+      <div class="co-code"><a name="1074027">Perform Find [Restore]<br />If [Get (FoundCount) = 0]<br />	Show Custom Dialog ["No records were found."]<br />End If</a></div>
+      <div class="sseh2-scriptexamhead2">Example 2<a name="1073982"> </a></div>
+      <div class="b-body"><a name="1074074">Creates a new record, prompts the user to enter information, then goes to the Customer Details layout. The first button is Cancel so that users don't inadvertently create a record by pressing Return or Enter in the custom dialog.</a></div>
+      <div class="co-code"><a name="1074076">Freeze Window<br />New Record/Request<br />Show Custom Dialog ["New Customer"; "Enter information into the fields below:"; Customers::Company; Customers::Name; Customers::City]<br />If [Get ( LastMessageChoice ) = 1]<br />	Delete Record/Request [No dialog]<br />Else<br />	Go to Layout ["Customer Details"]<br />End If</a></div>
+      <div class="sseh3-scriptexamhead3">Example 3<a name="1074003"> </a></div>
+      <div class="b-body"><a name="1074159">Enters Find mode, prompts the user for find criteria, and performs the find. If the find returns no records, asks if the user wants to find again, and either performs the script again or halts all scripts.</a></div>
+      <div class="hs2-headsub2"><a name="1074161">Script: Find</a></div>
+      <div class="co1-code1"><a name="1076311">Enter Find Mode [ ]<br />Show Custom Dialog ["Find customers by ID, name, or city."; Customers::ID; Customers::Name; Customers::City]<br />If [Get ( LastMessageChoice ) = 1]<br />		Perform Find [ ]<br />		If [Get ( FoundCount ) = 0]<br />			Show Custom Dialog ["No records were found. Find again?"]<br />			If [Get ( LastMessageChoice ) = 1]<br />				#Calls this script as a sub-script<br />				Perform Script ["Find"]<br />			Else<br />				Show All Records<br />				#Halts all scripts and sub-scripts<br />				Halt Script<br />			End If<br />		End If<br />Else If [Get ( LastMessageChoice ) = 2]<br />		Enter Browse Mode [ ]<br />End If</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1029366"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_alpha.html#66468" name="1029370">Script steps reference (alphabetical list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_cat.34.2.html#947337" name="1029374">Script steps reference (category list)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

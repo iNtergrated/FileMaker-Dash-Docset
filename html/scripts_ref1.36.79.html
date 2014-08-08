@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Enters Find mode and finds records that match one or more find requests that you set up, that are stored with the script step." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Perform Find</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="scripts_ref1.36.80.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="scripts_ref1.36.78.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1030378">Reference</a> &gt; 
+      <a href="help_script_cat.34.1.html#1030378">Script steps reference</a> &gt; 
+      <a href="scripts_ref1.36.78.html#1030378">Found Sets script steps</a> &gt; 
+      <b>Perform Find</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="ssh-scripthead">Perform Find</div>
+      <div class="sspuh-scriptpurposehead">Purpose<a name="1040543"> </a></div>
+      <div class="sspu-scriptpurpose"><a name="1040544">Enters </a><span class="g-glosslink"><a href="glossary.html#1027728">Find mode</a></span> and finds records that match one or more find requests that you set up, that are stored with the script step. </div>
+      <div class="ssfh-scriptformathead">Format<a name="1030379"> </a></div>
+      <div class="ssf-scriptformat"><a name="1030380">Perform Find [Restore]</a></div>
+      <div class="ssoh-scriptoptshead">Options<a name="1030381"> </a></div>
+      <div class="b-body"><a name="1030383">Select </a><span class="o-onscreen">Specify find requests</span> or click <span class="o-onscreen">Specify </span>to create and manage <span class="g-glosslink"><a href="glossary.html#1027732">find requests</a></span>. The requests you create are stored with the script step. For more information, see <span class="zh-hyper"><a href="non_toc.46.45.html#1029788">Specify Find Requests and Edit Find Request dialog boxes</a></span>.</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1030384">New</a></span> opens the Edit Find Request dialog box, where you define criteria for a find request.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1030385">Edit</a></span> opens a selected find request from the list.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1030386">Duplicate</a></span> duplicates one or more selected find requests from the list.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1030387">Delete</a></span> deletes one or more selected find requests from the list.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1030388">The Edit Find Request dialog box allows you to create or edit find request criteria.</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030389">For </a><span class="o-onscreen">Action</span>, select <span class="o-onscreen">Find Records</span> or <span class="o-onscreen">Omit Records</span> to specify whether this find request will find or omit records. Finding records adds them to your <span class="g-glosslink"><a href="glossary.html#1027747">found set</a></span>. Omitting records excludes them. An individual request can find <span class="e-emphasis">or</span> omit records; use multiple requests if you need to find <span class="e-emphasis">and</span> omit records during the same Perform Find script step.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1030392">Find records when</a></span> (or <span class="o-onscreen">Omit records when</span>) shows a list of the fields in your current <span class="g-glosslink"><a href="glossary.html#1045562">table</a></span>. To construct a find request, begin by selecting a field from this list. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1030394">To select a field from a </a><span class="g-glosslink"><a href="glossary.html#1028042">related table</a></span>, click the name of the current table at the top of the list and select the related table you want. Select a <span class="g-glosslink"><a href="glossary.html#1028036">related field</a></span> from this new list.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1030397">Change the value in </a><span class="o-onscreen">Repetition</span> to specify a particular cell of a <span class="g-glosslink"><a href="glossary.html#1028056">repeating field</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030399">Type your </a><span class="g-glosslink"><a href="glossary.html#1028084">search criteria</a></span> for the selected field in the <span class="o-onscreen">Criteria</span> area.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1030403">Click </a><span class="o-onscreen">Insert Operator</span> to further refine your search criteria. See <span class="zh-hyper"><a href="find_sort.5.2.html#1027519">Finding records</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030404">Click </a><span class="o-onscreen">Add</span> to add your criteria to the find request.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030405">To change existing criteria, select the line containing the field and criteria from the top of the dialog box, and make your changes to field and/or criteria. Click </a><span class="o-onscreen">Change</span> to store your changes.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030406">To delete existing criteria, select the line containing the field and criteria from the top of the dialog box and click </a><span class="o-onscreen">Remove</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sscoh-scriptcompathead">Compatibility<a name="1064142"> </a></div>
+      <div class="ta-tableanchor"><a name="1064168"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh1-scriptstepcompthead1">Where the script step runs<a name="1077585"> </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh2-scriptstepcompthead2">Supported<a name="1077587"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco1-scriptstepcompt1">FileMaker Pro<a name="1077589"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077591"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco2-scriptstepcompt2">FileMaker Server scheduled script<a name="1077593"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077595"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco3-scriptstepcompt3">FileMaker Go<a name="1077597"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077599"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco4-scriptstepcompt4">Custom Web Publishing<a name="1077601"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077603"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco5-scriptstepcompt5">FileMaker WebDirect<a name="1077605"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077607"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco6-scriptstepcompt6">Runtime solution<a name="1077609"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1077611"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="orh-originhead">Originated in<a name="1049983"> </a></div>
+      <div class="or-origin"><a name="1049984">FileMaker Pro 6.0 or earlier</a></div>
+      <div class="ssdh-scriptdeschead">Description<a name="1030409"> </a></div>
+      <div class="b-body"><a name="1030416">If you do not create a find request, this script step will perform the last find request that was executed. </a></div>
+      <div class="b-body"><a name="1030420">You can use a Perform Find script following an </a><span class="zh-hyper"><a href="scripts_ref1.36.30.html#1028614">Enter Find Mode script step</a></span>, to pause the script and allow the user to enter find criteria before performing a find.</div>
+      <div class="sseh1-scriptexamhead1">Example 1<a name="1092240"> </a></div>
+      <div class="b-body"><a name="1092268">Goes to the Invoice Details layout, enters Find Mode, pauses for user input, performs a find, and returns to the original layout.</a></div>
+      <div class="co-code"><a name="1092270">Go to Layout ["Invoice Details"]<br />Enter Find Mode [Pause]<br />Perform Find [ ]<br />Go to Layout [original layout]</a></div>
+      <div class="sseh2-scriptexamhead2">Example 2<a name="1092257"> </a></div>
+      <div class="b-body"><a name="1092317">Goes to Find mode, pauses for user input, and performs the find. Displays the Invoice Details layout, Invoices layout, or a custom dialog depending on how many records were found.</a></div>
+      <div class="co-code"><a name="1092319">Set Error Capture [On]<br />Enter Find Mode [Pause]<br />Perform Find [ ]<br />If [Get ( FoundCount ) = 1]<br />	Go to Layout ["Invoice Details"]<br />Else If [Get ( FoundCount ) &gt; 1]<br />	Go to Layout ["Invoices"]<br />Else<br />	Show Custom Dialog ["No records were found."]<br />End If</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1092242"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="scripts_ref1.36.82.html#1095835" name="1030435">Constrain Found Set script step</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="scripts_ref1.36.83.html#1030473" name="1030439">Extend Found Set script step</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.8.html#1028153" name="1052918">Finding ranges of information</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_alpha.html#66468" name="1030443">Script steps reference (alphabetical list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_cat.34.2.html#947337" name="1030447">Script steps reference (category list)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

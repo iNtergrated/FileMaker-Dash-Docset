@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="You can use Table View in Browse mode to group your data by a field, display subtotals for a field, create subtotals for each group of data, or display a grand total for a group of data." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Creating dynamic reports in Table View</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="add_view_data.4.11.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="add_view_data.4.9.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part1.html#1046958">Using FileMaker Pro</a> &gt; 
+      <a href="add_view_data.4.1.html#1046958">Adding and viewing data</a> &gt; 
+      <a href="add_view_data.4.8.html#1046958">Working with data in Table View</a> &gt; 
+      <b>Creating dynamic reports in Table View</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Creating dynamic reports in Table View</div>
+      <div class="b-body"><a name="1047030">You can use </a><span class="g-glosslink"><a href="glossary.html#1045566">Table View</a></span> in <span class="g-glosslink"><a href="glossary.html#1027555">Browse mode</a></span> to group your data by a field, display subtotals for a field, create subtotals for each group of data, or display a grand total for a group of data.</div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1047477">You can view the quick report only in Table View. The changes you make have no impact on the current layout.</a></div>
+      <div class="hs1-headsub1"><a name="1048653">To group data by a field:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1048655">In Browse mode, right-click the column heading for the field that you want to use for grouping the data, then choose </a><span class="o-onscreen">Add Leading Group by &lt;</span><span class="e-emphasis">field name</span><span class="o-onscreen">&gt; </span>or <span class="o-onscreen">Add Trailing Group by &lt;</span><span class="v-variable">field name</span><span class="o-onscreen">&gt;</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1047109">For example, if you want to display the sales data by City and add a summary row at the end of the records for each city, choose Add Trailing Group by City. If you want to add the summary row before the records for each city, choose Add Leading Group by City.</a></div>
+      <div class="b1-body1"><a name="1047486">Adding a leading/trailing group automatically sorts the records by the field that you used for grouping the data. For example, the cities will be listed in alphabetical order.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1053873">If you want to change the color of the summary row for each group, right-click the left or right margin of the summary row and choose a color from the </a><span class="o-onscreen">Part Color</span> shortcut menu.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1049647">If you want to display the name of each group in the summary row, right-click the left margin of the summary row, then choose </a><span class="o-onscreen">Add Group Field (&lt;</span><span class="e-emphasis">field name</span><span class="o-onscreen">&gt;)</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="nt-notetip">
+        <span class="zan-autonum">Tip  </span><a name="1049648">You can add leading/trailing groups for multiple fields to display different categories for each group of records.</a></div>
+      <div class="hs1-headsub1"><a name="1047220">To remove a group:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1047222">In Browse mode, right-click the column heading for the field that you used for grouping the data, then choose </a><span class="o-onscreen">Remove Leading Group by &lt;</span><span class="e-emphasis">field name</span><span class="o-onscreen">&gt; </span>or <span class="o-onscreen">Remove Trailing Group by &lt;</span><span class="e-emphasis">field name</span><span class="o-onscreen">&gt;</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1047218">To display subtotals:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1047205">In Browse mode, right-click the column heading of the field that you want to display subtotals for.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1047279">Choose </a><span class="o-onscreen">Leading Subtotals </span>or <span class="o-onscreen">Trailing Subtotals</span>, then choose options from the shortcut menu.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ta-tableanchor"><a name="1047316"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1047285">Select</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1047287">To</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1047289">Total</a></span></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047291">Calculate the total of values in the field.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1047422">Running Total</a></span></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047424">Show the cumulative total for the current and all previous sorted groups. </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1047293">Average</a></span></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047295">Calculate the average of values in the field.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1047297">Count</a></span></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047299">Count the number of records that contain a value for the field. For example, if a field contains 100 values (one value for each record), the result of the count is 100.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1047427">Running Count</a></span></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047429">Show the cumulative count of the current and all previous sorted groups.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1047301">Minimum</a></span></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047303">Show the lowest number, or earliest date, time, or timestamp for a field.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1047305">Maximum</a></span></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047307">Show the highest number, or latest date, time, or timestamp for a field.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1047309">Standard Deviation</a></span></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047311">Find how widely the values in a field differ from each other. This option calculates the standard deviation from the mean of the values in a field.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1047435">Standard Deviation By Population</a></span></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047437">Calculate population standard deviation.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1047313">Fraction of Total</a></span></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1047315">Calculate the ratio of the value in the field to the total of all the values in that field. For example, find what fraction of total sales can be attributed to each salesperson.</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="b1-body1"><a name="1047206">A new row in the beginning of the table (for leading) or at the end of the table (for trailing) displays the subtotal for the field.</a></div>
+      <div class="b1-body1"><a name="1047217">If you have also added leading or trailing groups to the table, the group summary rows also display the subtotal for each group for the specified field. You have to choose a leading subtotal to display subtotals for leading groups and a trailing subtotal to display subtotals for trailing groups.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1053902">(Optional) To change the color of the row that displays the subtotal for the field, right-click the left or right margin of the row, then choose a color from the </a><span class="o-onscreen">Part Color</span> shortcut menu.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1048144">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1048146">Creating subtotals in Table View creates a summary field for each subtotal.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1048164">You need to have </a><span class="g-glosslink"><a href="glossary.html#1027750">Full Access privilege set</a></span> to create summary fields in Table View. If you don’t have Full Access privilege set, only existing summary fields are available in the shortcut menu.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1048576">To remove subtotals from Table View:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1050942">In Browse mode, right-click the column heading of the field that displays subtotals and choose </a><span class="o-onscreen">Leading Subtotals </span>or <span class="o-onscreen">Trailing Subtotals</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1050943">Deselect any options that you want to remove from the </a><span class="o-onscreen">Leading Subtotals </span>or <span class="o-onscreen">Trailing Subtotals </span>shortcut menu.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="n1-note1">
+        <span class="zan-autonum">Note  </span><a name="1047520">Removing subtotals from Table View does not remove the subtotal summary fields from the database. To remove the summary fields from the database, choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Manage</span> &gt; <span class="o-onscreen">Database</span>, click <span class="o-onscreen">Fields</span>, then choose the summary fields to remove and click <span class="o-onscreen">Delete</span>.</div>
+      <div class="hs1-headsub1"><a name="1049715">To display grand totals:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1049716">First group and subtotal data as described earlier in this topic.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1049900">In Browse mode, right-click the column heading of the field containing subtotals.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1049703">Choose </a><span class="o-onscreen">Add Leading Grand Summary</span> or <span class="o-onscreen">Add Trailing Grand Summary</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1049756">A new row in the beginning of the table (for leading) or at the end of the table (for trailing) displays the grand total for the field. </a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1049771">(Optional) To change the color of the row that displays the grand total for the field, right-click the left or right margin of the row, then choose a color from the </a><span class="o-onscreen">Part Color</span> shortcut menu.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1049783">To remove grand totals from Table View:</a></div>
+      <div class="b-body"><a name="1049784">In Browse mode, right-click the column heading of the field that displays grand totals and choose </a><span class="o-onscreen">Remove Leading Grand Summary by &lt;</span><span class="v-variable">field name</span><span class="o-onscreen">&gt; </span>or <span class="o-onscreen">Remove Trailing Grand Summary by &lt;</span><span class="v-variable">field name</span><span class="o-onscreen">&gt;</span>.</div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Power failures, hardware problems, and other factors can damage a FileMaker Pro database file. Although the Recover feature might be able to salvage a damaged file, it is strongly recommended that you perform regular maintenance on your FileMaker Pro datab ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Maintaining and recovering FileMaker Pro databases</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="recover.40.2.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="versions.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1027500">Reference</a> &gt; 
+      <b>Maintaining and recovering FileMaker Pro databases</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h2-head2">Maintaining and recovering FileMaker Pro databases</div>
+      <div class="b-body"><a name="1027501">Power failures, hardware problems, and other factors can damage a FileMaker Pro database file. Although the Recover feature might be able to salvage a damaged file, it is strongly recommended that you perform regular maintenance on your FileMaker Pro databases.</a></div>
+      <div class="b-body"><a name="1027502">Regular FileMaker Pro maintenance takes two forms:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="zh-hyper"><a href="recover.40.2.html#1027535" name="1027506">Backing up</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="zh-hyper"><a href="recover.40.4.html#1035127" name="1027510">Saving a compacted copy</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1027511">About file maintenance</a></div>
+      <div class="b-body"><a name="1027512">In order to understand how file corruption occurs, it is useful to know how FileMaker Pro manages data.</a></div>
+      <div class="b-body"><a name="1027513">FileMaker Pro is a disk-based application, so it does not need to load the entire database into RAM as the file is opened. Instead, the application transfers data as needed from the hard drive to RAM and back. As the file is used, updated data is written from data buffers in RAM to the hard drive. The most common cause of file damage is an unexpected application termination or quit. In most cases, an unexpected quit occurs when the file is between hard-drive updates. In this situation, the next time the database is opened, FileMaker Pro runs a</a><span class="g-glosslink"><a href="glossary.html#1034446"> consistency check</a></span> on the file and the file usually opens without problems. However, if the unexpected quit occurs during a hard drive update, the file is likely to require <span class="g-glosslink"><a href="glossary.html#1034487">recovery</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1027514">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027515">Because unexpected application termination is the most common cause of database corruption, try to ensure that your operating system is stable.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029192">Make sure that you are running the most current and stable version of .dll files (Windows) and system components (OS X). </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029193">Run only the software that is absolutely necessary on your most critical machines. Keeping your configurations simple reduces the chance that some software may conflict, and makes it easier to troubleshoot if there is a problem.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027518">Use an uninterruptible power supply (UPS) if your files are being used in an area subject to power outages.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027519">Consider all hard disk problems to be potentially serious. In cases of multiple corrupted files on a hard drive, the hard drive may be at fault. Check the hard drive with a disk utility program.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027520">Software that optimizes, compresses, or partitions the hard drive should be the most current version. Driver software must be compatible with your version of the operating system.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </blockquote>
+    <div class="WebWorks_MiniTOC">
+      <div class="WebWorks_MiniTOCTitle">Topics in this section</div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="recover.40.2.html#1027535">Backing up</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="recover.40.4.html#1035127">Saving a compacted copy</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="recover.40.5.html#1028457">About recovering FileMaker Pro files</a>
+      </div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="recover.40.12.html#1033097">Troubleshooting file recovery</a>
+      </div>
+    </div>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

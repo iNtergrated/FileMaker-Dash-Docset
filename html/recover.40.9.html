@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="FileMaker Pro verifies the consistency of a database file, if needed, when the file is opened." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Checking file consistency</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="recover.40.10.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="recover.40.8.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1029333">Reference</a> &gt; 
+      <a href="recover.40.1.html#1029333">Maintaining and recovering FileMaker Pro databases</a> &gt; 
+      <a href="recover.40.5.html#1029333">About recovering FileMaker Pro files</a> &gt; 
+      <b>Checking file consistency</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Checking file consistency</div>
+      <div class="b-body"><a name="1029402">FileMaker Pro verifies the consistency of a database file, if needed, when the file is opened.</a></div>
+      <div class="b-body"><a name="1029869">You can also have FileMaker Pro verify consistency if you suspect that a file is damaged. A consistency check reads every block in the file and verifies that:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1033309">the internal structure of the block is valid</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1033317">the block is properly linked to other blocks in the file</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1033318">The consistency check does not read all the data within each block or check the schema or higher-level structures in the file. Those higher-level checks are performed only by the Recover command.</a></div>
+      <div class="hs1-headsub1"><a name="1029335">To check file consistency:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1029336">Choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Recover</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1035944">In the Select Damaged File dialog box, select the file you want to check, and click </a><span class="o-onscreen">Check Consistency</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1035945">If you see the Open Encrypted Database dialog box, type the </a><span class="g-glosslink"><a href="glossary.html#1047186">encryption password</a></span>, then click <span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1035988">If you don’t know the encryption password, see your database administrator.</a></div>
+      <div class="b1-body1"><a name="1035887">FileMaker Pro checks the consistency of the selected file and displays a summary of the file’s status, including the total number of blocks checked, total number of blocks processed, and number of bad blocks found.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029341">To see a log of the file consistency check, click </a><span class="o-onscreen">Open Log File</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1030528">The Recover.log file displays in a separate window, in tab-delimited format. From left to right the columns show the date, time, and time zone in which the consistency check took place, the filename, error number, and description of the consistency check event. You can save or print this file for further examination. Then close the window.</a></div>
+      <div class="b1-body1"><a name="1030902">The most recent data is added to any existing Recover.log file information, so you may need to scroll to the end of the file to see the results of the latest consistency check.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029343">In the status dialog box, click </a><span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029838">The Select Damaged file dialog box remains open. If the consistency check indicated that the file was damaged, try saving a compacted copy of the file before attempting to recover it (see </a><span class="zh-hyper"><a href="recover.40.10.html#1029844">Recovering files</a></span>). If the consistency check revealed no damage, click <span class="o-onscreen">Cancel</span>.</div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1032552">It might take longer to open a file on which FileMaker Pro is performing a consistency check.</a></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

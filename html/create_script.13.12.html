@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="FileMaker Pro supports three Automation Objects: Application, Documents, and Document. The following are methods and properties available for the objects." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>ActiveX Automation objects, methods, and properties (Windows)</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="create_script.13.13.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="create_script.13.11.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1028320">Designing and creating databases</a> &gt; 
+      <a href="create_script.13.1.html#1028320">Creating scripts to automate tasks</a> &gt; 
+      <a href="create_script.13.10.html#1028320">Scripting with ActiveX Automation (Windows)</a> &gt; 
+      <b>ActiveX Automation objects, methods, and properties (Windows)</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">ActiveX Automation objects, methods, and properties (Windows)</div>
+      <div class="b-body"><a name="1028321">FileMaker Pro supports three Automation Objects: Application, Documents, and Document. The following are methods and properties available for the objects.</a></div>
+      <div class="hs1-headsub1"><a name="1028322">Application</a></div>
+      <div class="b-body"><a name="1028323">Access to the FileMaker Pro application.</a></div>
+      <div class="hs1-headsub1"><a name="1028324">Properties</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1028325">All properties are read-only except "Visible."</a></div>
+      <div class="b-body"><span class="v-variable"><a name="1028326">Application:</a></span> Returns a pointer to this object, which is the root object of the object hierarchy.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028327">Parent:</a></span> Returns a pointer to this object.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028328">FullName</a></span>: Returns the name of the application, including the path.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028329">Name( ):</a></span> Returns the name of the application - "FileMaker Pro."</div>
+      <div class="b-body"><span class="v-variable"><a name="1028330">Caption:</a></span> Returns the window title for the frame window. The FileMaker Pro caption is always set to describe the currently active document and cannot be set differently by clients.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028331">DefaultFilePath:</a></span> Returns the default path specification used for opening files.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028332">Documents: </a></span>Returns a pointer to the Documents collection object so that individual Document objects may be opened, accessed, and run through scripting.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028333">Version: </a></span>Returns the version of FileMaker Pro.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028334">Visible: </a></span>Returns TRUE if the application is visible. Set to TRUE to show the application, FALSE to hide the application.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028335">ScriptStatus( ):</a></span> Returns 0 if no script is running, 1 if a script is paused, 2 if a script is running, or 3 if a script is queued (selected to run but not yet started).</div>
+      <div class="hs1-headsub1"><a name="1028336">Methods</a></div>
+      <div class="b-body"><span class="v-variable"><a name="1028337">Quit( ):</a></span> Closes the application. Note that if clients are still attached, the application is hidden until all clients release the FileMaker Pro automation server. To prevent unexpected behavior, always follow a Quit statement with an object release statement. For example:</div>
+      <div class="co-code"><a name="1028338">	FMproApp.Quit<br />	Set FMProApp = Nothing</a></div>
+      <div class="hs1-headsub1"><a name="1028339">Documents</a></div>
+      <div class="b-body"><a name="1028340">This is the collection of open documents, or FileMaker Pro files.</a></div>
+      <div class="hs1-headsub1"><a name="1028341">Properties</a></div>
+      <div class="b-body"><a name="1028342">Note All properties are read-only.</a></div>
+      <div class="b-body"><span class="v-variable"><a name="1028343">Application:</a></span> Returns a pointer to the Application object.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028344">Parent:</a></span> Returns a pointer to the Application object.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028345">Count:</a></span> Returns the number of Documents (long integer) in the Document collection.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028346">_NewEnum: </a></span>Returns an enumerator object to traverse all the Document objects in the Document collection. This is not an explicit property of the object, but accessible implicitly when you use the document in a For loop.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028347">Active: </a></span>Returns the active document.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028348">Item(variant):</a></span> Returns a specific Document object from the collection. This method is the default member of the Documents Collection. It takes a variant parameter that can be specified by:</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028349">A string that represents the document’s filename (full path name).</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028350">An index (long integer) into the Documents collection.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028351">NULL (which returns the entire collection).</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1028352">Methods</a></div>
+      <div class="b-body"><span class="v-variable"><a name="1028353">Open(filename As String, accountName As String, password As String):</a></span> Opens a specific FileMaker Pro file, creates a Document object, and returns a pointer to the Document object.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028354">Close( ):</a></span> Closes all documents in the collection and removes them from this collection. The Document Close statement produces a hard close of the document. If other users are connected to the FileMaker Pro database when the application receives a Document Close statement, they will be disconnected immediately, and without warning. Be sure to allow any connected users the opportunity to exit FileMaker Pro before sending this command.</div>
+      <div class="hs1-headsub1"><a name="1028355">Document</a></div>
+      <div class="b-body"><a name="1028356">A Document is a FileMaker Pro database file.</a></div>
+      <div class="hs1-headsub1"><a name="1028357">Properties</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1028358">All properties are read-only.</a></div>
+      <div class="b-body"><span class="v-variable"><a name="1028359">Application:</a></span> Returns a pointer to the Application object.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028360">Parent:</a></span> Returns a pointer to the Document Collection object, the parent of the Document object.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028361">FullName:</a></span> Returns the file specification of the document, including the path. If the Document FullName command is sent to a remote file running on a host, only the file’s name, and not its path, will be returned.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028362">Path: </a></span>Returns the path specification of the document. This does not include the filename or the extension.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028363">Saved:</a></span> Returns the state of the document (whether the document has been saved). FileMaker Pro always returns TRUE.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028364">Active: </a></span>If the Document object’s window is active, then TRUE is returned, otherwise, FALSE.</div>
+      <div class="hs1-headsub1"><a name="1028365">Methods</a></div>
+      <div class="b-body"><span class="v-variable"><a name="1028366">Activate( ):</a></span> Makes the window associated with this Document object the active window.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028367">Save( ):</a></span> Flushes the database cache.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028368">Close( ):</a></span> Closes the document and removes it from the Documents collection.</div>
+      <div class="b-body"><span class="v-variable"><a name="1028369">DoFMScript(WhichScript As String): </a></span>Executes a FileMaker Pro script on this Document object. The script is specified by name, and must already exist in the Document (for example, in the FileMaker Pro file).</div>
+      <div class="rh-relatedhead">Related topics<a name="1028370"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_script.13.11.html#1028245" name="1028374">Using FileMaker Pro ActiveX Automation (Windows)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_script.13.13.html#1028380" name="1028378">ActiveX Automation example (Windows)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

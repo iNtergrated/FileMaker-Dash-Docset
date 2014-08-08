@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="The following topics describe common problems and solutions when printing labels." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Troubleshooting label printing</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="create_layout.9.68.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="create_layout.9.66.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1159460">Designing and creating databases</a> &gt; 
+      <a href="create_layout.9.1.html#1159460">Creating and managing layouts and reports</a> &gt; 
+      <a href="create_layout.9.65.html#1159460">Troubleshooting layouts</a> &gt; 
+      <b>Troubleshooting label printing</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Troubleshooting label printing</div>
+      <div class="b-body"><a name="1030452">The following topics describe common problems and solutions when printing labels.</a></div>
+      <div class="hs1-headsub1"><a name="1030453">Labels have all fields on the same line</a></div>
+      <div class="b-body"><a name="1030454">In the text block that contains merge fields, insert carriage returns at the locations you want: </a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1030455">You see a label with a line of fields, each field enclosed in double opening and closing angle brackets like this: </a><span class="o-onscreen">&lt;&lt;fieldname&gt;&gt;</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1030460">In </a><span class="g-glosslink"><a href="glossary.html#1034324">Layout mode</a></span>, click the <span class="o-onscreen">Text tool</span> <img class="Default" src="../images/text-tool.png" width="22" height="24" style="float: none; left: 0.0; top: 0.0;" alt="Text tool" /> in the <span class="g-glosslink"><a href="glossary.html#1028139">status toolbar</a></span>, and click to place the insertion point at the position before the field that you want to begin the second line of text.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1030461">For example, in a mailing address, you might place the insertion point before the Address field.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1030462">Press the Enter key in the main keypad (Windows) or Return (OS X).</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1030463">Only one label prints</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030464">Open the Print dialog box to see if you are printing only the current record.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1030465">Data doesn't print within each label</a></div>
+      <div class="nt-notetip">
+        <span class="zan-autonum">Tip  </span><a name="1030466">When fixing label printing problems, print the first sheet of your labels on plain paper and hold the printout and the label template sheet together up to a light to see if they are aligned.</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030467">Make sure your paper size is set appropriately for the type of printer and labels that you’re using. Follow the instructions in </a><span class="zh-hyper"><a href="preview_print.6.9.html#1034814">Printing labels</a></span> to set the paper size for your layout.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030471">If you’re printing on continuous-feed label paper using a dot-matrix printer and your layout contains a header part, delete the header part. For more information, see </a><span class="zh-hyper"><a href="create_layout.9.24.html#1028387">Deleting layout parts</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030475">If you’re printing to sheets of labels, some laser and ink jet printers cannot print within 0.25 inches of the top of the paper. (Check your printer documentation for this information.) Use a ruler to measure the distance from the top of the label paper to the top of the first row of labels. If the distance is less than the minimum margin your printer requires, increase the height of the header part to include the first row of labels, so that printing starts at the top of the second row. FileMaker Pro won't print on the first row of labels, but it prints in the correct position on subsequent labels.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030476">If all labels are too high or too low by the same amount, resize the header part.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030477">If the labels move increasingly higher on the page, make the body part one point larger and try again. Repeat until the labels fit the page properly.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030478">If the labels move increasingly lower on the page, make the body part one point smaller and try again. Repeat until fixed.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1030482">For more information on resizing layout parts, see </a><span class="zh-hyper"><a href="create_layout.9.23.html#1028353">Resizing layout parts</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1030483">There are blank lines in labels</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030484">Check for extra carriage returns in the field: go to the problem record and click in the field. If it expands, there may be an extra carriage return in it. Delete it.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1030485">The last row of labels on each sheet isn't printing</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030486">Choose </a><span class="o-onscreen">Layouts</span> menu &gt; <span class="o-onscreen">Part Setup</span>. Select the <span class="o-onscreen">Body</span> part, and click <span class="o-onscreen">Change</span>. In the Part Definition dialog box, look to see whether <span class="o-onscreen">Allow part to break across page boundaries</span> is selected, and then do the following:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1030487">If </a><span class="o-onscreen">Allow part to break across page boundaries</span> is not selected, then select this option, and also select <span class="o-onscreen">Discard remainder of part before new page</span>. Then click <span class="o-onscreen">OK</span>, and try printing again. (You may also want to try printing with <span class="o-onscreen">Allow part to break across page boundaries</span> selected and <span class="o-onscreen">Discard remainder of part before new page</span> cleared.)</div>
+      <div class="b1-body1"><a name="1030493">For more information, see </a><span class="zh-hyper"><a href="create_layout.9.19.html#1028136">Adding a layout part</a></span> and <span class="zh-hyper"><a href="create_layout.9.21.html#1109919">Defining page breaks and numbering</a></span>.</div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

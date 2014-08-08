@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Find results for ODBC tables might differ from FileMaker find results on the same data. For example, Asian text in an external table might be collated differently and give different find results than the same text in a FileMaker table." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>ODBC data sources troubleshooting</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="odbc_ess.20.12.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="odbc_ess.20.10.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1027916">Sharing data</a> &gt; 
+      <a href="odbc_ess.20.1.html#1027916">Accessing external data sources</a> &gt; 
+      <a href="odbc_ess.20.4.html#1027916">Working with data sources</a> &gt; 
+      <b>ODBC data sources troubleshooting</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">ODBC data sources troubleshooting</div>
+      <div class="hs1-headsub1"><a name="1027917">Missing data</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027918">If a table is renamed or removed from an external database, </a><span class="o-onscreen">&lt;Table Missing&gt;</span> is displayed.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027919">If a column is renamed or removed from the external database table, </a><span class="o-onscreen">&lt;Field Missing&gt;</span> is displayed. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027920">If a data source name or database is renamed or removed, </a><span class="o-onscreen">&lt;Data Source Missing&gt;</span> is displayed.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027921">If the connection fails, the appropriate error message for connection failure is displayed, and </a><span class="o-onscreen">&lt;Data Source Missing&gt;</span> is displayed.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027924">If FileMaker cannot identify a unique </a><span class="g-glosslink"><a href="glossary.html#1027838">key</a></span> for an <span class="g-glosslink"><a href="glossary.html#1027961">ODBC</a></span> table or view, <span class="o-onscreen">&lt;Primary key missing&gt;</span> is displayed in the relationships graph and in field objects. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="n1-note1">
+        <span class="zan-autonum">Note  </span><a name="1027925">FileMaker automatically tries to identify a unique key for an ODBC table or view. If FileMaker cannot identify a unique key, when you Sync or add a new ODBC table, a FileMaker dialog box appears where you can specify one or more columns to use as a unique key. If FileMaker still cannot determine unique values for every record in the external table or view at that time, you see </a><span class="o-onscreen">&lt;Primary key missing&gt;</span>. If someone working outside FileMaker software associates a new primary key with the external table, the new primary key will be used instead of the key specified in FileMaker.</div>
+      <div class="hs1-headsub1"><a name="1027926">ODBC errors</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027927">If the name of a column in an external table is a FileMaker reserved word or a SQL keyword, an ODBC error might result. (For example, an error might result if a column is named “Number” or “Timestamp.”) See </a><span class="zh-hyper"><a href="create_db.8.12.html#1081048">About naming fields</a></span> and <span class="zh-hyper"><a href="create_db.8.51.html#1030956">Using a reserved word or symbol for a field or table name</a></span> for more information about FileMaker reserved words. To avoid schema naming problems with ODBC data sources, see the documentation that came with your data source software.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030526">For ODBC imports and Execute SQL script steps, if an error occurs while performing a </a><span class="g-glosslink"><a href="glossary.html#1028126">SQL</a></span> query, the Get(LastError) function returns FileMaker error 1408. The Get(LastODBCError) function returns detailed information about the error. If there is no information about the error, the Get(LastError) function returns FileMaker error 1409.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027934">When you are working with ODBC data sources in the relationships graph, the Get(LastError) function returns FileMaker error 1408. The Get(LastODBCError) function returns the readable error string that is generated by the ODBC driver.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027935">If you are connected to an ODBC table that contains a duplicate record and you modify that record in FileMaker, your modification only affects the first instance of the record. If you then delete the record in FileMaker, both external records are deleted.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1027936">Find results</a></div>
+      <div class="b-body"><a name="1035963">Find results for ODBC tables might differ from FileMaker find results on the same data. For example, Asian text in an external table might be collated differently and give different find results than the same text in a FileMaker table.</a></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

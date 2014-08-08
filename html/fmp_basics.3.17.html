@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Here are some suggestions for correcting problems that could occur during conversion." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Troubleshooting conversion problems</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="fmp_basics.3.18.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="fmp_basics.3.16.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part1.html#1028139">Using FileMaker Pro</a> &gt; 
+      <a href="fmp_basics.3.1.html#1028139">FileMaker Pro basics</a> &gt; 
+      <a href="fmp_basics.3.11.html#1028139">Converting files from FileMaker Pro 11 and earlier</a> &gt; 
+      <b>Troubleshooting conversion problems</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Troubleshooting conversion problems</div>
+      <div class="b-body"><a name="1028141">Here are some suggestions for correcting problems that could occur during </a><span class="g-glosslink"><a href="glossary.html#1046386">conversion</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1028147">FileMaker Pro 13 can’t open my file</a></div>
+      <div class="b-body"><a name="1084550">If the file you want to convert is open in an earlier version of FileMaker Pro (for example, an Inventory.fp7 file is open in FileMaker Pro 11), close the file in the earlier version. </a></div>
+      <div class="hs1-headsub1"><a name="1084505">My file didn’t convert properly</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028148">If you are converting a copy of a file, make sure that the original file was closed before you copied it. Otherwise, the copy will not convert correctly. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028149">Check the Conversion.log file located in the folder with the database you are attempting to convert.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028150">Try recovering the file first using a previous version of FileMaker Pro and then convert the file again. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1038355">I received a consistency check or auto-repair message when I opened my original file with that version of FileMaker Pro</a></div>
+      <div class="b-body"><a name="1038356">Try recovering the original file using your version of FileMaker Pro. Then open the recovered file with that same version, close the file, and then try converting it with FileMaker Pro 13.</a></div>
+      <div class="hs1-headsub1"><a name="1038344">The converted file won’t accept my password</a></div>
+      <div class="b-body"><a name="1088103">Passwords are case-sensitive in FileMaker Pro. Make sure you enter your password exactly as it was created in a previous version of FileMaker Pro. If you are not the owner of the file or the database administrator, consult your database administrator for password information.</a></div>
+      <div class="hs1-headsub1"><a name="1088104">I can’t open a snapshot link</a></div>
+      <div class="b-body"><a name="1073412">You cannot open a </a><span class="g-glosslink"><a href="glossary.html#1046078">snapshot link</a></span> that was created using FileMaker Pro 11. You must convert the database from which the records were found and then re-create the snapshot link. See <span class="zh-hyper"><a href="import_export.17.5.html#1051509">Saving and sending records as a snapshot link</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1088900">I can't edit a layout object that I copied from a FileMaker Pro 11 file</a></div>
+      <div class="b-body"><a name="1088888">You cannot edit layout objects that were copied from files created with versions of FileMaker Pro earlier than FileMaker Pro 13. Either convert the file to FileMaker Pro 13 and edit the object, or re-create the object in a new FileMaker Pro 13 file. See </a><span class="zh-hyper"><a href="edit_layout.10.1.html#1189180">Editing objects, layout parts, and the layout background</a></span>.</div>
+      <div class="rh-relatedhead">Related topics<a name="1073413"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmp_basics.3.15.html#1028132" name="1028161">Reading the Conversion.log file</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="recover.40.10.html#1029844" name="1085674">Recovering files</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

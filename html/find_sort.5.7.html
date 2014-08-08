@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="When you enter criteria in a find request, numbers, dates, times, and timestamps should be entered in the corresponding field types (or calculation fields returning the corresponding field type) to ensure correct behavior when finding them." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Finding numbers, dates, times, and timestamps</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="find_sort.5.8.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="find_sort.5.6.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part1.html#1027993">Using FileMaker Pro</a> &gt; 
+      <a href="find_sort.5.1.html#1027993">Finding, sorting, and replacing data</a> &gt; 
+      <a href="find_sort.5.2.html#1027993">Finding records</a> &gt; 
+      <b>Finding numbers, dates, times, and timestamps</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Finding numbers, dates, times, and timestamps</div>
+      <div class="b-body"><a name="1028011">When you enter criteria in a find request, numbers, dates, times, and timestamps should be entered in the corresponding </a><span class="g-glosslink"><a href="glossary.html#1027715">field types</a></span> (or <span class="g-glosslink"><a href="glossary.html#1027566">calculation fields</a></span> returning the corresponding field type) to ensure correct behavior when finding them.</div>
+      <div class="ni-noteimportant">
+        <span class="zan-autonum">Important  </span><a name="1044144">Entering two-digit year dates along with Find operators in a </a><span class="g-glosslink"><a href="glossary.html#1027732">find request</a></span> will be interpreted as four-digit dates based on a conversion algorithm. For example, entering a find request as <span class="c-code">1/1/14 .. 12/31/15</span> will find the years 2014 through 2015 if the current year is 2014. It is strongly recommended that complete four-digit years be used to avoid possible confusion. For more information about the conversion algorithm, see <span class="zh-hyper"><a href="add_view_data.4.22.html#1028976">Conversion of dates with two-digit years</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1028018">To find numbers, dates, times, and timestamps:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1028019">Start a find request.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1028023">See </a><span class="zh-hyper"><a href="find_sort.5.5.html#1027609">Making a find request</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028024">Refer to the following table for examples of different ways to search for numbers, dates, times, and timestamps.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ta-tableanchor"><a name="1028117"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028027">To find</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028029">Type this in the field</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028031">Examples</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028033">A number in a number field or in a calculation field that produces a numeric result</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028035">The number</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="c-code"><a name="1028037">.50</a></span> finds <span class="o-onscreen">.5</span>, <span class="o-onscreen">.50</span>, and <span class="o-onscreen">$.50</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028039">One or more digits in a number field or in a calculation field that produces a numeric result</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028041">A # character for each digit</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="c-code"><a name="1028043">#</a></span> finds <span class="o-onscreen">3 </span>but not <span class="o-onscreen">30</span></div>
+            <div class="td-tabledata"><span class="c-code"><a name="1028044">##</a></span> finds <span class="o-onscreen">30 </span>but not <span class="o-onscreen">3 </span>or <span class="o-onscreen">300</span></div>
+            <div class="td-tabledata"><span class="c-code"><a name="1028045">#3</a></span> finds <span class="o-onscreen">53</span> and <span class="o-onscreen">43</span> but not <span class="o-onscreen">3</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028047">A Boolean number in a number field or in a calculation field that produces a Boolean result</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="c-code"><a name="1028049">1</a></span> to find<span class="c-code"> True </span>values<br /><span class="c-code">0</span> to find<span class="c-code"> False </span>values</div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="c-code"><a name="1028051">1</a></span> finds <span class="o-onscreen">1</span></div>
+            <div class="td-tabledata"><span class="c-code"><a name="1028052">0</a></span> finds <span class="o-onscreen">0</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028054">Invalid data (fields with no numeric digits) in a number field or calculation field that produces a numeric result</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028056">?</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="c-code"><a name="1028058">?</a></span> finds <span class="o-onscreen">twelve</span> but not <span class="o-onscreen">12</span> or <span class="o-onscreen">twelve30</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028060">A date in a date field or in a calculation field that produces a date result</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028062">The date as digits, separated by a valid date separator character (such as a slash or hyphen)</a></div>
+            <div class="td-tabledata"><a name="1028063"> </a></div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1028064">Note  </a></span>For help entering dates with the drop-down calendar, see <span class="zh-hyper"><a href="add_view_data.4.20.html#1028779">Working with data in date fields</a></span></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="c-code"><a name="1028069">3/3/2014</a></span> finds <span class="o-onscreen">3/3/2014</span>, <span class="o-onscreen">March 3, 2014</span>, and <span class="o-onscreen">3-3-2014</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028071">Today's date in a date field or in a calculation field that produces a date result</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="c-code"><a name="1028073">//</a></span></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="c-code"><a name="1028075">//</a></span> finds <span class="o-onscreen">April 4, 2014</span> (when the current date is 4/4/2014)</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028077">A time in a time field or in a calculation field that produces a time result</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028079">The time as digits, separated by colons</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="c-code"><a name="1028081">12:53:09</a></span> finds <span class="o-onscreen">12:53:09</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028083">A timestamp in a timestamp field or in a calculation field that produces a timestamp</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028085">The date as digits, separated by a valid date separator character, then the time as digits, separated by colons</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="c-code"><a name="1028087">3/3/2014 12:59:09 PM </a></span>finds <span class="o-onscreen">3/3/2014 12:59:09 PM</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028089">Invalid dates, times, timestamps, or calculated date or time results </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028091">?</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="c-code"><a name="1028093">?</a></span> finds <span class="o-onscreen">Next Tuesday</span> or <span class="o-onscreen">2/33/2014</span> in a date field, or <span class="o-onscreen">midnight</span> in a time field</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028095">Dates on a day of the week in a date or timestamp field</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028097">The day of the week</a></div>
+            <div class="td-tabledata"><a name="1028098"> </a></div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1028099">Note  </a></span>Full or short day names (for example, Friday or Fri) are acceptable in day of week searches</div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="c-code"><a name="1028101">Tuesday</a></span> finds all dates that occur on a Tuesday<br /><span class="c-code">=Thu</span> finds all dates that occur on a Thursday</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028103">Any valid value for a date or time component in a date, time, or timestamp field</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028105">* or leave component unspecified, while specifying the other components you want to find</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="c-code"><a name="1028107">5/12/*</a></span> finds the 12th day of May in any year<br /><span class="c-code">5/12 </span>finds the 12th day of May in the current year<br /><span class="c-code">*:15</span> finds times 15 minutes after any hour<br /><span class="c-code">1/1/* 7 PM</span> finds timestamps in the 7 o’clock PM hour on January 1st in any year</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028109">Ranges of information</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;" colspan="2">
+            <div class="td-tabledata"><a name="1028114">See </a><span class="zh-hyper"><a href="find_sort.5.8.html#1028153">Finding ranges of information</a></span></div>
+          </td>
+        </tr>
+      </table>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028118">When you’ve entered the find criteria that you want, click </a><span class="o-onscreen">Perform Find</span> in the status toolbar, or choose <span class="o-onscreen">Requests</span> menu &gt; <span class="o-onscreen">Perform Find</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1028119">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028120">When you enter numbers, dates, days of the week, times, and timestamps into find requests, always enter them using the appropriate system or file settings that are in use.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028121">When you perform day of the week searches on systems set to a language other than English, you may use English day names and abbreviations if you wish. The English names are supported in all </a><span class="g-glosslink"><a href="glossary.html#1028160">system formats</a></span>. See <span class="zh-hyper"><a href="fmp_basics.3.26.html#1028551">Opening files with different system formats</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028126">When you perform day of the week searches, the first day of the week depends on your system settings. Sunday is the first day of the week in English, Japanese, and Korean, but Monday is the first day of the week in German, French, Italian, Swedish, Dutch, Spanish, and other system formats that FileMaker Pro supports.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="rh-relatedhead">Related topics<a name="1028127"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.15.html#1028753" name="1028131">About number fields</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.16.html#1090590" name="1028135">About date fields</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.17.html#1028864" name="1028139">About time fields</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.18.html#1028912" name="1028143">About timestamp fields</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

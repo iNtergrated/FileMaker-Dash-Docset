@@ -1,0 +1,8 @@
+{
+    "require": {
+        "paquettg/php-html-parser": "1.*",
+        "symfony/dom-crawler": "2.5.*",
+        "symfony/css-selector": "2.5.*",
+        "keboola/csv": "1.*"
+    }
+}

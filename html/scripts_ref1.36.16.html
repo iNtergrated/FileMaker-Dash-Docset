@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Sets a local or global variable to a specified value." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Set Variable</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="scripts_ref1.36.17.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="scripts_ref1.36.15.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1044136">Reference</a> &gt; 
+      <a href="help_script_cat.34.1.html#1044136">Script steps reference</a> &gt; 
+      <a href="scripts_ref1.36.1.html#1044136">Control script steps</a> &gt; 
+      <b>Set Variable</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="ssh-scripthead">Set Variable</div>
+      <div class="sspuh-scriptpurposehead">Purpose<a name="1044137"> </a></div>
+      <div class="sspu-scriptpurpose"><a name="1044138">Sets a local or global variable to a specified value.</a></div>
+      <div class="ssfh-scriptformathead">Format<a name="1052642"> </a></div>
+      <div class="ssf-scriptformat"><a name="1052643">Set Variable [&lt;</a><span class="v-variable">variable name</span>&gt; {[&lt;<span class="v-variable">repetition number</span>&gt;]}; Value:&lt;<span class="v-variable">value or formula</span>&gt;]</div>
+      <div class="ssoh-scriptoptshead">Options<a name="1028138"> </a></div>
+      <div class="b-body"><a name="1028140">Click </a><span class="o-onscreen">Specify</span> to set the <span class="g-glosslink"><a href="glossary.html#1028231">variable</a></span> options:</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1028141">Name</a></span> is the name of the variable you want to create. Prefix the name with $ for a local variable or $$ for a global variable. If no prefix is added, $ is automatically added to the beginning of the name.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1028142">Value</a></span> is the value the variable is set to. You can enter text or specify a calculation.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1060013">Repetition</a></span> is the repetition (index) number of the variable you want to create. If no repetition is specified, the default is 1.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sscoh-scriptcompathead">Compatibility<a name="1061467"> </a></div>
+      <div class="ta-tableanchor"><a name="1061493"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh1-scriptstepcompthead1">Where the script step runs<a name="1074603"> </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh2-scriptstepcompthead2">Supported<a name="1074605"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco1-scriptstepcompt1">FileMaker Pro<a name="1074607"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1074609"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco2-scriptstepcompt2">FileMaker Server scheduled script<a name="1074611"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1074613"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco3-scriptstepcompt3">FileMaker Go<a name="1074615"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1074617"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco4-scriptstepcompt4">Custom Web Publishing<a name="1074619"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1074621"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco5-scriptstepcompt5">FileMaker WebDirect<a name="1074623"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1074625"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco6-scriptstepcompt6">Runtime solution<a name="1074627"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1074629"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="orh-originhead">Originated in<a name="1060016"> </a></div>
+      <div class="or-origin"><a name="1049132">FileMaker Pro 8.0</a></div>
+      <div class="ssdh-scriptdeschead">Description<a name="1028146"> </a></div>
+      <div class="b-body"><a name="1028147">If a variable doesn’t exist, this script step will create one. A variable name has the same naming restrictions as a field name. For more information, see </a><span class="zh-hyper"><a href="create_db.8.12.html#1081048">About naming fields</a></span>. </div>
+      <div class="b-body"><a name="1028151">Local and global variables can be created and used in calculations.</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028152">A local variable can only be used in script steps in the currently executing script. The value in a local variable is cleared when the script exits.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028153">A global variable can be used in a calculation or script anywhere in a file, for example, other scripts or </a><span class="g-glosslink"><a href="glossary.html#1027722">file paths</a></span>. The value of a global variable is not cleared until the file is closed.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1028155">Local and global variables (or even two local variables in different scripts) can have the same name but they are treated as different variables and can store different values. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sseh1-scriptexamhead1">Example 1<a name="1028156"> </a></div>
+      <div class="b-body"><a name="1085371">Creates a related record by using a local variable to copy information into a match field.</a></div>
+      <div class="co-code"><a name="1096333">Set Variable [$CURRENT_CUSTOMER_ID; Value: Customers::Customer ID]<br />Go to Layout ["Invoice Details"]<br />New Record/Request<br />Set Field [Invoices::Customer ID; $CURRENT_CUSTOMER_ID]</a></div>
+      <div class="sseh2-scriptexamhead2">Example 2<a name="1085332"> </a></div>
+      <div class="b-body"><a name="1085420">Uses a local variable to save records as Excel or PDF files in the Documents folder.</a></div>
+      <div class="co-code"><a name="1085422">Show Custom Dialog ["Save the current record as Excel or PDF?"]<br />If [Get ( LastMessageChoice ) = 1]<br />	Set Variable [$PATH; Value: Get ( DocumentsPath ) &amp; "Invoice " &amp; Invoice::Invoice Number &amp; ".xlsx"]<br />	Save Records as Excel [Restore; "$PATH"; Current record]<br />Else<br />	Set Variable [$PATH; Value: Get ( DocumentsPath ) &amp; "Invoice " &amp; Invoice::Invoice Number &amp; ".pdf"]<br />	Save Records as PDF [Restore; "$PATH"; Current record"]<br />End If</a></div>
+      <div class="sseh3-scriptexamhead3">Example 3<a name="1085353"> </a></div>
+      <div class="b-body"><a name="1085511">Uses global variable as a toggle to stop a script from being triggered.</a></div>
+      <div class="hs2-headsub2"><a name="1085513">Script: Go to Selected Invoice for iOS</a></div>
+      <div class="co1-code1"><a name="1097579">Set Variable [$$SCRIPT_TRIGGER; Value: "Off"]<br />Go to Layout ["Invoice Details iPad"]</a></div>
+      <div class="hs2-headsub2"><a name="1096006">Script: Trigger Entering Invoice Details</a></div>
+      <div class="co1-code1"><a name="1097590">If [$$SCRIPT_TRIGGER = "Off"]<br />		Set Variable [$$SCRIPT_TRIGGER; Value: "On"]<br />		Exit Script [ ]<br />End If<br />Find Matching Records [Replace; Invoices::Customer Name]<br />Go to Record/Request/Page [First]</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1028163"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_alpha.html#66468" name="1028167">Script steps reference (alphabetical list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_cat.34.2.html#947337" name="1028171">Script steps reference (category list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.46.html#1030710" name="1028175">About formulas</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.43.html#1030458" name="1028179">Using variables</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.26.html#1029799" name="1028183">Defining repeating fields</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

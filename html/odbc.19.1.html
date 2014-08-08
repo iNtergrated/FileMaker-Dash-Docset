@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="You can use FileMaker Pro as:" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Using ODBC and JDBC with FileMaker Pro</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="odbc.19.2.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="publish_web.18.3.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1027500">Sharing data</a> &gt; 
+      <b>Using ODBC and JDBC with FileMaker Pro</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h2-head2">Using ODBC and JDBC with FileMaker Pro</div>
+      <div class="b-body"><a name="1027501">You can use FileMaker Pro as:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027504">a </a><span class="g-glosslink"><a href="glossary.html#1027629">data source</a></span>, sharing your <span class="g-glosslink"><a href="glossary.html#1027641">database files</a></span> with other applications on the same computer using <span class="g-glosslink"><a href="glossary.html#1027961">ODBC</a></span> (Open Database Connectivity) and <span class="g-glosslink"><a href="glossary.html#1027831">JDBC</a></span> (Java Database Connectivity). For example, you can create charts, analyze numbers, and generate reports using FileMaker Pro data in other applications. See “FileMaker Pro as a data source,” below.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027508">an ODBC </a><span class="g-glosslink"><a href="glossary.html#1027581">client application</a></span>, interacting with data sources on the same computer or over a network. For example, you can import data from an Oracle data source into FileMaker Pro, or you can work with an Oracle data source interactively in the relationships graph and in layouts. See “FileMaker Pro as an ODBC client application,” below.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1027509">FileMaker Pro as a data source</a></div>
+      <div class="b-body"><a name="1027510">FileMaker Pro includes all the software you need to share your database as a data source via ODBC and JDBC, including the client </a><span class="g-glosslink"><a href="glossary.html#1027659">drivers</a></span> you use to access your database from other applications. To share your FileMaker database file as a data source over a network, use FileMaker Server.</div>
+      <div class="b-body"><a name="1027515">See </a><span class="zh-hyper"><a href="odbc.19.2.html#1027617">Sharing FileMaker Pro data via ODBC or JDBC</a></span> for information about enabling a database file for sharing. </div>
+      <div class="b-body"><a name="1027516">For details about supported SQL statements, expressions, Catalog functions, and client drivers, see </a><span class="bt-booktitle">FileMaker ODBC and JDBC Guide</span> and <span class="bt-booktitle">FileMaker SQL Reference</span>.</div>
+      <div class="hs1-headsub1"><a name="1027517">FileMaker Pro as an ODBC client application</a></div>
+      <div class="b-body"><a name="1027518">When you use FileMaker Pro as a client application, you must install and configure drivers for the ODBC data source you’re accessing. For example, to access data from an Oracle database using ODBC, you must install and configure an Oracle ODBC client driver. Third-party drivers are available from a number of vendors. For more information, see </a><span class="zh-hyper"><a href="odbc_ess.20.2.html#1027549">Configuring an ODBC client driver</a></span>.</div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1028253">ODBC data sources are also referred to as external SQL sources (ESS).</a></div>
+      <div class="b-body"><a name="1027525">See </a><span class="zh-hyper"><a href="odbc_ess.20.1.html#1027502">Accessing external data sources</a></span> for information about:</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027526">working with ODBC data sources interactively, in real time, in the relationships graph and in layouts. See </a><span class="zh-hyper"><a href="odbc_ess.20.3.html#1027612">Connecting to data sources</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027532">importing ODBC data in batch operations by writing SQL queries. See </a><span class="zh-hyper"><a href="odbc_ess.20.12.html#1035969">Querying an ODBC data source from FileMaker Pro</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1027534">See the next section for an overview of using FileMaker Pro as a data source or as a client.</a></div>
+      <div class="hs1-headsub1"><a name="1027535">Deciding how to work with ODBC in FileMaker</a></div>
+      <div class="ta-tableanchor"><a name="1027564"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1027538">What do you want to do?</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1027540">How do you do it?</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1027542">See</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1027544">Products</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027546">Use FileMaker Pro as a data source/share FileMaker Pro data</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027548">1. SQL queries</a></div>
+            <div class="td-tabledata"><a name="1027549">2. JDBC</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="bt-booktitle"><a name="1027551">FileMaker ODBC and JDBC Guide</a></span> and <span class="bt-booktitle">FileMaker SQL Reference</span></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027553">FileMaker Pro/ Pro Advanced and FileMaker Server only</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027556">Use FileMaker Pro as an ODBC client/access ODBC data</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027558">1. Interactively via the relationships graph</a></div>
+            <div class="td-tabledata"><a name="1027559">2. One-time, static via ODBC import (or </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Open</span>), also Import Records script step, Execute SQL script step</div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027561">FileMaker Pro Help</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027563">FileMaker Pro/ Pro Advanced, and FileMaker Server</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="hs1-headsub1"><a name="1027565">Terminology</a></div>
+      <div class="ta-tableanchor"><a name="1027615"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1027568">Term</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1027570">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027572">Database Management System (DBMS)</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027574">An application that allows users to store, process, and retrieve information in a database</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027576">SQL</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027578">A standard programming language that controls and interacts with a DBMS</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027580">Data source</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027582">The data you want to access (like a DBMS) and information to locate the data (like the path or </a><span class="g-glosslink"><a href="glossary.html#1027827">IP address</a></span>)</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027585">Client application</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027587">The application that is requesting data (using SQL) from a data source using ODBC or JDBC</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027589">Query</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027591">The retrieval, manipulation, or modification of data from a data source by sending SQL statements</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027593">Table</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027596">A collection of data, similar to a </a><span class="g-glosslink"><a href="glossary.html#1045562">table</a></span> in a FileMaker Pro database file</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027598">Column</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027601">An attribute in a table, similar to a </a><span class="g-glosslink"><a href="glossary.html#1027703">field</a></span> in a FileMaker Pro database file</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027603">Row</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027606">A set of cells in a table, similar to a </a><span class="g-glosslink"><a href="glossary.html#1028030">record</a></span> in a FileMaker Pro database file</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027608">ODBC driver</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027610">A DLL (Windows) or shared library (OS X) that sends an SQL query to access data stored in a database and delivers the requested data to the client application</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027612">JDBC driver</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027614">A JAR (Java Archive) file that sends an SQL query to access data stored in a database and delivers the requested data to the client application</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="hs1-headsub1"><a name="1029349">Before you begin</a></div>
+      <div class="b-body"><a name="1029364">Before you work begin working with ODBC data sources, do the following:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029371">Install the appropriate ODBC driver.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029378">Know the IP address or domain name of the ODBC data source or FileMaker Pro database.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1029392">Know the user name and password for the ODBC data source as supplied by the database administrator. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1029399">The access that the database administrator provides determines whether you will be allowed read-write or read-only access.</a></div>
+    </blockquote>
+    <div class="WebWorks_MiniTOC">
+      <div class="WebWorks_MiniTOCTitle">Topics in this section</div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="odbc.19.2.html#1027617">Sharing FileMaker Pro data via ODBC or JDBC</a>
+      </div>
+    </div>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

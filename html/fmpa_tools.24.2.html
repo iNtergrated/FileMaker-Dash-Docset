@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="The Script Debugger is an interactive tool for troubleshooting your FileMaker scripts." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Debugging scripts (FileMaker Pro Advanced)</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="6515" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="fmpa_tools.24.3.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="fmpa_tools.24.1.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part4.html#1033267">Using FileMaker Pro Advanced</a> &gt; 
+      <a href="fmpa_tools.24.1.html#1033267">Using FileMaker Pro Advanced tools</a> &gt; 
+      <b>Debugging scripts (FileMaker Pro Advanced)</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h3-head3">Debugging scripts (FileMaker Pro Advanced)</div>
+      <div class="b-body"><a name="1027551">The Script Debugger is an interactive tool for troubleshooting your FileMaker </a><span class="g-glosslink"><a href="glossary.html#1028072">scripts</a></span>.</div>
+      <div class="b-body"><a name="1027552">With the Script Debugger, you can:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027553">debug scripts that are run from the Scripts menu or keyboard shortcuts</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1035429">debug startup scripts (the Script Debugger menu is enabled even if there are no open files)</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1034687">debug a script activated by a </a><span class="g-glosslink"><a href="glossary.html#1033294">script trigger</a></span>, <span class="g-glosslink"><a href="glossary.html#1027559">button</a></span>, or <span class="g-glosslink"><a href="glossary.html#1027622">custom menu</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027555">step into a </a><span class="g-glosslink"><a href="glossary.html#1028145">sub-script</a></span> to execute it one step at a time, or step out of a sub-script</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027556">set or clear breakpoints in your script</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027558">begin debugging from any </a><span class="g-glosslink"><a href="glossary.html#1028078">script steps</a></span> within the script</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027559">view sub-scripts as you step through scripts</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027560">debug restricted-access scripts</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027561">pause a script when script errors are encountered</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027562">click a script error number to open a Help topic</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027565">monitor </a><span class="g-glosslink"><a href="glossary.html#1027703">fields</a></span>, <span class="g-glosslink"><a href="glossary.html#1028231">variables</a></span>, and calculations</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1036283">temporarily disable or enable script triggers while you work in the Script Debugger</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1027567">To debug scripts:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1027568">To enable the Script Debugger, choose </a><span class="o-onscreen">Tools</span> menu &gt;<span class="o-onscreen"> Script Debugger</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1035609">Run your script.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1035610">Choose from the following options:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ta-tableanchor"><a name="1035716"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1035613">Choose</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1035615">To</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035617">Step Over</a></div>
+            <div class="td-tabledata"><a name="1035621"><img class="Default" src="../images/DebuggerStepOver2x.png" width="15" height="15" style="float: none; left: 0.0; top: 0.0;" alt="Step over button" /> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035623">Execute the script one step at a time without entering sub-scripts.</a></div>
+            <div class="td-tabledata"><a name="1035624">If the script step is Perform Script, the Script Debugger will execute the sub-script, and proceed to the next line of the calling script. The Script Debugger will execute all sub-script steps until it encounters a breakpoint.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035626">Step Into</a></div>
+            <div class="td-tabledata"><a name="1035630"><img class="Default" src="../images/DebuggerStepIn2x.png" width="15" height="15" style="float: none; left: 0.0; top: 0.0;" alt="Step into button" /> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035632">Execute the script one step at a time, as well as enter and show steps in sub-scripts.</a></div>
+            <div class="td-tabledata"><a name="1035633">If the script step is Perform Script, the Script Debugger will step to the first line of the sub-script and await user input before proceeding to the next sub-script step.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035635">Step Out</a></div>
+            <div class="td-tabledata"><a name="1035639"><img class="Default" src="../images/DebuggerStepOut2x.png" width="15" height="15" style="float: none; left: 0.0; top: 0.0;" alt="Step out button" /> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035756">Execute all script steps in the current script and, if the script is a sub-script, return to the line after the Perform Script step in the calling script.</a></div>
+            <div class="td-tabledata"><a name="1035642">If the script is not a sub-script, the Step Out command will cause the Script Debugger to execute all remaining script and sub-script steps, until it encounters a breakpoint.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035644">Set Next Step</a></div>
+            <div class="td-tabledata"><a name="1035648"><img class="Default" src="../images/DebuggerStepToStep2x.png" width="15" height="15" style="float: none; left: 0.0; top: 0.0;" alt="Set next step button" /></a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035650">Set the step execution pointer to the highlighted script step.</a></div>
+            <div class="td-tabledata"><a name="1035651">This command passes control to the highlighted step but does not perform the step. The highlighted step is performed when script execution or debug stepping is resumed. </a><span class="e-emphasis">Any script steps between the last executed step and the assigned next step are not executed.</span> Click a step to highlight it, then click Set Next Step.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035653">Run</a></div>
+            <div class="td-tabledata"><a name="1035657"><img class="Default" src="../images/DebuggerRun2x.png" width="15" height="15" style="float: none; left: 0.0; top: 0.0;" alt="Run button" /> </a></div>
+            <div class="td-tabledata"><a name="1035658">Pause</a></div>
+            <div class="td-tabledata"><a name="1035662"><img class="Default" src="../images/DebuggerPause2x.png" width="15" height="15" style="float: none; left: 0.0; top: 0.0;" alt="Pause button" /></a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035664">Toggle between executing all script steps until the end of a script or a breakpoint is encountered and pausing. When a script is paused, you can double-click the script in the </a><span class="o-onscreen">Call Stack </span>list to edit it. Each active script opens in a separate Edit Script dialog box, so you can edit multiple scripts. Script execution is not halted until you save the changes.</div>
+            <div class="td-tabledata"><a name="1035665">You can step through a script using the Step script button when a script is paused.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035667">Halt Script</a></div>
+            <div class="td-tabledata"><a name="1035671"><img class="Default" src="../images/DebuggerStop2x.png" width="15" height="15" style="float: none; left: 0.0; top: 0.0;" alt="Halt script button" /> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035673">Halt execution of a script.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1036418">Enable/Disable Script Triggers</a></div>
+            <div class="td-tabledata"><a name="1036297"><img class="Default" src="../images/IDB_DBG_TRIGGER_DISABLED2x.png" width="15" height="15" style="float: none; left: 0.0; top: 0.0;" alt="Enable/Disable script triggers button showing script triggers are disabled" /> <img class="Default" src="../images/IDB_DBG_TRIGGER_ENABLED2x.png" width="15" height="15" style="float: none; left: 0.0; top: 0.0;" alt="Enable/Disable script triggers button showing script triggers are enabled" /> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1036299">Temporarily disable or enable all script triggers in a file.</a></div>
+            <div class="td-tabledata"><a name="1036302">You must have Full Access privileges to disable a script trigger. Script triggers are enabled by default. When you close the Script Debugger, all disabled script triggers are enabled.</a></div>
+            <div class="td-tabledata"><a name="1036329">You can also choose </a><span class="o-onscreen">Tools</span> menu &gt; <span class="o-onscreen">Debugging Controls</span> &gt; <span class="o-onscreen">Disable</span> <span class="o-onscreen">Script Triggers</span> or <span class="o-onscreen">Enable Script Triggers</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035675">Set/Clear Breakpoint</a></div>
+            <div class="td-tabledata"><a name="1035679"><img class="Default" src="../images/DebuggerSetClearBreakpoint2x.png" width="15" height="15" style="float: none; left: 0.0; top: 0.0;" alt="Set/Clear breakpoint button" /> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035681">Set or clear a breakpoint from the selected line.</a></div>
+            <div class="td-tabledata"><a name="1035682">Breakpoints allow the Script Debugger to execute large sections of a script, pausing only to inspect the section marked with a breakpoint. Breakpoints are ignored by FileMaker Pro when the Script Debugger is not in use. You can set or clear breakpoints in the Script Debugger or when you create scripts. To set a breakpoint when you create scripts, click to the left of the step. Breakpoints are saved with the script in which they are set. You can set breakpoints on multiple steps.</a></div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1035683">Note  </a></span>You cannot set breakpoints on steps called by a button or custom menu.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035685">Edit Script</a></div>
+            <div class="td-tabledata"><a name="1035689"><img class="Default" src="../images/DebuggerEditScript2x.png" width="15" height="15" style="float: none; left: 0.0; top: 0.0;" alt="Edit script button" /></a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035691">Open the Edit Script dialog box to edit the current script. You can make changes to a script while it is executing, but once you save changes to the script, execution halts.</a></div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1035692">Note  </a></span>To edit the script step associated with buttons or custom menu items, use the Button Setup or Manage Custom Menu dialogs.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035694">Open/Close Data Viewer</a></div>
+            <div class="td-tabledata"><a name="1035698"><img class="Default" src="../images/DebuggerDataViewer2x.png" width="15" height="15" style="float: none; left: 0.0; top: 0.0;" alt="Open/Close data viewer button" /></a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035700">Open (or close) the Data Viewer window so you can monitor specified fields, variables, and calculation formulas. See </a><span class="zh-hyper"><a href="fmpa_tools.24.4.html#1035402">Using the Data Viewer (FileMaker Pro Advanced)</a></span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035705">Authenticate/Deauthenticate script</a></div>
+            <div class="td-tabledata"><a name="1035712"><img class="Default" src="../images/lock.png" width="21" height="21" style="float: none; left: 0.0; top: 0.0;" alt="Lock button to authenticate script or data viewer" /> <img class="Default" src="../images/unlock.png" width="21" height="21" style="float: none; left: 0.0; top: 0.0;" alt="Unlock button to deauthenticate script or data viewer" /> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1035714">Unlock Script Debugger or Data Viewer for scripts that do not allow modify privileges.</a></div>
+            <div class="td-tabledata"><a name="1035715">You must have Full Access privileges to authenticate a script. The higher level of privileges applies to all scripts, but not to other file elements (for example, records and layouts). Your editing privileges last until you close both the Script Debugger and the Data Viewer. </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027670">Select </a><span class="o-onscreen">Pause on error</span> if you want scripts to pause when errors are encountered.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027671">For </a><span class="o-onscreen">Last error</span>,<span class="o-onscreen"> </span>click the error number to open a Help topic with details about the error. See <span class="zh-hyper"><a href="error_codes.html#1030072">FileMaker Pro error codes</a></span>.</div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1034073">When you use the Script Debugger to step through enabled scripts activated by a script trigger, you can’t interact with the document windows, move between fields or records, change the data, close the window, or quit. This blocking of interaction only occurs when a script is triggered via some action. When you are debugging a script that is not activated by a script trigger, you can interact normally with the document windows, fields, and records.</a></div>
+      <div class="hs1-headsub1"><a name="1027675">Viewing sub-scripts</a></div>
+      <div class="b-body"><a name="1027676">You can view sub-scripts when you step through scripts in the Script Debugger. For example, if Script A calls Script B, which then calls Script C, you can view the steps in all three scripts.</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1027677">Choose </a><span class="o-onscreen">Tools</span> menu &gt; <span class="o-onscreen">Script Debugger</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027678">To open the Script Debugger from the Manage Scripts dialog box, select a script, press Shift and click </a><span class="o-onscreen">Perform</span>. To close the Script Debugger, press Ctrl (Windows) or Command (OS X) and click <span class="o-onscreen">Perform</span>. For more information on keyboard shortcuts, see <span class="zh-hyper"><a href="keys_win.27.6.html#1033676">FileMaker Pro Advanced keyboard shortcuts (Windows)</a></span> and <span class="zh-hyper"><a href="keys_mac.28.6.html#1029040">FileMaker Pro Advanced keyboard shortcuts (OS X)</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027685">Select a script step that calls a sub-script.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027686">Click </a><span class="o-onscreen">Step Into</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027687">The </a><span class="o-onscreen">Call Stack </span>list displays the sub-script.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027688">Select a script in the </a><span class="o-onscreen">Call Stack </span>list to view that script’s steps in the display area.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1027689">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027690">Set Next Step is only available for the currently executing script.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027691">In order to facilitate proper script debugging, the Script Debugger overrides some script steps. The Allow User Abort script step with the option set to off will not prevent you from stopping the execution of a script. The Adjust Window script step with the options of hide or minimize will not hide or minimize the window when encountered through the Step Over or Step Into buttons.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027692">If a script with access privileges set to Modifiable performs a script with Executable Only access, the Executable Only script will perform in its entirety without showing its steps in the Script Debugger. If an Executable Only script performs a script with privileges set to Modifiable, only the steps in the Modifiable script will appear in the Script Debugger. To edit a script, choose Authenticate/Deauthenticate Script. For more information about script privileges and running scripts with full access, see </a><span class="zh-hyper"><a href="passwords.14.23.html#1029102">Editing scripts privileges</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027696">If you open the Data Viewer after choosing Authenticate/Deauthenticate Script, your access privileges are maintained in both the Data Viewer and Script Debugger until you close the Script Debugger.</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027697">You can open one Edit Script dialog box per script.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027698">You can debug a startup script by opening the Script Debugger before opening your database file.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027699">When you close the Script Debugger while a script is paused, the script resumes and completes.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1034662">When a File Open script is loaded, the Script Debugger displays OnFirstWindowOpen.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1034660">When a File Close script is loaded, the Script Debugger displays OnLastWindowClose.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1034882">When you debug a script that is called from a button, the button is identified in the </a><span class="o-onscreen">Call Stack</span> list by the filename and layout in which the button is located. The button name is the button object name that was assigned using the <span class="g-glosslink"><a href="glossary.html#1036424">Inspector</a></span>. If no name was assigned in the Inspector, <span class="o-onscreen">&lt;unnamed button&gt;</span> followed by the filename and layout appears in the list. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1035119">When the Script Debugger stops on a script step called by a button in the script step list, the text above the list changes to </a><span class="o-onscreen">Button: </span><span class="o-onscreen">&lt;name of button&gt;</span>, or it changes to <span class="o-onscreen">Button: &lt;unnamed button&gt; </span>if no name was assigned in the Inspector.</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1034894">When you debug a script that is called from a custom menu, the menu item is identified in the </a><span class="o-onscreen">Call Stack</span> list by menu item name and filename. When the Script Debugger stops on a script step called by a custom menu in the script step list, the text above the list changes to <span class="o-onscreen">Menu item: </span><span class="o-onscreen">&lt;custom menu item text&gt;</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="rh-relatedhead">Related topics<a name="1027701"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_script.13.3.html#1037007" name="1027705">Creating and editing scripts</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmpa_tools.24.4.html#1035402" name="1027713">Using the Data Viewer (FileMaker Pro Advanced)</a></span></div>
+    </blockquote>
+    <div class="WebWorks_MiniTOC">
+      <div class="WebWorks_MiniTOCTitle">Topics in this section</div>
+      <div class="WebWorks_MiniTOC_Level1">
+        <a class="WebWorks_MiniTOC_Link" href="fmpa_tools.24.3.html#1027715">Disabling script steps (FileMaker Pro Advanced)</a>
+      </div>
+    </div>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

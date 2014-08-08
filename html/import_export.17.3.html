@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="You can save FileMaker Pro data as an Excel file in all modes except Find mode. The Excel file will only include fields that are visible on the layout when you perform the save (including any related fields). Fields in panel controls that are not on the fr ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Saving and sending records as an Excel file</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="24016" class="applehelp-cs"></a>
+      <a name="24027" class="applehelp-cs"></a>
+      <a name="8900" class="applehelp-cs"></a>
+      <a name="8920" class="applehelp-cs"></a>
+      <a name="131073" class="applehelp-cs"></a>
+      <a name="12024" class="applehelp-cs"></a>
+      <a name="14024" class="applehelp-cs"></a>
+      <a name="SaveAsExcelOptions" class="applehelp-cs"></a>
+      <a name="SaveAsExcelOptions_ScriptMaker" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="import_export.17.4.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="import_export.17.2.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1056548">Sharing data</a> &gt; 
+      <a href="import_export.17.1.html#1056548">Saving, importing, and exporting data</a> &gt; 
+      <a href="import_export.17.2.html#1056548">Saving and sending records in other formats</a> &gt; 
+      <b>Saving and sending records as an Excel file</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Saving and sending records as an Excel file</div>
+      <div class="b-body"><a name="1056551">You can save FileMaker Pro data as an Excel file in all </a><span class="g-glosslink"><a href="glossary.html#1027931">modes</a></span> except <span class="g-glosslink"><a href="glossary.html#1027728">Find mode</a></span>. The Excel file will only include fields that are visible on the <span class="g-glosslink"><a href="glossary.html#1027851">layout</a></span> when you perform the save (including any <span class="g-glosslink"><a href="glossary.html#1028036">related fields</a></span>). Fields in <span class="g-glosslink"><a href="glossary.html#1047120">panel controls</a></span> that are not on the front-most panel are not included. All the records in a repeating field will be exported into a single cell. If you want more control over which fields appear in the Excel file, then use the Export Records command instead. See <span class="zh-hyper"><a href="import_export.17.21.html#1049167">Exporting data from FileMaker Pro</a></span>.</div>
+      <div class="b-body"><a name="1027617">Your access privileges must allow exporting in order to save Excel files. See </a><span class="zh-hyper"><a href="passwords.14.25.html#1029402">Editing other privileges</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1027621">To save records as an Excel file:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1027622">Display the layout that shows the fields you want to include in the Excel file.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027626">See </a><span class="zh-hyper"><a href="create_layout.9.3.html#1027705">Switching between layouts</a></span>.</div>
+      <div class="n1-note1">
+        <span class="zan-autonum">Note  </span><a name="1027627">When saving as an Excel file, FileMaker Pro does not save fields that are not visible in Browse or Preview mode.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027628">In Browse or Layout mode, choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Save/Send Records As</span> &gt; <span class="o-onscreen">Excel</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1043535">In Preview mode, click</a><span class="o-onscreen"> Save As Excel</span> in the <span class="g-glosslink"><a href="glossary.html#1028139">status toolbar</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1056658">In the Save Records As Excel dialog box, enter a name for the file.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1058720">For </a><span class="o-onscreen">Save as type</span>, choose <span class="o-onscreen">Excel Workbooks (.xlsx)</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1058722">Specify where to store the file, what to save, whether to automatically open the file, and whether to create an email with the Excel file as an attachment.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1027631">You can save the current record or all the records in the current </a><span class="g-glosslink"><a href="glossary.html#1027747">found set</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1027632">If you select </a><span class="o-onscreen">Create email with file as attachment</span>, an email is created with the Excel file attached.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1037791">Click </a><span class="o-onscreen">Options</span> to set the Excel options:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1037792">If you don’t want to include the field names, clear the </a><span class="o-onscreen">Use field names as column names in first row</span> checkbox.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1027635">For </a><span class="o-onscreen">Worksheet</span>, <span class="o-onscreen">Title</span>, <span class="o-onscreen">Subject</span>, and <span class="o-onscreen">Author</span>, enter descriptive information about the file.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027636">Click </a><span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">8.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027637">Click </a><span class="o-onscreen">Save</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1062371">When you save or send data as Excel, fields on popovers are not included in the destination file. Use </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Export Records</span> instead. After naming the destination file and setting Excel options, choose <span class="o-onscreen">Current Table</span> in the Specify Field Order for Export dialog box, then select the fields you want to export. See <span class="zh-hyper"><a href="import_export.17.21.html#1049167">Exporting data from FileMaker Pro</a></span>.</div>
+      <div class="rh-relatedhead">Related topics<a name="1037853"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="import_export.17.29.html#1029538" name="1037857">Microsoft Excel format</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

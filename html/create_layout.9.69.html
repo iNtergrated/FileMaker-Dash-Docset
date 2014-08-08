@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="The following topics describe common problems and solutions when designing layouts for use in both Windows and OS X." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Troubleshooting layouts designed for both Windows and OS X</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="create_layout.9.70.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="create_layout.9.68.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1030598">Designing and creating databases</a> &gt; 
+      <a href="create_layout.9.1.html#1030598">Creating and managing layouts and reports</a> &gt; 
+      <a href="create_layout.9.65.html#1030598">Troubleshooting layouts</a> &gt; 
+      <b>Troubleshooting layouts designed for both Windows and OS X</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Troubleshooting layouts designed for both Windows and OS X</div>
+      <div class="b-body"><a name="1161129">The following topics describe common problems and solutions when designing layouts for use in both Windows and OS X.</a></div>
+      <div class="hs1-headsub1"><a name="1161130">Fonts don’t look the same on Windows and OS X systems</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1161131">Use fonts with identical names and font metrics on both operating systems whenever you can. Most font vendors can supply Windows and OS X versions of the same font. Contact your font vendor for more information.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030604">Use only TrueType fonts. The Windows version of FileMaker Pro does not support any other font formats, such as OpenType, PostScript Type 1, bitmap, raster, or vector fonts.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030605">OS X does not support bitmap fonts. (TrueType, PostScript, and OpenType font formats are supported.) If a file created in a previous version of FileMaker Pro uses bitmap fonts, you must change them to fonts in a supported format. You can either make the font change in the original file prior to conversion, or in the converted file.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1030606">The following table describes how FileMaker handles fonts when you open a file created on another platform.</a></div>
+      <div class="ta-tableanchor"><a name="1030624"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1030609">If a font</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1030611">FileMaker does this</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030613">With the same name is available</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030615">Uses the same font. Even so, there may be slight differences in font character widths that cause problems with word wrapping and exact text placement.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030617">With the same name is not available</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030619">Attempts to substitute a similar font. This can also cause word wrapping and text placement problems.</a></div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1030620">Note  </a></span>If FileMaker Pro cannot find a similar font to substitute, it uses the default font specified in the <span class="o-onscreen">Fonts</span> tab of the Preferences dialog box. For more information, see <span class="zh-hyper"><a href="preferences.26.6.html#1027830">Setting font preferences</a></span>.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="hs1-headsub1"><a name="1030625">Layout text is truncated or cut off when viewed in Windows or OS X</a></div>
+      <div class="b-body"><a name="1030626">Even when FileMaker Pro is able to match fonts, there can be subtle differences in font character width and line spacing when viewed on another operating system. This can cause lines of text to wrap differently or appear cut off, like the following examples.</a></div>
+      <div class="gr-graphicanchor"><a name="1030649"><img class="Default" src="../images/create_layout.9.69.1.png" width="320.5" height="119" style="float: none; left: 0.0; top: 0.0;" alt="Examples of truncated layout text" /></a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030650">Leave space between objects on your layouts, in case a font is taller or wider on the other platform.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030651">Resize text objects so that they are a bit wider and taller than the text within them. This provides space for small changes in font characteristics to occur without causing word wrap problems or truncated text.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1030652">Field names and columns don’t align in a columnar layout</a></div>
+      <div class="b-body"><a name="1030653">Check the alignment of the field labels and their associated fields — they should both be aligned in the same direction. If you put a left-aligned label over a column of right-aligned numbers, for example, the report might look fine on your computer. But font substitution could cause field labels to shift when the file is opened on another computer. For more information, see </a><span class="zh-hyper"><a href="edit_layout.10.64.html#1029908">Specifying paragraph attributes and tab settings</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1030657">There are gaps between text and data</a></div>
+      <div class="b-body"><a name="1030658">To combine text and field data (such as to place a field in the middle of a sentence), don’t use separate text objects and field objects. Instead, combine the text and fields into a single </a><span class="g-glosslink"><a href="glossary.html#1027927">merge field</a></span>. For more information, see <span class="zh-hyper"><a href="create_layout.9.27.html#1160797">Placing merge fields on a layout</a></span>. </div>
+      <div class="hs1-headsub1"><a name="1030663">Colors don’t look the same on Windows and OS X systems</a></div>
+      <div class="b-body"><a name="1030665">Use only the colors available in the System Subset palette or the Web palette. These colors are virtually identical across platforms. Any other colors that you use may not look the same on both Windows and OS X. For information on specifying the palette that appears, see </a><span class="zh-hyper"><a href="preferences.26.3.html#1027658">Setting layout preferences</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1030669">QuickTime files don’t play in Windows</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030670">FileMaker Pro may not be able to find a QuickTime file that was previously inserted. If the Insert QuickTime dialog box appears, select the QuickTime file and click </a><span class="o-onscreen">Open</span>. Then try playing the QuickTime file again.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030671">Make sure the QuickTime software is installed in Windows.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030672">Make sure the QuickTime file is saved in a cross-platform format. If necessary, use a QuickTime editing application to re-save the file in a cross-platform format. (If you have upgraded to QuickTime Pro, you can use the QuickTime Player application to re-save the QuickTime file by choosing </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Save As</span>, and choosing <span class="o-onscreen">Make movie self-contained</span> while saving the file.)</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1030673">For more information about QuickTime, see </a><span class="h-hyperlink"><a href="http://www.apple.com/quicktime" target="external_window">http://www.apple.com/quicktime</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1030676">A script that prints a layout does not print the same in Windows and OS X</a></div>
+      <div class="b-body"><a name="1030680">Scripts that include Print Setup and Print script steps commands may not be compatible across platforms. If you’re storing special print options with these script steps such as paper size, orientation, and number of copies, FileMaker Pro may not be able to recall these settings properly on the other operating system. (This can occur because each operating system uses different printer driver software for printing, even when printing to the same printer.) To correct the problem, do one of the following:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030681">Create separate scripts for printing in Windows and OS X. First, open the file on your Windows computer and create the script for printing from Windows. Then, move the database file to OS X computer and create the script for printing from OS X. You can even create a third script using the</a><span class="c-code"> Get(SystemPlatform) </span>function that will print using the correct script on each operating system:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="co-code"><a name="1030682">	If [Get(SystemPlatform) = 1]<br />		Perform Script [“Print in OS X”]<br />	Else<br />		Perform Script [“Print in Windows”]<br />	End If</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030683">Clear the </a><span class="o-onscreen">Perform Without Dialog</span> options for the Print and Print Setup script steps. This allows users to change the print options when they run the script to print.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1030690">For more information, see </a><span class="zh-hyper"><a href="scripts_ref2.37.27.html#1028386">Print script step</a></span> and <span class="zh-hyper"><a href="scripts_ref2.37.26.html#1028361">Print Setup script step</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1030691">A layout does not print the same in Windows and OS X</a></div>
+      <div class="b-body"><a name="1030692">Printing can vary because the each operating system uses different printer driver software to control printing. When you’re designing layouts to print data at precise locations, such as mailing label sheets or preprinted forms, you may notice discrepancies when printing the same layout from computers running Windows or OS X.</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030695">Try specifying exact margins for the layout. For more information, see </a><span class="zh-hyper"><a href="create_layout.9.56.html#1029929">Specifying page margins</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030697">If specifying exact margins does not help, you may need to create a unique layout for each operating system, which would allow you to make adjustments to each layout to optimize printing for Windows and OS X.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

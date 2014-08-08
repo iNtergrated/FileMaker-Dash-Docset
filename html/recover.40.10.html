@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="If a file appears to be damaged, first try saving a compacted copy, which copies all the data and rebuilds the tree structure of the database (see Saving a compacted copy). Even if the file can’t be opened, you can use the Advanced Recovery Options dialog ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Recovering files</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="recover.40.11.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="recover.40.9.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1029844">Reference</a> &gt; 
+      <a href="recover.40.1.html#1029844">Maintaining and recovering FileMaker Pro databases</a> &gt; 
+      <a href="recover.40.5.html#1029844">About recovering FileMaker Pro files</a> &gt; 
+      <b>Recovering files</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Recovering files</div>
+      <div class="b-body"><a name="1035500">If a file appears to be damaged, first try saving a compacted copy, which copies all the data and rebuilds the tree structure of the database (see </a><span class="zh-hyper"><a href="recover.40.4.html#1035127">Saving a compacted copy</a></span>). Even if the file can’t be opened, you can use the Advanced Recovery Options dialog box (described below) to make a compacted copy. If a file is too damaged to open or use, you can use the Recover command to have FileMaker Pro salvage as much information as it can and create a new, recovered file.</div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1035504">FileMaker Pro Advanced: Runtime applications do not support advanced file recovery features.</a></div>
+      <div class="hs1-headsub1"><a name="1027655">To recover a damaged file:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1028612">Choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Recover</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028613">Select the file to recover, and click </a><span class="o-onscreen">Select</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1028614">FileMaker Pro displays the “Name new recovered file” dialog box. The original (damaged) filename, followed by </a><span class="o-onscreen">Recovered</span>, displays for <span class="o-onscreen">File name</span> (Windows) or <span class="o-onscreen">Save As</span> (OS X).</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028616">Accept the default name, or enter a different name for the recovered file.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029920">To have FileMaker Pro use the default file recovery settings (recommended for best results), make sure that </a><span class="o-onscreen">Use advanced options</span> is deselected and then skip to the next step.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1031306">To change the recovery settings, select </a><span class="o-onscreen">Use advanced options</span> or click <span class="o-onscreen">Specify</span>, set options, then click <span class="o-onscreen">OK</span>. (For more information about advanced recovery options, see <span class="zh-hyper"><a href="recover.40.11.html#1032103">Setting advanced file recovery options</a></span>.)</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1028618">Click </a><span class="o-onscreen">Save</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1035905">If you see the Open Encrypted Database dialog box, type the </a><span class="g-glosslink"><a href="glossary.html#1047186">encryption password</a></span>, then click <span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1036015">If you don’t know the encryption password, see your database administrator.</a></div>
+      <div class="b1-body1"><a name="1028619">You see the progress of the file recovery. When the operation is finished, FileMaker Pro displays the status of the recovered file. For more information, see </a><span class="zh-hyper"><a href="#1031273">Results of a recover</a></span>, below.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">7.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1029512">To see a log of the recovery process, click </a><span class="o-onscreen">Open Log File</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1030513">The Recover.log file displays in a separate window, in tab-delimited format. From left to right the columns show the date, time, and time zone in which the recovery took place, the filename, error number, and description of the recovery event. You can save or print this file for further examination. Then close the window.</a></div>
+      <div class="b1-body1"><a name="1031267">The most recent data is added to any existing Recover.log file information, so you may need to scroll to the end of the file to see the results of the latest file recovery.</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1032109">These steps apply only to files in FileMaker Pro 12 format. To use these steps to recover a file created in a different FileMaker Pro format, you must convert the file to the FileMaker Pro 12 format. If the file is too damaged to convert, recover the file in the appropriate version of the application. See </a><span class="zh-hyper"><a href="fmp_basics.3.11.html#1073169">Converting files from FileMaker Pro 11 and earlier</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1031273">Results of a recover</a></div>
+      <div class="b-body"><a name="1031595">After a file is recovered, FileMaker Pro displays status information. What you see depends on the result of the recovery operation and the options that were used. The following table shows all possible results that could be displayed for each database component that can be recovered. (For information about these settings, see </a><span class="zh-hyper"><a href="recover.40.11.html#1032103">Setting advanced file recovery options</a></span>.)</div>
+      <div class="b-body"><a name="1031677"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1031945">For this component</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1031947">One of these messages is displayed</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="b-body"><a name="1031949">File blocks</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="bu1-bullet1_inner"><a name="1032348">Scanned and rebuilt </a><span class="v-variable">“&lt;nnn&gt;”</span> blocks, dropped <span class="v-variable">“&lt;nnn&gt;”</span> invalid data blocks</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="bu1-bullet1_inner"><a name="1032349">Copied as is</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="bu1-bullet1_inner"><a name="1031953">Copied logical structure</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="b-body"><a name="1031955">Schema</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="bu1-bullet1_inner"><a name="1031957">Scanned fields and tables, </a><span class="v-variable">“&lt;nnn&gt;”</span> missing fields added</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="bu1-bullet1_inner"><a name="1031958">NOT scanned</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="b-body"><a name="1031960">Structure</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="bu1-bullet1_inner"><a name="1031962">Scanned; </a><span class="v-variable">“&lt;nnn&gt;”</span> items modified</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="bu1-bullet1_inner"><a name="1031963">NOT scanned</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="b-body"><a name="1031965">Field indexes</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="bu1-bullet1_inner"><a name="1031967">Rebuilt</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="bu1-bullet1_inner"><a name="1031968">NOT modified</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="bu1-bullet1_inner"><a name="1031969">Removed for later rebuilding (as needed)</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="bu1-bullet1_inner"><a name="1031970">Some rebuilt, some removed for later rebuilding</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div class="b-body"><a name="1027666">In many cases, a successfully recovered database is larger than the original database. This is caused by new disk blocks being allocated as the database is recovered. For example, rebuilding the index field by field and record by record can cause data distribution that is different (and possibly larger) than the original file.</a></div>
+      <div class="b-body"><a name="1033809">After you recover a file, copy the most recent data from the recovered file to a backup copy of the original file. It is safest to use that file instead of the recovered file.</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1032100">A newly recovered database will also take longer to open than a database that was closed properly the last time it was used. This happens only the first time a recovered database is opened, as a result of rebuilding various internal structures that were deleted during recovery.</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1035850"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="recover.40.12.html#1033097" name="1035838">Troubleshooting file recovery</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="To find records, work in Find mode. You type search criteria (the value or values to find) into fields in a find request, which looks like a blank record. When you perform the find, FileMaker Pro searches for records that match the criteria you entered. Ma ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Making a find request</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="find_sort.5.6.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="find_sort.5.4.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part1.html#1027609">Using FileMaker Pro</a> &gt; 
+      <a href="find_sort.5.1.html#1027609">Finding, sorting, and replacing data</a> &gt; 
+      <a href="find_sort.5.2.html#1027609">Finding records</a> &gt; 
+      <b>Making a find request</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Making a find request</div>
+      <div class="b-body"><a name="1050768">To find records, work in </a><span class="g-glosslink"><a href="glossary.html#1027728">Find mode</a></span>. You type <span class="g-glosslink"><a href="glossary.html#1028084">search criteria</a></span> (the value or values to find) into <span class="g-glosslink"><a href="glossary.html#1027703">fields</a></span> in a <span class="g-glosslink"><a href="glossary.html#1027732">find request</a></span>, which looks like a blank record. When you perform the find, FileMaker Pro searches for records that match the criteria you entered. Matching records replace any previous <span class="g-glosslink"><a href="glossary.html#1027747">found set</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1050771">To make a find request:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1049510">Switch to Find mode by clicking </a><span class="o-onscreen">Find </span>in the <span class="g-glosslink"><a href="glossary.html#1028139">status toolbar</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1049513">From the </a><span class="g-glosslink"><a href="glossary.html#1027861">Layout pop-up menu</a></span>, select a <span class="g-glosslink"><a href="glossary.html#1027851">layout</a></span> that contains the fields you want to search for.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1041766">If necessary, you can change layouts and enter criteria on more than one layout.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1036690">In the find request, select a text, number, date, time, timestamp, or </a><span class="g-glosslink"><a href="glossary.html#1027566">calculation field</a></span> to use for finding, and then type a value in the field.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1050967">You can use the </a><span class="o-onscreen">Insert</span> <span class="o-onscreen">Operators</span> list in the <span class="g-glosslink"><a href="glossary.html#1034854">layout bar</a></span> to help you enter criteria. For example, the search criteria Jo@n can be used to find the first names John and Joan. See <span class="zh-hyper"><a href="find_sort.5.6.html#1050963">Finding text and characters</a></span> for more information on using operators.</div>
+      <div class="b1-body1"><a name="1050971">You can click </a><span class="o-onscreen">Omit</span> to exclude records matching a specific set of criteria.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1055580">Click </a><span class="o-onscreen">Perform Find</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1055584">Your find request returns a found set of records.The light green area of the pie chart <img class="Default" src="../images/pie-chart.png" width="22" height="22" style="float: none; left: 0.0; top: 0.0;" alt="Pie chart icon" /> in the status toolbar indicates the portion of the total records displayed.</a></div>
+      <div class="hs1-headsub1"><a name="1045294">Tips</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1045304">You can click the pie chart to toggle between your found set and the omitted records in the database. When all records are displayed, the pie chart is a solid color.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1042551">You can see the last several find requests you have performed in a </a><span class="o-onscreen">Recent Finds</span> list.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1042552">To access a list of recent finds:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1042496">Do one of the following: </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1045054">In Find mode, click </a><span class="o-onscreen">Saved Finds</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1042497">In Browse mode, click the down arrow next to</a><span class="o-onscreen"> Find</span> (Windows), or click and hold <span class="o-onscreen">Find</span> (OS X). </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1042499">Choose a find request from the </a><span class="o-onscreen">Recent Finds</span> list.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1050012">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1050017">You can do one or more of the following during or after performing a find request:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ta-tableanchor"><a name="1027742"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1027698">To</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1027700">Do this</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027702">Cancel a find operation before it is finished and leave the previous found set unchanged</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027705">Press Esc (Windows) or Command-period (OS X).</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027707">Change or refine a find after performing it</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027711">See </a><span class="zh-hyper"><a href="find_sort.5.15.html#1043318">Viewing, repeating, or changing the last find</a></span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027714">Narrow an existing found set</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027718">See </a><span class="zh-hyper"><a href="find_sort.5.17.html#1028608">Constraining (narrowing) a found set</a></span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027721">Broaden an existing found set</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027725">See </a><span class="zh-hyper"><a href="find_sort.5.18.html#1028651">Extending (broadening) a found set</a></span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027728">Show all records</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1027731">In </a><span class="g-glosslink"><a href="glossary.html#1027555">Browse mode</a></span>, click <span class="o-onscreen">Show All</span>, or choose <span class="o-onscreen">Records</span> menu &gt; <span class="o-onscreen">Show All Records</span>.</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1027733">In </a><span class="g-glosslink"><a href="glossary.html#1027728">Find mode</a></span>, choose <span class="o-onscreen">Requests</span> menu &gt; <span class="o-onscreen">Show All Records</span>.</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1027734">Note  </a></span>You do not need to choose <span class="o-onscreen">Show All Records</span> before performing finds. FileMaker Pro always searches all records in the tables you specify unless you have narrowed the existing found set.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027736">Open another window to perform a different find request on the same data</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1027741">See </a><span class="zh-hyper"><a href="fmp_basics.3.29.html#1028665">Opening multiple windows per file</a></span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1036334">Save a find request</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1036336">See </a><span class="zh-hyper"><a href="find_sort.5.20.html#1028826">Saving a find request</a></span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1037617">Access a saved find request</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1037636">See </a><span class="zh-hyper"><a href="find_sort.5.21.html#1042244">Managing saved find requests</a></span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1048529">Save and send a snapshot link of the found set of records</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1048531">See </a><span class="zh-hyper"><a href="import_export.17.5.html#1051509">Saving and sending records as a snapshot link</a></span>.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027744">Finds on </a><span class="g-glosslink"><a href="glossary.html#1027810">unindexed</a></span> fields (for example, calculation fields referencing related fields) can take longer than finds on indexed fields. See <span class="zh-hyper"><a href="create_db.8.27.html#1029839">Defining field indexing options</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027748">If a field’s values are indexed, you can use the index to enter values in find requests. See </a><span class="zh-hyper"><a href="add_view_data.4.29.html#1029531">Using a field index</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027756">You can’t enter search criteria in </a><span class="g-glosslink"><a href="glossary.html#1041246">container fields</a></span>, <span class="g-glosslink"><a href="glossary.html#1028154">summary fields</a></span>, <span class="g-glosslink"><a href="glossary.html#1027766">global fields</a></span>, or <span class="g-glosslink"><a href="glossary.html#1028257">web viewers</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1042480">To find data in container fields, create a text or number field that describes or identifies the contents of the container field. Then perform a find on that field. See </a><span class="zh-hyper"><a href="add_view_data.4.35.html#1053046">Using data in container fields</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1055834">To delete recent finds, click the down arrow next to </a><span class="o-onscreen">Find</span> or click <span class="o-onscreen">Saved Finds</span> (Windows), or click and hold <span class="o-onscreen">Find</span> or click <span class="o-onscreen">Saved Finds</span> (OS X). Then choose <span class="o-onscreen">Clear All Recent Finds</span> from the list.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1055838">In Find mode, a badge <img class="Default" src="../images/find_badge.png" width="15" height="15" style="float: none; left: 0.0; top: 0.0;" alt="Magnifying glass icon" /> indicates a searchable field.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="rh-relatedhead">Related topics<a name="1055839"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.6.html#1050963" name="1050992">Finding text and characters</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.7.html#1027993" name="1035937">Finding numbers, dates, times, and timestamps</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.8.html#1028153" name="1035941">Finding ranges of information</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.9.html#1028305" name="1035945">Finding data in related fields</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.10.html#1028352" name="1035949">Finding empty or non-empty fields</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.11.html#1059754" name="1035953">Finding duplicate values</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.13.html#1050516" name="1035957">Finding records that match multiple criteria</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.14.html#1028490" name="1035961">Finding records except those matching criteria</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.15.html#1043318" name="1035965">Viewing, repeating, or changing the last find</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.16.html#1041700" name="1035969">Hiding records from a found set and viewing hidden records</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.17.html#1028608" name="1035973">Constraining (narrowing) a found set</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.18.html#1028651" name="1035977">Extending (broadening) a found set</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.19.html#1028742" name="1050232">Finding records troubleshooting</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.4.html#1047538" name="1035981">Finding records based on criteria in a single field</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.20.html#1028826" name="1050957">Saving a find request</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="find_sort.5.21.html#1042244" name="1050961">Managing saved find requests</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="non_toc.46.45.html#1029788" name="1050997">Specify Find Requests and Edit Find Request dialog boxes</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

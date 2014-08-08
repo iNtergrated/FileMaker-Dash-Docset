@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Replaces the entire contents of a calculated target field in the current record with the result of the calculated value." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Set Field By Name</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <a name="//apple_ref/cpp/Command/Set Field By Name" class="dashAnchor"></a>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="scripts_ref1.36.44.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="scripts_ref1.36.42.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1096126">Reference</a> &gt; 
+      <a href="help_script_cat.34.1.html#1096126">Script steps reference</a> &gt; 
+      <a href="scripts_ref1.36.41.html#1096126">Fields script steps</a> &gt; 
+      <b>Set Field By Name</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="ssh-scripthead">Set Field By Name</div>
+      <div class="sspuh-scriptpurposehead">Purpose<a name="1042348"> </a></div>
+      <div class="b-body"><a name="1043179">Replaces the entire contents of a calculated target field in the current record with the result of the calculated value.</a></div>
+      <div class="ssfh-scriptformathead">Format<a name="1044815"> </a></div>
+      <div class="ssf-scriptformat"><a name="1042986">Set Field By Name[&lt;</a><span class="v-variable">calculated target field</span>&gt;<span class="v-variable">; &lt;calculated value&gt;</span>]</div>
+      <div class="ssoh-scriptoptshead">Options<a name="1042988"> </a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1047412">Select </a><span class="o-onscreen">Specify target field</span> or click <span class="o-onscreen">Specify</span> to create a calculation to specify the field whose contents you want to replace. In the Specify Calculation dialog box, use the field list (on the left) and the functions list (on the right) with the mathematical and text <span class="g-glosslink"><a href="glossary.html#1027983">operators</a></span> to build the calculation. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1047444">For </a><span class="o-onscreen">Calculated result</span>, click <span class="o-onscreen">Specify</span> to define the calculated value.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sscoh-scriptcompathead">Compatibility<a name="1062504"> </a></div>
+      <div class="ta-tableanchor"><a name="1062530"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh1-scriptstepcompthead1">Where the script step runs<a name="1075737"> </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh2-scriptstepcompthead2">Supported<a name="1075739"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco1-scriptstepcompt1">FileMaker Pro<a name="1075741"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075743"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco2-scriptstepcompt2">FileMaker Server scheduled script<a name="1075745"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075747"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco3-scriptstepcompt3">FileMaker Go<a name="1075749"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075751"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco4-scriptstepcompt4">Custom Web Publishing<a name="1075753"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075755"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco5-scriptstepcompt5">FileMaker WebDirect<a name="1075757"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075759"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco6-scriptstepcompt6">Runtime solution<a name="1075761"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075763"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="orh-originhead">Originated in<a name="1049165"> </a></div>
+      <div class="or-origin"><a name="1049163">FileMaker Pro 10.0</a></div>
+      <div class="ssdh-scriptdeschead">Description<a name="1042359"> </a></div>
+      <div class="b-body"><a name="1043140">The Set Field By Name script step lets you create a calculation to specify a field name, then change the value of the field either literally or based on a second calculation.</a></div>
+      <div class="b-body"><a name="1088347">Because the target field is calculated, a single Set Field By Name step can replace multiple </a><span class="zh-hyper"><a href="scripts_ref1.36.42.html#1029024">Set Field script step</a></span><span class="h-hyperlink">s</span> between If conditions.</div>
+      <div class="b-body"><a name="1047421">The calculated target field must return a text result.</a></div>
+      <div class="b-body"><a name="1047400">If quotation marks are not included around the fully qualified field name, the target field name is obtained from the named field.</a></div>
+      <div class="b-body"><a name="1047401">If no field is specified and a field is selected in Browse mode or Find mode, that field is used.</a></div>
+      <div class="hs1-headsub1"><a name="1042362">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1043197">The specified field doesn’t have to be on the current layout.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1047499">Set Field By Name ignores validation checking.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1047733">When possible, the Set Field By Name script step makes the record active and leaves it active until the record is exited or committed. Scripts that use a series of Set Field By Name script steps should group these steps together if possible, so that subsequent Set Field By Name script steps can act on the record without having to lock the record, download and upload data, index the field, and so on, after each individual Set Field By Name script step. These functions and record-level validation are performed after the record has been exited or committed.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sseh1-scriptexamhead1">Example 1<a name="1047734"> </a></div>
+      <div class="b-body"><a name="1088464">Identifies the target field (National Statistics or World Statistics) based on geographical location, then enters a calculated value (the sum of all Grand Totals) in the target field.</a></div>
+      <div class="co-code"><a name="1088425">Set Field By Name [If ( Customers::Country = "Japan" ; Customers::National Statistics ; Customers::World Statistics ); Sum ( Invoices::Grand Total )]</a></div>
+      <div class="sseh2-scriptexamhead2">Example 2<a name="1088436"> </a></div>
+      <div class="b-body"><a name="1088486">Demonstrates when to use Set Field By Name instead of Set Field to simplify scripts.</a></div>
+      <div class="co-code"><a name="1088488">#With Set Field, an If statement with multiple Else If steps is needed<br />#to determine which field on the Customers table to update<br />#with information from Credit Collection::Phone Number.</a></div>
+      <div class="co-code"><a name="1088575">If [Credit Collection::Call Location = "Work"]<br />	Set Field [Customers::Work Phone; Credit Collection::Phone Number]<br />Else If [Credit Collection::Call Location = "Home" ]<br />	Set Field [Customers::Home Phone; Credit Collection::Phone Number]<br />Else If [Credit Collection::Call Location = "Mobile" ]<br />	Set Field [Customers::Mobile Phone; Credit Collection::Phone Number]<br />End If</a></div>
+      <div class="co-code"><a name="1088497">#A single Set Field By Name script step can perform the same task<br />#by using a calculation to determine the target field.</a></div>
+      <div class="co-code"><a name="1094228">Set Field By Name [GetFieldName ( Evaluate ( Credit Collection::Call Location &amp; " Phone" ) ); Credit Collection::Phone Number]</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1094229"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_alpha.html#66468" name="1094233">Script steps reference (alphabetical list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_cat.34.2.html#947337" name="1047757">Script steps reference (category list)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

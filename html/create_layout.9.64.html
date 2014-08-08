@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Bulk operations that may change many records at once will not trigger a script." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Changing object data without activating script triggers</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="create_layout.9.65.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="create_layout.9.63.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1053469">Designing and creating databases</a> &gt; 
+      <a href="create_layout.9.1.html#1053469">Creating and managing layouts and reports</a> &gt; 
+      <a href="create_layout.9.61.html#1053469">Setting up script triggers</a> &gt; 
+      <b>Changing object data without activating script triggers</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Changing object data without activating script triggers</div>
+      <div class="b-body"><a name="1048623">Bulk operations that may change many records at once will not trigger a script. </a></div>
+      <div class="b-body"><a name="1062454">Spell checking (</a><span class="o-onscreen">Edit</span> menu &gt; <span class="o-onscreen">Spelling</span> &gt; <span class="o-onscreen">Check All</span> or the <span class="zh-hyper"><a href="scripts_ref2.37.38.html#1028756">Check Found Set script step</a></span>) or a Find/Replace (<span class="o-onscreen">Edit</span> menu &gt; <span class="o-onscreen">Find/Replace</span> or the <span class="zh-hyper"><a href="scripts_ref2.37.54.html#1029097">Open Find/Replace script step</a></span>) on more than one record at a time will not activate script triggers.</div>
+      <div class="b-body"><a name="1048630">When you check spelling for all fields in a record or all records in a found set (as in the Check Found Set script step), script triggers will not activate except:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1048634">If a field is active when an operation starts, the </a><span class="zh-hyper"><a href="script_trigg.38.7.html#1030203">OnObjectExit</a></span> trigger will activate.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1048638">If a field is active at the end of an operation, the </a><span class="zh-hyper"><a href="script_trigg.38.2.html#1029602">OnObjectEnter</a></span> trigger will activate for that field.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1100448"> </a></div>
+      <div class="b-body"><a name="1048639">Only direct operations can trigger scripts:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1048640">Changes made directly to a layout object or using a layout will trigger scripts, while changes made to the underlying data will not trigger a script.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1048641">Changes made to a field in one layout object instance will not trigger scripts on other layout objects on the same layout or a different layout.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1048647">Script steps and menu commands that apply directly to the table data rather than the layout, such as </a><span class="zh-hyper"><a href="scripts_ref1.36.73.html#1030099">Import Records</a></span>, <span class="zh-hyper"><a href="scripts_ref1.36.59.html#1029581">Replace Field Contents</a></span>, and <span class="zh-hyper"><a href="scripts_ref1.36.60.html#1029621">Relookup Field Contents</a></span> will not trigger scripts.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1048655">Changes made to a field from the </a><span class="zh-hyper"><a href="scripts_ref2.37.60.html#1068697">Show Custom Dialog script step</a></span> will not activate the <span class="zh-hyper"><a href="script_trigg.38.4.html#1028556">OnObjectModify</a></span> script trigger.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1048667">Script steps that can change a field directly, such as </a><span class="zh-hyper"><a href="scripts_ref1.36.42.html#1029024">Set Field</a></span>, <span class="zh-hyper"><a href="scripts_ref1.36.43.html#1096126">Set Field By Name</a></span>, and <span class="zh-hyper"><a href="scripts_ref2.37.68.html#1076179">Set Web Viewer</a></span> will not activate the OnObjectModify script trigger. Script steps that work on a layout object even though their target is specified as a field, such as <span class="zh-hyper"><a href="scripts_ref1.36.45.html#1096105">Insert Text</a></span>, will activate the OnObjectModify script trigger.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1048678">Apple events that apply directly to or work through layout objects will trigger scripts. Apple events that bypass the layout will not trigger the scripts.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1048680">Schema changes that change the data in fields will not trigger scripts.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1100452"> </a></div>
+      <div class="b-body"><a name="1048684">Summary fields and calculation fields:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1062458">The OnObjectEnter, OnObjectExit, and </a><span class="zh-hyper"><a href="script_trigg.38.3.html#1028479">OnObjectKeystroke</a></span> script triggers will activate for summary and calculation fields. The OnObjectModify script trigger can be set for summary and calculation fields, but it will not activate.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

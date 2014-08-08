@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Sends AppleScript commands to another application." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Perform AppleScript (OS X)</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="1532" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="scripts_ref2.37.73.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="scripts_ref2.37.71.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1029745">Reference</a> &gt; 
+      <a href="help_script_cat.34.1.html#1029745">Script steps reference</a> &gt; 
+      <a href="scripts_ref2.37.59.html#1029745">Miscellaneous script steps</a> &gt; 
+      <b>Perform AppleScript (OS X)</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="ssh-scripthead">Perform AppleScript (OS X)</div>
+      <div class="sspuh-scriptpurposehead">Purpose<a name="1038446"> </a></div>
+      <div class="sspu-scriptpurpose"><a name="1038447">Sends AppleScript commands to another application.</a></div>
+      <div class="ssfh-scriptformathead">Format<a name="1029746"> </a></div>
+      <div class="co-code"><a name="1029747">Perform AppleScript [“&lt;</a><span class="v-variable">applescript text</span>&gt;”]</div>
+      <div class="ssoh-scriptoptshead">Options<a name="1029748"> </a></div>
+      <div class="b-body"><a name="1029749">Click</a><span class="o-onscreen"> Specify</span> to display the “Perform AppleScript” Options dialog box, where you can set the following options.</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1029751">Calculated AppleScript</a></span> lets you create a calculation to use as the <span class="g-glosslink"><a href="glossary.html#1027516">AppleScript</a></span> text.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="o-onscreen"><a name="1029752">Native AppleScript</a></span> lets you manually enter the text of an AppleScript (up to 30000 characters). Indenting of repeat loops and conditional statements is not supported.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sscoh-scriptcompathead">Compatibility<a name="1055844"> </a></div>
+      <div class="ta-tableanchor"><a name="1055870"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh1-scriptstepcompthead1">Where the script step runs<a name="1067167"> </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh2-scriptstepcompthead2">Supported<a name="1067169"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco1-scriptstepcompt1">FileMaker Pro<a name="1067171"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1067173"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco2-scriptstepcompt2">FileMaker Server scheduled script<a name="1067175"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1067177"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco3-scriptstepcompt3">FileMaker Go<a name="1067179"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1067181"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco4-scriptstepcompt4">Custom Web Publishing<a name="1067183"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1067185"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco5-scriptstepcompt5">FileMaker WebDirect<a name="1067187"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscon-scriptstepcomptno">No<a name="1067189"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco6-scriptstepcompt6">Runtime solution<a name="1067191"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1067193"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="orh-originhead">Originated in<a name="1043694"> </a></div>
+      <div class="or-origin"><a name="1043695">FileMaker Pro 6.0 or earlier</a></div>
+      <div class="ssdh-scriptdeschead">Description<a name="1029755"> </a></div>
+      <div class="b-body"><a name="1029761">You can create a calculation to generate the AppleScript commands to be sent, or you can type the commands directly into the Native AppleScript text area.</a></div>
+      <div class="b-body"><a name="1029762">For calculated scripts and scripts stored in FileMaker Pro fields, the AppleScript commands are compiled each time the script is performed. If you type the script into the Native AppleScript text area, then FileMaker Pro compiles the script and detects any scripting or system errors. (The script is recompiled whenever it's edited.)</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1029763">Because AppleScript is an OS X feature, if you run a script containing a Perform AppleScript script step on a Windows computer, the script step is ignored. (An error code is generated, which can be captured with the </a><span class="zh-hyper"><a href="func_ref2.32.46.html#1029752">Get(LastError) function</a></span>.)</div>
+      <div class="hs2-headsub2"><a name="1029767">Tips on usage</a></div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029769">FileMaker Pro can use the Perform AppleScript script step to send </a><span class="g-glosslink"><a href="glossary.html#1027519">Apple events</a></span> to itself or to FileMaker Pro software running on other machines.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1086911">Use Perform AppleScript to pass image data between FileMaker Pro and other applications. With AppleScript, you can pass images stored in container fields to other applications or pass images into FileMaker Pro container fields.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1029771">Use Perform AppleScript to communicate with applets and other scriptable applications. For example, if you have created an AppleScript applet with sub-routines, you can call the handlers using the Perform AppleScript command, like this:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b2-body2"><span class="c-code"><a name="1029772">Perform AppleScript ["tell application "My Applet" to doMyRoutine()"]</a></span></div>
+      <div class="sseh1-scriptexamhead1">Example 1<a name="1029773"> </a></div>
+      <div class="b-body"><a name="1076412">Opens the Documents folder of the current OS X User.</a></div>
+      <div class="b-body"><span class="c-code"><a name="1076437">Perform AppleScript ["tell application "Finder" (*enter line break*) activate (*enter line break*) set x to path to documents folder (*enter line break*) open x (*enter line break*) end tell"]</a></span></div>
+      <div class="sseh2-scriptexamhead2">Example 2<a name="1076438"> </a></div>
+      <div class="b-body"><a name="1075479">Sets the bounds of the Documents window to the specified size. The Documents folder must be open before this script runs.</a></div>
+      <div class="co-code"><a name="1075481">Perform AppleScript ["tell application "Finder" to set bounds of window "Documents" to {170, 70, 1000, 600}"]</a></div>
+      <div class="sseh3-scriptexamhead3">Example 3<a name="1075429"> </a></div>
+      <div class="b-body"><a name="1075541">Calculates and performs the AppleScript to install a network printer. "\" tells FileMaker Pro to recognize the symbol that follows as a character and not as a calculation operator.</a></div>
+      <div class="b-body"><span class="c-code"><a name="1075543">Perform AppleScript ["do shell script \"lpadmin -p " &amp; Printers::Name &amp; " -E -v lpd://" &amp; Printers::IP Address &amp; " -P /Library/Printers/PPDs/Contents/Resources/" &amp; Substitute ( Printers::Driver Name ; " " ; "\\\ " ) &amp; ".gz -D \\\"" &amp; Printers::Description &amp; "\\\"\""]</a></span></div>
+      <div class="rh-relatedhead">Related topics<a name="1029778"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_alpha.html#66468" name="1029782">Script steps reference (alphabetical list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_cat.34.2.html#947337" name="1029786">Script steps reference (category list)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

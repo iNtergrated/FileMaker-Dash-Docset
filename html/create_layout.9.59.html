@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Often, the amount of information in the fields in your database varies. When you print, FileMaker Pro can shrink field boundaries and shift objects to the left or up on your layout to close up the blank space caused when the information in a field doesn't ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Removing blank spaces in printouts</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="create_layout.9.60.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="create_layout.9.58.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1030089">Designing and creating databases</a> &gt; 
+      <a href="create_layout.9.1.html#1030089">Creating and managing layouts and reports</a> &gt; 
+      <a href="create_layout.9.55.html#1030089">Controlling how layouts print</a> &gt; 
+      <b>Removing blank spaces in printouts</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Removing blank spaces in printouts</div>
+      <div class="b-body"><a name="1030103">Often, the amount of information in the fields in your database varies. When you print, FileMaker Pro can shrink </a><span class="g-glosslink"><a href="glossary.html#1027706">field boundaries</a></span> and shift objects to the left or up on your layout to close up the blank space caused when the information in a field doesn't fill the field boundary.</div>
+      <div class="b-body"><a name="1165682">For example, in a catalog, a description for one item may be longer than for another. If you use the sliding feature of FileMaker Pro, you can close up the space between items and print more items per page.</a></div>
+      <div class="b-body"><a name="1165689">You can slide any object, including fields, </a><span class="g-glosslink"><a href="glossary.html#1028003">portals</a></span>, other objects, and even <span class="g-glosslink"><a href="glossary.html#1027858">layout parts</a></span>. Here is how certain objects slide:</div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="e-emphasis"><a name="1030113">Fields</a></span> shrink to eliminate empty space within field boundaries. A field can also slide if there is a sliding or shrinking field above or to the left of the field.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="e-emphasis"><a name="1030114">Non-field objects,</a></span> like a horizontal line or a text object, can slide if there is a sliding field above or to the left of the objects. When a non-field object slides, it moves to another place on the layout but it doesn't shrink.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><span class="e-emphasis"><a name="1030115">Portals</a></span> slide like any other non-field object, but objects within a portal can't slide. If you specify that a portal slides up and the enclosing part shrink, FileMaker Pro omits empty portal rows.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030116">You can set </a><span class="e-emphasis">layout parts</span> to shrink when the fields in them slide up. Headers, footers, title headers, and title footers never shrink or slide up. Don't set a part to shrink on a layout that requires fixed vertical spacing, like labels.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1030117">All objects slide left (or up) corresponding to the amount of space that the fields to the left of (or above) the objects shrink. However, sliding does not remove empty space you leave between fields, or other empty spaces on parts. For example, if you create a body part with one inch of space below the lowest object, and set all the objects to slide and the part to shrink, FileMaker Pro leaves one inch below the lowest object when you print.</a></div>
+      <div class="hs1-headsub1"><a name="1030118">To set sliding options:</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1030119">The effects of the sliding options you set only appear in Preview mode and printouts, not in Browse mode.</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1030131">In </a><span class="g-glosslink"><a href="glossary.html#1034324">Layout mode</a></span>, select both the objects you want to slide and the left-most (or top-most) field that you want the other objects to slide into so it can shrink.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1090479">Click </a><span class="o-onscreen">Inspector </span><img class="Default" src="../images/objectinfo_button.png" width="21" height="18" style="float: none; left: 0.0; top: 0.0;" alt="Inspector button" /> in the <span class="g-glosslink"><a href="glossary.html#1034854">layout bar</a></span>, then click <span class="o-onscreen">Position</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1030133">In the Sliding &amp; Visibility area, select the sliding options you want.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ta-tableanchor"><a name="1030169"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1030136">To</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1030138">Select this option</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030140">Reduce the width of the selected fields to the minimum needed for their data, and then slide all selected objects left based on the amount of space the fields shrink.</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1030142">Sliding left</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030148">Reduce the height of the selected fields to the minimum needed for their data, and then slide all selected objects up based on the field above that shrinks the least.</a></div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1030149">Note  </a></span>This option maintains consistent vertical spacing among columns and repeating fields.</div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1030151">Sliding up based on</a></span>, and click <span class="o-onscreen">All objects above</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030157">Reduce the height of the selected fields to the minimum needed for their data, and then slide all selected objects up based on the amount of space the fields directly above shrink.</a></div>
+            <div class="td-tabledata"><span class="zan-autonum"><a name="1030158">Note  </a></span>This option allows the spacing in a column to adjust independently of other columns and repeating fields.</div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1057368">Sliding up based on</a></span>, and click <span class="o-onscreen">Only objects directly above</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1030166">Close up the space in the layout part that contains the selected fields. To slide the part up relative to all objects, set this option for all the objects that are sliding up. To slide the part up relative to a single object, set this option for that object only.</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><span class="o-onscreen"><a name="1030168">Also resize enclosing part</a></span></div>
+          </td>
+        </tr>
+      </table>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1052183">To see the effects of the sliding options you set, choose </a><span class="o-onscreen">Preview </span>from the <span class="g-glosslink"><a href="glossary.html#1027934">Mode pop-up menu</a></span> at the bottom of the document window.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1030175">For more information, see </a><span class="zh-hyper"><a href="preview_print.6.4.html#1027619">Previewing data on a layout</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1030176">To modify or remove the sliding options for objects:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1030177">In Layout mode, select the objects you want to change.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1030178">If you want to remove sliding from a group of objects, remember to select the left-most (or top-most) field along with the other objects that are sliding.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1076167">Click </a><span class="o-onscreen">Inspector </span><img class="Default" src="../images/objectinfo_button.png" width="21" height="18" style="float: none; left: 0.0; top: 0.0;" alt="Inspector button" /> in the <span class="g-glosslink"><a href="glossary.html#1034854">layout bar</a></span>, then click <span class="o-onscreen">Position</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1076184">In the Sliding &amp; Visibility area, deselect options you don't want.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1030180">Notes</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030181">In many cases, you can achieve the same sliding effects by using merge fields. The following table summarizes when to use sliding objects and when to use merge fields.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="ta-tableanchor"><a name="1030199"> </a></div>
+      <table class="t1-table1" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1030184">Use sliding objects when you want to:</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1030186">Use merge fields when you want to:</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1030188">slide non-text objects, like graphics</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1030189">shrink a layout part to fit more on a page</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1030190">align formatted fields, like value lists and repeating fields</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1030191">use a layout for data entry (you can't enter data into a field formatted as a merge field) </a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1030193">slide fields together in one continuous block of text, such as for mailing labels</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="tb1-tablebullet1_outer" style="margin-left: 0em;">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline;">
+                  <td>
+                    <div class="tb1-tablebullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                      <span style="color: Black; font-weight: bold;"> •</span>
+                    </div>
+                  </td>
+                  <td width="100%">
+                    <div class="tb1-tablebullet1_inner"><a name="1030194">slide fields and text together in one continuous block of text, such as for form letters.</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="td-tabledata"><a name="1030197">For more information, see </a><span class="zh-hyper"><a href="create_layout.9.27.html#1160797">Placing merge fields on a layout</a></span>.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030200">In Layout mode, choose </a><span class="o-onscreen">View</span> menu &gt; <span class="o-onscreen">Show</span> &gt; <span class="o-onscreen">Sliding Objects</span> to see which objects slide and in which directions.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030201">When you slide objects or parts, FileMaker Pro prints the objects relative to each other, not precisely as you placed them on your layout. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030203">Be careful when setting sliding options for </a><span class="g-glosslink"><a href="glossary.html#1028056">repeating fields</a></span>. If some repeating fields are empty and the space is removed by sliding, then adjoining data in different repeating fields may no longer be in proper alignment.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1030204">If your database includes one or more fields that display Japanese text, you can trim extra spaces between characters with the</a><span class="c-code"> TrimAll </span>function. For each field that contains Japanese data that you want to trim, create a calculation field that uses the<span class="c-code"> TrimAll </span>function to trim that field, and then place that field on your layout. For more information, see <span class="zh-hyper"><a href="func_ref3.33.90.html#1031850">TrimAll function</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="rh-relatedhead">Related topics<a name="1030208"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_layout.9.65.html#1042836" name="1030216">Troubleshooting layouts</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

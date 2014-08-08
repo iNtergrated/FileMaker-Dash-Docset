@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="The following sections describe each layout part type." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>About layout part types</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="create_layout.9.19.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="create_layout.9.17.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1028102">Designing and creating databases</a> &gt; 
+      <a href="create_layout.9.1.html#1028102">Creating and managing layouts and reports</a> &gt; 
+      <a href="create_layout.9.17.html#1028102">Working with layout parts</a> &gt; 
+      <b>About layout part types</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">About layout part types</div>
+      <div class="b-body"><a name="1028109">The following sections describe each </a><span class="g-glosslink"><a href="glossary.html#1027858">layout part</a></span> type.</div>
+      <div class="hs1-headsub1"><a name="1028110">Non-summary layout parts</a></div>
+      <div class="b-body"><a name="1028111">Title header: Appears only once at the top of the first screen or page and replaces the normal header (if one is specified). In reports, can be used to print a separate title page. You can have only one title header in a layout.</a></div>
+      <div class="b-body"><a name="1028112">Any fields in the title header preview and print data from the first record in the found set.</a></div>
+      <div class="b-body"><a name="1028113">Header: Appears at the top of every screen or page (unless you add a title header, which supersedes the header on the first page). Use for titles or column headings (in columnar reports). You can have only one header in a layout.</a></div>
+      <div class="b-body"><a name="1028114">Any fields in the header preview and print data from the first record on that page.</a></div>
+      <div class="b-body"><a name="1028115">Body: Each object you put in the body, including fields, text objects, and graphics, appears once for each record in the found set. You can have only one body in a layout.</a></div>
+      <div class="b-body"><a name="1028116">Footer: Appears at the bottom of every screen or page (unless you add a title footer). You can have only one footer in a layout.</a></div>
+      <div class="b-body"><a name="1028117">Any fields in the footer preview and print data from the last record on that page.</a></div>
+      <div class="b-body"><a name="1028118">Title footer: Appears only once at the bottom of the first screen or page and replaces the normal footer (if one is specified). You can have only one title footer in a layout.</a></div>
+      <div class="b-body"><a name="1028119">Any fields in the title footer preview and print data from the last record on the first page.</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1028120">In Browse mode, the title header, header, footer and title footer display the data from the active record.</a></div>
+      <div class="hs1-headsub1"><a name="1028121">Summary layout parts</a></div>
+      <div class="b-body"><a name="1028122">To include summary data on a layout (for example, subtotals, grand totals, averages, counts, and so on), you place summary fields in summary layout parts. Summary parts include grand summary and subsummary parts.</a></div>
+      <div class="b-body"><a name="1028123">A grand summary part usually contains one or more summary fields that display summary information (like totals) about all records being browsed.</a></div>
+      <div class="b-body"><a name="1028124">A subsummary part usually contains one or more summary fields that display “subsummary” information (like subtotals) for a subset of records. The records are grouped (sorted) by values in another field, the break field. Whenever the value of the break field changes, the report “breaks” and FileMaker Pro inserts the subsummary part.</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1028125">You may want to create the summary fields that you want prior to creating a summary part. For more information, see </a><span class="zh-hyper"><a href="create_db.8.21.html#1029235">Defining summary fields</a></span>.</div>
+      <div class="b-body"><a name="1028129">Grand summary (leading or trailing): When you place a summary field in this part, the summary field displays summary information for all records in the found set. The grand summary part can be at the beginning (leading) or end (trailing) of the report, depending on its placement on the layout. You can have only one leading grand summary and one trailing grand summary in a layout.</a></div>
+      <div class="b-body"><a name="1028130">If you put another type of field in this part, FileMaker Pro displays data from the first record (leading) or last record (trailing) being browsed.</a></div>
+      <div class="b-body"><a name="1028131">Subsummary (leading or trailing): When you place a summary field in this part, the summary field displays “subsummary” information for each subset of records sorted by the specified break field. The subsummary part can be before or after the body part, depending on the placement on the layout. You can have multiple subsummary parts in a layout.</a></div>
+      <div class="b-body"><a name="1028132">If you put another type of field here, FileMaker Pro displays data from the first record (leading) or last record (trailing) in the group. Put the break field here to identify what subset of records the summary is for.</a></div>
+      <div class="b-body"><a name="1028133">For example, to summarize each salesperson's sales figures in a database recording sales transactions, define a summary field totaling the Sales field, and then create a subsummary part and place that summary field in it (the break field is the salesperson's name). If you also want a count of that salesperson's transactions, create a second summary field counting the transactions, and also place it on the same subsummary part. To get a grand total of all transactions, place the sales summary field in a grand summary part.</a></div>
+      <div class="nt-notetip">
+        <span class="zan-autonum">Tip  </span><a name="1048442">You can change the focus of a report by specifying a different break field for a subsummary part. For example, in a sales report with a subsummary part containing a summary field for sales, you can select Month for the break field to get monthly totals or Salesperson to get individual performance totals.</a></div>
+      <div class="hs1-headsub1"><a name="1043224">Viewing summary data in Table View</a></div>
+      <div class="b-body"><a name="1043237">When you view summary data in Table View:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1056248">The summary part is resized to display one row beyond the number of rows in the table.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1043213">Fields placed on a layout in leading parts (leading grand summary or subsummary parts) are aligned touching the bottom of the part.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1043214">Fields placed on a layout in trailing parts (trailing grand summary or subsummary parts) are aligned touching the top of the part.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1043216">If a </a><span class="g-glosslink"><a href="glossary.html#1027552">break field</a></span> is placed in a subsummary part, it will always appear in the left-most column in Table View. Break fields appear at the bottom of leading parts or the top of trailing parts.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1043217">If more than one summary field is set for the same field, summary values appear together with one value above the other.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1043218">FileMaker Pro automatically adds field labels (such as </a><span class="o-onscreen">Total</span>) to subsummary parts to identify the data displayed.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1056285">If subsummary parts are assigned a fill color, the fill is applied only to the inside edge of the right-hand column when the layout is viewed in Table View. The area to the right and below the table appears in the color assigned to the body part in the layout.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

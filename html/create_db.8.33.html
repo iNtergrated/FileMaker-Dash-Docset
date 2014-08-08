@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="When you set up a container field to store data externally, any embedded data in the field is not automatically moved to the external directory. If you want embedded data to be stored externally, you must use the following steps to transfer the data. FileM ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Transferring container data</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="appleanchors">
+      <a name="8895" class="applehelp-cs"></a>
+      <a name="8896" class="applehelp-cs"></a>
+      <a name="DataTransferSummary" class="applehelp-cs"></a>
+      <a name="ContainerDataTransfer" class="applehelp-cs"></a>
+      <a name="remote container fields, managed container fields" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="create_db.8.34.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="create_db.8.32.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1065805">Designing and creating databases</a> &gt; 
+      <a href="create_db.8.1.html#1065805">Creating a database</a> &gt; 
+      <a href="create_db.8.29.html#1065805">About setting up container fields</a> &gt; 
+      <b>Transferring container data</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Transferring container data</div>
+      <div class="b-body"><a name="1065808">When you set up a </a><span class="g-glosslink"><a href="glossary.html#1041246">container field</a></span> to store data externally, any <span class="g-glosslink"><a href="glossary.html#1041191">embedded</a></span> data in the field is not automatically moved to the external directory. If you want embedded data to be stored externally, you must use the following steps to transfer the data. FileMaker Pro uses settings you choose in the Options for Field dialog box to move the data to the specified <span class="g-glosslink"><a href="glossary.html#1040430">base directory</a></span>.</div>
+      <div class="b-body"><a name="1105825">You can also transfer data that’s stored externally into the container field, convert data with secure storage to open storage and vice versa, move data between base directories, and move files when the open storage calculation is changed. Files that are stored by reference and some embedded container data (such as text objects and layout objects) cannot be transferred.</a></div>
+      <div class="b-body"><a name="1063317">You must have full access privileges to transfer data.</a></div>
+      <div class="hs1-headsub1"><a name="1063318">To transfer container data:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1080409">If you changed storage options for a container field in the Options for Field dialog box (or by right-clicking and choosing </a><span class="o-onscreen">Field</span> &gt; <span class="o-onscreen">Field Options</span> while working in Table View), the Container Data Transfer dialog box appears after you exit the dialog box.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="n1-note1">
+        <span class="zan-autonum">Note  </span><a name="1065308">Or, in the Manage Containers dialog box, click </a><span class="o-onscreen">Transfer Data</span>. The Container Data Transfer dialog box appears, showing all the container fields that are available for transfer.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1063322">To see information about a destination (including whether data is embedded or stored externally, and its base directory, storage type, and file path), click the field (not the checkbox) in the list.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1063323">The information appears below the list.</a></div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1063324">Fields are by default selected for data transfer. To exclude a field from data transfer, deselect the checkbox next to the field.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1063325">Click </a><span class="o-onscreen">Transfer</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1063326">If there is not enough disk space in the base directory, a message appears telling you how much free space is available and how much space is needed. Click </a><span class="o-onscreen">OK</span> and create enough space.</div>
+      <div class="b1-body1"><a name="1063327">FileMaker Pro transfers the data from all selected fields to their destinations.</a></div>
+      <div class="b1-body1"><a name="1063328">To stop the transfer process, click </a><span class="o-onscreen">Stop</span> in the Container Data Transfer dialog box. Stopping the transfer doesn’t roll back the data already transferred. You can restart the process at any time by following the steps above.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1063329">When the transfer is completed, the Transfer Summary dialog box appears, showing you the status, number of files transferred, and number of files skipped. Click </a><span class="o-onscreen">OK</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1063751">To see a log of the transfer, click </a><span class="o-onscreen">Open Log File</span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1063755">For information about reading this file, see the next section.</a></div>
+      <div class="hs1-headsub1"><a name="1063757">Reading the Transfer.log file</a></div>
+      <div class="b-body"><a name="1063332">The Transfer.log file displays information about container data that failed to transfer.</a></div>
+      <div class="b-body"><a name="1063333">The most recent data is added to any existing Transfer.log file information, so you may need to scroll to the end of the file to see the results of the latest data transfer session.</a></div>
+      <div class="b-body"><a name="1082235">From left to right the columns show the date, time, and time zone in which the transfer took place, the filename or error number, and a description of the transfer event.</a></div>
+      <div class="b-body"><a name="1082336">The following are examples of warnings and errors:</a></div>
+      <div class="b-body"><span class="zan-autonum"><a name="1082449">Example 1: Warning</a></span></div>
+      <div class="co-code"><a name="1082400">2011-07-20 16:27:58.676 +0800   Warning   [Record ID 3, field Animals::Picture] Skipped non-transferrable data: File reference or text.</a></div>
+      <div class="b-body"><span class="e-emphasis"><a name="1082401">Problem:</a></span> File references and text cannot be transferred.</div>
+      <div class="b-body"><span class="e-emphasis"><a name="1082531">Solution:</a></span> For file references, create a script that embeds the referenced files, then transfer data.</div>
+      <div class="b-body"><span class="zan-autonum"><a name="1082404">Example 2: Error</a></span></div>
+      <div class="co-code"><a name="1082405">2011-07-31 11:39:45.265 +0800   Error 301   [Record ID 1] Opening record resulted in error (301): Record cannot be changed, because another user is modifying it.</a></div>
+      <div class="b-body"><span class="e-emphasis"><a name="1082406">Problem:</a></span> A record was being edited when the transfer occurred.</div>
+      <div class="b-body"><span class="e-emphasis"><a name="1082502">Solution:</a></span> Turn off file sharing before transferring data.</div>
+      <div class="b-body"><span class="zan-autonum"><a name="1082457">Example 3: Error</a></span></div>
+      <div class="co-code"><a name="1082408">2011-07-31 11:43:06.916 +0800   Error 852   [Record ID 6, field Animals::Picture] Saving container data resulted in error (852): Cannot write file to the external storage.</a></div>
+      <div class="b-body"><span class="e-emphasis"><a name="1082390">Problem: </a></span>The destination path could not be written to.</div>
+      <div class="b-body"><span class="e-emphasis"><a name="1082524">Solution:</a></span> Change the operating system permissions for the destination folder.</div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

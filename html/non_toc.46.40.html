@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="keywords" content="Boolean" />
+    <meta name="description" content="Logical operators can build compound conditions into a formula, such as two or more conditions that must be met before you choose a particular method of calculation. With logical operators, you can describe such combinations of conditions." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Logical operators</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="non_toc.46.41.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="non_toc.46.39.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <b></b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="hx3-head3notoc">Logical operators</div>
+      <div class="b-body"><a name="1029467">Logical </a><span class="g-glosslink"><a href="glossary.html#1027983">operators</a></span> can build compound conditions into a <span class="g-glosslink"><a href="glossary.html#1027744">formula</a></span>, such as two or more conditions that must be met before you choose a particular method of calculation. With logical operators, you can describe such combinations of conditions. </div>
+      <div class="b-body"><a name="1029469">Use </a><span class="c-code">AND, OR, </span>or<span class="c-code"> XOR</span> with two <span class="g-glosslink"><a href="glossary.html#1027690">expressions</a></span>; use <span class="c-code">NOT</span> with one expression.</div>
+      <div class="ta-tableanchor"><a name="1029491"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1029472">Symbol</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1029474">Definition</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029476">AND</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029478">True only if both items are true</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029480">OR</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029482">True if either item is true</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029484">XOR</a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029486">True if either of the expressions (but not both) is true</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029488">NOT</a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1029490">Changes the value from False to True or from True to False</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="hs1-headsub1"><a name="1029492">Examples</a></div>
+      <div class="b-body"><a name="1029493">Use </a><span class="c-code">ApplicationReceived="Y" AND FeePaid&gt;0</span> if you want something to occur only if you have received both the application AND the fee.</div>
+      <div class="b-body"><a name="1029494">Use </a><span class="c-code">CurrentBalance</span><span class="sy-symbol">≤</span><span class="c-code">0 OR CreditApproved="Y"</span> if you want something to occur only if no money is owed, OR credit has been approved, OR both are true. </div>
+      <div class="b-body"><a name="1029495">Use </a><span class="c-code">FeePaid&gt;0 XOR FreeGift="Y"</span> if you want something to occur only if EITHER a fee has been paid or a free gift has been sent, but not both (for example, if a fee has not been paid and a free gift has been sent).</div>
+      <div class="b-body"><a name="1029496">Use </a><span class="c-code">NOT IsEmpty(FieldName)</span> to identify records that have a value in the FieldName field.</div>
+      <div class="rh-relatedhead">Related topics<a name="1029497"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.46.html#1030710" name="1029501">About formulas</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="keywords" content="chart data limit, chart limit, charting data limit, data limit" />
+    <meta name="description" content="When you chart delimited data, you must enter numerical data, dates, and times in the format of the current locale. Otherwise, FileMaker Pro displays an error." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Charting tips, tricks, and troubleshooting</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="create_chart.12.14.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="create_chart.12.12.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part2.html#1140276">Designing and creating databases</a> &gt; 
+      <a href="create_chart.12.1.html#1140276">Creating charts from data</a> &gt; 
+      <b>Charting tips, tricks, and troubleshooting</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h3-head3">Charting tips, tricks, and troubleshooting</div>
+      <div class="hs1-headsub1"><a name="1165511">Chart doesn’t look as expected</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1165557">Verify that data is sorted in the current layout and unwanted records are omitted from the found set before creating a chart.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1166243">Are you comparing individual </a><span class="g-glosslink"><a href="glossary.html#1041572">data points</a></span> (the price of each product in a category) or summarized data points (the sum of all products in a category)?</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1166244">Individual data points must be numeric so they can be plotted directly on the chart. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1166245">Summarized data points can be text or number field type. You can count data in a text field and you can perform a variety of mathematical operations on number data (sum, average, and so on).</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1166261">If your chart displays too few data points when data is sorted, in the Chart inspector, click </a><span class="o-onscreen">Data Source</span> and select <span class="o-onscreen">Individual record data</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1165434">When you create a quick chart, FileMaker Pro includes axis labels based on the field you selected and the current state of the file. When FileMaker Pro can’t determine appropriate labels, it leaves labels blank. For example, if you chart individual data points such as soccer scores, FileMaker Pro labels the appropriate axis </a><span class="o-onscreen">Scores</span>. However, the labels on the opposite axis are blank if FileMaker Pro can’t determine you want to plot by player first names, last names, the team name, or the game date. If axis labels are missing, you can add them in the Chart inspector.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1165440">If summary data looks unexpected, check the summary type FileMaker Pro applied. You can use the </a><span class="o-onscreen">Summary</span> setting in the Chart inspector to verify and the change the summary type.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1174679">A chart can display up to 2048 data points. If your data set contains more than 2048 records, FileMaker Pro charts a subset of the available data representing a uniform spread of the larger data set.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1165537">Charts created in Layout mode appear differently in the Chart Setup dialog box preview than in Browse mode depending on the layout part in which they are placed. See </a><span class="zh-hyper"><a href="create_chart.12.12.html#1155706">Placing your chart in the appropriate layout part</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1165418">Troubleshooting calculated titles and data series</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1154124">When you use a calculation to specify a title in a chart created in Layout mode, the result is based on the layout part in which the chart is located. See </a><span class="zh-hyper"><a href="create_chart.12.12.html#1155706">Placing your chart in the appropriate layout part</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1140279">A calculated x-axis data series must return a result:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1154006">as text in a column, stacked column, positive/negative, pie (category label), line, or area chart</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1154027">as number in a bar, stacked bar, scatter, or bubble chart</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1154061">When you chart data in a found set or in related records, a calculated y-axis data series must return a result:</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1154062">as number in a column, stacked column, positive/negative, pie (slice data), line, area, scatter, or bubble chart</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu2-bullet2_outer" style="margin-left: 1.2000000000000001em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu2-bullet2_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu2-bullet2_inner"><a name="1154063">as text in a bar or stacked bar</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1143048">When you chart delimited data in the current record, a calculated y-axis data series (slice data in pie charts) must return the result in a text field.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hs1-headsub1"><a name="1140299">I received a parsing error when charting delimited data</a></div>
+      <div class="b-body"><a name="1140300">When you chart delimited data, you must enter numerical data, dates, and times in the format of the current locale. Otherwise, FileMaker Pro displays an error.</a></div>
+      <div class="hs1-headsub1"><a name="1140301">Blank records appear in chart</a></div>
+      <div class="b-body"><a name="1143105">If data points for unexpected blank records appear in your chart, it’s possible:</a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1140303">there are restricted records in the database that you do not have access to chart</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1140304">the file contains invalid calculations that are returning the question mark character (</a><span class="o-onscreen">?</span>)</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-body"><a name="1140305">To remove zero data points from your chart, perform a find and omit the invalid records by entering only the </a><span class="o-onscreen">=</span> operator in the appropriate fields. If the problem persists, check and correct calculations. See <span class="zh-hyper"><a href="find_sort.5.14.html#1028490">Finding records except those matching criteria</a></span>.</div>
+      <div class="hs1-headsub1"><a name="1140309">Charting missing data values</a></div>
+      <div class="b-body"><a name="1140314">If your x-axis data series contains missing values (no data), a data label is displayed on the x-axis for most chart types, but no corresponding data point is displayed. Line and area charts display a missing data point as a zero.</a></div>
+      <div class="hs1-headsub1"><a name="1166508">Tick marks display differently in the chart preview and Layout mode</a></div>
+      <div class="b-body"><a name="1140315">FileMaker Pro automatically adjusts chart scale and tick marks depending on the size of the chart. Therefore, tick marks and scales might look different when viewed in the chart preview and Layout mode.</a></div>
+      <div class="hs1-headsub1"><a name="1140319">Charting repeating fields</a></div>
+      <div class="b-body"><a name="1140320">FileMaker Pro does not recognize individual values in repeating fields as a data series. To chart data in repeating fields, use the </a><span class="zh-hyper"><a href="func_ref1.31.4.html#1036551">List function</a></span> to combine repeating data in a delimited format, then choose <span class="o-onscreen">Current Record (delimited data)</span> for <span class="o-onscreen">Chart Data</span>.</div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

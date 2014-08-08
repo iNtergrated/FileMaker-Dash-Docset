@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Closes the currently active window or any other window by name." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Close Window</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <a name="//apple_ref/cpp/Command/Close Window" class="dashAnchor"></a>
+    <div id="appleanchors">
+      <a name="1535" class="applehelp-cs"></a>
+    </div>
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="scripts_ref2.37.5.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="scripts_ref2.37.3.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1027655">Reference</a> &gt; 
+      <a href="help_script_cat.34.1.html#1027655">Script steps reference</a> &gt; 
+      <a href="scripts_ref2.37.1.html#1027655">Windows script steps</a> &gt; 
+      <b>Close Window</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="ssh-scripthead">Close Window</div>
+      <div class="sspuh-scriptpurposehead">Purpose<a name="1037571"> </a></div>
+      <div class="sspu-scriptpurpose"><a name="1037572">Closes the currently active window or any other window by name.</a></div>
+      <div class="ssfh-scriptformathead">Format<a name="1027656"> </a></div>
+      <div class="co-code"><a name="1027657">Close Window [</a><span class="v-variable">Current window or Name: &lt;name of window&gt;; Current file</span>]</div>
+      <div class="ssoh-scriptoptshead">Options<a name="1027658"> </a></div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027659">Click </a><span class="o-onscreen">Specify </span>to select which window you want FileMaker Pro to close. You can enter literal text or click <span class="o-onscreen">Specify</span> to generate a name from a calculation. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="bu1-bullet1_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="bu1-bullet1_inner" style="width: 1.5em; white-space: nowrap;">
+                <span style="color: Black; font-weight: bold;"> •</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="bu1-bullet1_inner"><a name="1027660">Select </a><span class="o-onscreen">Current file only </span>to restrict matches to the current file (not selecting this option matches all available FileMaker Pro files).</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1037679">Closing the last window of a file closes the file and halts execution of the current script. In FileMaker WebDirect, closing the last window logs out the current web session.</a></div>
+      <div class="sscoh-scriptcompathead">Compatibility<a name="1052472"> </a></div>
+      <div class="ta-tableanchor"><a name="1052498"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh1-scriptstepcompthead1">Where the script step runs<a name="1063903"> </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh2-scriptstepcompthead2">Supported<a name="1063905"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco1-scriptstepcompt1">FileMaker Pro<a name="1063907"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1063909"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco2-scriptstepcompt2">FileMaker Server scheduled script<a name="1063911"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1063913"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco3-scriptstepcompt3">FileMaker Go<a name="1063915"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1063917"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco4-scriptstepcompt4">Custom Web Publishing<a name="1063919"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1063921"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco5-scriptstepcompt5">FileMaker WebDirect<a name="1063923"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1063925"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco6-scriptstepcompt6">Runtime solution<a name="1063927"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1063929"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="orh-originhead">Originated in<a name="1043138"> </a></div>
+      <div class="or-origin"><a name="1043139">FileMaker Pro 6.0 or earlier</a></div>
+      <div class="sseh1-scriptexamhead1">Example 1<a name="1027666"> </a></div>
+      <div class="b-body"><a name="1068988">Goes to a related record in the Invoices table using the Print Invoices layout, prints, and closes the window.</a></div>
+      <div class="co-code"><a name="1068990">Go to Related Record [Show only related records; From table: "Invoices"; Using layout: “Print Invoices”; New Window]<br />Print [Restore: Printer; No dialog]<br />Close Window [Current Window]</a></div>
+      <div class="sseh2-scriptexamhead2">Example 2<a name="1069034"> </a></div>
+      <div class="b-body"><a name="1069104">Closes the current window if it is hidden.</a></div>
+      <div class="co-code"><a name="1069106">If [Get ( WindowVisible ) = 0]<br />	Close Window [Current Window]<br />End If</a></div>
+      <div class="sseh3-scriptexamhead3">Example 3<a name="1069051"> </a></div>
+      <div class="b-body"><a name="1069144">Closes the Invoice Details window if it is open.</a></div>
+      <div class="co-code"><a name="1069146">If [PatternCount ( WindowNames ( Get ( FileName ) ) ; "Invoice Details" )]<br />	Close Window [Name: "Invoice Details"]<br />End If</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1027668"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_db.8.20.html#1029046" name="1027672">Defining calculation fields</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_alpha.html#66468" name="1027676">Script steps reference (alphabetical list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_cat.34.2.html#947337" name="1027680">Script steps reference (category list)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Some file formats (such as DBF) can interpret only one value per field and do not support repeating fields. When you export to these formats, only the first value in a repeating field is exported. An alert message warns you if you’re exporting repeating fi ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Exporting repeating field data</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="import_export.17.23.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="import_export.17.21.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1046912">Sharing data</a> &gt; 
+      <a href="import_export.17.1.html#1046912">Saving, importing, and exporting data</a> &gt; 
+      <b>Exporting repeating field data</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h3-head3">Exporting repeating field data</div>
+      <div class="b-body"><a name="1046920">Some file formats (such as DBF) can interpret only one value per field and do not support </a><span class="g-glosslink"><a href="glossary.html#1028056">repeating fields</a></span>. When you export to these formats, only the first value in a repeating field is exported. An alert message warns you if you’re exporting repeating fields to a file format that supports only the first value.</div>
+      <div class="b-body"><a name="1046923">Although you can export repeating fields to XML, if you export </a><span class="g-glosslink"><a href="glossary.html#1028036">related fields</a></span> that repeat, only the first value in each related repeating field is exported.</div>
+      <div class="b-body"><a name="1046924">You can work around these limitations by following these steps.</a></div>
+      <div class="hs1-headsub1"><a name="1046925">To export repeating field values into formats that don’t support repeating fields:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1046926">In the FileMaker Pro file, find the records you want to export.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1046930">For information about finding records, see </a><span class="zh-hyper"><a href="find_sort.5.2.html#1027519">Finding records</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1046932">Make a </a><span class="g-glosslink"><a href="glossary.html#1027590">clone</a></span> of the file to export.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1046936">For information about cloning files, see </a><span class="zh-hyper"><a href="fmp_basics.3.33.html#1028872">Saving and copying files</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1046938">Open the clone, then </a><span class="g-glosslink"><a href="glossary.html#1027807">import</a></span> the data from the original file.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1059018">For information about importing records, see </a><span class="zh-hyper"><a href="import_export.17.10.html#1027874">Importing data into FileMaker Pro</a></span>.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1046939">When the Import Options dialog box opens, select </a><span class="o-onscreen">Splitting them into separate records</span>, then click <span class="o-onscreen">Import</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1046940">Export from this clone file to DBF format.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1046944">For more information see </a><span class="zh-hyper"><a href="import_export.17.21.html#1049167">Exporting data from FileMaker Pro</a></span>.</div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

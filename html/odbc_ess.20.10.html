@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="If your FileMaker Pro file accesses data from an ODBC data source, you can use supplemental fields to define unstored calculations or summary instructions that act on data coming from the external sources. These fields display calculation and summary resul ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Using supplemental fields</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="odbc_ess.20.11.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="odbc_ess.20.9.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part3.html#1027889">Sharing data</a> &gt; 
+      <a href="odbc_ess.20.1.html#1027889">Accessing external data sources</a> &gt; 
+      <a href="odbc_ess.20.4.html#1027889">Working with data sources</a> &gt; 
+      <b>Using supplemental fields</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Using supplemental fields</div>
+      <div class="b-body"><a name="1027892">If your FileMaker Pro file accesses data from an </a><span class="g-glosslink"><a href="glossary.html#1027961">ODBC</a></span> <span class="g-glosslink"><a href="glossary.html#1027629">data source</a></span>, you can use <span class="g-glosslink"><a href="glossary.html#1028157">supplemental fields</a></span> to define unstored calculations or summary instructions that act on data coming from the external sources. These fields display calculation and summary results in the FileMaker Pro file without changing the external database. For example, you can use supplemental fields to display aggregated data from an external file similarly to how you use summary fields to display aggregated data stored in FileMaker Pro files. </div>
+      <div class="hs1-headsub1"><a name="1027894">To do calculations on ODBC data:</a></div>
+      <div class="s1f-step1first_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1f-step1first_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">1.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1f-step1first_inner"><a name="1027895">Open the file with the link to the external data source.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">2.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027896">Choose </a><span class="o-onscreen">File</span> menu &gt; <span class="o-onscreen">Manage</span> &gt; <span class="o-onscreen">Database</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">3.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027897">In the Manage Database dialog box, click the </a><span class="o-onscreen">Fields</span> tab.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">4.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027898">Choose the ODBC table you want to work with from the </a><span class="o-onscreen">Table</span> list.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">5.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027901">Add a </a><span class="g-glosslink"><a href="glossary.html#1027566">calculation field</a></span> or a <span class="g-glosslink"><a href="glossary.html#1028154">summary field</a></span>. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027908">See </a><span class="zh-hyper"><a href="create_db.8.20.html#1029046">Defining calculation fields</a></span> and <span class="zh-hyper"><a href="create_db.8.21.html#1029235">Defining summary fields</a></span> for more information.</div>
+      <div class="s1r-step1reg_outer" style="margin-left: 0em;">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline;">
+            <td>
+              <div class="s1r-step1reg_inner" style="width: 1.5em; white-space: nowrap;">
+                <span class="zan-autonum">6.	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="s1r-step1reg_inner"><a name="1027909">Specify the fields in the ODBC table for which you want to calculate or summarize values.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="b1-body1"><a name="1027910">The supplemental fields appear in the </a><span class="o-onscreen">Fields</span> tab for the specified ODBC table.</div>
+      <div class="rh-relatedhead">Related topics<a name="1027911"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="create_layout.9.26.html#1028465" name="1027915">Placing and removing fields on a layout</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

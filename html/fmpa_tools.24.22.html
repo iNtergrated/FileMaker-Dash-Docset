@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="After a user has run the installation program for your runtime application, the files are installed on the user’s hard drive. The solution’s three-character filename extension is registered with the operating system (Windows) or in the system preferences ( ..." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Starting runtime solutions (FileMaker Pro Advanced)</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="fmpa_tools.24.23.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="fmpa_tools.24.21.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part4.html#1028687">Using FileMaker Pro Advanced</a> &gt; 
+      <a href="fmpa_tools.24.1.html#1028687">Using FileMaker Pro Advanced tools</a> &gt; 
+      <a href="fmpa_tools.24.16.html#1028687">About creating runtime solutions (FileMaker Pro Advanced)</a> &gt; 
+      <b>Starting runtime solutions (FileMaker Pro Advanced)</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="h4-head4">Starting runtime solutions (FileMaker Pro Advanced)</div>
+      <div class="b-body"><a name="1046645">After a user has run the installation program for your runtime application, the files are installed on the user’s hard drive. The solution’s three-character filename extension is registered with the operating system (Windows) or in the system preferences (OS X). This registration allows the operating system to locate and launch the runtime solution if the user double-clicks the primary or auxiliary solution files. If a primary or auxiliary solution file is double-clicked before the runtime application has registered the extension, the runtime application won’t be found.</a></div>
+      <div class="ni-noteimportant">
+        <span class="zan-autonum">Important  </span><a name="1028689">Your users should start your solution by double-clicking the runtime application icon, not the solution file icon. Double-clicking the icons for the solution or auxiliary files might result in errors, depending on whether there are other copies of the runtime application on their hard disk. If your users have more than one solution on their computers associated with the same three-character extension and they double-click the icon for the solution file, the first solution installed will attempt to open the file, and this might not be the correct application for the specific solutions file.</a></div>
+      <div class="b-body"><a name="1028709"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028692">Icon</a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="th-tablehead"><a name="1028694">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028699"><img class="Default" src="../images/runtimeapp.png" width="63" height="63" style="float: none; left: 0.0; top: 0.0;" alt="Runtime application icon" /> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028701">Runtime application. Tell users to double-click this icon to start the runtime application.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028706"><img class="Default" src="../images/runtime_document_icon.png" width="63" height="63" style="float: none; left: 0.0; top: 0.0;" alt="Runtime document icon" /> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="td-tabledata"><a name="1028708">Solution file</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="b-body"><a name="1028710">Each time the runtime application is opened, it looks for the primary file that has been bound to it. If the primary file can’t be found, the user is asked to locate the primary file.</a></div>
+      <div class="b-body"><a name="1028711">Caution your users that they should not rename the primary or auxiliary solution files. If they do, relationships and external scripts may not work properly.</a></div>
+      <div class="n-note">
+        <span class="zan-autonum">Note  </span><a name="1028712">When you make a change to your solution, make sure that your users can import their data into your updated solution. Include a script attached to a button to make it easy for your users to import their data into the new solution files.</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1028717"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmpa_tools.24.16.html#1028309" name="1028721">About creating runtime solutions (FileMaker Pro Advanced)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmpa_tools.24.17.html#1028384" name="1028725">Preparing files for a runtime solution (FileMaker Pro Advanced)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmpa_tools.24.18.html#1028450" name="1028729">Binding files into a runtime solution (FileMaker Pro Advanced)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmpa_tools.24.19.html#1028531" name="1028733">Naming runtime solutions (FileMaker Pro Advanced)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmpa_tools.24.20.html#1028581" name="1028737">Distributing runtime solutions (FileMaker Pro Advanced)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmpa_tools.24.21.html#1028635" name="1028741">Importing data into upgraded runtime solutions (FileMaker Pro Advanced)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="fmpa_tools.24.23.html#1028748" name="1028745">Recovering runtime files (FileMaker Pro Advanced)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>

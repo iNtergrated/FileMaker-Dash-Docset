@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="Reverses, restores, or switches between the most recently performed actions in the file." />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Undo/Redo</title>
+    <!-- MLP 012913 remove chapter specific css
+    <link wwpage:condition="catalog-css" rel="StyleSheet" href="css/catalog.css" wwpage:attribute-href="catalog-css" type="text/css" media="all" />
+	 -->
+    <link rel="StyleSheet" href="../css/webworks.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="../css/print.css" type="text/css" media="print" />
+    <!--[if lt IE 7]>
+     <link rel="StyleSheet" href="../css/ie6.css" type="text/css" media="all" />
+    <![endif]-->
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "../";
+      // -->
+    </script>
+  </head>
+  <body class="" style="">
+    <div id="navbar">
+      <a class="navleft" href="../index.html"><span class="navimg">FileMaker Pro 13 Help</span></a>
+      <div class="navmarginright"></div>
+      <a class="navright" href="toc.html">Contents</a>
+      <a class="navright" href="scripts_ref1.36.34.html"><span>Next</span> &gt;</a>
+      <a class="navright" href="scripts_ref1.36.32.html">&lt; <span>Previous</span></a>
+    </div>
+    <p id="breadcrumb">
+      <a href="../index.html">Home</a> &gt; 
+      <a href="part5.html#1028704">Reference</a> &gt; 
+      <a href="help_script_cat.34.1.html#1028704">Script steps reference</a> &gt; 
+      <a href="scripts_ref1.36.32.html#1028704">Editing script steps</a> &gt; 
+      <b>Undo/Redo</b>
+    </p>
+    <blockquote class="content-fmi">
+      <div class="ssh-scripthead">Undo/Redo</div>
+      <div class="sspuh-scriptpurposehead">Purpose<a name="1040187"> </a></div>
+      <div class="sspu-scriptpurpose"><a name="1040188">Reverses, restores, or switches between the most recently performed actions in the file.</a></div>
+      <div class="ssfh-scriptformathead">Format<a name="1028705"> </a></div>
+      <div class="ssf-scriptformat"><a name="1028706">Undo/Redo [Undo; Redo; Toggle]</a></div>
+      <div class="ssoh-scriptoptshead">Options<a name="1028707"> </a></div>
+      <div class="b-body"><span class="o-onscreen"><a name="1028708">Undo</a></span> reverses the previously performed action in the file.</div>
+      <div class="b-body"><span class="o-onscreen"><a name="1028709">Redo</a></span> restores the previously undone action in the file.</div>
+      <div class="b-body"><span class="o-onscreen"><a name="1028710">Toggle</a></span> switches between the two most recently performed actions in the file.</div>
+      <div class="sscoh-scriptcompathead">Compatibility<a name="1062121"> </a></div>
+      <div class="ta-tableanchor"><a name="1062147"> </a></div>
+      <table class="t-table" style="text-align: left;" summary="">
+        <caption></caption>
+        <tr>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh1-scriptstepcompthead1">Where the script step runs<a name="1075298"> </a></div>
+          </td>
+          <td style="background-color: #666666; background-image: url(&quot;images\tablebg.gif&quot;); background-repeat: repeat-x; padding-left: .4em; padding-right: .4em; vertical-align: bottom;">
+            <div class="sscoh2-scriptstepcompthead2">Supported<a name="1075300"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco1-scriptstepcompt1">FileMaker Pro<a name="1075302"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075304"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco2-scriptstepcompt2">FileMaker Server scheduled script<a name="1075306"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075308"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco3-scriptstepcompt3">FileMaker Go<a name="1075310"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075312"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco4-scriptstepcompt4">Custom Web Publishing<a name="1075314"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075316"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco5-scriptstepcompt5">FileMaker WebDirect<a name="1075318"> </a></div>
+          </td>
+          <td style="padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075320"> </a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="ssco6-scriptstepcompt6">Runtime solution<a name="1075322"> </a></div>
+          </td>
+          <td style="background-color: #E6EDFF; padding-left: .4em; padding-right: .4em; vertical-align: top;">
+            <div class="sscoy-scriptstepcomptyes">Yes<a name="1075324"> </a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="orh-originhead">Originated in<a name="1049457"> </a></div>
+      <div class="or-origin"><a name="1049458">FileMaker Pro 6.0 or earlier</a></div>
+      <div class="ssdh-scriptdeschead">Description<a name="1028713"> </a></div>
+      <div class="b-body"><a name="1028717">Multiple actions can be undone by repeatedly executing this script step with the Undo option. The number of actions that can be undone or redone is limited only by the amount of available memory.</a></div>
+      <div class="sseh1-scriptexamhead1">Example 1<a name="1028718"> </a></div>
+      <div class="b-body"><a name="1087104">Undoes data entry if the Phone Number field has fewer than seven digits.</a></div>
+      <div class="co-code"><a name="1087260">If [Length ( Customer::Phone Number ) &lt; 7]<br />	Show Custom Dialog ["Phone Number must contain at least 7 digits. Undo number input?"]<br />	If [Get ( LastMessageChoice ) = 1]<br />		Undo/Redo [Undo]<br />	End If<br />End If</a></div>
+      <div class="rh-relatedhead">Related topics<a name="1087261"> </a></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_alpha.html#66468" name="1087257">Script steps reference (alphabetical list)</a></span></div>
+      <div class="rt-relatedtopic"><span class="zh-hyper"><a href="help_script_cat.34.2.html#947337" name="1028730">Script steps reference (category list)</a></span></div>
+    </blockquote>
+    <div class="feedbacklink">Was this topic helpful? <a href="http://www.filemaker.com/redirects/fmp13_admin.html?page=feedback&amp;lang=en" target="external_window">Send feedback.</a></div>
+  </body>
+</html>
