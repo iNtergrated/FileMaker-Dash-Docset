@@ -48,36 +48,10 @@ foreach ( $htmlFiles as $file ) {
         $csvOutput[$i]['name'] = $title;
         $csvOutput[$i]['$type'] = $currentType;
         $csvOutput[$i]['filename'] = $relativePath . $currentFile;
-
-        /* 
-         * Write TOC Anchor
-         *     <a name="//apple_ref/cpp/Entry Type/Entry Name" class="dashAnchor"></a>
-         */
-        /* Strip existing anchors */
-        $fileContents = preg_replace('/<a name="\/\/apple_ref\/cpp\/.*<\/a>\n/', null, $fileContents );
-        // $tocAnchor = '<a name="//apple_ref/cpp/' . $currentType . '/' . $title . '" class="dashAnchor"></a>';
-        // $fileContentsBreakOnClosingBody = preg_split('/(<body.*>)/', $fileContents, 2, PREG_SPLIT_DELIM_CAPTURE );
-
-        // $fileContents =
-        //     $fileContentsBreakOnClosingBody[0] . 
-        //     $fileContentsBreakOnClosingBody[1] . 
-        //     "\n    $tocAnchor" .
-        //     $fileContentsBreakOnClosingBody[2];
-        $updatedFileContents[$currentFile] = $fileContents;
     }
 
     $i++;
 }
-
-echo "$i files processed...\n";
-$i = 1;
-foreach ( $updatedFileContents as $file => $contents )
-{
-    file_put_contents($path . $file, $contents);
-    $i++;
-}
-
-// echo "TOC Anchor added to $i files...\n";
 
 /* Save CSV */
 if ( ! isset ( $csvOutput ))
