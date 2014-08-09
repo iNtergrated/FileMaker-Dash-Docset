@@ -5,7 +5,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>filemaker</string>
 	<key>CFBundleName</key>
-	<string>FileMaker Pro 13</string>
+	<string>FileMaker Pro</string>
 	<key>DashDocSetKeyword</key>
 	<string>fmp</string>
 	<key>DocSetPlatformFamily</key>
