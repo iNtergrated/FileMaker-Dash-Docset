@@ -1,23 +1,44 @@
 #!/usr/local/bin/php
-
 <?php
+
 require_once ( "vendor/autoload.php");
 ob_end_flush();
 use Symfony\Component\DomCrawler\Crawler;
+use Symfony\Component\Filesystem\Filesystem;
 use Keboola\Csv\CsvFile;
+use Colors\Color;
+
+$c = new Color();
+$bundle = new Filesystem();
+/*
+ * Configuration
+ */
+
+define ( 'DOCSET_NAME', 'FileMaker');
+define ( 'DOCSET_BUNDLE', DOCSET_NAME . '.docset');
+define ( 'DOCSET_DESTINATION', __DIR__ . '/build/');
+define ( 'FILEMAKER_BUNDLE', __DIR__ . '/FileMaker Help.bundle');
 
 /* The directory containing the FileMaker Help Files */
-$relativePath = '/html/';
-$path = __DIR__ . $relativePath;
+$sourcePath = FILEMAKER_BUNDLE . '/Contents/Resources/en.lproj/FileMaker Pro Help';
+$htmlPath = $sourcePath . '/html/';
+$path = $htmlPath;
+
+/* Make sure the FileMaker Help bundle is in the project root. */
+if ( ! $bundle->exists( FILEMAKER_BUNDLE ))
+{
+    echo $c( "FileMaker Help Bundle missing!\n" )->red->bold;
+    echo $c( " --> Copy \"FileMaker Help.bundle\" to this directory.\n" )->blue;
+    die;
+}
 
 $htmlFiles = new DirectoryIterator ( $path );
 
-//$dom = new Dom;
 $htmlContents = new Crawler();
 /* Loop through an create the csv and add anchors. */
 $i = 0;
 
-echo "Processing files...\n";
+echo $c( "Processing files...\n" )->green->bold;
 
 foreach ( $htmlFiles as $file ) {
 
@@ -28,8 +49,6 @@ foreach ( $htmlFiles as $file ) {
 
     $fileContents = file_get_contents($path . $currentFile);
     $htmlContents = new Crawler ( $fileContents );
-    
-    //$htmlContents->addHTMLContent ( file_get_contents($path . $currentFile));
 
     $title = $htmlContents->filterXPath('//head/title')->text();
     
@@ -45,23 +64,104 @@ foreach ( $htmlFiles as $file ) {
 
     if ( ! is_null ( $currentType ))
     {
-        $csvOutput[$i]['name'] = $title;
-        $csvOutput[$i]['$type'] = $currentType;
-        $csvOutput[$i]['filename'] = $relativePath . $currentFile;
+        $indexOutput[$i]['name'] = $title;
+        $indexOutput[$i]['type'] = $currentType;
+        $indexOutput[$i]['path'] = '/html/' . $currentFile;
     }
 
     $i++;
 }
 
-/* Save CSV */
-if ( ! isset ( $csvOutput ))
-{
-    echo "ERROR:No data exported to CSV...\n";
-} else {
-    echo "Saving CSV File...\n";
-    $csvFile = new CsvFile ( __DIR__ . '/help_index.csv');
+echo $c( "Building " . DOCSET_NAME . " docset...\n" )->green->bold;
 
-    foreach ( $csvOutput as $row ) {
-        $csvFile->writeRow($row);
-    }
+/* Cleanup up any existing docset */
+if ( $bundle->exists ( DOCSET_DESTINATION . DOCSET_BUNDLE ))
+{
+    echo $c( "   Deleting old " . DOCSET_BUNDLE . "...\n" )->red->bold;
+    $bundle->remove ( DOCSET_DESTINATION . DOCSET_BUNDLE );
 }
+
+/* Create Docset Bundle Structure */
+try
+{
+    $bundle->mkdir( DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/Documents/', 0777 );
+} catch ( Exception $e ) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+}
+
+/* Copy Icon */
+try
+{
+    $bundle->copy( __DIR__ . '/resources/icon.png', DOCSET_DESTINATION . DOCSET_BUNDLE . '/icon.png' );
+} catch ( Exception $e ) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+}
+
+/* Copy plist */
+try
+{
+    $bundle->copy( __DIR__ . '/resources/Info.plist', DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Info.plist' );
+} catch ( Exception $e ) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+}
+
+/* Copy Bundle Help Files */
+try {
+    $bundle->mirror ( $sourcePath, DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/Documents');
+} catch ( Exception $e ) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+}
+
+/* Copy Updated CSS */
+try {
+    $bundle->copy ( __DIR__ . '/resources/webworks.css', DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/Documents/css/webworks.css', true );
+} catch ( Exception $e ) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+}
+
+$indexFilename = 'docSet.dsidx';
+$indexPath = DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/' . $indexFilename;
+$csvIndexFilename = $indexFilename . 'csv';
+$csvIndexPath = DOCSET_DESTINATION . DOCSET_BUNDLE . '/' . $indexFilename . '.csv.';
+
+/* Delete any existing docset index. */
+if ( file_exists ( $indexPath ))
+{
+    echo $c( "   Deleting existing $indexFilename...\n" )->red->bold;
+    $bundle->remove( $indexPath );
+}
+
+/* Create docset index. */
+echo $c( "   Generating index: $indexFilename...\n" )->green;
+
+if ( $db = new SQLite3( $indexPath ))
+{
+    /* Create searchIndex Table */
+    $createQuery = "CREATE TABLE searchIndex(id INTEGER PRIMARY KEY, name TEXT, type TEXT, path TEXT);CREATE UNIQUE INDEX anchor ON searchIndex (name, type, path);";
+    $createQueryResults = @$db->query( $createQuery );
+
+    /* Check results of query. */
+    if ( $createQueryResults === false ) {
+        echo $c( "   ERROR: Table creation failed. Generating CSV file: $csvIndexFilename...\n" )->red->bold;
+        $csvFile = new CsvFile ( $csvIndexPath );
+        foreach ( $indexOutput as $row ) {
+            $csvFile->writeRow($row);
+        }
+    }
+
+    /* Add indexing results to new table. */
+    foreach ( $indexOutput as $row )
+    {
+        $insertQuery = "INSERT OR IGNORE INTO searchIndex(name, type, path) VALUES ('" . $row['name'] ."','" . $row['type'] . "','" . $row['path'] . "');";
+        $insertQueryResults = @$db->query ( $insertQuery );
+        if ( $insertQueryResults === false )
+        {
+            $insertError[] = $err;
+        }
+    }
+} else {
+    die($err);
+}
+
+echo $c( "Docset generation complete!\n" )->green->bold;
+echo $c( "    " . $bundle->makePathRelative ( DOCSET_DESTINATION . DOCSET_BUNDLE, __DIR__ ) )->green . PHP_EOL;
