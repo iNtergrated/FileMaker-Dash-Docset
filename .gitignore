@@ -2,3 +2,4 @@ vendor/
 help_index.csv
 composer.lock
 docSet.dsidx
+build/
