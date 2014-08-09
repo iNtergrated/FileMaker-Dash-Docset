@@ -1,7 +1,6 @@
 FileMaker Pro
 =======================
 
-When you contribute a docset, you need to edit this README to include the following:
 * [Jason P. Scharf](https://github.com/iNtergrated/) [@jpscharf](https://twitter.com/jpscharf)
 
 ## Docset Generation ##
