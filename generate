@@ -2,13 +2,13 @@
 <?php
 
 require_once ( "vendor/autoload.php");
-ob_end_flush();
+// ob_end_flush();
 use Symfony\Component\DomCrawler\Crawler;
 use Symfony\Component\Filesystem\Filesystem;
 use Keboola\Csv\CsvFile;
 use Colors\Color;
 
-$c = new Color();
+$color = new Color();
 $bundle = new Filesystem();
 /*
  * Configuration
@@ -17,67 +17,80 @@ $bundle = new Filesystem();
 define ( 'DOCSET_NAME', 'FileMaker');
 define ( 'DOCSET_BUNDLE', DOCSET_NAME . '.docset');
 define ( 'DOCSET_DESTINATION', __DIR__ . '/build/');
-define ( 'FILEMAKER_BUNDLE', __DIR__ . '/FileMaker Help.bundle');
+define ( 'FILEMAKER_BUNDLE', __DIR__ . '/FileMaker Help');
 
 /* The directory containing the FileMaker Help Files */
-$sourcePath = FILEMAKER_BUNDLE . '/Contents/Resources/en.lproj/FileMaker Pro Help';
-$htmlPath = $sourcePath . '/html/';
+// $sourcePath = FILEMAKER_BUNDLE . '/Contents/Resources/en.lproj/FileMaker Pro Help';
+$sourcePath = FILEMAKER_BUNDLE . '/Resources';
+$htmlPath = $sourcePath . '/FMP_Help/';
+// $htmlPath = $sourcePath . '/';
 $path = $htmlPath;
 
 /* Make sure the FileMaker Help bundle is in the project root. */
 if ( ! $bundle->exists( FILEMAKER_BUNDLE ))
 {
-    echo $c( "FileMaker Help Bundle missing!\n" )->red->bold;
-    echo $c( " --> Copy \"FileMaker Help.bundle\" to this directory.\n" )->blue;
+    echo $color( "FileMaker Help Bundle missing!\n" )->red->bold;
+    echo $color( " --> Copy \"FileMaker Help.bundle\" to this directory.\n" )->blue;
     die;
 }
 
 $htmlFiles = new DirectoryIterator ( $path );
 
-$htmlContents = new Crawler();
+$html_content = new Crawler();
 /* Loop through an create the csv and add anchors. */
 $i = 0;
 
-echo $c( "Processing files...\n" )->green->bold;
+echo $color( "Processing files...\n" )->green->bold;
+
+$types = [
+    'Command'   => '/script-steps-reference.html#',
+    'Functions' => '/functions-reference.html#',
+    'Events'    => '/script-triggers-reference.html#',
+];
 
 foreach ( $htmlFiles as $file ) {
+    $current_type = null;
 
-    $currentType = null;
+     /* Ignore ['./', '../']' */
+    if ( $file->isDot() ) continue;
 
-    if($file->isDot()) continue;
-    $currentFile =  $file->getFilename();
+    $current_file =  $file->getFilename();
 
-    $fileContents = file_get_contents($path . $currentFile);
-    $htmlContents = new Crawler ( $fileContents );
+    if ( preg_match ( "/\.htm.$/", $current_file )) {
 
-    $title = $htmlContents->filterXPath('//head/title')->text();
-    
-    /* Only generate data for the specific types. */
-    if ( preg_match( '/^scripts_ref/', $currentFile ))
-    {
-        $currentType = "Command";
-    } elseif ( preg_match( '/^func_ref/', $currentFile )) {
-        $currentType = "Functions";
-    } elseif (preg_match( '/^script_trigg/', $currentFile )) {
-        $currentType =  "Events";
+        $file_content = file_get_contents($path . $current_file);
+        $html_content = new Crawler ( $file_content );
+
+        $title = $html_content->filterXPath('//head/title')->text();
+                
+        /* Only generate data for the specific types. */
+        foreach ( $types as $type => $match )
+        {
+            $current_type = strpos ( $file_content, $match ) ? $type : $current_type;
+        }
+
+        if ( ! is_null ( $current_type ))
+        {
+            $indexOutput[$i]['name'] = $title;
+            $indexOutput[$i]['type'] = $current_type;
+            $indexOutput[$i]['path'] = '/FMP_Help/' . $current_file;
+        }
     }
-
-    if ( ! is_null ( $currentType ))
-    {
-        $indexOutput[$i]['name'] = $title;
-        $indexOutput[$i]['type'] = $currentType;
-        $indexOutput[$i]['path'] = '/html/' . $currentFile;
-    }
-
     $i++;
 }
+    
+if ( empty( $indexOutput )) {
+    echo $color( " - No valid matches.\n" )->red->bold;
+    echo $color( " - Index could not be built.\n" )->red->bold;
+    die;
+}
 
-echo $c( "Building " . DOCSET_NAME . " docset...\n" )->green->bold;
+echo $color( "Building " . DOCSET_NAME . " docset...\n" )->green->bold;
 
 /* Cleanup up any existing docset */
 if ( $bundle->exists ( DOCSET_DESTINATION . DOCSET_BUNDLE ))
 {
-    echo $c( "   Deleting old " . DOCSET_BUNDLE . "...\n" )->red->bold;
+    echo $color( "   Deleting old " . DOCSET_BUNDLE . "...\n" )->red->bold;
     $bundle->remove ( DOCSET_DESTINATION . DOCSET_BUNDLE );
 }
 
@@ -93,6 +106,7 @@ try
 try
 {
     $bundle->copy( __DIR__ . '/resources/icon.png', DOCSET_DESTINATION . DOCSET_BUNDLE . '/icon.png' );
+    $bundle->copy( __DIR__ . '/resources/icon@2x.png', DOCSET_DESTINATION . DOCSET_BUNDLE . '/icon@2x.png' );
 } catch ( Exception $e ) {
     echo 'Caught exception: ',  $e->getMessage(), "\n";
 }
@@ -121,31 +135,31 @@ try {
 
 $indexFilename = 'docSet.dsidx';
 $indexPath = DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/' . $indexFilename;
-$csvIndexFilename = $indexFilename . 'csv';
-$csvIndexPath = DOCSET_DESTINATION . DOCSET_BUNDLE . '/' . $indexFilename . '.csv.';
+$colorsvIndexFilename = $indexFilename . 'csv';
+$colorsvIndexPath = DOCSET_DESTINATION . DOCSET_BUNDLE . '/' . $indexFilename . '.csv.';
 
 /* Delete any existing docset index. */
 if ( file_exists ( $indexPath ))
 {
-    echo $c( "   Deleting existing $indexFilename...\n" )->red->bold;
+    echo $color( "   Deleting existing $indexFilename...\n" )->red->bold;
     $bundle->remove( $indexPath );
 }
 
 /* Create docset index. */
-echo $c( "   Generating index: $indexFilename...\n" )->green;
+echo $color( "   Generating index: $indexFilename...\n" )->green;
 
 if ( $db = new SQLite3( $indexPath ))
 {
     /* Create searchIndex Table */
-    $createQuery = "CREATE TABLE searchIndex(id INTEGER PRIMARY KEY, name TEXT, type TEXT, path TEXT);CREATE UNIQUE INDEX anchor ON searchIndex (name, type, path);";
-    $createQueryResults = @$db->query( $createQuery );
+    $colorreateQuery = "CREATE TABLE searchIndex(id INTEGER PRIMARY KEY, name TEXT, type TEXT, path TEXT);CREATE UNIQUE INDEX anchor ON searchIndex (name, type, path);";
+    $colorreateQueryResults = @$db->query( $colorreateQuery );
 
     /* Check results of query. */
-    if ( $createQueryResults === false ) {
-        echo $c( "   ERROR: Table creation failed. Generating CSV file: $csvIndexFilename...\n" )->red->bold;
-        $csvFile = new CsvFile ( $csvIndexPath );
+    if ( $colorreateQueryResults === false ) {
+        echo $color( "   ERROR: Table creation failed. Generating CSV file: $colorsvIndexFilename...\n" )->red->bold;
+        $colorsvFile = new CsvFile ( $colorsvIndexPath );
         foreach ( $indexOutput as $row ) {
-            $csvFile->writeRow($row);
+            $colorsvFile->writeRow($row);
         }
     }
 
@@ -163,5 +177,5 @@ if ( $db = new SQLite3( $indexPath ))
     die($err);
 }
 
-echo $c( "Docset generation complete!\n" )->green->bold;
-echo $c( "    " . $bundle->makePathRelative ( DOCSET_DESTINATION . DOCSET_BUNDLE, __DIR__ ) )->green . PHP_EOL;
+echo $color( "Docset generation complete!\n" )->green->bold;
+echo $color( "    " . $bundle->makePathRelative ( DOCSET_DESTINATION . DOCSET_BUNDLE, __DIR__ ) )->green . PHP_EOL;

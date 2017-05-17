@@ -4,3 +4,7 @@ composer.lock
 docSet.dsidx
 build/
 FileMaker Help.bundle
+.DS_Store
+FileMaker Help */
+FileMaker Help/
+fmp*en.zip
