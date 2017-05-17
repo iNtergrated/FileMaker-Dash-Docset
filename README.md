@@ -1,4 +1,4 @@
-FileMaker Pro 15
+FileMaker Pro 16
 =======================
 
 * [Jason P. Scharf](https://github.com/iNtergrated/) [@jpscharf](https://twitter.com/jpscharf)
@@ -7,8 +7,8 @@ FileMaker Pro 15
 
 1. Clone the docset generation [repository](git@github.com:iNtergrated/FileMaker-Dash-Docset.git): ````git clone git@github.com:iNtergrated/FileMaker-Dash-Docset.git````
 
-2. For FileMaker < 15, use master, otherwise checkout the branch for your version, e.g. `checkout FileMaker-15`
-3. Download the FileMaker Help File: `https://www.filemaker.com/help/15/fmp/en/`
+2. For FileMaker < 15, use master, otherwise checkout the branch for your version, e.g. `checkout FileMaker-16`
+3. Download the FileMaker Help File: `http://www.filemaker.com/redirects/fmp16_admin.html?page=help_zip&lang=en`
 4. Extract the zip file, rename the folder to `FileMaker Help`, and copy to the root of this folder.
 5. Install dependencies: ````composer install````
 6. Generate the docset: ````php generate````
