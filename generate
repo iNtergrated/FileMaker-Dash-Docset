@@ -20,17 +20,14 @@ define ( 'DOCSET_DESTINATION', __DIR__ . '/build/');
 define ( 'FILEMAKER_BUNDLE', __DIR__ . '/FileMaker Help');
 
 /* The directory containing the FileMaker Help Files */
-// $sourcePath = FILEMAKER_BUNDLE . '/Contents/Resources/en.lproj/FileMaker Pro Help';
 $sourcePath = FILEMAKER_BUNDLE . '/Resources';
-$htmlPath = $sourcePath . '/FMP_Help/';
-// $htmlPath = $sourcePath . '/';
+$htmlPath = $sourcePath . '/FMP_Help';
 $path = $htmlPath;
 
 /* Make sure the FileMaker Help bundle is in the project root. */
 if ( ! $bundle->exists( FILEMAKER_BUNDLE ))
 {
-    echo $color( "FileMaker Help Bundle missing!\n" )->red->bold;
-    echo $color( " --> Copy \"FileMaker Help.bundle\" to this directory.\n" )->blue;
+    echo $color( "FileMaker Help folder missing!\n" )->red->bold;
     die;
 }
 
@@ -43,40 +40,50 @@ $i = 0;
 echo $color( "Processing files...\n" )->green->bold;
 
 $types = [
-    'Command'   => '/script-steps-reference.html#',
-    'Functions' => '/functions-reference.html#',
-    'Events'    => '/script-triggers-reference.html#',
+    'Command'   => [
+        'index' => 'script-steps-alphabetical.html',
+        'html_selector' => '.ssh-scriptheadAPL > a',
+    ],
+    'Functions' => [
+        'index' => 'functions-alphabetical.html',
+        'html_selector' => '.fh-funcheadAPL > a',
+    ],
+    'Events'    => [
+        'index' => 'script-triggers.html',
+        'html_selector' => '.td-tabledata > .zh-hyper > a',
+    ],
 ];
 
-foreach ( $htmlFiles as $file ) {
-    $current_type = null;
+$i = 0;
+foreach($types as $type => $type_meta) {
+    $file = "{$htmlPath}/{$type_meta['index']}";
+    $file_content = file_get_contents($file);
 
-     /* Ignore ['./', '../']' */
-    if ( $file->isDot() ) continue;
+    $html_content = new Crawler($file_content);
+    $els = $html_content->filter($type_meta['html_selector']);
 
-    $current_file =  $file->getFilename();
+    $results = $els->extract(['href', '_text']);
 
-    if ( preg_match ( "/\.htm.$/", $current_file )) {
+    foreach($results as $result) {
+        $item_name = $result[1];
+        $url = $result[0];
+        $item_url_path = parse_url($url)['path'];
+        $item_path = "{$htmlPath}/{$item_url_path}";
+        $item_realpath = realpath($item_path);
+        $item_relative_path = str_replace($sourcePath, "", $item_realpath);
+        ; //explode('#', $url)[0];
+        // $item_path_absolute = realpath($item_path);
+        // $item_path = "{$htmlPath}/{$result[0]}";
 
-        $file_content = file_get_contents($path . $current_file);
-        $html_content = new Crawler ( $file_content );
+    // var_dump(compact('file', 'type_path', 'els', 'results', 'result'));
+    // var_dump(compact('item_name', 'item_path', 'item_realpath', 'item_relative_path'));
+        $indexOutput[$i]['name'] = $item_name;
+        $indexOutput[$i]['type'] = $type;
+        $indexOutput[$i]['path'] = $item_relative_path;
 
-        $title = $html_content->filterXPath('//head/title')->text();
-                
-        /* Only generate data for the specific types. */
-        foreach ( $types as $type => $match )
-        {
-            $current_type = strpos ( $file_content, $match ) ? $type : $current_type;
-        }
-
-        if ( ! is_null ( $current_type ))
-        {
-            $indexOutput[$i]['name'] = $title;
-            $indexOutput[$i]['type'] = $current_type;
-            $indexOutput[$i]['path'] = '/FMP_Help/' . $current_file;
-        }
+        $i++;
     }
-    $i++;
+
 }
     
 if ( empty( $indexOutput )) {
@@ -126,12 +133,49 @@ try {
     echo 'Caught exception: ',  $e->getMessage(), "\n";
 }
 
-/* Copy Updated CSS */
-try {
-    $bundle->copy ( __DIR__ . '/resources/webworks.css', DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/Documents/css/webworks.css', true );
-} catch ( Exception $e ) {
-    echo 'Caught exception: ',  $e->getMessage(), "\n";
+/* Fix FMP Help JS */
+$fix_fmp_files = [
+    DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/Documents/index.html',
+    DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/Documents/connect/scripts/common.js',
+    DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/Documents/connect/search.html',
+    DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/Documents/FMP_Help/scripts/common.js',
+    DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/Documents/FMP_Help/scripts/page.js',
+    DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/Documents/connect/scripts/page.js',
+];
+
+foreach($fix_fmp_files as $fmp_file) {
+    $fmp_file_contents = file_get_contents($fmp_file);
+    $fmp_file_contents = str_replace(
+        [
+            "Connect_Window.document.location.protocol === 'file:'",
+            "Connect_Window.document.location.protocol !== 'file:'",
+            "param_window.location.protocol === 'file:'",
+            "accept = (param_event.origin.indexOf('file:') === 0);",
+            "window.location.protocol === 'file:'",
+            "window.document.location.protocol === 'file:'",
+            "Page.window.document.location.protocol !== 'file:'",
+        ],
+        [
+            "['file:', 'dfile:'].includes(Connect_Window.document.location.protocol)",
+            "! ['file:', 'dfile:'].includes(Connect_Window.document.location.protocol)",
+            "['file:', 'dfile:'].includes(param_window.location.protocol)",
+            "accept = (param_event.origin.indexOf('file:') === 0 || param_event.origin.indexOf('dfile:') === 0);",
+            "['file:', 'dfile:'].includes(window.location.protocol)",
+            "['file:', 'dfile:'].includes(window.document.location.protocol)",
+            "! ['file:', 'dfile:'].includes(Page.window.document.location.protocol)",
+        ],
+        $fmp_file_contents
+    );
+    file_put_contents($fmp_file, $fmp_file_contents);    
 }
+
+
+/* Copy Updated CSS */
+// try {
+//     $bundle->copy ( __DIR__ . '/resources/webworks.css', DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/Documents/css/webworks.css', true );
+// } catch ( Exception $e ) {
+//     echo 'Caught exception: ',  $e->getMessage(), "\n";
+// }
 
 $indexFilename = 'docSet.dsidx';
 $indexPath = DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/' . $indexFilename;
