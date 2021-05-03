@@ -71,12 +71,7 @@ foreach($types as $type => $type_meta) {
         $item_path = "{$htmlPath}/{$item_url_path}";
         $item_realpath = realpath($item_path);
         $item_relative_path = str_replace($sourcePath, "", $item_realpath);
-        ; //explode('#', $url)[0];
-        // $item_path_absolute = realpath($item_path);
-        // $item_path = "{$htmlPath}/{$result[0]}";
-
-    // var_dump(compact('file', 'type_path', 'els', 'results', 'result'));
-    // var_dump(compact('item_name', 'item_path', 'item_realpath', 'item_relative_path'));
+        
         $indexOutput[$i]['name'] = $item_name;
         $indexOutput[$i]['type'] = $type;
         $indexOutput[$i]['path'] = $item_relative_path;
@@ -168,14 +163,6 @@ foreach($fix_fmp_files as $fmp_file) {
     );
     file_put_contents($fmp_file, $fmp_file_contents);    
 }
-
-
-/* Copy Updated CSS */
-// try {
-//     $bundle->copy ( __DIR__ . '/resources/webworks.css', DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/Documents/css/webworks.css', true );
-// } catch ( Exception $e ) {
-//     echo 'Caught exception: ',  $e->getMessage(), "\n";
-// }
 
 $indexFilename = 'docSet.dsidx';
 $indexPath = DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/' . $indexFilename;
