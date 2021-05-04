@@ -262,6 +262,28 @@ foreach($insertErrors as $index => $error) {
     echo "    - Query: {$error['query']}" . PHP_EOL . PHP_EOL;
 }
 
+/* Remove Google Analytics Code */
+echo $color( "Removing Google Analytics Code..." )->yellow->bold . PHP_EOL;
+$all_files = glob(DOCSET_DESTINATION . DOCSET_BUNDLE . '/Contents/Resources/Documents/**/*.*');
+foreach($all_files as $file) {
+    if( ! fnmatch('*.html', $file) && ! fnmatch('*.js', $file)) {
+        continue;
+    }
+
+    $contents = file_get_contents($file);
+
+    if(stripos($contents, "GoogleAnalyticsObject") === false) {
+        continue;
+    }
+
+    $contents_clean = preg_replace(
+        '/<script((?!<\/script>).)*?GoogleAnalyticsObject((?!<\/script>).)*?<\/script>/s',
+        '',
+        $contents
+    );
+
+    file_put_contents($file, $contents);
+}
 
 echo $color( "Docset generation complete!\n" )->green->bold;
 echo $color( "    " . $bundle->makePathRelative ( DOCSET_DESTINATION . DOCSET_BUNDLE, __DIR__ ) )->green . PHP_EOL;
