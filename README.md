@@ -19,3 +19,4 @@ https://www.filemaker.com/redirects/fmp19_admin.html?page=help_zip&lang=en
 
 ## Known Issues ##
 - Native FileMaker help search does not work.
+- Does not remove Google Anaaltics code from `index.html` and `search.html`.

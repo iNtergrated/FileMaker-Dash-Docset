@@ -280,9 +280,9 @@ foreach($all_files as $file) {
         '/<script((?!<\/script>).)*?GoogleAnalyticsObject((?!<\/script>).)*?<\/script>/s',
         '',
         $contents
-    );
+    ) ?? $contents;
 
-    file_put_contents($file, $contents);
+    file_put_contents($file, $contents_clean);
 }
 
 echo $color( "Docset generation complete!\n" )->green->bold;
