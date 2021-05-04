@@ -14,5 +14,7 @@
 	<string>index.html</string>
 	<key>isDashDocset</key>
 	<true/>
+	<key>isJavaScriptEnabled</key>
+	<true/>
 </dict>
 </plist>
