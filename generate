@@ -33,6 +33,9 @@ if ( ! $bundle->exists( FILEMAKER_BUNDLE ))
 
 $htmlFiles = new DirectoryIterator ( $path );
 
+$indexOutput = [];
+$insertErrors = [];
+
 $html_content = new Crawler();
 /* Loop through an create the csv and add anchors. */
 $i = 0;
@@ -44,13 +47,35 @@ $types = [
         'index' => 'script-steps-alphabetical.html',
         'html_selector' => '.ssh-scriptheadAPL > a',
     ],
-    'Functions' => [
+    'Function' => [
         'index' => 'functions-alphabetical.html',
         'html_selector' => '.fh-funcheadAPL > a',
     ],
-    'Events'    => [
+    'Event'    => [
         'index' => 'script-triggers.html',
         'html_selector' => '.td-tabledata > .zh-hyper > a',
+    ],
+    'Error' => [
+        'index' => 'error-codes.html',
+        'html_extractor' => function(string $file, string $type, Crawler $html) use ($sourcePath, &$indexOutput) {
+            $id_els = $html->filter('.ecn-errorcodenumber');
+
+            $i = 0;
+            foreach($id_els as $id_el) {
+                $id = $id_el->textContent;
+                $description = $id_el
+                    ->parentNode
+                    ->nextSibling
+                    ->textContent;
+
+                $item_relative_path = str_replace($sourcePath, "", $file);
+                $indexOutput[$i]['name'] = "{$id} - {$description}";
+                $indexOutput[$i]['type'] = $type;
+                $indexOutput[$i]['path'] = "{$item_relative_path}";
+
+                $i++;
+            }
+        },
     ],
 ];
 
@@ -60,12 +85,22 @@ foreach($types as $type => $type_meta) {
     $file_content = file_get_contents($file);
 
     $html_content = new Crawler($file_content);
+    $html_extractor = $type_meta['html_extractor'] ?? null;
+
+    if (is_callable($html_extractor)) {
+        $html_extractor($file, $type, $html_content);
+        continue;
+    }
+
+    $html_selector = $type_meta['html_selector'];
+
     $els = $html_content->filter($type_meta['html_selector']);
 
     $results = $els->extract(['href', '_text']);
 
     foreach($results as $result) {
         $item_name = $result[1];
+
         $url = $result[0];
         $item_url_path = parse_url($url)['path'];
         $item_path = "{$htmlPath}/{$item_url_path}";
@@ -80,7 +115,7 @@ foreach($types as $type => $type_meta) {
     }
 
 }
-    
+
 if ( empty( $indexOutput )) {
     echo $color( " - No valid matches.\n" )->red->bold;
     echo $color( " - Index could not be built.\n" )->red->bold;
@@ -197,16 +232,36 @@ if ( $db = new SQLite3( $indexPath ))
     /* Add indexing results to new table. */
     foreach ( $indexOutput as $row )
     {
-        $insertQuery = "INSERT OR IGNORE INTO searchIndex(name, type, path) VALUES ('" . $row['name'] ."','" . $row['type'] . "','" . $row['path'] . "');";
-        $insertQueryResults = @$db->query ( $insertQuery );
+        // $insertQuery = "INSERT OR IGNORE INTO searchIndex(name, type, path) VALUES ('" . $row['name'] ."','" . $row['type'] . "','" . $row['path'] . "');";
+        $insertQuery = "INSERT OR IGNORE INTO searchIndex(name, type, path) VALUES (:name, :type, :path);";
+        $insertPrepare = $db->prepare($insertQuery);
+        $insertPrepare->bindValue('name', $row['name']);
+        $insertPrepare->bindValue('type', $row['type']);
+        $insertPrepare->bindValue('path', $row['path']);
+
+        $insertQueryResults = @$insertPrepare->execute();
         if ( $insertQueryResults === false )
         {
-            $insertError[] = $err;
+            $insertErrors[] = [
+                'query' => $insertQuery,
+                'errorCode' => $db->lastErrorCode(),
+                'errorMessage' => $db->lastErrorMsg(),
+            ];
         }
     }
 } else {
     die($err);
 }
+
+
+foreach($insertErrors as $index => $error) {
+    if ($index === 0) {
+        echo PHP_EOL . $color('Insert Errors')->red->bold . PHP_EOL;
+    }
+    echo $color("  #{$index}: [{$error['errorCode']}] {$error['errorMessage']}")->red . PHP_EOL;
+    echo "    - Query: {$error['query']}" . PHP_EOL . PHP_EOL;
+}
+
 
 echo $color( "Docset generation complete!\n" )->green->bold;
 echo $color( "    " . $bundle->makePathRelative ( DOCSET_DESTINATION . DOCSET_BUNDLE, __DIR__ ) )->green . PHP_EOL;
