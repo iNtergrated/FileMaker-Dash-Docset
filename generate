@@ -57,10 +57,9 @@ $types = [
     ],
     'Error' => [
         'index' => 'error-codes.html',
-        'html_extractor' => function(string $file, string $type, Crawler $html) use ($sourcePath, &$indexOutput) {
+        'html_extractor' => function(string $file, string $type, Crawler $html) use ($sourcePath, &$indexOutput, &$i) {
             $id_els = $html->filter('.ecn-errorcodenumber');
 
-            $i = 0;
             foreach($id_els as $id_el) {
                 $id = $id_el->textContent;
                 $description = $id_el
